@@ -1,0 +1,124 @@
+/*
+Theme Name:NV Training Portal
+Author: Ralph Cockburn
+Version: 1.0
+*/
+.h2 {
+	color:#E26743;
+}
+.nav.nav-center {
+    margin:0;
+    float:none;
+}
+
+.navbar-inner{
+    text-align:center;
+}
+.login-text{
+	 font-size: 28px;
+    font-weight: 600;
+}
+.logo{
+	max-width: 300px;
+}
+
+.login-btn{
+	background-color: #e26743;
+	color: #f6e0c3;
+}
+
+.login-btn:hover{
+	background-color: #f6e0c3;
+	color:#e26743;
+}
+
+.selection-box{
+	max-width: 400px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.selection-text{
+	position: absolute;
+	bottom: 45%;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size:2em;
+}
+
+.pad-top{
+	padding-top: 30px;
+}
+
+#login h1 a{
+	height:65px;
+		width:320px;
+		background-size: 320px 65px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+	background-image: url(https://training.naturvet.com/wp-content/uploads/2018/08/naturvet-logo_green.png);
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Bold.eot');
+    src: url('fonts/BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Bold.woff') format('woff'),
+        url('fonts/BrandonGrotesque-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Medium.eot');
+    src: url('fonts/BrandonGrotesque-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BrandonGrotesque-Medium.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Medium.woff') format('woff'),
+        url('fonts/BrandonGrotesque-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Light.eot');
+    src: url('fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Light.woff') format('woff'),
+        url('fonts/BrandonGrotesque-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Black.eot');
+    src: url('fonts/BrandonGrotesque-Black.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BrandonGrotesque-Black.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Black.woff') format('woff'),
+        url('fonts/BrandonGrotesque-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('fonts/BrandonGrotesque-Regular.eot');
+    src: url('fonts/BrandonGrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('fonts/BrandonGrotesque-Regular.woff') format('woff'),
+        url('fonts/BrandonGrotesque-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
