@@ -185,7 +185,7 @@
       .responsive-menu {
         display: none;
         position: fixed;
-        width: 85%;
+        width: 100%;
         height: 100vh;
         max-width: 400px;
         background-color: #2C667ECC;
@@ -193,7 +193,6 @@
         left: 0;
         z-index: 0;
         text-align: center;
-        padding: 75px 25px 25px 25px;
       }
 
       .top-btns {
@@ -217,7 +216,7 @@
       .close-btn {
         color: #FFFFFF;
         position: absolute;
-        right: 0px;
+        left: 0px;
         top: 0px;
         cursor: pointer;
         display: block !important;
