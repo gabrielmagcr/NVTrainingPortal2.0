@@ -329,17 +329,16 @@
                 <a href="<?php echo wp_login_url(); ?>">Login</a>
               <?php } ?>
             </li>
-            <?php
-            if (isset($menuItems)) {
+            <?php if ($menuItems) {
               foreach ($menuItems as $menuItem) {
                 // Create <li> for each menu element
                 echo '<li><a href="' . $menuItem->url . '">' . $menuItem->title . '</a></li>';
               }
             }
             ?>
-          </ul>
+          </ul>s
 
-        </div><!--end responsive-menu-->
+        </div><!--end responsives-menu-->
 
         <script>
           jQuery(".close-btn").on("click", function() {
