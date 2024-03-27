@@ -1,378 +1,402 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<?php wp_head(); ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Hotjar Tracking Code for https://training.naturvet.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1178112,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <?php wp_head(); ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hotjar Tracking Code for https://training.naturvet.com -->
+  <script>
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1178112,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="-1">
-<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-<style type="text/css">
-div,section,img,header{-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
-.sticky{position:fixed; top:0; left:0; width:100%; z-index:999;}
-.content{width:96%; max-width:1450px; margin:0 auto; font-family: 'Brandon Grotesque'; padding:7px 0px 9px 0px;}
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+  <style type="text/css">
+    div,
+    section,
+    img,
+    header {
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+    }
 
-.top-belt{width:100%; background-color:#FA9E33; color:#fff; font-size:13px; text-align:center; font-weight:bold; text-transform:uppercase; letter-spacing:1px; position:relative; z-index:1;}
-.top-belt .icon-arrow{width:13px; display: inline-block; pointer-events: none; margin-left: .8rem; vertical-align: middle; margin-bottom: .2rem;}
+    .sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
 
-header{width:100%; background-color:#fff;}
-header .content{display:flex; flex-wrap:wrap; align-items:center; padding:1rem 0rem;}
-header .content .header-l{width:35%; visibility:hidden; }
-header .content .header-l .bars{color:#25938B; width:100px; cursor:pointer; display:none;}
-header .content .header-c{width:30%; text-align:center;}
-header .content .header-c svg{width:100%; max-width:270px;}
-header .content .header-r{width:35%; text-align:right;}
+    .content {
+      width: 96%;
+      max-width: 1450px;
+      margin: 0 auto;
+      font-family: 'Brandon Grotesque';
+      padding: 7px 0px 9px 0px;
+    }
 
-header .content .header-l .top-btns{display:none;}
-.close-btn{display:none;}
+    .top-belt {
+      width: 100%;
+      background-color: #FA9E33;
+      color: #fff;
+      font-size: 13px;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 1;
+    }
 
-.top-btns{background-color:#E26743; font-weight: 700; max-height:6rem; padding:1.1rem 2rem; font-family:1.6rem; text-transform:uppercase; text-align:center; border:.2rem solid transparent; border-radius:5em; color:#fff; margin:0px 5px;}
+    .top-belt .icon-arrow {
+      width: 13px;
+      display: inline-block;
+      pointer-events: none;
+      margin-left: .8rem;
+      vertical-align: middle;
+      margin-bottom: .2rem;
+    }
 
-.responsive-menu{display:none;}
+    header {
+      width: 100%;
+      background-color: #fff;
+    }
 
-@media only screen and (max-width:1420px){
-.top-btns{max-height:6rem; padding:1rem 1.5rem; font-size:15px; margin:0px 0px;}
-#banner{max-height:420px !important;}
-}
+    header .content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 1rem 0rem;
+    }
 
-@media only screen and (max-width:1205px){
-.top-btns{max-height:6rem; padding:1rem 1rem; font-size:13px; margin:0px 0px;}
+    header .content .header-l {
+      width: 35%;
+      visibility: hidden;
+    }
 
-#banner{max-height:400px !important;}
-}
+    header .content .header-l .bars {
+      color: #25938B;
+      width: 100px;
+      cursor: pointer;
+      display: none;
+    }
 
-@media only screen and (max-width:1024px){
-header .content .header-l{visibility:initial;}
-header .content .header-l .bars{color:#25938B; width:100px; cursor:pointer; display:block;}
-.responsive-menu{display:none; position:fixed; width:85%; height:100vh; max-width:400px; background-color:#25938B; top:0; left:0; z-index:0; text-align:center; padding:75px 25px 25px 25px;}
-.top-btns{background-color:#E26743; font-weight: 700; max-height:6rem; padding:1.1rem 2rem; font-size:16px; text-transform:uppercase; text-align:center; border:.2rem solid transparent; border-radius:5em; color:#fff; margin:20px 0px; display:block !important; width:100%; box-sizing:border-box; text-decoration:none;}
-.close-btn{background-color:#fff; color:#25938B; position:absolute; right:-60px; top:0px; padding:80px 15px 33px 15px; cursor:pointer; display:block !important;}
-.close-btn svg{color:#25938B; width:30px;}
-header .content .header-r{width:35%; text-align:right; display:none;}
-#banner{max-height:380px !important;}
-}
+    header .content .header-c {
+      width: 30%;
+      text-align: center;
+    }
 
-@media only screen and (max-width:767px){
-.top-belt{font-size:11px; letter-spacing:0.5px;}
-.top-belt .icon-arrow{width:11px; margin-left: .2rem; margin-bottom: .3rem;}3
-#banner{max-height:320px !important;}
-}
+    header .content .header-c svg {
+      width: 100%;
+      max-width: 270px;
+    }
 
-@media only screen and (max-width:480px){
-.responsive-menu{padding:65px 15px 25px 15px;}
-.top-btns{max-height:5rem; padding:1rem 1rem; font-size:13px; margin:20px 0px; }
-.close-btn{right:-50px; top:0px; padding:60px 15px 30px 15px;}
-.close-btn svg{color:#25938B; width:20px;}
-#banner{max-height:300px !important;}
-}
-</style>
+    header .content .header-r {
+      width: 35%;
+      text-align: right;
+    }
+
+    header .content .header-l .top-btns {
+      display: none;
+    }
+
+    .close-btn {
+      display: none;
+    }
+
+    .top-btns {
+      background-color: #E26743;
+      font-weight: 700;
+      max-height: 6rem;
+      padding: 1.1rem 2rem;
+      font-family: 1.6rem;
+      text-transform: uppercase;
+      text-align: center;
+      border: .2rem solid transparent;
+      border-radius: 5em;
+      color: #fff;
+      margin: 0px 5px;
+    }
+
+    .responsive-menu {
+      display: none;
+    }
+
+    @media only screen and (max-width:1420px) {
+      .top-btns {
+        max-height: 6rem;
+        padding: 1rem 1.5rem;
+        font-size: 15px;
+        margin: 0px 0px;
+      }
+
+      #banner {
+        max-height: 420px !important;
+      }
+    }
+
+    @media only screen and (max-width:1205px) {
+      .top-btns {
+        max-height: 6rem;
+        padding: 1rem 1rem;
+        font-size: 13px;
+        margin: 0px 0px;
+      }
+
+      #banner {
+        max-height: 400px !important;
+      }
+    }
+
+    @media only screen and (max-width:1024px) {
+      header .content .header-l {
+        visibility: initial;
+      }
+
+      header .content .header-l .bars {
+        color: #25938B;
+        width: 100px;
+        cursor: pointer;
+        display: block;
+      }
+
+      .responsive-menu {
+        display: none;
+        position: fixed;
+        width: 85%;
+        height: 100vh;
+        max-width: 400px;
+        background-color: #25938B;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        text-align: center;
+        padding: 75px 25px 25px 25px;
+      }
+
+      .top-btns {
+        background-color: #E26743;
+        font-weight: 700;
+        max-height: 6rem;
+        padding: 1.1rem 2rem;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        border: .2rem solid transparent;
+        border-radius: 5em;
+        color: #fff;
+        margin: 20px 0px;
+        display: block !important;
+        width: 100%;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+
+      .close-btn {
+        background-color: #fff;
+        color: #25938B;
+        position: absolute;
+        right: -60px;
+        top: 0px;
+        padding: 80px 15px 33px 15px;
+        cursor: pointer;
+        display: block !important;
+      }
+
+      .close-btn svg {
+        color: #25938B;
+        width: 30px;
+      }
+
+      header .content .header-r {
+        width: 35%;
+        text-align: right;
+        display: none;
+      }
+
+      #banner {
+        max-height: 380px !important;
+      }
+    }
+
+    @media only screen and (max-width:767px) {
+      .top-belt {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+      }
+
+      .top-belt .icon-arrow {
+        width: 11px;
+        margin-left: .2rem;
+        margin-bottom: .3rem;
+      }
+
+      3 #banner {
+        max-height: 320px !important;
+      }
+    }
+
+    @media only screen and (max-width:480px) {
+      .responsive-menu {
+        padding: 65px 15px 25px 15px;
+      }
+
+      .top-btns {
+        max-height: 5rem;
+        padding: 1rem 1rem;
+        font-size: 13px;
+        margin: 20px 0px;
+      }
+
+      .close-btn {
+        right: -50px;
+        top: 0px;
+        padding: 60px 15px 30px 15px;
+      }
+
+      .close-btn svg {
+        color: #25938B;
+        width: 20px;
+      }
+
+      #banner {
+        max-height: 300px !important;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<section class="top-belt" style="display:none;">
-	<div class="content">
-                Free shipping on all subscriptions and orders $35+ <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
-</path></svg>
-	</div><!--end content-->
-</section><!--end top-belt-->
-<header>
-	<div class="content">
-	<div class="header-l">
-<svg class="bars" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" width="27" height="19" viewBox="0 0 27 19">
-  <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
-    <path id="Path_7978" data-name="Path 7978" d="M4.5,18h24" transform="translate(0 -1)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-    <path id="Path_7979" data-name="Path 7979" d="M4.5,9h24" transform="translate(0)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-    <path id="Path_7980" data-name="Path 7980" d="M4.5,27h24" transform="translate(0 -2)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-  </g>
-</svg>
-		<div class="responsive-menu">
-		<div class="close-btn">
-<svg class="icon icon-close" fill="none" width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
-    <g id="Artboard1" transform="matrix(0.740741,0,0,0.740741,0,0)">
-        <rect x="0" y="0" width="27" height="27" style="fill:none;"></rect>
-        <g transform="matrix(1.35,0,0,1.35,-8.775,-13.4801)">
-            <g id="Icon_feather-menu">
-                <g>
-                    <g id="Path_7978" transform="matrix(0.707107,0.707107,-0.707107,0.707107,17.5607,-4.4099)">
+  <section class="top-belt" style="display:none;">
+    <div class="content">
+      Free shipping on all subscriptions and orders $35+ <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
+        </path>
+      </svg>
+    </div><!--end content-->
+  </section><!--end top-belt-->
+  <header>
+    <div class="content">
+      <div class="header-l">
+        <svg class="bars" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" width="27" height="19" viewBox="0 0 27 19">
+          <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-3 -7.5)">
+            <path id="Path_7978" data-name="Path 7978" d="M4.5,18h24" transform="translate(0 -1)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+            <path id="Path_7979" data-name="Path 7979" d="M4.5,9h24" transform="translate(0)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+            <path id="Path_7980" data-name="Path 7980" d="M4.5,27h24" transform="translate(0 -2)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+          </g>
+        </svg>
+        <div class="responsive-menu">
+          <div class="close-btn">
+            <svg class="icon icon-close" fill="none" width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+              <g id="Artboard1" transform="matrix(0.740741,0,0,0.740741,0,0)">
+                <rect x="0" y="0" width="27" height="27" style="fill:none;"></rect>
+                <g transform="matrix(1.35,0,0,1.35,-8.775,-13.4801)">
+                  <g id="Icon_feather-menu">
+                    <g>
+                      <g id="Path_7978" transform="matrix(0.707107,0.707107,-0.707107,0.707107,17.5607,-4.4099)">
                         <path d="M4.5,18L28.5,18" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:3px;"></path>
-                    </g>
-                    <g id="Path_7979" transform="matrix(0.707107,-0.707107,0.707107,0.707107,-1.53122,25.2886)">
+                      </g>
+                      <g id="Path_7979" transform="matrix(0.707107,-0.707107,0.707107,0.707107,-1.53122,25.2886)">
                         <path d="M4.5,9L28.5,9" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:3px;"></path>
+                      </g>
                     </g>
+                  </g>
                 </g>
-            </g>
-        </g>
-    </g>
-</svg>
-		</div><!--end close-btn-->
-			<?php if( is_user_logged_in() ) { ?>
-               	<a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
-                    <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
-			<?php } else { ?>
-				<a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
-			<?php } ?>	
-		</div><!--end responsive-menu-->
+              </g>
+            </svg>
+          </div><!--end close-btn-->
+          <?php if (is_user_logged_in()) { ?>
+            <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
+            <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
+          <?php } else { ?>
+            <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
+          <?php } ?>
+        </div><!--end responsive-menu-->
 
-<script>
-jQuery( ".close-btn" ).on( "click", function() {
-  jQuery( ".responsive-menu" ).hide('slow');
-  jQuery( ".responsive-menu" ).css('left', '-100%');
-});
-jQuery( ".bars" ).on( "click", function() {
-  jQuery( ".responsive-menu" ).show('slow');
-  jQuery( ".responsive-menu" ).css('left', '0%');
-});
-</script>
-	</div><!--end header-l-->
-	<div class="header-c">
-<a href="<?php echo home_url( '/' ); ?>" rel="home">
-<svg version="1.1" id="NaturVet_Logo_Horizontal" class="header__heading-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.66 71.82" style="enable-background:new 0 0 240.66 71.82;" xml:space="preserve">
-    <style type="text/css">
-     .st0{fill:#4D7F70;}
-     .st1{fill:#E26743;}
-     .st2{enable-background:new;}
-    </style>
-    <g>
-     <g>
-       <g>
-         <g>
-           <g>
-             <g>
-               <path class="st0" d="M112.65,49.4h-0.08c-0.31,0.32-0.67,0.64-1.09,0.98c-0.42,0.33-0.92,0.65-1.44,0.94
-                 c-0.56,0.29-1.16,0.53-1.8,0.71c-0.68,0.18-1.41,0.28-2.19,0.28c-1.02,0-2.01-0.17-2.92-0.5c-0.91-0.32-1.68-0.79-2.33-1.41
-                 c-0.65-0.61-1.18-1.35-1.53-2.22c-0.39-0.88-0.57-1.84-0.57-2.93c0-1.17,0.23-2.23,0.65-3.17c0.44-0.94,1.04-1.73,1.81-2.39
-                 c0.78-0.64,1.68-1.14,2.77-1.48c1.09-0.34,2.26-0.51,3.57-0.51c0.94,0,1.82,0.06,2.63,0.17c0.79,0.12,1.51,0.26,2.11,0.43
-                 v-0.89c0-0.5-0.09-1-0.28-1.48c-0.16-0.47-0.45-0.9-0.83-1.26c-0.38-0.37-0.88-0.67-1.49-0.89c-0.62-0.21-1.38-0.32-2.27-0.32
-                 c-1.09,0-2.19,0.11-3.28,0.36c-1.09,0.24-2.27,0.6-3.55,1.09v-4.2c1.11-0.49,2.29-0.85,3.53-1.12c1.23-0.25,2.54-0.39,3.9-0.4
-                 c1.59,0,3,0.19,4.22,0.58c1.21,0.4,2.21,0.94,3.01,1.63c0.81,0.68,1.42,1.5,1.83,2.43c0.39,0.94,0.58,1.97,0.58,3.08v8.28
-                 c0,1.46,0.03,2.7,0.05,3.75c0.04,1.04,0.07,1.98,0.1,2.79h-4.86L112.65,49.4z M112.23,42.36c-0.52-0.12-1.11-0.23-1.77-0.32
-                 c-0.67-0.11-1.34-0.16-2.03-0.16c-1.31,0-2.35,0.26-3.11,0.78c-0.76,0.53-1.15,1.33-1.15,2.4c0,0.51,0.09,0.93,0.25,1.31
-                 c0.19,0.37,0.42,0.68,0.71,0.91c0.3,0.25,0.65,0.43,1.04,0.55c0.4,0.13,0.8,0.19,1.25,0.19c0.54,0,1.05-0.09,1.55-0.22
-                 c0.48-0.14,0.92-0.33,1.34-0.55c0.4-0.22,0.76-0.46,1.1-0.73c0.31-0.28,0.59-0.55,0.82-0.79V42.36z"></path>
-               <path class="st0" d="M134.76,51.71c-0.61,0.18-1.34,0.32-2.18,0.44c-0.82,0.1-1.62,0.16-2.35,0.16
-                 c-1.84,0-3.34-0.31-4.52-0.91c-1.17-0.6-1.99-1.45-2.49-2.57c-0.36-0.81-0.53-1.89-0.53-3.27v-11.4h-4.1v-4.43h4.1v-6.15h5.39
-                 v6.15h6.35v4.43h-6.35v10.69c0,0.85,0.12,1.47,0.37,1.88c0.46,0.7,1.35,1.05,2.71,1.05c0.63,0,1.26-0.05,1.84-0.15
-                 c0.62-0.09,1.2-0.22,1.75-0.37V51.71z"></path>
-               <path class="st0" d="M146.35,52.31c-2.21,0-4.04-0.37-5.49-1.13c-1.46-0.75-2.55-1.76-3.31-3.03
-                 c-0.38-0.69-0.68-1.43-0.87-2.26c-0.18-0.82-0.28-1.71-0.28-2.72V29.74h5.39V42.6c0,0.76,0.05,1.39,0.15,1.93
-                 c0.12,0.53,0.27,1.01,0.47,1.39c0.37,0.68,0.89,1.16,1.55,1.49c0.67,0.33,1.45,0.48,2.39,0.48c0.97,0,1.81-0.18,2.48-0.54
-                 c0.69-0.37,1.21-0.92,1.55-1.66c0.36-0.71,0.52-1.7,0.52-2.98V29.74h5.38v13.44c0,1.78-0.31,3.29-0.92,4.52
-                 c-0.36,0.7-0.81,1.32-1.36,1.89c-0.55,0.57-1.2,1.06-1.94,1.46c-0.76,0.4-1.6,0.72-2.55,0.93
-                 C148.58,52.18,147.51,52.31,146.35,52.31z"></path>
-               <polygon class="st0" points="89.63,51.74 95.46,51.74 95.46,23.58 89.87,23.58 89.87,43.51 76.3,23.58 70.47,23.58
-                 70.47,51.74 76.03,51.74 76.02,31.74 						"></polygon>
-               <g>
-                 <path class="st0" d="M167.3,30.16c-1.11,0.64-1.99,1.52-2.62,2.64h-0.09l-0.5-3.07h-4.45v22h5.38V37
-                   c0.69-1.01,1.65-1.76,2.9-2.25c1.24-0.49,2.68-0.74,4.34-0.74h0.45v-0.07l-1.84-4.72C169.5,29.27,168.29,29.58,167.3,30.16z"></path>
-               </g>
-             </g>
-             <g>
-               <path class="st0" d="M209.5,47.97c1.05,0,2.13-0.1,3.27-0.31c1.15-0.22,2.29-0.53,3.46-0.92v4.3c-0.7,0.3-1.77,0.59-3.2,0.86
-                 c-1.45,0.27-2.95,0.41-4.48,0.41c-1.56,0-3.02-0.21-4.44-0.61c-1.4-0.39-2.62-1.04-3.67-1.94c-1.05-0.9-1.87-2.05-2.48-3.48
-                 c-0.63-1.42-0.93-3.15-0.93-5.17c0-2,0.29-3.75,0.87-5.24c0.59-1.49,1.36-2.73,2.33-3.72c0.96-0.99,2.06-1.73,3.32-2.21
-                 c1.25-0.5,2.55-0.73,3.88-0.73c1.38,0,2.67,0.21,3.84,0.64c1.18,0.42,2.19,1.08,3.04,1.99c0.86,0.9,1.51,2.07,1.99,3.51
-                 c0.48,1.42,0.72,3.12,0.72,5.07c-0.02,0.74-0.04,1.39-0.06,1.91h-14.41c0.07,1.03,0.3,1.88,0.68,2.61
-                 c0.37,0.72,0.87,1.3,1.47,1.75c0.62,0.45,1.34,0.77,2.16,0.98C207.66,47.86,208.55,47.97,209.5,47.97z M207.34,33.39
-                 c-0.68,0-1.28,0.13-1.8,0.38c-0.55,0.25-0.99,0.6-1.38,1.02c-0.39,0.43-0.7,0.94-0.93,1.52c-0.23,0.56-0.38,1.18-0.46,1.84
-                 h8.65c0-0.65-0.09-1.28-0.27-1.84c-0.16-0.59-0.42-1.09-0.76-1.52c-0.35-0.42-0.77-0.77-1.27-1.02
-                 C208.63,33.51,208.02,33.39,207.34,33.39z"></path>
-               <path class="st0" d="M233.12,51.71c-0.62,0.18-1.33,0.32-2.17,0.44c-0.86,0.1-1.62,0.16-2.36,0.16
-                 c-1.83,0-3.35-0.31-4.51-0.91c-1.18-0.6-2.01-1.45-2.5-2.57c-0.36-0.81-0.54-1.89-0.54-3.27v-11.4h-4.1v-4.43h4.1v-6.15h5.39
-                 v6.15h6.37v4.43h-6.37v10.69c0,0.85,0.13,1.47,0.38,1.88c0.47,0.7,1.37,1.05,2.71,1.05c0.63,0,1.23-0.05,1.86-0.15
-                 c0.6-0.09,1.18-0.22,1.73-0.37V51.71z"></path>
-               <g>
-                 <path class="st0" d="M188.31,36.45c-0.81,2.19-1.33,3.63-1.58,4.33c-0.24,0.7-0.65,1.88-1.22,3.53h-0.1
-                   c-0.55-1.65-0.95-2.83-1.21-3.53c-0.25-0.7-0.78-2.15-1.57-4.33l-4.81-12.86h-5.87l10.99,28.15h4.99l11.01-28.15h-5.84
-                   L188.31,36.45z"></path>
-               </g>
-             </g>
-           </g>
-           <g>
-             <g>
-               <g>
-                 <path class="st1" d="M37.55,22.58c-2.59-0.07-3.54,0.92-5.86,0.81c-2.55-0.11-4.2-3.04-2.44-5.16
-                   c0.67-0.81,1.98-1.5,2.96-2.61c0.79-0.89,1.02-2.09,1.9-2.78c1.1-0.85,2.55-1.23,3.44-1.19c0.9-0.04,2.33,0.34,3.42,1.19
-                   c0.9,0.69,1.11,1.89,1.91,2.78c0.98,1.11,2.3,1.8,2.97,2.61c1.75,2.13,0.1,5.05-2.44,5.16
-                   C41.09,23.5,40.14,22.51,37.55,22.58z"></path>
-               </g>
-             </g>
-             <path class="st1" d="M24.35,6.49c1.49-1.01,3.16-0.34,4.61,1.78c1.68,2.44,1.63,4.19,0.42,5.17c-1.41,1.12-3.09,0.79-5.03-1.74
-               C22.65,9.44,22.9,7.46,24.35,6.49z"></path>
-             <path class="st1" d="M32.27,0.06c1.89-0.38,3.25,0.97,3.82,3.66c0.67,3.1-0.1,4.82-1.7,5.29C32.54,9.55,31,8.53,30.13,5.23
-               C29.36,2.29,30.42,0.44,32.27,0.06z"></path>
-             <path class="st1" d="M50.74,6.49c-1.49-1.01-3.14-0.34-4.6,1.78c-1.67,2.44-1.62,4.19-0.42,5.17c1.41,1.12,3.1,0.79,5.02-1.74
-               C52.46,9.44,52.2,7.46,50.74,6.49z"></path>
-             <path class="st1" d="M42.83,0.06c-1.89-0.38-3.25,0.97-3.82,3.66c-0.66,3.1,0.11,4.82,1.7,5.29c1.88,0.53,3.41-0.49,4.27-3.78
-               C45.74,2.29,44.68,0.44,42.83,0.06z"></path>
-           </g>
-           <g>
-             <path class="st0" d="M30.75,52.31C25.42,28.11,8.71,19.16,0,43.17c9.22-14.81,20.11-13.52,24.56,9.13H30.75z"></path>
-             <path class="st0" d="M36.5,52.31h2.96c4.96-28.98,16.19-29.24,26.34-28.22c-18.15-6.8-25.26,3.77-29.3,15.36
-               C31.01,27.6,22.18,9.49,4.26,14.52c14.67,0.51,22.88,12.09,29.36,37.79H36.5z"></path>
-           </g>
-         </g>
-         <g>
-           <g>
-             <path class="st0" d="M236.37,19.49c-0.15,0.15-0.33,0.22-0.54,0.22h-1.19v-0.75v-0.74h1.19c0.21,0,0.39,0.07,0.54,0.21
-               c0.14,0.15,0.21,0.32,0.21,0.53C236.58,19.16,236.5,19.34,236.37,19.49z M234.64,22.67v-2.2h0.9l0.89,2.2h0.95l-0.93-2.31
-               c0.17-0.08,0.33-0.19,0.47-0.32c0.31-0.3,0.46-0.66,0.46-1.09c0-0.43-0.15-0.78-0.44-1.08c-0.31-0.29-0.68-0.44-1.11-0.44
-               h-1.97v5.23H234.64z M239.97,20.06c0,1.19-0.42,2.2-1.27,3.03c-0.84,0.82-1.87,1.23-3.09,1.23c-1.21,0-2.25-0.41-3.08-1.23
-               c-0.84-0.83-1.26-1.83-1.26-3.03c0-1.19,0.42-2.2,1.26-3.03c0.83-0.82,1.87-1.24,3.08-1.24c1.22,0,2.25,0.42,3.09,1.24
-               C239.55,17.87,239.97,18.87,239.97,20.06z M235.61,15.13c-1.39,0-2.6,0.48-3.57,1.43c-0.97,0.96-1.45,2.12-1.45,3.5
-               c0,1.38,0.48,2.54,1.45,3.5c0.98,0.96,2.18,1.43,3.57,1.43c1.41,0,2.62-0.47,3.59-1.43c0.97-0.95,1.46-2.12,1.46-3.5
-               c0-1.38-0.5-2.55-1.46-3.5C238.22,15.61,237.02,15.13,235.61,15.13z"></path>
-           </g>
-         </g>
-       </g>
-     </g>
-     <g class="st2">
-       <path class="st0" d="M15.52,71.41l3.57-7.68c0.03-0.07,0.11-0.13,0.19-0.13h0.11c0.08,0,0.16,0.06,0.19,0.13l3.57,7.68
-         c0.07,0.15-0.02,0.3-0.19,0.3H21.7c-0.21,0-0.3-0.07-0.4-0.29l-0.41-0.9h-3.1l-0.41,0.91c-0.06,0.14-0.18,0.27-0.41,0.27h-1.26
-         C15.54,71.7,15.45,71.56,15.52,71.41z M20.21,68.96l-0.87-1.88h-0.01l-0.86,1.88H20.21z"></path>
-       <path class="st0" d="M27.41,63.78c0.01-0.1,0.11-0.18,0.21-0.18h0.18c0.06,0,0.16,0.05,0.19,0.11l2.65,4.93h0.02l2.65-4.93
-         c0.03-0.07,0.14-0.11,0.19-0.11h0.18c0.09,0,0.19,0.08,0.21,0.18l1.29,7.67c0.02,0.15-0.08,0.25-0.22,0.25h-1.35
-         c-0.1,0-0.21-0.09-0.22-0.18l-0.51-3.53h-0.02l-1.92,3.7c-0.03,0.07-0.14,0.13-0.19,0.13h-0.21c-0.07,0-0.16-0.06-0.19-0.13
-         l-1.93-3.7h-0.02l-0.5,3.53c-0.01,0.09-0.1,0.18-0.22,0.18h-1.35c-0.14,0-0.24-0.1-0.22-0.25L27.41,63.78z"></path>
-       <path class="st0" d="M36.65,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-         h-3.16v1.42h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.13-0.1,0.22-0.22,0.22h-2.6v1.54h3.16c0.13,0,0.22,0.1,0.22,0.22v1.24
-         c0,0.11-0.09,0.22-0.22,0.22h-4.73c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M44.13,63.78c0.01-0.1,0.11-0.18,0.21-0.18h0.18c0.06,0,0.16,0.05,0.19,0.11l2.65,4.93h0.02l2.65-4.93
-         c0.03-0.07,0.14-0.11,0.19-0.11h0.18c0.09,0,0.19,0.08,0.21,0.18l1.29,7.67c0.02,0.15-0.08,0.25-0.22,0.25h-1.35
-         c-0.1,0-0.21-0.09-0.22-0.18l-0.51-3.53h-0.02l-1.92,3.7c-0.03,0.07-0.14,0.13-0.19,0.13h-0.21c-0.07,0-0.16-0.06-0.19-0.13
-         l-1.93-3.7h-0.02l-0.5,3.53c-0.01,0.09-0.1,0.18-0.22,0.18h-1.35c-0.14,0-0.24-0.1-0.22-0.25L44.13,63.78z"></path>
-       <path class="st0" d="M53.36,63.93c0-0.11,0.09-0.22,0.22-0.22h2.66c1.35,0,2.45,0.92,2.45,2.12c0,0.88-0.79,1.52-1.32,1.8
-         c0.6,0.25,1.53,0.81,1.53,1.86c0,1.28-1.13,2.2-2.49,2.2h-2.83c-0.13,0-0.22-0.1-0.22-0.22V63.93z M56.03,66.96
-         c0.43,0,0.8-0.37,0.8-0.82s-0.37-0.78-0.8-0.78h-0.89v1.6H56.03z M56.18,70.07c0.45,0,0.82-0.37,0.82-0.83
-         c0-0.46-0.49-0.8-0.94-0.8h-0.92v1.63H56.18z"></path>
-       <path class="st0" d="M60.35,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-         h-3.16v1.42h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.13-0.1,0.22-0.22,0.22h-2.6v1.54h3.16c0.13,0,0.22,0.1,0.22,0.22v1.24
-         c0,0.11-0.09,0.22-0.22,0.22h-4.73c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M67.04,63.93c0-0.11,0.09-0.22,0.22-0.22h3.41c1.37,0,2.49,1.11,2.49,2.47c0,1.05-0.7,1.9-1.69,2.29l1.56,2.9
-         c0.08,0.15,0,0.33-0.19,0.33h-1.52c-0.09,0-0.16-0.06-0.18-0.1l-1.52-3.03h-0.79v2.91c0,0.11-0.1,0.22-0.22,0.22h-1.36
-         c-0.13,0-0.22-0.1-0.22-0.22V63.93z M70.52,67.13c0.47,0,0.87-0.43,0.87-0.91c0-0.48-0.4-0.87-0.87-0.87h-1.69v1.78H70.52z"></path>
-       <path class="st0" d="M80.73,63.6c2.28,0,4.11,1.84,4.11,4.12c0,2.28-1.83,4.1-4.11,4.1c-2.28,0-4.1-1.82-4.1-4.1
-         C76.63,65.44,78.44,63.6,80.73,63.6z M80.73,69.99c1.26,0,2.28-1.03,2.28-2.27c0-1.26-1.03-2.29-2.28-2.29
-         c-1.24,0-2.27,1.04-2.27,2.29C78.46,68.96,79.48,69.99,80.73,69.99z"></path>
-       <path class="st0" d="M86.22,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22H88
-         v1.64h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.1,0.22-0.22,0.22H88v2.77c0,0.11-0.1,0.22-0.22,0.22h-1.35
-         c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M96.2,65.39h-1.63c-0.13,0-0.22-0.1-0.22-0.22v-1.24c0-0.11,0.09-0.22,0.22-0.22h5.07
-         c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22H98v6.1c0,0.11-0.1,0.22-0.22,0.22h-1.37c-0.11,0-0.22-0.1-0.22-0.22
-         V65.39z"></path>
-       <path class="st0" d="M100.99,63.93c0-0.11,0.1-0.22,0.22-0.22h1.36c0.13,0,0.22,0.1,0.22,0.22v2.88h3.26v-2.88
-         c0-0.11,0.09-0.22,0.22-0.22h1.36c0.11,0,0.22,0.1,0.22,0.22v7.56c0,0.11-0.1,0.22-0.22,0.22h-1.36c-0.13,0-0.22-0.1-0.22-0.22v-3
-         h-3.26v3c0,0.11-0.09,0.22-0.22,0.22h-1.36c-0.11,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M109.81,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-         h-3.16v1.42h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.13-0.1,0.22-0.22,0.22h-2.6v1.54h3.16c0.13,0,0.22,0.1,0.22,0.22v1.24
-         c0,0.11-0.09,0.22-0.22,0.22h-4.73c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-     </g>
-     <g>
-       <g>
-         <path class="st1" d="M118.56,70.62l0.54-0.95c0.09-0.15,0.31-0.13,0.39-0.07c0.05,0.02,0.87,0.63,1.62,0.63
-           c0.46,0,0.79-0.29,0.79-0.68c0-0.48-0.4-0.84-1.18-1.15c-0.98-0.39-2.21-1.15-2.21-2.52c0-1.13,0.88-2.27,2.64-2.27
-           c1.19,0,2.1,0.6,2.44,0.86c0.14,0.08,0.11,0.29,0.07,0.37l-0.58,0.88c-0.08,0.13-0.29,0.23-0.39,0.15
-           c-0.1-0.06-0.94-0.68-1.63-0.68c-0.41,0-0.72,0.27-0.72,0.58c0,0.42,0.34,0.74,1.24,1.11c0.89,0.35,2.31,1.05,2.31,2.6
-           c0,1.18-1.02,2.36-2.69,2.36c-1.48,0-2.31-0.62-2.57-0.88C118.5,70.83,118.47,70.78,118.56,70.62z"></path>
-         <path class="st1" d="M124.57,63.99c-0.05-0.16,0.05-0.27,0.21-0.27h1.34c0.09,0,0.18,0.08,0.21,0.16l0.98,3.87h0.05l1.77-4.02
-           c0.03-0.07,0.1-0.13,0.19-0.13h0.21c0.1,0,0.17,0.06,0.19,0.13l1.77,4.02h0.05l0.98-3.87c0.02-0.08,0.11-0.16,0.21-0.16h1.34
-           c0.16,0,0.25,0.11,0.21,0.27l-2.16,7.67c-0.02,0.09-0.11,0.16-0.21,0.16h-0.18c-0.08,0-0.16-0.06-0.19-0.13l-2.09-4.67h-0.03
-           l-2.08,4.67c-0.03,0.07-0.11,0.13-0.19,0.13h-0.18c-0.09,0-0.18-0.07-0.21-0.16L124.57,63.99z"></path>
-         <path class="st1" d="M135.47,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-           h-3.16v1.42h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.13-0.1,0.22-0.22,0.22h-2.6v1.54h3.16c0.13,0,0.22,0.1,0.22,0.22v1.24
-           c0,0.11-0.09,0.22-0.22,0.22h-4.73c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-         <path class="st1" d="M142.16,63.93c0-0.11,0.09-0.22,0.21-0.22h2.79c2.2,0,4.01,1.79,4.01,3.98c0,2.21-1.8,4.01-4.01,4.01h-2.79
-           c-0.11,0-0.21-0.1-0.21-0.22V63.93z M145.04,70.01c1.29,0,2.23-1.02,2.23-2.32c0-1.29-0.94-2.31-2.23-2.31h-1.1v4.62H145.04z"></path>
-         <path class="st1" d="M150.55,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-           h-3.16v1.42h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.13-0.1,0.22-0.22,0.22h-2.6v1.54h3.16c0.13,0,0.22,0.1,0.22,0.22v1.24
-           c0,0.11-0.09,0.22-0.22,0.22h-4.73c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-         <path class="st1" d="M157.23,63.8c0-0.11,0.1-0.21,0.22-0.21h0.29l4.55,4.38h0.01v-4.05c0-0.11,0.09-0.22,0.22-0.22h1.37
-           c0.11,0,0.22,0.1,0.22,0.22v7.68c0,0.11-0.1,0.21-0.22,0.21h-0.18c-0.03,0-0.13-0.03-0.15-0.06l-4.51-4.53h-0.01v4.26
-           c0,0.11-0.09,0.22-0.22,0.22h-1.36c-0.11,0-0.22-0.1-0.22-0.22L157.23,63.8z"></path>
-         <path class="st1" d="M169.6,63.6c1.14,0,1.99,0.35,2.76,1.06c0.1,0.09,0.1,0.23,0.01,0.32l-0.89,0.92
-           c-0.08,0.08-0.21,0.08-0.29,0c-0.42-0.38-0.98-0.58-1.54-0.58c-1.29,0-2.24,1.07-2.24,2.35c0,1.27,0.96,2.32,2.25,2.32
-           c0.54,0,1.12-0.19,1.53-0.55c0.08-0.07,0.23-0.07,0.3,0.01l0.89,0.95c0.08,0.08,0.07,0.23-0.01,0.31
-           c-0.78,0.75-1.76,1.11-2.77,1.11c-2.28,0-4.12-1.82-4.12-4.1C165.48,65.44,167.32,63.6,169.6,63.6z"></path>
-         <path class="st1" d="M172.72,71.41l3.57-7.68c0.03-0.07,0.11-0.13,0.19-0.13h0.11c0.08,0,0.16,0.06,0.19,0.13l3.57,7.68
-           c0.07,0.15-0.02,0.3-0.19,0.3h-1.27c-0.21,0-0.3-0.07-0.4-0.29l-0.41-0.9h-3.1l-0.41,0.91c-0.06,0.14-0.18,0.27-0.41,0.27h-1.26
-           C172.74,71.7,172.65,71.56,172.72,71.41z M177.41,68.96l-0.87-1.88h-0.01l-0.86,1.88H177.41z"></path>
-         <path class="st1" d="M181.31,63.93c0-0.11,0.09-0.22,0.22-0.22h3.41c1.37,0,2.49,1.11,2.49,2.47c0,1.05-0.7,1.9-1.69,2.29
-           l1.56,2.9c0.08,0.15,0,0.33-0.19,0.33h-1.52c-0.09,0-0.16-0.06-0.18-0.1l-1.52-3.03h-0.79v2.91c0,0.11-0.1,0.22-0.22,0.22h-1.36
-           c-0.13,0-0.22-0.1-0.22-0.22V63.93z M184.79,67.13c0.47,0,0.87-0.43,0.87-0.91c0-0.48-0.4-0.87-0.87-0.87h-1.69v1.78H184.79z"></path>
-         <path class="st1" d="M188.95,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-           h-3.16v1.42h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.13-0.1,0.22-0.22,0.22h-2.6v1.54h3.16c0.13,0,0.22,0.1,0.22,0.22v1.24
-           c0,0.11-0.09,0.22-0.22,0.22h-4.73c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       </g>
-     </g>
-     <g class="st2">
-       <path class="st0" d="M198.17,63.93c0-0.11,0.09-0.22,0.22-0.22h4.73c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22
-         h-3.16v1.64h2.6c0.11,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.1,0.22-0.22,0.22h-2.6v2.77c0,0.11-0.1,0.22-0.22,0.22h-1.35
-         c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M203.27,71.41l3.57-7.68c0.03-0.07,0.11-0.13,0.19-0.13h0.11c0.08,0,0.16,0.06,0.19,0.13l3.57,7.68
-         c0.07,0.15-0.02,0.3-0.19,0.3h-1.27c-0.21,0-0.3-0.07-0.4-0.29l-0.41-0.9h-3.1l-0.41,0.91c-0.06,0.14-0.18,0.27-0.41,0.27h-1.26
-         C203.29,71.7,203.2,71.56,203.27,71.41z M207.96,68.96l-0.87-1.88h-0.01l-0.86,1.88H207.96z"></path>
-       <path class="st0" d="M212.64,63.78c0.01-0.1,0.11-0.18,0.21-0.18h0.18c0.06,0,0.16,0.05,0.19,0.11l2.65,4.93h0.02l2.65-4.93
-         c0.03-0.07,0.14-0.11,0.19-0.11h0.18c0.09,0,0.19,0.08,0.21,0.18l1.29,7.67c0.02,0.15-0.08,0.25-0.22,0.25h-1.35
-         c-0.1,0-0.21-0.09-0.22-0.18l-0.51-3.53h-0.02l-1.92,3.7c-0.03,0.07-0.14,0.13-0.19,0.13h-0.21c-0.07,0-0.16-0.06-0.19-0.13
-         l-1.93-3.7h-0.02l-0.5,3.53c-0.01,0.09-0.1,0.18-0.22,0.18h-1.35c-0.14,0-0.24-0.1-0.22-0.25L212.64,63.78z"></path>
-       <path class="st0" d="M221.88,63.93c0-0.11,0.1-0.22,0.22-0.22h1.37c0.11,0,0.22,0.1,0.22,0.22v7.56c0,0.11-0.1,0.22-0.22,0.22
-         h-1.37c-0.11,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M225.65,63.93c0-0.11,0.09-0.22,0.22-0.22h1.36c0.11,0,0.22,0.1,0.22,0.22v6.1h2.72
-         c0.13,0,0.22,0.1,0.22,0.22v1.24c0,0.11-0.09,0.22-0.22,0.22h-4.29c-0.13,0-0.22-0.1-0.22-0.22V63.93z"></path>
-       <path class="st0" d="M232.41,67.86l-2.52-3.81c-0.09-0.15,0-0.33,0.18-0.33h1.48c0.09,0,0.15,0.06,0.18,0.1l1.59,2.34l1.59-2.34
-         c0.03-0.05,0.08-0.1,0.18-0.1h1.48c0.18,0,0.27,0.18,0.18,0.33l-2.56,3.8v3.64c0,0.11-0.1,0.22-0.22,0.22h-1.36
-         c-0.13,0-0.22-0.1-0.22-0.22V67.86z"></path>
-     </g>
-    </g>
-  </svg>
-</a>
-	</div><!--end header-c-->
-	<div class="header-r">
-          	<?php if( is_user_logged_in() ) { ?>
-               	<a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
-                    <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
-			<?php } else { ?>
-				<a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
-			<?php } ?>	
-	</div><!--end header-r-->
-</div><!--end content-->
-</header>
-<?php if(get_field('activate_banner')){ ?>
-<section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
-</section>
-<?php } ?>
+        <script>
+          jQuery(".close-btn").on("click", function() {
+            jQuery(".responsive-menu").hide('slow');
+            jQuery(".responsive-menu").css('left', '-100%');
+          });
+          jQuery(".bars").on("click", function() {
+            jQuery(".responsive-menu").show('slow');
+            jQuery(".responsive-menu").css('left', '0%');
+          });
+        </script>
+      </div><!--end header-l-->
+      <div class="header-c">
+        <a href="<?php echo home_url('/'); ?>" rel="home">
+          <svg width="250" height="56" viewBox="0 0 250 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M117.021 52.0611H116.932C116.619 52.3984 116.237 52.7294 115.8 53.0796C115.363 53.4298 114.85 53.7575 114.296 54.0659C113.719 54.3743 113.087 54.6217 112.427 54.8145C111.723 55.0008 110.958 55.1068 110.155 55.1068C109.093 55.1068 108.067 54.9301 107.12 54.5864C106.176 54.2522 105.373 53.7575 104.7 53.1085C104.021 52.4691 103.476 51.7013 103.11 50.7856C102.711 49.8667 102.517 48.8547 102.517 47.7206C102.517 46.4901 102.759 45.3913 103.192 44.4017C103.645 43.4218 104.27 42.5961 105.073 41.9022C105.883 41.2339 106.817 40.7102 107.949 40.3536C109.074 40.0002 110.295 39.8235 111.656 39.8235C112.635 39.8235 113.546 39.8877 114.391 40.0066C115.21 40.1319 115.96 40.2797 116.581 40.4532V39.5247C116.581 39.0042 116.492 38.4709 116.291 37.9697C116.125 37.4781 115.826 37.0315 115.427 36.646C115.035 36.2573 114.509 35.9488 113.872 35.7143C113.231 35.4894 112.443 35.3769 111.513 35.3769C110.378 35.3769 109.236 35.4894 108.114 35.7561C106.983 36.0067 105.755 36.3826 104.423 36.8934V32.4951C105.583 31.9874 106.807 31.6051 108.092 31.3288C109.374 31.0621 110.728 30.9208 112.144 30.9111C113.801 30.9111 115.268 31.1071 116.524 31.5184C117.777 31.936 118.822 32.5015 119.654 33.2276C120.493 33.9376 121.13 34.7954 121.554 35.7721C121.959 36.7552 122.15 37.8315 122.15 38.9914V47.6595C122.15 49.1824 122.185 50.4836 122.208 51.5856C122.246 52.678 122.271 53.6547 122.31 54.5093H117.267L117.021 52.0611ZM116.581 44.6941C116.042 44.5656 115.427 44.4499 114.735 44.3568C114.044 44.2379 113.349 44.1929 112.635 44.1929C111.273 44.1929 110.186 44.4692 109.399 45.0058C108.605 45.5551 108.207 46.3937 108.207 47.515C108.207 48.0451 108.296 48.4917 108.471 48.8836C108.669 49.2756 108.905 49.5904 109.211 49.841C109.52 50.1013 109.877 50.2908 110.288 50.4097C110.7 50.5511 111.124 50.6153 111.586 50.6153C112.144 50.6153 112.676 50.5222 113.189 50.384C113.693 50.2362 114.139 50.0435 114.586 49.8153C114.997 49.5808 115.376 49.327 115.727 49.0443C116.052 48.7551 116.339 48.4724 116.581 48.2121V44.6941Z" fill="#4D7F70" />
+            <path d="M139.989 54.4836C139.361 54.6796 138.602 54.8209 137.729 54.943C136.878 55.0458 136.049 55.1069 135.287 55.1069C133.378 55.1069 131.816 54.7856 130.592 54.1559C129.374 53.5262 128.516 52.6426 128.006 51.47C127.633 50.6218 127.455 49.4844 127.455 48.0451V36.1095H123.196V31.4766H127.455V25.0349H133.052V31.4766H139.651V36.1095H133.052V47.3062C133.052 48.1897 133.183 48.8451 133.445 49.2756C133.926 50.0113 134.854 50.3744 136.256 50.3744C136.91 50.3744 137.557 50.3198 138.175 50.2105C138.813 50.1142 139.422 49.9792 139.989 49.825V54.4836Z" fill="#4D7F70" />
+            <path d="M152.029 55.1068C149.731 55.1068 147.834 54.7149 146.326 53.9277C144.812 53.1438 143.68 52.0836 142.89 50.7535C142.498 50.0338 142.185 49.2563 141.994 48.392C141.806 47.5342 141.701 46.5993 141.701 45.5391V31.4766H147.298V44.9383C147.298 45.7318 147.346 46.3937 147.448 46.9591C147.573 47.5149 147.726 48.0193 147.939 48.4145C148.325 49.1213 148.86 49.629 149.552 49.976C150.241 50.3197 151.057 50.4836 152.029 50.4836C153.03 50.4836 153.904 50.2908 154.608 49.9213C155.329 49.539 155.864 48.9543 156.218 48.1832C156.594 47.4378 156.76 46.4033 156.76 45.0636V31.4766H162.351V45.5391C162.351 47.4089 162.036 48.9928 161.398 50.278C161.025 51.0073 160.566 51.6659 159.986 52.2538C159.412 52.8514 158.736 53.3623 157.962 53.7799C157.177 54.2008 156.307 54.5285 155.322 54.7566C154.347 54.9783 153.231 55.1068 152.029 55.1068Z" fill="#4D7F70" />
+            <path d="M93.1092 54.5083H99.1628V25.0339H93.3515V45.8915L79.2614 25.0339H73.2109V54.5083H78.9809L78.9649 33.5672L93.1092 54.5083Z" fill="#4D7F70" />
+            <path d="M173.799 31.92C172.648 32.5883 171.724 33.5072 171.073 34.6863H170.978L170.455 31.4735H165.833V54.5061H171.421V39.0814C172.138 38.0244 173.139 37.234 174.433 36.72C175.727 36.2027 177.223 35.9425 178.947 35.9425H179.406V35.8686L177.497 30.9241C176.078 30.9851 174.822 31.3064 173.799 31.92Z" fill="#4D7F70" />
+            <path d="M217.628 50.5607C218.718 50.5607 219.837 50.4547 221.023 50.2362C222.212 50.0113 223.401 49.6868 224.619 49.2756V53.7703C223.892 54.0884 222.776 54.3936 221.297 54.6763C219.796 54.9559 218.24 55.1068 216.64 55.1068C215.02 55.1068 213.5 54.8916 212.024 54.4675C210.567 54.0563 209.311 53.3751 208.221 52.437C207.131 51.4989 206.28 50.2908 205.642 48.7969C204.988 47.3061 204.673 45.5037 204.673 43.3833C204.673 41.2885 204.969 39.4604 205.569 37.8926C206.184 36.3312 206.981 35.03 207.991 33.9954C208.992 32.9641 210.134 32.1866 211.441 31.6758C212.735 31.1553 214.086 30.9111 215.467 30.9111C216.901 30.9111 218.24 31.1264 219.458 31.5762C220.685 32.0131 221.731 32.7071 222.623 33.6645C223.513 34.6091 224.192 35.8332 224.689 37.34C225.193 38.8307 225.435 40.601 225.435 42.6508C225.416 43.425 225.394 44.1094 225.368 44.6556H210.395C210.468 45.7318 210.704 46.6282 211.103 47.3897C211.482 48.1415 212.005 48.7551 212.63 49.2178C213.277 49.6868 214.029 50.021 214.877 50.2394C215.719 50.4547 216.64 50.5607 217.628 50.5607ZM215.387 35.2966C214.683 35.2966 214.055 35.4283 213.513 35.6918C212.945 35.9488 212.48 36.3183 212.081 36.7585C211.676 37.2147 211.358 37.7416 211.122 38.352C210.886 38.94 210.723 39.5922 210.65 40.2765H219.64C219.64 39.5922 219.547 38.94 219.353 38.352C219.19 37.7416 218.916 37.2147 218.562 36.7585C218.202 36.3183 217.765 35.9488 217.242 35.6918C216.726 35.4283 216.098 35.2966 215.387 35.2966Z" fill="#4D7F70" />
+            <path d="M242.174 54.4836C241.527 54.6796 240.79 54.8209 239.92 54.943C239.031 55.0458 238.234 55.1069 237.472 55.1069C235.569 55.1069 233.994 54.7856 232.786 54.1559C231.559 53.5262 230.698 52.6426 230.194 51.47C229.821 50.6218 229.627 49.4844 229.627 48.0451V36.1095H225.371V31.4766H229.627V25.0349H235.231V31.4766H241.849V36.1095H235.231V47.3062C235.231 48.1897 235.368 48.8451 235.629 49.2756C236.117 50.0113 237.051 50.3744 238.444 50.3744C239.098 50.3744 239.726 50.3198 240.376 50.2105C240.998 50.1142 241.607 49.9792 242.174 49.825V54.4836Z" fill="#4D7F70" />
+            <path d="M195.613 38.4998C194.778 40.7873 194.236 42.3038 193.974 43.0331C193.726 43.7721 193.302 45.0026 192.712 46.7311H192.607C192.04 45.0026 191.622 43.7721 191.354 43.0331C191.099 42.3038 190.538 40.7873 189.722 38.4998L184.73 25.0349H178.622L190.041 54.5061H195.221L206.659 25.0349H200.592L195.613 38.4998Z" fill="#4D7F70" />
+            <path d="M39.0089 23.9877C36.3184 23.917 35.327 24.9483 32.9234 24.8423C30.2712 24.7234 28.5593 21.6584 30.3827 19.4351C31.0809 18.587 32.4389 17.8641 33.4653 16.7043C34.2878 15.7725 34.5205 14.5163 35.4386 13.7934C36.5798 12.9035 38.0845 12.5115 39.0089 12.5469C39.9461 12.5115 41.4316 12.9035 42.5601 13.7934C43.4942 14.5163 43.7205 15.7725 44.5398 16.7043C45.5694 17.8641 46.9338 18.587 47.6319 19.4351C49.449 21.6584 47.7339 24.7234 45.0976 24.8423C42.6845 24.9483 41.7026 23.917 39.0089 23.9877Z" fill="#E26743" />
+            <path d="M25.3014 7.13637C26.8538 6.07614 28.5784 6.77975 30.0894 8.99659C31.8332 11.5476 31.779 13.3821 30.5262 14.4102C29.0566 15.5861 27.3129 15.2423 25.3014 12.5917C23.5258 10.2271 23.7904 8.15483 25.3014 7.13637Z" fill="#E26743" />
+            <path d="M33.5262 0.408758C35.4835 0.00715563 36.8957 1.42079 37.4886 4.23843C38.1835 7.48659 37.3866 9.28898 35.7194 9.78054C33.8035 10.3396 32.2032 9.2697 31.2979 5.81914C30.5041 2.74447 31.6007 0.800721 33.5262 0.408758Z" fill="#E26743" />
+            <path d="M52.7071 7.13637C51.1642 6.07614 49.446 6.77975 47.9286 8.99659C46.1913 11.5476 46.2423 13.3821 47.4919 14.4102C48.9551 15.5861 50.7179 15.2423 52.7071 12.5917C54.4955 10.2271 54.2213 8.15483 52.7071 7.13637Z" fill="#E26743" />
+            <path d="M44.492 0.408758C42.522 0.00715563 41.1098 1.42079 40.52 4.23843C39.8347 7.48659 40.6348 9.28898 42.2829 9.78054C44.2306 10.3396 45.8182 9.2697 46.7203 5.81914C47.5141 2.74447 46.4143 0.800721 44.492 0.408758Z" fill="#E26743" />
+            <path d="M31.9449 55.1068C26.4109 29.7706 9.04698 20.3956 0 45.5391C9.56978 30.0404 20.8801 31.3834 25.5056 55.1068H31.9449Z" fill="#4D7F70" />
+            <path d="M37.9158 55.1069H40.9889C46.1404 24.7715 57.8013 24.4984 68.3498 25.5651C49.4971 18.4487 42.111 29.5104 37.9158 41.642C32.2192 29.2437 23.0384 10.2753 4.4248 15.5443C19.6625 16.0776 28.1867 28.1996 34.9289 55.1069H37.9158Z" fill="#4D7F70" />
+            <path d="M245.54 20.7426C245.378 20.8968 245.193 20.9739 244.973 20.9739H243.742V20.19V19.4157H244.973C245.193 19.4157 245.378 19.4864 245.54 19.6374C245.684 19.7948 245.757 19.9715 245.757 20.19C245.757 20.402 245.684 20.5916 245.54 20.7426ZM243.742 24.0775V21.7771H244.676L245.604 24.0775H246.592L245.626 21.6647C245.802 21.5811 245.971 21.4687 246.12 21.3305C246.436 21.0221 246.592 20.6366 246.592 20.19C246.592 19.7402 246.436 19.3675 246.133 19.0623C245.808 18.7571 245.429 18.6028 244.973 18.6028H242.933V24.0775H243.742ZM249.289 21.3466C249.289 22.5932 248.846 23.647 247.963 24.5144C247.089 25.3722 246.018 25.7996 244.756 25.7996C243.497 25.7996 242.423 25.3722 241.555 24.5144C240.685 23.647 240.242 22.5932 240.242 21.3466C240.242 20.1032 240.685 19.0494 241.555 18.1788C242.423 17.3209 243.497 16.884 244.756 16.884C246.018 16.884 247.089 17.3209 247.963 18.1788C248.846 19.0494 249.289 20.1032 249.289 21.3466ZM244.756 16.1836C243.306 16.1836 242.059 16.6816 241.039 17.6808C240.038 18.68 239.538 19.8976 239.538 21.3466C239.538 22.7924 240.038 24.0132 241.039 25.006C242.059 26.0084 243.306 26.5032 244.756 26.5032C246.219 26.5032 247.472 26.0084 248.479 25.006C249.48 24.0132 250 22.7924 250 21.3466C250 19.8976 249.48 18.68 248.479 17.6808C247.472 16.6816 246.219 16.1836 244.756 16.1836Z" fill="#4D7F70" />
+          </svg>
+        </a>
+      </div><!--end header-c-->
+      <div class="header-r">
+        <?php if (is_user_logged_in()) { ?>
+          <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
+          <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
+        <?php } else { ?>
+          <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
+        <?php } ?>
+      </div><!--end header-r-->
+    </div><!--end content-->
+  </header>
+  <?php if (get_field('activate_banner')) { ?>
+    <section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
+    </section>
+  <?php } ?>
 
 
-<!-- Partne Assets Modal -->
-<div id="partnerAssets" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+  <!-- Partne Assets Modal -->
+  <div id="partnerAssets" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-    <!-- Modal content-->
-    <div class="modal-content" style="margin-top: 30%;
+      <!-- Modal content-->
+      <div class="modal-content" style="margin-top: 30%;
 ">
-      <div class="modal-header" style="background-color: #f6e0c3">
-        <button type="button" class="close" data-dismiss="modal" style="position: absolute; right: 10px;">&times;</button>
-        <h4 class="modal-title" style="color: #4d7e71">Access NaturVet Partner Assets</h4>
+        <div class="modal-header" style="background-color: #f6e0c3">
+          <button type="button" class="close" data-dismiss="modal" style="position: absolute; right: 10px;">&times;</button>
+          <h4 class="modal-title" style="color: #4d7e71">Access NaturVet Partner Assets</h4>
+        </div>
+        <div class="modal-body">
+          <p>Visit the NaturVet Partner Assets site to see all of our latest NaturVet Universities and get access to NaturVet marketing materials.</p>
+          <p><a href="https://partners.naturvet.com/" target="_blank">Naturvet Partner Assets</a></p>
+          <p>Username: NaturVet<br>Password: assets</p>
+        </div>
+        <div class="modal-footer" style="background-color: #f6e0c3">
+          <button type="button" class="btn login-btn" data-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Visit the NaturVet Partner Assets site to see all of our latest NaturVet Universities and get access to NaturVet marketing materials.</p>
-        <p><a href="https://partners.naturvet.com/" target="_blank">Naturvet Partner Assets</a></p>
-        <p>Username: NaturVet<br>Password: assets</p>
-      </div>
-      <div class="modal-footer" style="background-color: #f6e0c3">
-        <button type="button" class="btn login-btn" data-dismiss="modal">Close</button>
-      </div>
-    </div>
 
+    </div>
   </div>
-</div>
