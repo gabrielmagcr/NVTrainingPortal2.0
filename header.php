@@ -338,7 +338,7 @@
             jQuery(".responsive-menu").css('left', '0%');
           });
         </script>
-      </div><!--end header-l-->
+      </div><!--end header-ll-->
       <div class="header-c">
         <a href="<?php echo home_url('/'); ?>" rel="home">
           <svg width="250" height="56" viewBox="0 0 250 56" fill="none" xmlns="http://www.w3.org/2000/svg">
