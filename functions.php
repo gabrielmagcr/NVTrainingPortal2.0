@@ -12,6 +12,7 @@ function nvtp_files() {
 
 add_action('wp_enqueue_scripts', 'nvtp_files');
 
+add_theme_support('menus');
 
 function show_template() {
  
