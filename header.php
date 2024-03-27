@@ -195,7 +195,7 @@
         text-align: center;
       }
 
-      .responsive-menu-ul {
+      .responsive-menu-ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
