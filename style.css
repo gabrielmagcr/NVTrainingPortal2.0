@@ -50,6 +50,9 @@ Version: 1.0
 .pad-top{
 	padding-top: 30px;
 }
+ul,li{
+    list-style: none;
+}
 
 #login h1 a{
 	height:65px;

@@ -188,7 +188,7 @@
         width: 85%;
         height: 100vh;
         max-width: 400px;
-        background-color: #25938B;
+        background-color: #2C667ECC;
         top: 0;
         left: 0;
         z-index: 0;
