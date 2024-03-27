@@ -338,6 +338,7 @@
             ?>
             <li>
               empty
+              <?php var_dump($menuItems)?>
             </li>
           </ul>
 
