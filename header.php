@@ -336,9 +336,9 @@
               }
             }
             ?>
-          </ul>s
+          </ul>
 
-        </div><!--end responsives-menu-->
+        </div><!--end responsive-menu-->
 
         <script>
           jQuery(".close-btn").on("click", function() {
