@@ -1,5 +1,4 @@
 <?php wp_footer(); ?>
-<div></div>
 <script>
 jQuery(window).scroll(function() {
     if (jQuery(this).scrollTop() > 60){  
