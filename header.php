@@ -193,8 +193,7 @@
         left: 0;
         z-index: 0;
         text-align: center;
-        margin: 95px 0 15px;
-        border-bottom: 1px solid #fff;
+ 
       }
 
       .responsive-menu-ul li {
