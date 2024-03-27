@@ -2,6 +2,12 @@
 <html>
 
 <head>
+  <?php
+  $activateBanner= get_field('activate_banner');
+  $bannerHeight= get_field('banner_height');
+  $bannerImage= get_field('banner_image');
+
+  ?>
   <?php wp_head(); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Hotjar Tracking Code for https://training.naturvet.com -->
@@ -371,10 +377,10 @@
       </div><!--end header-r-->
     </div><!--end content-->
   </header>
-  <?php if (get_field('activate_banner')) { ?>
-    <section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
+  <?php if ($activateBanner):?>
+    <section id="banner" style="height:<?php echo $bannerHeight;?>px; background:url('<?php echo $bannerImage;?>') no-repeat center center; background-size:cover;">
     </section>
-  <?php } ?>
+  <?php endif;?>
 
 
   <!-- Partne Assets Modal -->
