@@ -215,18 +215,17 @@
       }
 
       .close-btn {
-        background-color: #fff;
-        color: #25938B;
+        color: #FFFFFF;
         position: absolute;
-        right: -60px;
+        right: 0px;
         top: 0px;
-        padding: 80px 15px 33px 15px;
         cursor: pointer;
         display: block !important;
+        z-index: 1;
       }
 
       .close-btn svg {
-        color: #25938B;
+        color: #FFFFFF;
         width: 30px;
       }
 
