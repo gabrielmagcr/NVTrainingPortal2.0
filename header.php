@@ -175,7 +175,7 @@
       }
 
       header .content .header-l .bars {
-        color: #25938B;
+        color: #E26743;
         width: 100px;
         cursor: pointer;
         display: block;
