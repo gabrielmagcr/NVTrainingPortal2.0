@@ -91,7 +91,7 @@
     }
 
     header .content .header-l {
-      width: 35%;
+      width: 30%;
       visibility: hidden;
     }
 
@@ -108,6 +108,7 @@
     }
 
     header .content .header-c svg {
+      min-width: 150px;
       width: 100%;
       max-width: 270px;
     }
