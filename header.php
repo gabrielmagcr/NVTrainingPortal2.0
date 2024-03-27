@@ -6,7 +6,7 @@
   $activateBanner = get_field('activate_banner');
   $bannerHeight = get_field('banner_height');
   $bannerImage = get_field('banner_image');
-
+  $menuItems= wp_get_nav_menu_items('MenuMobile')
   ?>
   <?php wp_head(); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -194,7 +194,8 @@
         z-index: 0;
         text-align: center;
       }
-      .responsive-menu-ul{
+
+      .responsive-menu-ul {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -321,13 +322,20 @@
                 </svg>
               </div>
             </li>
-            <li><?php if (is_user_logged_in()) { ?>
-                <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
-                <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
+            <li>
+              <?php if (is_user_logged_in()) { ?>
+                <a href="<?php echo wp_logout_url();  ?>">Logout</a>
               <?php } else { ?>
-                <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
+                <a href="<?php echo wp_login_url(); ?>">Login</a>
               <?php } ?>
             </li>
+            <?php if ($menuItems) {
+            foreach ($menutems as $menuItem) {
+                // Crear un <li> para cada elemento del menú
+                echo '<li><a href="' . $menuItem->url . '">' . $menuItem->title . '</a></li>';
+            }
+        }
+        ?>
           </ul>
 
         </div><!--end responsive-menu-->
