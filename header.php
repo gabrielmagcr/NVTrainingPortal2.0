@@ -308,7 +308,8 @@
           </g>
         </svg>
         <div class="responsive-menu">
-          <div class="close-btn">
+          <ul>
+            <li><div class="close-btn">
             <svg class="icon icon-close" fill="none" width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
               <g id="Artboard1" transform="matrix(0.740741,0,0,0.740741,0,0)">
                 <rect x="0" y="0" width="27" height="27" style="fill:none;"></rect>
@@ -326,13 +327,18 @@
                 </g>
               </g>
             </svg>
-          </div><!--end close-btn-->
-          <?php if (is_user_logged_in()) { ?>
+          </div>
+              <!--end close-btn-->
+        </li>
+            <li><?php if (is_user_logged_in()) { ?>
             <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
             <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
           <?php } else { ?>
             <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
           <?php } ?>
+        </li>
+          </ul>
+      
         </div><!--end responsive-menu-->
 
         <script>
