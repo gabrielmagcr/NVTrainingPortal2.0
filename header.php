@@ -252,7 +252,7 @@
         margin-bottom: .3rem;
       }
 
-      3 #banner {
+       #banner {
         max-height: 320px !important;
       }
     }
@@ -270,13 +270,12 @@
       }
 
       .close-btn {
-        right: -50px;
+        right: 0px;
         top: 0px;
-        padding: 60px 15px 30px 15px;
       }
 
       .close-btn svg {
-        color: #25938B;
+        color: #FFFFFF;
         width: 20px;
       }
 
