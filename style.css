@@ -52,6 +52,7 @@ Version: 1.0
 }
 ul,li{
     list-style: none;
+    padding: 0;
 }
 
 #login h1 a{
