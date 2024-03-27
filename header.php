@@ -6,7 +6,7 @@
   $activateBanner = get_field('activate_banner');
   $bannerHeight = get_field('banner_height');
   $bannerImage = get_field('banner_image');
-  $menuItems= wp_get_nav_menu_items('MenuMobile')
+  $menuItems = wp_get_nav_menu_items('Menu_Mobile')
   ?>
   <?php wp_head(); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -330,12 +330,12 @@
               <?php } ?>
             </li>
             <?php if ($menuItems) {
-            foreach ($menutems as $menuItem) {
-                // Crear un <li> para cada elemento del menú
+              foreach ($menutems as $menuItem) {
+                // Create <li> for each menu element
                 echo '<li><a href="' . $menuItem->url . '">' . $menuItem->title . '</a></li>';
+              }
             }
-        }
-        ?>
+            ?>
           </ul>
 
         </div><!--end responsive-menu-->
