@@ -258,25 +258,13 @@
     }
 
     @media only screen and (max-width:480px) {
-      .responsive-menu {
-        padding: 65px 15px 25px 15px;
-      }
+
 
       .top-btns {
         max-height: 5rem;
         padding: 1rem 1rem;
         font-size: 13px;
         margin: 20px 0px;
-      }
-
-      .close-btn {
-        right: 0px;
-        top: 0px;
-      }
-
-      .close-btn svg {
-        color: #FFFFFF;
-        width: 20px;
       }
 
       #banner {
