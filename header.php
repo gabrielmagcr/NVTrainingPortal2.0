@@ -3,9 +3,9 @@
 
 <head>
   <?php
-  $activateBanner= get_field('activate_banner');
-  $bannerHeight= get_field('banner_height');
-  $bannerImage= get_field('banner_image');
+  $activateBanner = get_field('activate_banner');
+  $bannerHeight = get_field('banner_height');
+  $bannerImage = get_field('banner_image');
 
   ?>
   <?php wp_head(); ?>
@@ -194,6 +194,12 @@
         z-index: 0;
         text-align: center;
       }
+      .responsive-menu-ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 
       .top-btns {
         background-color: #E26743;
@@ -251,7 +257,7 @@
         margin-bottom: .3rem;
       }
 
-       #banner {
+      #banner {
         max-height: 320px !important;
       }
     }
@@ -293,37 +299,37 @@
           </g>
         </svg>
         <div class="responsive-menu">
-          <ul>
-            <li><div class="close-btn">
-            <svg class="icon icon-close" fill="none" width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
-              <g id="Artboard1" transform="matrix(0.740741,0,0,0.740741,0,0)">
-                <rect x="0" y="0" width="27" height="27" style="fill:none;"></rect>
-                <g transform="matrix(1.35,0,0,1.35,-8.775,-13.4801)">
-                  <g id="Icon_feather-menu">
-                    <g>
-                      <g id="Path_7978" transform="matrix(0.707107,0.707107,-0.707107,0.707107,17.5607,-4.4099)">
-                        <path d="M4.5,18L28.5,18" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:3px;"></path>
-                      </g>
-                      <g id="Path_7979" transform="matrix(0.707107,-0.707107,0.707107,0.707107,-1.53122,25.2886)">
-                        <path d="M4.5,9L28.5,9" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:3px;"></path>
+          <ul class="responsive-menu-ul">
+            <li>
+              <div class="close-btn">
+                <svg class="icon icon-close" fill="none" width="100%" height="100%" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
+                  <g id="Artboard1" transform="matrix(0.740741,0,0,0.740741,0,0)">
+                    <rect x="0" y="0" width="27" height="27" style="fill:none;"></rect>
+                    <g transform="matrix(1.35,0,0,1.35,-8.775,-13.4801)">
+                      <g id="Icon_feather-menu">
+                        <g>
+                          <g id="Path_7978" transform="matrix(0.707107,0.707107,-0.707107,0.707107,17.5607,-4.4099)">
+                            <path d="M4.5,18L28.5,18" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:3px;"></path>
+                          </g>
+                          <g id="Path_7979" transform="matrix(0.707107,-0.707107,0.707107,0.707107,-1.53122,25.2886)">
+                            <path d="M4.5,9L28.5,9" style="fill:none;fill-rule:nonzero;stroke:currentColor;stroke-width:3px;"></path>
+                          </g>
+                        </g>
                       </g>
                     </g>
                   </g>
-                </g>
-              </g>
-            </svg>
-          </div>
-              <!--end close-btn-->
-        </li>
+                </svg>
+              </div>
+            </li>
             <li><?php if (is_user_logged_in()) { ?>
-            <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
-            <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
-          <?php } else { ?>
-            <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
-          <?php } ?>
-        </li>
+                <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
+                <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
+              <?php } else { ?>
+                <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
+              <?php } ?>
+            </li>
           </ul>
-      
+
         </div><!--end responsive-menu-->
 
         <script>
@@ -369,10 +375,10 @@
       </div><!--end header-r-->
     </div><!--end content-->
   </header>
-  <?php if ($activateBanner):?>
-    <section id="banner" style="height:<?php echo $bannerHeight;?>px; background:url('<?php echo $bannerImage;?>') no-repeat center center; background-size:cover;">
+  <?php if ($activateBanner) : ?>
+    <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat center center; background-size:cover;">
     </section>
-  <?php endif;?>
+  <?php endif; ?>
 
 
   <!-- Partne Assets Modal -->
