@@ -6,7 +6,7 @@
   $activateBanner = get_field('activate_banner');
   $bannerHeight = get_field('banner_height');
   $bannerImage = get_field('banner_image');
-  $menuItems = wp_get_nav_menu_items('MenuMobile');
+  $menuItems = wp_get_nav_menu_items('menumobile');
   ?>
   <?php wp_head(); ?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
