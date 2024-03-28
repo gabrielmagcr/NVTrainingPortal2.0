@@ -187,7 +187,7 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        max-width: 500px;
+        max-width: 450px;
         background-color: #2C667E;
         top: 0;
         left: 0;
@@ -196,11 +196,14 @@
  
       }
 
-      .responsive-menu-ul li {
+      .responsive-menu-ul li, a{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+        padding: 15px 0 15px 30px;
+        border-top: 1px solid #fff;
+        text-transform: uppercase;
       }
       #responsiveMenuLogo{
         width: 300px;
@@ -229,7 +232,7 @@
         display: flex;
         align-items: center;
         z-index: 1;
-        padding: 20px 40px;
+        padding: 20px 0;
       }
 
       .close-btn svg {
