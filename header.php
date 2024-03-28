@@ -420,6 +420,7 @@
         <?php } else { ?>
           <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
         <?php } ?>
+        <a href="https://naturvet.com/"><button type="button" class="top-btns">Naturvet partner assets site</button></a>
       </div><!--end header-r-->
     </div><!--end content-->
   </header>
