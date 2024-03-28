@@ -49,8 +49,6 @@
     }
 
     .content {
-      width: 96%;
-      max-width: 1450px;
       margin: 0 auto;
       font-family: 'Brandon Grotesque';
       padding: 7px 0px 9px 0px;
@@ -87,6 +85,7 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       padding: 1rem 0rem;
     }
 
@@ -130,7 +129,7 @@
       background-color: #E26743;
       font-weight: 700;
       max-height: 6rem;
-      padding: 1.1rem 2rem;
+      padding: 0.5rem 2rem;
       font-family: 1.6rem;
       text-transform: uppercase;
       text-align: center;
