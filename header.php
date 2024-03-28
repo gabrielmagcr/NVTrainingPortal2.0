@@ -226,11 +226,7 @@
 
       .close-btn {
         color: #FFFFFF;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        cursor: pointer;
-        display: block !important;
+        display: flex;
         z-index: 1;
         padding: 20px 40px;
       }
