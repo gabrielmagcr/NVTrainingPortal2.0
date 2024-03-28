@@ -85,7 +85,6 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
       padding: 1rem 0rem;
     }
 
@@ -102,7 +101,7 @@
     }
 
     header .content .header-c {
-      width: 30%;
+      width: 50%;
       text-align: center;
     }
 
