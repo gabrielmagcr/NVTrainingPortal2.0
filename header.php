@@ -83,7 +83,6 @@
 
     header .content {
       display: flex;
-      flex-wrap: wrap;
       align-items: center;
       padding: 1rem 0rem;
     }
