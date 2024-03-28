@@ -227,6 +227,7 @@
       .close-btn {
         color: #FFFFFF;
         display: flex;
+        align-items: center;
         z-index: 1;
         padding: 20px 40px;
       }
