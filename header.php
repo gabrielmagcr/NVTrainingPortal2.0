@@ -193,10 +193,10 @@
         left: 0;
         z-index: 0;
         text-align: center;
- 
+
       }
 
-      .responsive-menu-ul li{
+      .responsive-menu-ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -204,11 +204,15 @@
         padding: 15px 0 15px 30px;
         border-top: 1px solid #fff;
         text-transform: uppercase;
+        font-weight: 450;
+        font-size: 18px;
       }
-      .responsiveList a{
+
+      .responsiveList a {
         color: #fff;
       }
-      #responsiveMenuLogo{
+
+      #responsiveMenuLogo {
         width: 300px;
       }
 
@@ -352,12 +356,18 @@
                 </svg>
               </div>
             </li>
-            <li class="responsiveList">
-              <?php if (is_user_logged_in()) { ?>
+            <?php if (is_user_logged_in()) { ?>
+              <li class="responsiveList">
                 <a href="<?php echo wp_logout_url();  ?>">Logout</a>
-              <?php } else { ?>
+              </li>
+            <?php } else { ?>
+              <li class="responsiveList">
                 <a href="<?php echo wp_login_url(); ?>">Login</a>
-              <?php } ?>
+              </li>
+              <li class="responsiveList">
+                <a href="<?php echo wp_registration_url(); ?>">Create an account</a>
+              </li>
+            <?php } ?>
             </li>
             <?php if ($menuItems) {
               foreach ($menuItems as $menuItem) {
