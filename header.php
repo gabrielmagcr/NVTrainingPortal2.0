@@ -415,7 +415,6 @@
       <div class="header-r">
         <?php if (is_user_logged_in()) { ?>
           <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
-          <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
         <?php } else { ?>
           <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
         <?php } ?>
