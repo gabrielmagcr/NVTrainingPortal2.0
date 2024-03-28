@@ -196,7 +196,7 @@
  
       }
 
-      .responsive-menu-ul li, a{
+      .responsive-menu-ul li{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -204,6 +204,9 @@
         padding: 15px 0 15px 30px;
         border-top: 1px solid #fff;
         text-transform: uppercase;
+      }
+      .responsiveList a{
+        color: #fff;
       }
       #responsiveMenuLogo{
         width: 300px;
@@ -349,7 +352,7 @@
                 </svg>
               </div>
             </li>
-            <li>
+            <li class="responsiveList">
               <?php if (is_user_logged_in()) { ?>
                 <a href="<?php echo wp_logout_url();  ?>">Logout</a>
               <?php } else { ?>
@@ -359,7 +362,7 @@
             <?php if ($menuItems) {
               foreach ($menuItems as $menuItem) {
                 // Create <li> for each menu element
-                echo '<li><a href="' . $menuItem->url . '">' . $menuItem->title . '</a></li>';
+                echo '<li class="responsiveList"><a href="' . $menuItem->url . '">' . $menuItem->title . '</a></li>';
               }
             }
             ?>
