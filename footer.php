@@ -109,7 +109,7 @@
     .footer-logo{
         width: 175px;
     }
-    .leftSection{
+    .leftSection span{
         color: #fff;
         font-weight: 500;
     }
