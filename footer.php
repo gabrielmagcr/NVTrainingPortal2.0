@@ -79,6 +79,18 @@
 
     .footerMenus {
         display: flex;
+        width: 90%;
+    }
+    .footerMenu{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footerMenu:first-child{
+        margin-left: 15px;
+    }
+    .footerMenu span{
+        color: #fff;
+        font-weight: bold;
     }
 </style>
 <footer>
@@ -108,9 +120,9 @@
             </div>
         </div>
         <div class="footerMenus">
-            <div>
+            <div class="footerMenu">
+                <span>Recources</span>
                 <?php if ($footerResources) {
-
                     foreach ($footerResources as $footerResource) {
                         // Create <li> for each menu element
                         echo '<li class="responsiveList"><a href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
@@ -118,9 +130,9 @@
                 }
                 ?>
             </div>
-            <div>
+            <div class="footerMenu">
+            <span>Company</span>
                 <?php if ($footerCompanys) {
-
                     foreach ($footerCompanys as $footerCompany) {
                         // Create <li> for each menu element
                         echo '<li class="responsiveList"><a href="' . $footerCompany->url . '">' . $footerCompany->title . '</a></li>';
