@@ -20,10 +20,8 @@ jQuery(window).scroll(function() {
 <footer>
     <div class="footerLogos">
         <?php
-        if ($brandsLogos) {
-            var_dump($brandsLogos);
-        }
-        
+      
+      var_dump($brandsLogos);
 
         ?>
 test
