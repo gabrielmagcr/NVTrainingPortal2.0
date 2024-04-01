@@ -61,6 +61,11 @@
         transform: translateY(-10px);
         margin-top: -10px;
     }
+    .newsLetterFormClass:not(:focus)::placeholder{
+        font-size: 16px;
+    transform: translateY(0);
+    margin-top: 0;
+    }
 
     .footerMenus {
         display: flex;
