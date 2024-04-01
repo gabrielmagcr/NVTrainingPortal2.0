@@ -23,7 +23,7 @@ $footerCompany = wp_get_nav_menu_items('Footer_Company');
         var_dump($brandsLogos)
 
         ?>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto minima illo sunt asperiores tempore quo soluta. Eius tenetur voluptatum provident, natus, deserunt veritatis iusto quam enim libero, officia doloremque nulla
+  
 
   
     <img src="">
