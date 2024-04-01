@@ -98,6 +98,7 @@
         width: 100%;
         align-items: center;
         justify-content: center;
+        margin: 25px;
     }
     .footerLastSectionLeftSide{
         width: 50%;
@@ -108,7 +109,13 @@
     .footer-logo{
         width: 175px;
     }
-
+    .leftSection{
+        color: #fff;
+        font-weight: 500;
+    }
+    #swedencare{
+        color: #fac33b;
+    }
 </style>
 <footer>
     <?php
@@ -160,7 +167,7 @@
         </div>
         <div class="footerLastSection">
             <div class="footerLastSectionLeftSide">
-                <div>
+                <div class="leftSection">
                 <a href="https://naturvet.com/">
                     <svg id="Group_344" class="footer-logo" data-name="Group 344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276.813" height="149.366" viewBox="0 0 276.813 149.366">
                         <g id="Group_343" data-name="Group 343">
@@ -183,7 +190,7 @@
                         </g>
                     </svg>
                     </div>
-                    <span>A MEMBER OF THE<span>SWEDENCARE</span>FAMILY</span>
+                    <span>A MEMBER OF THE <span id="swedencare">SWEDENCARE </span>FAMILY</span>
                 </a>
             </div>
             <div class="footerLastSectionRightSide">
