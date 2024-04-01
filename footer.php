@@ -11,6 +11,11 @@ jQuery(window).scroll(function() {
 });
 </script>
 
-Lorem ipsum dolor sit ame..t consectetur adipisicing elit. Sint est ratione laborum maiores saepe quibusdam consequuntur eveniet tempore consectetur dicta ea impedit maxime hic reprehenderit, porro optio modi a! Officiis.
+
+
+<footer>
+    <div> Lorem ipsum dolor sit ame..t consectetur adipisicing elit. Sint est ratione laborum maiores saepe quibusdam consequuntur eveniet tempore consectetur dicta ea impedit maxime hic reprehenderit, porro optio modi a! Officiis.</div>
+   
+</footer>
 </body>
 </html>
