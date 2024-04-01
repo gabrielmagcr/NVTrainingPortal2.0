@@ -1,7 +1,7 @@
 
 <?php wp_footer();
 
-$brandsLogos= get_field('brands_logos');
+$brandsLogos= get_field('brandslogos');
 $footerResources = wp_get_nav_menu_items('Footer_Resources');
 $footerCompany = wp_get_nav_menu_items('Footer_Company');
 ?>
