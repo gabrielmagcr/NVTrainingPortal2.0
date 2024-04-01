@@ -19,14 +19,13 @@ jQuery(window).scroll(function() {
 </body>
 <footer>
     <div class="footerLogos">
-        <?php
-      
-      var_dump($brandsLogos);
-
-        ?>
-test
+        <?php if($brandsLogos):?>
+        <?php foreach ($brandsLogos as $brandlogo):?>
+            <img src="<?php echo $brandlogo['url'];?>">
+            <?php endforeach;?>
+        <?php endif;?>
   
-    <img src="">
+   
     </div>
 </footer>
 </html>
