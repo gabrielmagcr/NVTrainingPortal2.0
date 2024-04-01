@@ -152,7 +152,6 @@ get_header();
 <?php } else { ?>
 	<!-- If user is not Logged in Diplays the log portal -->
 	<div>
-	<div>
 		<h2 class="h2login" 2>WELCOME TO NATURVET TRAINING PORTAL</h2>
 	</div>
 	<div class="container pad-top">
@@ -179,7 +178,7 @@ get_header();
 		<a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
 		</a>
 	</div>
-	</div>
+
 <?php }
-			get_footer();
+		
 ?>
