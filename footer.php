@@ -22,7 +22,6 @@ jQuery(window).scroll(function() {
         width: 100px;
     }
 </style>
-</body>
 <footer>
     <?php 
 $brandsLogos = get_field('brands');
@@ -39,4 +38,5 @@ $footerCompany = wp_get_nav_menu_items('Footer_Company');
    
     </div>
 </footer>
+</body>
 </html>
