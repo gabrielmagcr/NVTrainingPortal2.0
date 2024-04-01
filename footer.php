@@ -20,7 +20,8 @@ jQuery(window).scroll(function() {
         var_dump($brandsLogos)
 
         ?>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto minima illo sunt asperiores tempore quo soluta. Eius tenetur voluptatum provident, natus, deserunt veritatis iusto quam enim libero, officia doloremque nulla.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto minima illo sunt asperiores tempore quo soluta. Eius tenetur voluptatum provident, natus, deserunt veritatis iusto quam enim libero, officia doloremque nulla
+        
     <?php if ($brandsLogos) {
         foreach($brandsLogos as $brandLogo){
             echo '<img src="'$brandlogo->url'">';
