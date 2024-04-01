@@ -14,6 +14,7 @@ jQuery(window).scroll(function() {
     }
 });
 </script>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam, vero minus dicta, corrupti et voluptatum rem in quidem, soluta qui fuga. In reprehenderit quibusdam voluptate nisi soluta voluptatem accusamus!
 </body>
 <footer>
     <div class="footerLogos">
