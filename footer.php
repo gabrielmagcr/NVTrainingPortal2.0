@@ -25,6 +25,11 @@
     .footerStructure {
         background-color: #2c667e;
     }
+    .newsLetterForm span{
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2em;
+    }
 </style>
 <footer>
     <?php
