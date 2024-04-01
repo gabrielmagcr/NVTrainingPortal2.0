@@ -87,12 +87,25 @@
         font-size: 14px;
     }
     .footerMenu:first-child{
-        margin-left: 15px;
+        margin-left: 25px;
     }
     .footerMenu span{
         color: #fff;
         font-weight: bold;
     }
+    .footerLastSection{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerLastSectionLeftSide{
+        width: 50%;
+    }
+    .footerLastSectionRightSide{
+        width: 50%;
+    }
+
 </style>
 <footer>
     <?php
@@ -142,8 +155,8 @@
                 ?>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="footerLastSection">
+            <div class="footerLastSectionLeftSide">
                 <a href="https://naturvet.com/">
                     <svg id="Group_344" class="footer-logo" data-name="Group 344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276.813" height="149.366" viewBox="0 0 276.813 149.366">
                         <g id="Group_343" data-name="Group 343">
@@ -168,7 +181,7 @@
                     <span>A MEMBER OF THE<span>SWEDENCARE</span>FAMILY</span>
                 </a>
             </div>
-            <div>
+            <div class="footerLastSectionRightSide">
                 <a href="https://www.nasc.cc/about-our-mission/"><img src="" alt="">upload the nasc image</a>
             </div>
         </div>
