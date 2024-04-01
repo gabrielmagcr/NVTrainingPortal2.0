@@ -4,6 +4,7 @@
 */
 get_header();
 ?>   
+<div>
 <div class="container pad-top">
 	<div class="row text-center">
 		<div class="col-sm user_title"><p>&nbsp;</p>
@@ -177,7 +178,8 @@ if($modalCompletedAllQuizzes && !$modalCompletedForm){?>
 <a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
 </a>
 </div>
-<br><br><br>																			   
+<br><br><br>	
+</div>																		   
 <?php }
 get_footer();
 ?>
