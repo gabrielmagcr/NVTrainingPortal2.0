@@ -30,7 +30,7 @@
     <?php
     $brandsLogos = get_field('brands');
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
-    $footerCompany = wp_get_nav_menu_items('Footer_Company');
+    $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
     <div class="footerLogos">
         <?php if ($brandsLogos) : ?>
@@ -45,13 +45,34 @@
             <input id="newsLetterForm" type="email" autocapitalize="off" autocomplete="email" placeholder="Email Address required">
             <label for="newsLetterForm">Email Address</label>
             <button class="top-btns">
-                <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow"  width='35px' xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" width='35px' xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
                     </path>
                 </svg>
             </button>
         </div>
-        <div></div>
+        <div>
+            <div>
+                <?php if ($footerResources) {
+
+                    foreach ($footerResources as $$footerResource) {
+                        // Create <li> for each menu element
+                        echo '<li class="responsiveList"><a href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
+                    }
+                }
+                ?>
+            </div>
+            <div>
+                <?php if ($footerCompanys) {
+
+                    foreach ($footerCompanys as $footerCompany) {
+                        // Create <li> for each menu element
+                        echo '<li class="responsiveList"><a href="' . $footerCompany->url . '">' . $footerCompany->title . '</a></li>';
+                    }
+                }
+                ?>
+            </div>
+        </div>
         <div></div>
     </div>
 </footer>
