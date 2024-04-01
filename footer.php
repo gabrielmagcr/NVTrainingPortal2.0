@@ -105,6 +105,9 @@
     .footerLastSectionRightSide{
         width: 50%;
     }
+    .footer-logo{
+        width: 175px;
+    }
 
 </style>
 <footer>
