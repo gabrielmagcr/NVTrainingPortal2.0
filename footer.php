@@ -1,5 +1,9 @@
 
-<?php wp_footer(); ?>
+<?php wp_footer();
+$brandsLogos= get_field('brands_logos');
+$footerResources = wp_get_nav_menu_items('Footer_Resources');
+$footerCompany = wp_get_nav_menu_items('Footer_Company');
+?>
 <script>
 jQuery(window).scroll(function() {
     if (jQuery(this).scrollTop() > 60){  
@@ -13,7 +17,6 @@ jQuery(window).scroll(function() {
 </script>
 </body>
 <footer>
-
     <div class="footerLogos">
         <?php
         var_dump($brandsLogos)
