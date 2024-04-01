@@ -36,6 +36,8 @@
 
     .newsLetterFormClass {
         display: flex;
+        gap: 10px;
+        margin: 20px;
     }
 
     .newsLetterFormClass input {
@@ -45,7 +47,8 @@
         border: 2px solid #fff;
         border-radius: 5rem;
         color: #d1d1d1;
-        font-size: 1.4rem;
+        font-size: 1rem;
+        padding-left: 15px;
         width: 100%;
         min-height: 3.6rem;
         box-sizing: border-box;
@@ -65,6 +68,9 @@
         font-size: 16px;
     transform: translateY(0);
     margin-top: 0;
+    }
+    .newsLetterFormClass button{
+        max-width: 150px;
     }
 
     .footerMenus {
