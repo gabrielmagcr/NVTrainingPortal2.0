@@ -42,7 +42,7 @@
         -webkit-appearance: none;
         appearance: none;
         background-color: transparent;
-        border: .3rem solid transparent;
+        border: .3rem solid #fff;
         border-radius: 5rem;
         color: rgb(var(--color-foreground));
         font-size: 1.4rem;
@@ -87,7 +87,7 @@
         <div class="newsLetter">
             <span>NEWSLETTER SIGN UP</span>
             <div class="newsLetterFormClass">
-                <input id="newsLetterForm" type="email" autocapitalize="off" autocomplete="email" placeholder="Email Address required">
+                <input id="newsLetterForm" type="email" autocapitalize="off" autocomplete="email">
                 <label for="newsLetterForm">Email Address</label>
                 <button class="top-btns">
                     <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" width='35px' xmlns="http://www.w3.org/2000/svg">
