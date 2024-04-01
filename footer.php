@@ -12,15 +12,7 @@ jQuery(window).scroll(function() {
 });
 </script>
 <style>
-    .footerLogos{
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #26948c;
-        width: 100%;
-    }
-    .footerLogos img{
-        width: 100px;
-    }
+
 </style>
 <footer>
     <?php 
