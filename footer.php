@@ -20,10 +20,10 @@ jQuery(window).scroll(function() {
     <div class="footerLogos">
         <?php
         var_dump($brandsLogos)
+        var_dump($brandsLogos)
 
         ?>
-  
-dasdasd
+
   
     <img src="">
     </div>
