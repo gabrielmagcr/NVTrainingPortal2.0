@@ -24,6 +24,8 @@
 
     .footerStructure {
         background-color: #2c667e;
+        display: flex;
+        flex-direction: column;
     }
 
     .newsLetter span {
@@ -64,6 +66,9 @@
         top: .6em;
         letter-spacing: .04rem;
     }
+    .footerMenus{
+        display: flex;
+    }
 </style>
 <footer>
     <?php
@@ -92,7 +97,7 @@
                 </button>
             </div>
         </div>
-        <div>
+        <div class="footerMenus">
             <div>
                 <?php if ($footerResources) {
 
