@@ -102,16 +102,17 @@
     }
     .footerLastSectionLeftSide{
         width: 50%;
+        
+    }
+    .footerLastSectionLeftSide span{
+        color: #fff;
+        font-weight: 500;
     }
     .footerLastSectionRightSide{
         width: 50%;
     }
     .footer-logo{
         width: 175px;
-    }
-    .leftSection span{
-        color: #fff;
-        font-weight: 500;
     }
     #swedencare{
         color: #fac33b;
@@ -189,9 +190,9 @@
                             <path id="Path_10648" data-name="Path 10648" d="M225.59,80.875a1.254,1.254,0,0,1-.888.36h-1.93V78.813h1.93a1.261,1.261,0,0,1,.888.346,1.251,1.251,0,0,1,0,1.717m-2.818,5.181V82.484h1.462l1.452,3.573h1.55l-1.511-3.749a3.2,3.2,0,0,0,.77-.522,2.484,2.484,0,0,0,.02-3.519,2.536,2.536,0,0,0-1.814-.717h-3.2v8.506Zm8.687-4.24a6.6,6.6,0,0,1-2.077,4.917,7.294,7.294,0,0,1-10.032,0,6.916,6.916,0,0,1,0-9.842,7.256,7.256,0,0,1,10.032,0,6.618,6.618,0,0,1,2.077,4.925m-7.1-8.024a8.065,8.065,0,0,0-5.82,2.325,8.065,8.065,0,0,0,0,11.382,8.46,8.46,0,0,0,11.65,0,8,8,0,0,0,0-11.382,8.027,8.027,0,0,0-5.831-2.325" transform="translate(44.243 15.102)" fill="#fff"></path>
                         </g>
                     </svg>
+                    </a>
                     </div>
                     <span>A MEMBER OF THE <span id="swedencare">SWEDENCARE </span>FAMILY</span>
-                </a>
             </div>
             <div class="footerLastSectionRightSide">
                 <a href="https://www.nasc.cc/about-our-mission/"><img src="" alt="">upload the nasc image</a>
