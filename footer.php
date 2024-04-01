@@ -11,6 +11,11 @@ jQuery(window).scroll(function() {
     }
 });
 </script>
+<?php
+$brandsLogos= getfield('brands_logos');
+$footerResources = wp_get_nav_menu_items('Footer_Resources');
+$footerCompany = wp_get_nav_menu_items('Footer_Company');
+?>
 </body>
 <footer>
     <div class="footerLogos">
