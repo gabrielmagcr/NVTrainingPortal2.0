@@ -55,7 +55,7 @@
             <div>
                 <?php if ($footerResources) {
 
-                    foreach ($footerResources as $$footerResource) {
+                    foreach ($footerResources as $footerResource) {
                         // Create <li> for each menu element
                         echo '<li class="responsiveList"><a href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
                     }
