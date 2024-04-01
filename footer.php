@@ -1,5 +1,6 @@
 
 <?php wp_footer();
+
 $brandsLogos= get_field('brands_logos');
 $footerResources = wp_get_nav_menu_items('Footer_Resources');
 $footerCompany = wp_get_nav_menu_items('Footer_Company');
@@ -19,7 +20,6 @@ jQuery(window).scroll(function() {
 <footer>
     <div class="footerLogos">
         <?php
-        var_dump($brandsLogos);
         var_dump($brandsLogos);
 
         ?>
