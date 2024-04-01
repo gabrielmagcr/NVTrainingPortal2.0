@@ -179,6 +179,8 @@ if($modalCompletedAllQuizzes && !$modalCompletedForm){?>
 </a>
 </div>
 <br><br><br>	
+</div>	
+</div>	
 </div>																		   
 <?php }
 get_footer();
