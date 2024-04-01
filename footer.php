@@ -84,6 +84,7 @@
     .footerMenu{
         flex-direction: column;
         flex-wrap: wrap;
+        font-size: 14px;
     }
     .footerMenu:first-child{
         margin-left: 15px;
