@@ -25,7 +25,7 @@
     .footerStructure {
         background-color: #2c667e;
     }
-    .newsLetterForm span{
+    .newsLetter span{
         color: #fff;
         font-weight: 700;
         font-size: 1.2em;
