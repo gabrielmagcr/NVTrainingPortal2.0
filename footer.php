@@ -42,31 +42,27 @@
         -webkit-appearance: none;
         appearance: none;
         background-color: transparent;
-        border: .3rem solid #fff;
+        border: 2px solid #fff;
         border-radius: 5rem;
-        color: rgb(var(--color-foreground));
+        color: #d1d1d1;
         font-size: 1.4rem;
         width: 100%;
         min-height: 3.6rem;
         box-sizing: border-box;
     }
 
-    .newsLetterFormClass label {
-        margin-bottom: 0;
-        pointer-events: none;
-        position: absolute;
-        transition: top var(--duration-short) ease, font-size var(--duration-short) ease, opacity var(--duration-short) ease;
-        color: rgba(var(--color-foreground));
-        letter-spacing: .1rem;
-        line-height: 1.5;
+    .newsLetterFormClass label::placeholder {
+        color: #d1d1d1;
+        transition: font-size 0.3s ease, transform 0.3s ease, margin-top 0.3s ease;
     }
-    .newsLetterFormClass label:focus {
-        opacity: 1;
-        font-size: 1rem;
-        top: .6em;
-        letter-spacing: .04rem;
+
+    .newsLetterFormClass input:focus::placeholder {
+        font-size: 12px;
+        transform: translateY(-10px);
+        margin-top: -10px;
     }
-    .footerMenus{
+
+    .footerMenus {
         display: flex;
     }
 </style>
@@ -87,8 +83,7 @@
         <div class="newsLetter">
             <span>NEWSLETTER SIGN UP</span>
             <div class="newsLetterFormClass">
-                <input id="newsLetterForm" type="email" autocapitalize="off" autocomplete="email">
-                <label for="newsLetterForm">Email Address</label>
+                <input id="newsLetterForm" type="email" autocapitalize="off" autocomplete="email" placeholder="Email Address">
                 <button class="top-btns">
                     <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" width='35px' xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor">
