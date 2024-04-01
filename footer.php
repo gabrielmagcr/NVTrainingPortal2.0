@@ -27,7 +27,10 @@
         display: flex;
         flex-direction: column;
     }
-
+    
+    .newsLetter{
+        margin: 15px;
+    }
     .newsLetter span {
         color: #fff;
         font-weight: 700;
@@ -37,7 +40,7 @@
     .newsLetterFormClass {
         display: flex;
         gap: 10px;
-        margin: 20px;
+        justify-content: space-evenly;
     }
 
     .newsLetterFormClass input {
@@ -48,6 +51,7 @@
         border-radius: 5rem;
         color: #d1d1d1;
         font-size: 1rem;
+        margin: 20px 0;
         padding-left: 15px;
         width: 100%;
         min-height: 3.6rem;
