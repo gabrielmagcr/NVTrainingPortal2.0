@@ -177,7 +177,7 @@ if($modalCompletedAllQuizzes && !$modalCompletedForm){?>
 <a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
 </a>
 </div>
-<br><br><br>																			   
+																		   
 <?php }
 get_footer();
 ?>

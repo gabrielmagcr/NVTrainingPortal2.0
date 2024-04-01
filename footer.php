@@ -1,10 +1,5 @@
 
-<?php wp_footer();
-
-$brandsLogos = get_field('brands');
-$footerResources = wp_get_nav_menu_items('Footer_Resources');
-$footerCompany = wp_get_nav_menu_items('Footer_Company');
-?>
+<?php wp_footer();?>
 <script>
 jQuery(window).scroll(function() {
     if (jQuery(this).scrollTop() > 60){  
@@ -18,6 +13,11 @@ jQuery(window).scroll(function() {
 </script>
 </body>
 <footer>
+    <?php 
+$brandsLogos = get_field('brands');
+$footerResources = wp_get_nav_menu_items('Footer_Resources');
+$footerCompany = wp_get_nav_menu_items('Footer_Company');
+    ?>
     <div class="footerLogos">
         <?php if($brandsLogos):?>
         <?php foreach ($brandsLogos as $brandlogo):?>
