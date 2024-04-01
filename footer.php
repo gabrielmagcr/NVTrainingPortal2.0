@@ -23,7 +23,7 @@ jQuery(window).scroll(function() {
         var_dump($brandsLogos);
 
         ?>
-
+test
   
     <img src="">
     </div>
