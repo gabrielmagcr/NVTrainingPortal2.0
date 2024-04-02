@@ -187,9 +187,9 @@
     ?>
     <div class="footerLogos">
             <?php foreach ($brandsLogos as $brandlogo => $data) : 
-                $image= $data=['img'];
-                $url= $data=['url'];
-                $name=$data=['name'];
+                $image= $data['img'];
+                $url= $data['url'];
+                $name=$data['name'];
                 ?>
                 <a href="<?php echo $url; ?>">
                 <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
