@@ -160,7 +160,7 @@
       }
 
       #banner {
-        max-height: 420px !important;
+   
       }
       .shield{
         top: 50px;
@@ -179,7 +179,7 @@
       }
 
       #banner {
-        max-height: 400px !important;
+
       }
     }
 
@@ -267,7 +267,7 @@
       }
 
       #banner {
-        max-height: 380px !important;
+
       }
       .shield{
         left: 85px;
@@ -304,7 +304,7 @@
       }
 
       #banner {
-        max-height: 300px !important;
+        background:url('https://training.naturvet.com/wp-content/uploads/NV_Training-Portals_forEXPORT_r1_v3_Training-Landing-Hero_v1.jpg')
         width: 500px;
  
       }
