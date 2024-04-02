@@ -150,6 +150,11 @@
     .responsive-menu {
       display: none;
     }
+    #banner{
+      background: url('/wp-content/uploads/HomePageBanner.png');
+      background-repeat: no-repeat;
+      background-position: right;
+    }
 
     @media only screen and (max-width:1420px) {
       .top-btns {
@@ -435,11 +440,8 @@
     </div><!--end content-->
   </header>
   <div class="bannerClass">
-    <?php if ($activateBanner) : ?>
-      <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat;    background-position: right;background-size:cover;">
-      </section>
-    <?php endif; ?>
-    <div class="shield">
+      <section id="banner"></section>
+      <div class="shield">
       <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
     </div>
   </div>
