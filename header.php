@@ -154,8 +154,9 @@
       background: url('/wp-content/uploads/HomePageBanner.png');
       background-repeat: no-repeat;
       background-position: right;
+      height: 750px;
     }
-
+    
     @media only screen and (max-width:1420px) {
       .top-btns {
         max-height: 6rem;
@@ -180,7 +181,10 @@
         font-size: 13px;
         margin: 0px 0px;
       }
-
+      #banner {
+        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background-position: center;
+      }
 
     }
 
@@ -274,6 +278,10 @@
       .shield img{
         width: 200px;
       }
+      #banner {
+        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background-position: center;
+      }
     }
 
     @media only screen and (max-width:767px) {
@@ -287,7 +295,10 @@
         margin-left: .2rem;
         margin-bottom: .3rem;
       }
-
+      #banner {
+        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background-position: center;
+      }
 
     }
 
@@ -300,9 +311,8 @@
       }
 
       #banner {
-        background:url('https://training.naturvet.com/wp-content/uploads/NV_Training-Portals_forEXPORT_r1_v3_Training-Landing-Hero_v1.jpg');
-        width: 500px;
- 
+        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background-position: center;
       }
     }
   </style>
