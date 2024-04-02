@@ -141,10 +141,10 @@
 
     .footerSocial {
         display: flex;
-        width: 75px;
         gap: 10px;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 25px;
     }
     .footerSocialDesktop{
         display: none;
@@ -261,7 +261,7 @@
             'name' => 'Twitter'
         ),
         'facebook' => array(
-            'img' => '/wp-content/uploads/facebook.svg',
+            'img' => '/wp-content/uploads/twitter.svg',
             'url' => 'https://www.facebook.com/',
             'name' => 'Facebook'
         ),
