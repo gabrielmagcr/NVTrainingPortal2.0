@@ -14,9 +14,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: 20px;
+        gap: 40px;
         background-color: #26948c;
-        padding: 15px 0;
+        padding: 20px 0;
         align-items: center;
 
     }
