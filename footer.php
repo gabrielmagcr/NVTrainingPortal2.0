@@ -87,6 +87,7 @@
     .footerMenus {
         display: flex;
         width: 90%;
+        justify-content: space-evenly;
     }
 
     .footerMenu {
@@ -135,6 +136,16 @@
 
     #swedencare {
         color: #fac33b;
+    }
+
+    @media (min-width:550px){
+        .footerMenu span {
+            font-size: 18px;
+        }
+        .responsiveList{
+            font-size: 17px;
+        }
+
     }
 </style>
 <footer>
