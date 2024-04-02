@@ -39,7 +39,7 @@
 
     .newsLetterFormClass {
         display: flex;
-        gap: 10px;
+        gap: 20px;
         justify-content: space-evenly;
     }
 
@@ -74,9 +74,9 @@
     margin-top: 0;
     }
     .newsLetterFormClass button{
-        max-width: 150px;
+        max-width: 110px;
     }
-
+ 
     .footerMenus {
         display: flex;
         width: 90%;
@@ -89,6 +89,7 @@
     .footerMenu:first-child{
         margin-left: 25px;
     }
+
     .footerMenu span{
         color: #fff;
         font-weight: bold;
@@ -195,7 +196,7 @@
                     <span>A MEMBER OF THE <span id="swedencare">SWEDENCARE </span>FAMILY</span>
             </div>
             <div class="footerLastSectionRightSide">
-                <a href="https://www.nasc.cc/about-our-mission/"><img src="" alt="">upload the nasc image</a>
+                <a href="https://www.nasc.cc/about-our-mission/"><img src="https://5hp.86b.myftpupload.com/wp-content/uploads/Group_345_2x_f60161c9-06f6-46dd-bb90-d1fc12451b79.png" alt="Nasc logo"></a>
             </div>
         </div>
     </div>
