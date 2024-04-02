@@ -159,9 +159,7 @@
         margin: 0px 0px;
       }
 
-      #banner {
-   
-      }
+
       .shield{
         top: 50px;
       }
@@ -178,9 +176,7 @@
         margin: 0px 0px;
       }
 
-      #banner {
 
-      }
     }
 
     @media only screen and (max-width:1024px) {
@@ -266,9 +262,7 @@
         display: none;
       }
 
-      #banner {
 
-      }
       .shield{
         left: 85px;
       }
@@ -289,10 +283,7 @@
         margin-bottom: .3rem;
       }
 
-      #banner {
-        max-height: 320px !important;
-     
-      }
+
     }
 
     @media only screen and (max-width:480px) {
@@ -304,7 +295,7 @@
       }
 
       #banner {
-        background:url('https://training.naturvet.com/wp-content/uploads/NV_Training-Portals_forEXPORT_r1_v3_Training-Landing-Hero_v1.jpg')
+        background:url('https://training.naturvet.com/wp-content/uploads/NV_Training-Portals_forEXPORT_r1_v3_Training-Landing-Hero_v1.jpg');
         width: 500px;
  
       }
