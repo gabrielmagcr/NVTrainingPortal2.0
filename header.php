@@ -154,6 +154,7 @@
       background: url('/wp-content/uploads/HomePageBanner.png');
       background-repeat: no-repeat;
       background-position: right;
+      background-size: cover;
       height: 750px;
     }
     
@@ -184,6 +185,7 @@
       #banner {
         background:url('/wp-content/uploads/HomePageBanner-1.png');
         background-position: center;
+
       }
 
     }
