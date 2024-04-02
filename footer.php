@@ -201,7 +201,7 @@
         }
 
         .footerLastSectionLeftSide span {
-          font-size: 10px;
+            font-size: 10px;
         }
 
         .footerLastSectionRightSide {
@@ -231,9 +231,11 @@
         .footerMenu span {
             font-size: 24px;
         }
+
         .footer-logo {
-    width: 300px;
-}
+            width: 300px;
+            margin-bottom: 0;
+        }
 
     }
 </style>
