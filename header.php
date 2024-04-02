@@ -136,7 +136,17 @@
       color: #fff;
       margin: 0px 5px;
     }
-
+    .bannerClass{
+      position: relative;
+      z-index: 0;
+    }
+    .shield{
+      position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 150px;
+}
+    
     .responsive-menu {
       display: none;
     }
@@ -151,6 +161,12 @@
 
       #banner {
         max-height: 420px !important;
+      }
+      .shield{
+        top: 50px;
+      }
+      .shield img{
+        width: 250px;
       }
     }
 
@@ -420,7 +436,7 @@
       </div><!--end header-r-->
     </div><!--end content-->
   </header>
-  <div>
+  <div class="bannerClass">
     <?php if ($activateBanner) : ?>
       <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat center center; background-size:cover;">
       </section>
