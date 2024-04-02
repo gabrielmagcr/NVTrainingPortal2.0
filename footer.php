@@ -133,6 +133,7 @@
 
     .footer-logo {
         width: 175px;
+        margin-bottom: -25px;
     }
 
     #swedencare {
@@ -146,9 +147,11 @@
         align-items: center;
         margin-bottom: 25px;
     }
-    .footerSocialDesktop{
+
+    .footerSocialDesktop {
         display: none;
     }
+
     @media (min-width:550px) {
         .footerMenu span {
             font-size: 18px;
@@ -168,6 +171,7 @@
         .newsLetter {
             order: 4;
             width: 50%;
+            margin-top: 55px;
         }
 
         .footerMenus {
@@ -184,9 +188,12 @@
         .footerSocial {
             display: none;
         }
-        .footerSocialDesktop{
-            display: block;
+
+        .footerSocialDesktop {
+            display: flex;
+            gap: 10px;
         }
+
         .footerLastSectionLeftSide {
             display: flex;
             flex-direction: column;
@@ -194,9 +201,7 @@
         }
 
         .footerLastSectionLeftSide span {
-
-            font-size: 10px;
-            margin-top: -20px;
+          font-size: 10px;
         }
 
         .footerLastSectionRightSide {
@@ -209,7 +214,6 @@
         }
 
         .newsLetterFormClass {
-
             gap: 5px;
         }
 
@@ -217,6 +221,19 @@
         .newsletterbtn {
             margin: 40px 0;
         }
+
+        .responsiveList a {
+            color: #ffffff;
+            font-size: 22px;
+
+        }
+
+        .footerMenu span {
+            font-size: 24px;
+        }
+        .footer-logo {
+    width: 300px;
+}
 
     }
 </style>
@@ -307,15 +324,15 @@
                 </button>
             </div>
             <div class="footerSocialDesktop">
-            <?php foreach ($socials as $social => $data) :
-                $image = $data['img'];
-                $url = $data['url'];
-                $name = $data['name'];
-            ?>
-                <a href="<?php echo $url; ?>">
-                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
-            <?php endforeach; ?>
-        </div>
+                <?php foreach ($socials as $social => $data) :
+                    $image = $data['img'];
+                    $url = $data['url'];
+                    $name = $data['name'];
+                ?>
+                    <a href="<?php echo $url; ?>">
+                        <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+                <?php endforeach; ?>
+            </div>
         </div>
         <div class="footerMenus">
             <div class="footerMenu">
