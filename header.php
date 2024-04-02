@@ -446,7 +446,7 @@
   </header>
   <div class="bannerClass">
     <?php if ($activateBanner) : ?>
-      <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat center center; background-size:cover;">
+      <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat; background-size:cover;">
       </section>
     <?php endif; ?>
     <div class="shield">
