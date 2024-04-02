@@ -13,7 +13,7 @@
     .footerLogos {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 20px;
         background-color: #26948c;
         padding: 15px 0;
@@ -124,6 +124,9 @@
 
     .footerLastSectionRightSide {
         width: 50%;
+    }
+    .footerLastSectionRightSide img{
+        width: 100px;
     }
 
     .footer-logo {
