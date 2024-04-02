@@ -126,7 +126,8 @@
     .footerLastSectionRightSide {
         width: 50%;
     }
-    .footerLastSectionRightSide img{
+
+    .footerLastSectionRightSide img {
         width: 100px;
     }
 
@@ -137,21 +138,57 @@
     #swedencare {
         color: #fac33b;
     }
-    .footerSocial{
+
+    .footerSocial {
         display: flex;
         width: 75px;
         gap: 10px;
         justify-content: space-evenly;
         align-items: center;
     }
-    @media (min-width:550px){
+
+    @media (min-width:550px) {
         .footerMenu span {
             font-size: 18px;
         }
-        .responsiveList{
+
+        .responsiveList {
             font-size: 17px;
         }
 
+    }
+
+    @media (min-width:1024px) {
+        .newsLetter {
+            order: 4;
+        }
+
+        .footerMenus {
+            order: 2;
+        }
+
+        .footerLastSection {
+            order: 0;
+        }
+
+        .footerSocial {
+            order: 3;
+        }
+
+        .footerLastSection {
+            gap: 15px;
+            width: 50%;
+        }
+
+        .footerLastSectionRightSide {
+            width: auto;
+        }
+
+        .footerMenus {
+            align-items: center;
+            margin-top: 45px;
+
+        }
     }
 </style>
 <footer>
@@ -213,25 +250,20 @@
             'img' => '/wp-content/uploads/youtube.svg',
             'url' => 'https://www.youtube.com/',
             'name' => 'YouTube'
-        ),
-        'img6' => array(
-            'img' => '/wp-content/uploads/tsc.png',
-            'url' => 'https://www.tractorsupply.com/landing-pages_brands_naturvet',
-            'name' => 'Tractor Supply Co.'
         )
     );
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
     <div class="footerLogos">
-            <?php foreach ($brandsLogos as $brandlogo => $data) : 
-                $image= $data['img'];
-                $url= $data['url'];
-                $name=$data['name'];
-                ?>
-                <a href="<?php echo $url; ?>">
+        <?php foreach ($brandsLogos as $brandlogo => $data) :
+            $image = $data['img'];
+            $url = $data['url'];
+            $name = $data['name'];
+        ?>
+            <a href="<?php echo $url; ?>">
                 <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
-            <?php endforeach; ?>
+        <?php endforeach; ?>
     </div>
     <div class="footerStructure">
         <div class="newsLetter">
@@ -301,13 +333,13 @@
             </div>
         </div>
         <div class="footerSocial">
-        <?php foreach ($socials as $social => $data) : 
-                $image= $data['img'];
-                $url= $data['url'];
-                $name=$data['name'];
-                ?>
+            <?php foreach ($socials as $social => $data) :
+                $image = $data['img'];
+                $url = $data['url'];
+                $name = $data['name'];
+            ?>
                 <a href="<?php echo $url; ?>">
-                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
             <?php endforeach; ?>
         </div>
     </div>
