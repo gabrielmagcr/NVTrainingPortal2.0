@@ -145,9 +145,11 @@
     .shield {
       position: absolute;
       z-index: 1;
-      top: 120px;
-      left: 150px;
-    }
+      top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+    
 
     .responsive-menu {
       display: none;
@@ -179,7 +181,7 @@
       }
 
       #banner {
-        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
+        background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -194,12 +196,7 @@
         margin: 0px 0px;
       }
 
-      #banner {
-        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
+
 
     }
 
@@ -295,12 +292,6 @@
         width: 200px;
       }
 
-      #banner {
-        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
     }
 
     @media only screen and (max-width:767px) {
@@ -315,12 +306,7 @@
         margin-bottom: .3rem;
       }
 
-      #banner {
-        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
+
 
     }
 
@@ -332,12 +318,7 @@
         margin: 20px 0px;
       }
 
-      #banner {
-        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
+
     }
   </style>
 </head>
