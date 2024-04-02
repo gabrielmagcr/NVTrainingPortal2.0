@@ -136,27 +136,31 @@
       color: #fff;
       margin: 0px 5px;
     }
-    .bannerClass{
+
+    .bannerClass {
       position: relative;
       z-index: 0;
     }
-    .shield{
+
+    .shield {
       position: absolute;
-    z-index: 1;
-    top: 120px;
-    left: 150px;
-}
-    
+      z-index: 1;
+      top: 120px;
+      left: 150px;
+    }
+
     .responsive-menu {
       display: none;
     }
-    #banner{
+
+    #banner {
       background: url('/wp-content/uploads/HomePageBanner.png');
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: right;
       height: 750px;
     }
-    
+
     @media only screen and (max-width:1420px) {
       .top-btns {
         max-height: 6rem;
@@ -166,11 +170,19 @@
       }
 
 
-      .shield{
+      .shield {
         top: 50px;
       }
-      .shield img{
+
+      .shield img {
         width: 250px;
+      }
+
+      #banner {
+        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
     }
 
@@ -181,12 +193,13 @@
         font-size: 13px;
         margin: 0px 0px;
       }
+
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
+        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
         background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-            }
+        background-position: center;
+        background-size: cover;
+      }
 
     }
 
@@ -274,17 +287,19 @@
       }
 
 
-      .shield{
+      .shield {
         left: 85px;
       }
-      .shield img{
+
+      .shield img {
         width: 200px;
       }
+
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
+        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
         background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+        background-position: center;
+        background-size: cover;
       }
     }
 
@@ -299,11 +314,12 @@
         margin-left: .2rem;
         margin-bottom: .3rem;
       }
+
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
+        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
         background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+        background-position: center;
+        background-size: cover;
       }
 
     }
@@ -317,10 +333,10 @@
       }
 
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
+        background: url('/wp-content/uploads/HomePageBanner-1-e1712099756908.png');
         background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+        background-position: center;
+        background-size: cover;
       }
     }
   </style>
@@ -458,8 +474,8 @@
     </div><!--end content-->
   </header>
   <div class="bannerClass">
-      <section id="banner"></section>
-      <div class="shield">
+    <section id="banner"></section>
+    <div class="shield">
       <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
     </div>
   </div>
