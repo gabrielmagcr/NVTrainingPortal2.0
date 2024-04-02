@@ -204,7 +204,7 @@
         background-color: #2C667E;
         top: 0;
         left: 0;
-        z-index: 0;
+        z-index: 10;
         text-align: center;
 
       }
@@ -269,6 +269,12 @@
       #banner {
         max-height: 380px !important;
       }
+      .shield{
+        left: 85px;
+      }
+      .shield img{
+        width: 200px;
+      }
     }
 
     @media only screen and (max-width:767px) {
@@ -300,6 +306,8 @@
 
       #banner {
         max-height: 300px !important;
+        width: 500px;
+    background-position: right;
       }
     }
   </style>
