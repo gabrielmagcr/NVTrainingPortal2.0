@@ -187,9 +187,13 @@
     ?>
     <div class="footerLogos">
         <?php if ($brandsLogos) : ?>
-            <?php foreach ($brandsLogos as $brandlogo) : ?>
-                <a href="<?php echo $brandlogo['url']; ?>">
-                <img alt="<?php echo $brandlogo['name']; ?>" src="<?php echo $brandlogo['img']; ?>"></a>
+            <?php foreach ($brandsLogos as $brandlogo => $data) : 
+                $image= $data=['img'];
+                $url= $data=['url'];
+                $name=$data=['name'];
+                ?>
+                <a href="<?php echo $url; ?>">
+                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
             <?php endforeach; ?>
         <?php endif; ?>
     </div>
