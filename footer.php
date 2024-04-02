@@ -146,7 +146,9 @@
         justify-content: space-evenly;
         align-items: center;
     }
-
+    .footerSocialDesktop{
+        display: none;
+    }
     @media (min-width:550px) {
         .footerMenu span {
             font-size: 18px;
@@ -180,9 +182,11 @@
         }
 
         .footerSocial {
-            order: 3;
+            display: none;
         }
-
+        .footerSocialDesktop{
+            display: block;
+        }
         .footerLastSectionLeftSide {
             display: flex;
             flex-direction: column;
@@ -262,17 +266,17 @@
             'name' => 'Facebook'
         ),
         'pinterest' => array(
-            'img' => '/wp-content/uploads/pinterest.svg',
+            'img' => '/wp-content/uploads/twitter.svg',
             'url' => 'https://www.pinterest.com/',
             'name' => 'Pinterest'
         ),
         'instagram' => array(
-            'img' => '/wp-content/uploads/instagram.svg',
+            'img' => '/wp-content/uploads/twitter.svg',
             'url' => 'https://www.instagram.com/',
             'name' => 'Instagram'
         ),
         'youtube' => array(
-            'img' => '/wp-content/uploads/youtube.svg',
+            'img' => '/wp-content/uploads/twitter.svg',
             'url' => 'https://www.youtube.com/',
             'name' => 'YouTube'
         )
@@ -302,6 +306,16 @@
                     </svg>
                 </button>
             </div>
+            <div class="footerSocialDesktop">
+            <?php foreach ($socials as $social => $data) :
+                $image = $data['img'];
+                $url = $data['url'];
+                $name = $data['name'];
+            ?>
+                <a href="<?php echo $url; ?>">
+                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+            <?php endforeach; ?>
+        </div>
         </div>
         <div class="footerMenus">
             <div class="footerMenu">
