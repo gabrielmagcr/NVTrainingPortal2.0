@@ -137,7 +137,13 @@
     #swedencare {
         color: #fac33b;
     }
-
+    .footerSocial{
+        display: flex;
+        width: 75px;
+        gap: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
     @media (min-width:550px){
         .footerMenu span {
             font-size: 18px;
@@ -175,6 +181,38 @@
             'img' => '/wp-content/uploads/pet-supermarket.png',
             'url' => 'https://www.petsupermarket.com/brands/n/naturvet/',
             'name' => 'Pet Supermarket'
+        ),
+        'img6' => array(
+            'img' => '/wp-content/uploads/tsc.png',
+            'url' => 'https://www.tractorsupply.com/landing-pages_brands_naturvet',
+            'name' => 'Tractor Supply Co.'
+        )
+    );
+    $socials = array(
+        'twitter' => array(
+            'img' => '/wp-content/uploads/twitter.svg',
+            'url' => 'https://twitter.com/',
+            'name' => 'Twitter'
+        ),
+        'facebook' => array(
+            'img' => '/wp-content/uploads/facebook.svg',
+            'url' => 'https://www.facebook.com/',
+            'name' => 'Facebook'
+        ),
+        'pinterest' => array(
+            'img' => '/wp-content/uploads/pinterest.svg',
+            'url' => 'https://www.pinterest.com/',
+            'name' => 'Pinterest'
+        ),
+        'instagram' => array(
+            'img' => '/wp-content/uploads/instagram.svg',
+            'url' => 'https://www.instagram.com/',
+            'name' => 'Instagram'
+        ),
+        'youtube' => array(
+            'img' => '/wp-content/uploads/youtube.svg',
+            'url' => 'https://www.youtube.com/',
+            'name' => 'YouTube'
         ),
         'img6' => array(
             'img' => '/wp-content/uploads/tsc.png',
@@ -261,6 +299,16 @@
             <div class="footerLastSectionRightSide">
                 <a href="https://www.nasc.cc/about-our-mission/"><img src="https://5hp.86b.myftpupload.com/wp-content/uploads/Group_345_2x_f60161c9-06f6-46dd-bb90-d1fc12451b79.png" alt="Nasc logo"></a>
             </div>
+        </div>
+        <div class="footerSocial">
+        <?php foreach ($socials as $social => $data) : 
+                $image= $data['img'];
+                $url= $data['url'];
+                $name=$data['name'];
+                ?>
+                <a href="<?php echo $url; ?>">
+                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+            <?php endforeach; ?>
         </div>
     </div>
 </footer>
