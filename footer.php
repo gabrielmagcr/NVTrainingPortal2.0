@@ -181,7 +181,7 @@
             'url' => 'https://www.tractorsupply.com/landing-pages_brands_naturvet',
             'name' => 'Tractor Supply Co.'
         )
-    )
+    );
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
