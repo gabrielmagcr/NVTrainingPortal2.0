@@ -186,7 +186,6 @@
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
     <div class="footerLogos">
-        <?php if ($brandsLogos) : ?>
             <?php foreach ($brandsLogos as $brandlogo => $data) : 
                 $image= $data=['img'];
                 $url= $data=['url'];
@@ -195,7 +194,6 @@
                 <a href="<?php echo $url; ?>">
                 <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
             <?php endforeach; ?>
-        <?php endif; ?>
     </div>
     <div class="footerStructure">
         <div class="newsLetter">
