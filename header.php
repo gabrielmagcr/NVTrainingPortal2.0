@@ -420,11 +420,15 @@
       </div><!--end header-r-->
     </div><!--end content-->
   </header>
-  <?php if ($activateBanner) : ?>
-    <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat center center; background-size:cover;">
-    </section>
-  <?php endif; ?>
-
+  <div>
+    <?php if ($activateBanner) : ?>
+      <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat center center; background-size:cover;">
+      </section>
+    <?php endif; ?>
+    <div class="shield">
+      <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
+    </div>
+  </div>
 
   <!-- Partne Assets Modal -->
   <div id="partnerAssets" class="modal fade" role="dialog">
