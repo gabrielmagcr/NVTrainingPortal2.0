@@ -291,12 +291,11 @@
 
       #banner {
         max-height: 320px !important;
+        background-position: right;
       }
     }
 
     @media only screen and (max-width:480px) {
-
-
       .top-btns {
         max-height: 5rem;
         padding: 1rem 1rem;
@@ -307,7 +306,7 @@
       #banner {
         max-height: 300px !important;
         width: 500px;
-    background-position: right;
+        background-position: right;
       }
     }
   </style>
