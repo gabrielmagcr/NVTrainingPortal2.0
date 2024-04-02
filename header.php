@@ -291,7 +291,7 @@
 
       #banner {
         max-height: 320px !important;
-        background-position: right;
+     
       }
     }
 
@@ -306,7 +306,7 @@
       #banner {
         max-height: 300px !important;
         width: 500px;
-        background-position: right;
+ 
       }
     }
   </style>
@@ -445,7 +445,7 @@
   </header>
   <div class="bannerClass">
     <?php if ($activateBanner) : ?>
-      <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat; background-size:cover;">
+      <section id="banner" style="height:<?php echo $bannerHeight; ?>px; background:url('<?php echo $bannerImage; ?>') no-repeat;    background-position: right;background-size:cover;">
       </section>
     <?php endif; ?>
     <div class="shield">
