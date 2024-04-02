@@ -150,14 +150,46 @@
 </style>
 <footer>
     <?php
-    $brandsLogos = get_field('brands');
+    $brandsLogos = array(
+        'img1' => array(
+            'img' => '/wp-content/uploads/petco.png',
+            'url' => 'https://www.petco.com/shop/en/petcostore/brand/naturvet',
+            'name' => 'Petco'
+        ),
+        'img2' => array(
+            'img' => '/wp-content/uploads/chewy.png',
+            'url' => 'https://www.chewy.com/brands/naturvet-7112',
+            'name' => 'Chewy'
+        ),
+        'img3' => array(
+            'img' => '/wp-content/uploads/amazon.png',
+            'url' => 'https://www.amazon.com/stores/page/55E4FBE0-1284-4FEA-94D5-1E199BED7E3C?maas=maas_adg_4E5B677FA0C870CEB1BE9A24C2332217_afap_abs&ref_=aa_maas&tag=maas',
+            'name' => 'Amazon'
+        ),
+        'img4' => array(
+            'img' => '/wp-content/uploads/psp.png',
+            'url' => 'https://www.petsuppliesplus.com/',
+            'name' => 'Pet Supplies Plus'
+        ),
+        'img5' => array(
+            'img' => '/wp-content/uploads/pet-supermarket.png',
+            'url' => 'https://www.petsupermarket.com/brands/n/naturvet/',
+            'name' => 'Pet Supermarket'
+        ),
+        'img6' => array(
+            'img' => '/wp-content/uploads/tsc.png',
+            'url' => 'https://www.tractorsupply.com/landing-pages_brands_naturvet',
+            'name' => 'Tractor Supply Co.'
+        )
+    )
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
     <div class="footerLogos">
         <?php if ($brandsLogos) : ?>
             <?php foreach ($brandsLogos as $brandlogo) : ?>
-                <img src="<?php echo $brandlogo['url']; ?>">
+                <a href="<?php echo $brandlogo['url']; ?>">
+                <img alt="<?php echo $brandlogo['name']; ?>" src="<?php echo $brandlogo['img']; ?>"></a>
             <?php endforeach; ?>
         <?php endif; ?>
     </div>
