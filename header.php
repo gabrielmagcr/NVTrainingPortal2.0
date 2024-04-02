@@ -182,7 +182,7 @@
         margin: 0px 0px;
       }
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background:url('/wp-content/uploads/HomePageBanner-2.png');
         background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -282,7 +282,7 @@
         width: 200px;
       }
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background:url('/wp-content/uploads/HomePageBanner-2.png');
         background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -301,7 +301,7 @@
         margin-bottom: .3rem;
       }
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background:url('/wp-content/uploads/HomePageBanner-2.png');
         background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -318,7 +318,7 @@
       }
 
       #banner {
-        background:url('/wp-content/uploads/HomePageBanner-1.png');
+        background:url('/wp-content/uploads/HomePageBanner-2.png');
         background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
