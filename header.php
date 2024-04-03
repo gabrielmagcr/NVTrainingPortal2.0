@@ -187,7 +187,6 @@
       .bannerInfo{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
       }
     }
@@ -291,7 +290,7 @@
       }
 
       .shield img {
-        width: 220px;
+        width: 230px;
       }
 
       .shield {
