@@ -84,7 +84,7 @@
     header .content {
       display: flex;
       align-items: center;
-      padding: 1rem 0rem;
+      padding: 2rem 0rem;
     }
 
     header .content .header-l {
@@ -111,7 +111,7 @@
     }
 
     header .content .header-r {
-      width: 35%;
+      width: 40%;
       text-align: right;
     }
 
