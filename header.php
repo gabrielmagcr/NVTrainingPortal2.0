@@ -184,11 +184,7 @@
         background-position: center;
         background-size: cover;
       }
-      .bannerInfo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+
     }
 
     @media only screen and (max-width:1205px) {
@@ -293,7 +289,9 @@
         display: none;
       }
       .logoutUser{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
       .shield img {
         width: 230px;
@@ -462,6 +460,7 @@
           <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
         <?php } else { ?>
           <a href="<?php echo wp_login_url(); ?>"><button type="button" class="top-btns">Login</button></a>
+          <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
         <?php } ?>
       </div><!--end header-r-->
     </div><!--end content-->
