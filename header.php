@@ -280,12 +280,12 @@
         text-align: right;
         display: none;
       }
-
-
-  
-
       .shield img {
-        width: 200px;
+        width: 270px;
+      }
+      .shield{
+        top: 65%;
+        left: 50%;
       }
 
     }
@@ -454,6 +454,9 @@
     <section id="banner"></section>
     <div class="shield">
       <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
+      <a href="<?php echo wp_login_url(); ?>">
+	    <button class="top-btns">Login</button>
+      	</a>
     </div>
   </div>
 
