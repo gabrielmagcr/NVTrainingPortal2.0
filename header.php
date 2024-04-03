@@ -165,7 +165,9 @@
         margin: 0px 0px;
       }
 
-
+      #banner{
+        background-position: center;
+      }
 
 
       .shield img {
@@ -302,6 +304,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        height: 750px;
       }
 
     }
