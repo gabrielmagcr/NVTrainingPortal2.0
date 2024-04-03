@@ -155,7 +155,7 @@
       display: none;
     }
 
-  
+
 
     @media only screen and (max-width:1420px) {
       .top-btns {
@@ -168,7 +168,7 @@
 
 
       .shield img {
-        width: 250px;
+        width: 350px;
       }
 
 
@@ -186,18 +186,21 @@
 
 
     }
+
     @media (min-width:1025px) {
-      .logoutUser{
+      .logoutUser {
         display: none;
       }
+
       #banner {
-      background: url('/wp-content/uploads/HomePageBanner.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 750px;
+        background: url('/wp-content/uploads/HomePageBanner.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 750px;
+      }
     }
-    }
+
     @media only screen and (max-width:1024px) {
       header .content .header-l {
         visibility: initial;
@@ -283,11 +286,13 @@
         text-align: right;
         display: none;
       }
-      .logoutUser{
+
+      .logoutUser {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
+
       .shield img {
         width: 230px;
       }
@@ -296,6 +301,7 @@
         top: 70%;
         left: 50%;
       }
+
       #banner {
         background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
         background-repeat: no-repeat;
@@ -474,54 +480,53 @@
       <div class="bannerInfo">
         <?php if (!is_user_logged_in()) { ?>
           <div class="logoutUser">
-          <a href="<?php echo wp_login_url(); ?>">
-            <button class="top-btns">Login</button>
-          </a>
-          <a href="<?php echo wp_registration_url(); ?>">
-            <button class="top-btns createAccount-btns">Create an account</button>
-          </a>
+            <a href="<?php echo wp_login_url(); ?>">
+              <button class="top-btns">Login</button>
+            </a>
+            <a href="<?php echo wp_registration_url(); ?>">
+              <button class="top-btns createAccount-btns">Create an account</button>
+            </a>
           </div>
-        <?php } else { ?>
-          <?php
+        <?php } else {
           $current_user_id = get_current_user_id();
           $user_info = get_userdata($current_user_id);
-          ?>
-          <h2 class="h2welcome">Welcome Back <?php echo $user_info->user_login; ?></h2>
+        ?>
+          <h2 class="h2welcome">Welcome Back <span><?php echo $user_info->user_login; ?>,</span></h2>
 
-          <?php
-          if (current_user_can('manage_options')) {
+          <?php if (current_user_can('manage_options')) :
             $completed_quizzes_count = count_completed_quizzes($current_user_id);
             $total_quizzes_count = count_total_quizzes();
-
-            echo "Completed: <strong>$completed_quizzes_count</strong> | Quizes Total: <strong>$total_quizzes_count</strong>";
-          }
-
-          function count_completed_quizzes($user_id)
-          {
-            $completed_quizzes_query = new WP_Query(array(
-              'post_type' => 'completed-quizzes',
-              'meta_query' => array(
-                array(
-                  'key' => 'user_id',
-                  'compare' => '=',
-                  'value' => $user_id
-                )
-              )
-            ));
-            return $completed_quizzes_query->found_posts;
-          }
-
-          function count_total_quizzes()
-          {
-            $total_quizzes_query = new WP_Query(array(
-              'posts_per_page' => 10,
-              'post_type' => 'quiz'
-            ));
-            return $total_quizzes_query->found_posts;
-          }
           ?>
+            <h2>Completed: <strong><?php echo $completed_quizzes_count; ?></strong> | Quizzes Total: <strong><?php echo $total_quizzes_count; ?></strong></h2>
+        <?php endif;
+        } ?>
 
-        <?php } ?>
+        <?php
+        function count_completed_quizzes($user_id)
+        {
+          $completed_quizzes_query = new WP_Query(array(
+            'post_type' => 'completed-quizzes',
+            'meta_query' => array(
+              array(
+                'key' => 'user_id',
+                'compare' => '=',
+                'value' => $user_id
+              )
+            )
+          ));
+          return $completed_quizzes_query->found_posts;
+        }
+
+        function count_total_quizzes()
+        {
+          $total_quizzes_query = new WP_Query(array(
+            'posts_per_page' => 10,
+            'post_type' => 'quiz'
+          ));
+          return $total_quizzes_query->found_posts;
+        }
+        ?>
+
       </div>
     </div>
   </div>
