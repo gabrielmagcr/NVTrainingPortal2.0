@@ -172,9 +172,7 @@
       }
 
 
-      .shield {
-        top: 50px;
-      }
+
 
       .shield img {
         width: 250px;
@@ -284,9 +282,7 @@
       }
 
 
-      .shield {
-        left: 85px;
-      }
+  
 
       .shield img {
         width: 200px;
