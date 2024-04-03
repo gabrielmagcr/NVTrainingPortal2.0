@@ -155,7 +155,13 @@
       display: none;
     }
 
-
+    .bannerInfo{
+      text-transform: uppercase;
+    color: #fff;
+    }
+    .bannerInfo span{
+      color: #FAC33B;
+    }
 
     @media only screen and (max-width:1420px) {
       .top-btns {
@@ -497,7 +503,7 @@
             $completed_quizzes_count = count_completed_quizzes($current_user_id);
             $total_quizzes_count = count_total_quizzes();
           ?>
-            <h2>Completed: <strong><?php echo $completed_quizzes_count; ?></strong> | Quizzes Total: <strong><?php echo $total_quizzes_count; ?></strong></h2>
+            <h2>You've completed <span><?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?></span> training videos</h2>
         <?php endif;
         } ?>
 
