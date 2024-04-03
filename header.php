@@ -291,11 +291,11 @@
       }
 
       .shield img {
-        width: 270px;
+        width: 220px;
       }
 
       .shield {
-        top: 65%;
+        top: 70%;
         left: 50%;
       }
 
