@@ -155,14 +155,7 @@
       display: none;
     }
 
-    #banner {
-      background: url('/wp-content/uploads/HomePageBanner.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: right;
-      height: 750px;
-    }
-
+  
     @media only screen and (max-width:1420px) {
       .top-btns {
         max-height: 6rem;
@@ -199,6 +192,13 @@
 
     }
     @media (min-width:1025px) {
+      #banner {
+      background: url('/wp-content/uploads/HomePageBanner.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: right;
+      height: 750px;
+    }
       .logoutUser{
         display: none;
       }
