@@ -307,7 +307,9 @@
         top: 70%;
         left: 50%;
       }
-
+      .bannerInfo{
+        text-align:center;
+      }
       #banner {
         background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
         background-repeat: no-repeat;
@@ -503,7 +505,7 @@
             $completed_quizzes_count = count_completed_quizzes($current_user_id);
             $total_quizzes_count = count_total_quizzes();
           ?>
-            <h2>You've completed <span><?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?></span> training videos</h2>
+            <h2>You've completed <span><?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?></span><br> training videos</h2>
         <?php endif;
         } ?>
 
