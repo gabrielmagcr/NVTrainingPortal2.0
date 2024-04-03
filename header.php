@@ -156,6 +156,7 @@
     }
 
   
+
     @media only screen and (max-width:1420px) {
       .top-btns {
         max-height: 6rem;
@@ -171,12 +172,7 @@
         width: 250px;
       }
 
-      #banner {
-        background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
+
 
     }
 
@@ -192,6 +188,9 @@
 
     }
     @media (min-width:1025px) {
+      .logoutUser{
+        display: none;
+      }
       #banner {
       background: url('/wp-content/uploads/HomePageBanner.png');
       background-repeat: no-repeat;
@@ -199,9 +198,6 @@
       background-position: right;
       height: 750px;
     }
-      .logoutUser{
-        display: none;
-      }
     }
     @media only screen and (max-width:1024px) {
       header .content .header-l {
@@ -300,6 +296,12 @@
       .shield {
         top: 70%;
         left: 50%;
+      }
+      #banner {
+        background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
 
     }
