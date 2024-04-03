@@ -165,9 +165,6 @@
         margin: 0px 0px;
       }
 
-      #banner{
-        background-position: center;
-      }
 
 
       .shield img {
@@ -197,7 +194,7 @@
       background: url('/wp-content/uploads/HomePageBanner.png');
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: right;
+      background-position: center;
       height: 750px;
     }
     }
