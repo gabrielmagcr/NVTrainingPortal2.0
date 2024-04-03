@@ -146,10 +146,10 @@
       position: absolute;
       z-index: 1;
       top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-}
-    
+      left: 20%;
+      transform: translate(-50%, -50%);
+    }
+
 
     .responsive-menu {
       display: none;
@@ -183,6 +183,12 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+      }
+      .bannerInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
     }
 
@@ -257,12 +263,12 @@
         color: #fff;
         margin: 20px 0px;
         display: block !important;
-        width: 100%;
         box-sizing: border-box;
         text-decoration: none;
       }
-      .createAccount-btns{
-        color: #FA9E33;
+
+      .createAccount-btns {
+        background-color: #FA9E33;
       }
 
       .close-btn {
@@ -283,10 +289,12 @@
         text-align: right;
         display: none;
       }
+
       .shield img {
         width: 270px;
       }
-      .shield{
+
+      .shield {
         top: 65%;
         left: 50%;
       }
@@ -457,12 +465,56 @@
     <section id="banner"></section>
     <div class="shield">
       <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
-      <a href="<?php echo wp_login_url(); ?>">
-	    <button class="top-btns">Login</button>
-      	</a>
-        <a href="<?php echo wp_registration_url(); ?>">
-          <button class="top-btns createAccount-btns">Create an account</button>
-      	</a>
+      <div class="bannerInfo">
+        <?php if (!is_user_logged_in()) { ?>
+          <a href="<?php echo wp_login_url(); ?>">
+            <button class="top-btns">Login</button>
+          </a>
+          <a href="<?php echo wp_registration_url(); ?>">
+            <button class="top-btns createAccount-btns">Create an account</button>
+          </a>
+        <?php } else { ?>
+          <?php
+          $current_user_id = get_current_user_id();
+          $user_info = get_userdata($current_user_id);
+          ?>
+          <h2 class="h2welcome">Welcome Back <?php echo $user_info->user_login; ?></h2>
+
+          <?php
+          if (current_user_can('manage_options')) {
+            $completed_quizzes_count = count_completed_quizzes($current_user_id);
+            $total_quizzes_count = count_total_quizzes();
+
+            echo "Completed: <strong>$completed_quizzes_count</strong> | Quizes Total: <strong>$total_quizzes_count</strong>";
+          }
+
+          function count_completed_quizzes($user_id)
+          {
+            $completed_quizzes_query = new WP_Query(array(
+              'post_type' => 'completed-quizzes',
+              'meta_query' => array(
+                array(
+                  'key' => 'user_id',
+                  'compare' => '=',
+                  'value' => $user_id
+                )
+              )
+            ));
+            return $completed_quizzes_query->found_posts;
+          }
+
+          function count_total_quizzes()
+          {
+            $total_quizzes_query = new WP_Query(array(
+              'posts_per_page' => 10,
+              'post_type' => 'quiz'
+            ));
+            return $total_quizzes_query->found_posts;
+          }
+          ?>
+
+        <?php } ?>
+      </div>
     </div>
   </div>
 
