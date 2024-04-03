@@ -202,7 +202,11 @@
 
 
     }
-
+    @media (min-width:1025px) {
+      .logoutUser{
+        display: none;
+      }
+    }
     @media only screen and (max-width:1024px) {
       header .content .header-l {
         visibility: initial;
@@ -288,7 +292,9 @@
         text-align: right;
         display: none;
       }
-
+      .logoutUser{
+        display: block;
+      }
       .shield img {
         width: 230px;
       }
@@ -466,12 +472,14 @@
       <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
       <div class="bannerInfo">
         <?php if (!is_user_logged_in()) { ?>
+          <div class="logoutUser">
           <a href="<?php echo wp_login_url(); ?>">
             <button class="top-btns">Login</button>
           </a>
           <a href="<?php echo wp_registration_url(); ?>">
             <button class="top-btns createAccount-btns">Create an account</button>
           </a>
+          </div>
         <?php } else { ?>
           <?php
           $current_user_id = get_current_user_id();
