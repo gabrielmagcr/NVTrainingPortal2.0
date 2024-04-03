@@ -261,6 +261,9 @@
         box-sizing: border-box;
         text-decoration: none;
       }
+      .createAccount-btns{
+        color: #FA9E33;
+      }
 
       .close-btn {
         color: #FFFFFF;
@@ -456,6 +459,9 @@
       <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
       <a href="<?php echo wp_login_url(); ?>">
 	    <button class="top-btns">Login</button>
+      	</a>
+        <a href="<?php echo wp_registration_url(); ?>">
+          <button class="top-btns createAccount-btns">Create an account</button>
       	</a>
     </div>
   </div>
