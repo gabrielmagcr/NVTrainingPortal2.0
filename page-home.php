@@ -17,7 +17,7 @@ get_header();
 		justify-content: center;
 		align-items: center;
 	}
-	.wattermark{
+	.bg-wattermark{
 		background: url('/wp-content/uploads/Paw-Watermark.svg');
 		background-position: center;
 		background-repeat: no-repeat;
