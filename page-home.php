@@ -191,10 +191,7 @@ get_header();
 
 	</div>
 </div>
-<div class="helpLinkButton">
-	<a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
-	</a>
-</div>
+
 <script>
 	//Script checks  the amount of completed training quizzes and displays the "recieve your gift card" button if amount equals to available quizzes
 	function checkIfTestsCompleted() {
@@ -218,37 +215,14 @@ get_header();
 	}
 	checkIfTestsCompleted()
 </script>
-<?php } else { ?>
-	<!-- If user is not Logged in Diplays the log portal -->
-	<div>
-		<h2 class="h2login" 2>WELCOME TO NATURVET TRAINING PORTAL</h2>
-	</div>
-	<div class="container pad-top">
-		<div class="row text-center pad-top">
-
-			<div class="col-sm">
-				<p class="login-text">Existing User</p>
-				<a href="<?php echo wp_login_url(); ?>">
-					<img class="selection-box" src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/Existing-Member-O.jpg">
-
-				</a>
-			</div>
-			<div class="col-sm">
-				<p class="login-text">New User</p>
-				<a href="<?php echo wp_registration_url(); ?>">
-					<img class="selection-box" src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/New-Member-O.jpg">
-
-				</a>
-			</div>
-		</div>
-	</div>
-	</div>
-	<?php if (!is_user_logged_in()) { ?>
-		<div class="bg-botton-logout"></div>
-	<?php } ?>
-	</div>
-	</div>
-	</div>
-<?php }
-				get_footer();
+<?php } ?>
+</div>
+<?php if (!is_user_logged_in()) { ?>
+	<div class="bg-botton-logout"></div>
+<?php } ?>
+</div>
+</div>
+</div>
+<?php
+get_footer();
 ?>
