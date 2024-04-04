@@ -107,7 +107,6 @@
 
     .footerLastSection {
         display: flex;
-        width: 100%;
         align-items: center;
         justify-content: center;
         margin: 25px;
