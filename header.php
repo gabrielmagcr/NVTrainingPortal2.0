@@ -310,6 +310,9 @@
       .bannerInfo{
         text-align:center;
       }
+      .bannerInfo h2{
+        margin: 0;
+      }
       #banner {
         background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
         background-repeat: no-repeat;

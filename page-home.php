@@ -4,12 +4,26 @@
 */
 get_header();
 ?>   
+<style>
+	.welcomeh2{
+		color: #4D7F70;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+	}
+	.mainConmtainer{
+		background: url('/wp-content/uploads/Paw-Watermark.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
+</style>
 <div>
-<div class="container pad-top">
+<div class="mainConmtainer">
 	<div class="row text-center">
 		<div class="col-sm user_title"><p>&nbsp;</p>
-			<h2 class="h2welcome">Welcome Back <?php $user_info = get_userdata($_SESSION["user_id"]);
-			                     echo $user_info->user_login;?></h2>
+			<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
 <?php
 if( is_user_logged_in() ) {
 	// session_start(); 
