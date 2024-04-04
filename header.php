@@ -302,6 +302,9 @@
         text-align: right;
         display: none;
       }
+      .logoutUserDesktop{
+        display: none;
+      }
 
       .logoutUser {
         display: flex;
