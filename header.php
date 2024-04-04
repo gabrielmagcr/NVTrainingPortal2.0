@@ -197,7 +197,9 @@
       .logoutUser {
         display: none;
       }
-
+      .logoutUserDesktop{
+        display: block;
+      }
       #banner {
         background: url('/wp-content/uploads/HomePageBanner.png');
         background-repeat: no-repeat;

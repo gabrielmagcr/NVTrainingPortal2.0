@@ -36,7 +36,7 @@ get_header();
 		background: url('/wp-content/uploads/Hills-Illustration.svg');
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 	    height: 10vh;
     width: 100vw;
     position: relative;
@@ -44,6 +44,7 @@ get_header();
     left: 0;
 
 	}
+	
 </style>
 <div>
 	<div class="mainContainer">
@@ -54,7 +55,7 @@ get_header();
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi, ex doloremque veniam dolore quidem natus. Recusandae magni ab maiores quis alias quasi eaque ex, libero iste? Nam, pariatur praesentium.</p>
 
 				<?php if (!is_user_logged_in()) { ?>
-					<div class="logoutUser">
+					<div class="logoutUser logoutUserDesktop">
 						<a href="<?php echo wp_login_url(); ?>">
 							<button class="top-btns">Login</button>
 						</a>
