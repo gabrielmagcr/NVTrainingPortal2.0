@@ -31,7 +31,8 @@ get_header();
 		margin-top: 40px;
 		position: absolute;
 	}
-	.bg-botton-logout{
+
+	.bg-botton-logout {
 		background: url('/wp-content/uploads/Hills-Illustration.svg');
 		background-position: center;
 		background-repeat: no-repeat;
@@ -39,7 +40,10 @@ get_header();
 		height: 20vh;
 		width: 100vw;
 		margin-top: 40px;
-		position: absolute;
+		position: relative;
+		bottom: 0;
+		left: 0;
+
 	}
 </style>
 <div>
@@ -60,7 +64,7 @@ get_header();
 						</a>
 					</div>
 				<?php } ?>
-				<div class="bg-botton-logout"></div>
+
 				<?php
 				if (is_user_logged_in()) {
 					// session_start(); 
@@ -224,11 +228,9 @@ get_header();
 		</div>
 	</div>
 	</div>
-	<div class="helpLinkButton">
-		<a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
-		</a>
-	</div>
-	<br><br><br>
+	<?php if (!is_user_logged_in()) { ?>
+		<div class="bg-botton-logout"></div>
+	<?php } ?>
 	</div>
 	</div>
 	</div>
