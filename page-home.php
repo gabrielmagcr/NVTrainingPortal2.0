@@ -37,7 +37,7 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 15vh;
+		height: 35vh;
 		width: 100vw;
 		position: relative;
 		bottom: 0;
@@ -57,7 +57,10 @@ get_header();
 
 	.textHome h2,
 	.textHome p {
-		width: 70%;
+		width: 80%;
+	}
+	@media (max-width: ) {
+		
 	}
 </style>
 <div>
