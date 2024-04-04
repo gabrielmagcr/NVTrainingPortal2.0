@@ -30,6 +30,8 @@ get_header();
 		width: 80vw;
 		margin-top: 40px;
 		position: absolute;
+		left: 50%;
+    	transform: translate(-50%, -50%);
 	}
 
 	.bg-botton-logout {
