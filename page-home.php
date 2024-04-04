@@ -11,18 +11,25 @@ get_header();
 		font-size: 36px;
 		text-align: center;
 	}
-	.mainConmtainer{
+	.mainContainer{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.wattermark{
 		background: url('/wp-content/uploads/Paw-Watermark.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		width: 100%;
+		height: 100vh;
 	}
 </style>
 <div>
-<div class="mainConmtainer">
+<div class="mainContainer">
+	<div class="bg-wattermark"></div>
 	<div class="row text-center">
-		<div class="col-sm user_title"><p>&nbsp;</p>
+		<div class="col-sm user_title">
 			<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
 <?php
 if( is_user_logged_in() ) {
