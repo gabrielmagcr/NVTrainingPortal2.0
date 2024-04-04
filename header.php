@@ -302,16 +302,16 @@
         text-align: right;
         display: none;
       }
-      .logoutUserDesktop{
-        display: none;
-      }
+    
 
       .logoutUser {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-
+      .logoutUserDesktop{
+        display: none;
+      }
       .shield img {
         width: 230px;
       }
