@@ -273,7 +273,9 @@
       .createAccount-btns {
         background-color: #FA9E33;
       }
-
+      .createAccount-btns-desktop{
+        background-color: #416D5E;
+      }
       .close-btn {
         color: #FFFFFF;
         display: flex;

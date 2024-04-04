@@ -18,15 +18,26 @@ get_header();
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin: 20px;
 	}
 
 	.bg-wattermark {
-		background: url(/wp-content/uploads/Paw-Watermark.svg);
+		background: url('/wp-content/uploads/Paw-Watermark.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 40vh;
 		width: 80vw;
+		margin-top: 40px;
+		position: absolute;
+	}
+	.bg-botton-logout{
+		background: url('/wp-content/uploads/Hills-Illustration.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 20vh;
+		width: 100vw;
 		margin-top: 40px;
 		position: absolute;
 	}
@@ -37,6 +48,19 @@ get_header();
 		<div class="row text-center">
 			<div class="col-sm user_title">
 				<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi, ex doloremque veniam dolore quidem natus. Recusandae magni ab maiores quis alias quasi eaque ex, libero iste? Nam, pariatur praesentium.</p>
+
+				<?php if (!is_user_logged_in()) { ?>
+					<div class="logoutUser">
+						<a href="<?php echo wp_login_url(); ?>">
+							<button class="top-btns">Login</button>
+						</a>
+						<a href="<?php echo wp_registration_url(); ?>">
+							<button class="top-btns createAccount-btns createAccount-btns-desktop">Create an account</button>
+						</a>
+					</div>
+				<?php } ?>
+				<div class="bg-botton-logout"></div>
 				<?php
 				if (is_user_logged_in()) {
 					// session_start(); 
