@@ -155,11 +155,12 @@
       display: none;
     }
 
-    .bannerInfo{
+    .bannerInfo {
       text-transform: uppercase;
-    color: #fff;
+      color: #fff;
     }
-    .bannerInfo span{
+
+    .bannerInfo span {
       color: #FAC33B;
     }
 
@@ -197,9 +198,16 @@
       .logoutUser {
         display: none;
       }
-      .logoutUserDesktop{
-        display: block;
+
+      .logoutUserDesktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin: 25px 0 40px;
       }
+
       #banner {
         background: url('/wp-content/uploads/HomePageBanner.png');
         background-repeat: no-repeat;
@@ -275,9 +283,7 @@
       .createAccount-btns {
         background-color: #FA9E33;
       }
-      .createAccount-btns-desktop{
-        background-color: #416D5E;
-      }
+
       .close-btn {
         color: #FFFFFF;
         display: flex;
@@ -311,12 +317,15 @@
         top: 70%;
         left: 50%;
       }
-      .bannerInfo{
-        text-align:center;
+
+      .bannerInfo {
+        text-align: center;
       }
-      .bannerInfo h2{
+
+      .bannerInfo h2 {
         margin: 0;
       }
+
       #banner {
         background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
         background-repeat: no-repeat;

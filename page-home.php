@@ -44,13 +44,18 @@ get_header();
     left: 0;
 
 	}
-	
+	.createAccount-btns-desktop{
+        background-color: #416D5E;
+      }
+	.textHome{
+		width: 70%;
+	}
 </style>
 <div>
 	<div class="mainContainer">
 		<div class="bg-wattermark"></div>
 		<div class="row text-center">
-			<div class="col-sm user_title">
+			<div class="col-sm user_title textHome">
 				<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
 				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi, ex doloremque veniam dolore quidem natus. Recusandae magni ab maiores quis alias quasi eaque ex, libero iste? Nam, pariatur praesentium.</p>
 
