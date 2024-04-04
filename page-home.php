@@ -9,7 +9,7 @@ get_header();
 	.welcomeh2 {
 		color: #4D7F70;
 		text-transform: uppercase;
-		font-size: 36px;
+		font-size: 32px;
 		text-align: center;
 	}
 
@@ -27,8 +27,8 @@ get_header();
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 40vh;
-		width: 80vw;
-		margin-top: 40px;
+	    width: 100vw;
+    margin-top: 120px;
 		position: absolute;
 		left: 50%;
     	transform: translate(-50%, -50%);
