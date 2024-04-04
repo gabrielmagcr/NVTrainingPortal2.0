@@ -37,7 +37,7 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 10vh;
+		height: 15vh;
 		width: 100vw;
 		position: relative;
 		bottom: 0;
