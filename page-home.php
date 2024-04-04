@@ -18,7 +18,7 @@ get_header();
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 20px;
+		margin: 20px 20px 0 20px;
 	}
 
 	.bg-wattermark {
@@ -37,12 +37,11 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 20vh;
-		width: 100vw;
-		margin-top: 40px;
-		position: relative;
-		bottom: 0;
-		left: 0;
+	    height: 10vh;
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    left: 0;
 
 	}
 </style>
