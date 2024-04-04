@@ -37,17 +37,26 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-	    height: 10vh;
-    width: 100vw;
-    position: relative;
-    bottom: 0;
-    left: 0;
+		height: 10vh;
+		width: 100vw;
+		position: relative;
+		bottom: 0;
+		left: 0;
 
 	}
-	.createAccount-btns-desktop{
-        background-color: #416D5E;
-      }
-	.textHome{
+
+	.createAccount-btns-desktop {
+		background-color: #416D5E;
+	}
+
+	.textHome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.textHome h2,
+	.textHome p {
 		width: 70%;
 	}
 </style>
@@ -57,8 +66,8 @@ get_header();
 		<div class="row text-center">
 			<div class="col-sm user_title ">
 				<div class="textHome">
-				<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi, ex doloremque veniam dolore quidem natus. Recusandae magni ab maiores quis alias quasi eaque ex, libero iste? Nam, pariatur praesentium.</p>
+					<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi, ex doloremque veniam dolore quidem natus. Recusandae magni ab maiores quis alias quasi eaque ex, libero iste? Nam, pariatur praesentium.</p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
 					<div class="logoutUser logoutUserDesktop">
