@@ -26,12 +26,15 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 40vh;
-	    width: 100vw;
-    margin-top: 120px;
+		height: 100vh;
+		width: 95vw;
+		overflow: hidden;
+		margin-top: 120px;
 		position: absolute;
 		left: 50%;
-    	transform: translate(-50%, -50%);
+		z-index: 23;
+		top: 100%;
+		transform: translate(-50%, -10%);
 	}
 
 	.bg-botton-logout {
@@ -60,9 +63,6 @@ get_header();
 	.textHome h2,
 	.textHome p {
 		width: 80%;
-	}
-	@media (max-width: ) {
-		
 	}
 </style>
 <div>
