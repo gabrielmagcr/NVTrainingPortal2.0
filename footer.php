@@ -338,11 +338,11 @@
         </div>
         <div class="footerMenus">
             <div class="footerMenu">
-                <span>Recources</span>
+                <span>Resources</span>
                 <?php if ($footerResources) {
                     foreach ($footerResources as $footerResource) {
                         // Create <li> for each menu element
-                        echo '<li class="responsiveList"><a href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
+                        echo '<li class="responsiveList"><a target="_blank" href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
                     }
                 }
                 ?>
@@ -352,7 +352,7 @@
                 <?php if ($footerCompanys) {
                     foreach ($footerCompanys as $footerCompany) {
                         // Create <li> for each menu element
-                        echo '<li class="responsiveList"><a href="' . $footerCompany->url . '">' . $footerCompany->title . '</a></li>';
+                        echo '<li class="responsiveList"><a target="_blank" href="' . $footerCompany->url . '">' . $footerCompany->title . '</a></li>';
                     }
                 }
                 ?>
@@ -361,7 +361,7 @@
         <div class="footerLastSection">
             <div class="footerLastSectionLeftSide">
                 <div class="leftSection">
-                    <a href="https://naturvet.com/">
+                    <a href="https://naturvet.com/" target="_blank">
                         <svg id="Group_344" class="footer-logo" data-name="Group 344" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276.813" height="149.366" viewBox="0 0 276.813 149.366">
                             <g id="Group_343" data-name="Group 343">
                                 <path id="Path_10633" data-name="Path 10633" d="M123.676,33.514c-4.211-.112-5.767,1.491-9.53,1.326-4.152-.181-6.833-4.943-3.977-8.4C111.261,25.126,113.391,24,115,22.2c1.287-1.447,1.652-3.4,3.09-4.522a9.463,9.463,0,0,1,5.591-1.936,9.3,9.3,0,0,1,5.562,1.936c1.462,1.12,1.813,3.075,3.1,4.522,1.608,1.8,3.748,2.926,4.839,4.242,2.847,3.456.161,8.218-3.967,8.4-3.778.165-5.319-1.438-9.535-1.326" transform="translate(22.303 3.221)" fill="#fff"></path>
@@ -396,7 +396,7 @@
                 $url = $data['url'];
                 $name = $data['name'];
             ?>
-                <a href="<?php echo $url; ?>">
+                <a target="_blank" href="<?php echo $url; ?>">
                     <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
             <?php endforeach; ?>
         </div>
