@@ -108,8 +108,9 @@
     .footerLastSection {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         margin: 25px;
+        gap: 40px;
     }
 
     .footerLastSectionLeftSide {
