@@ -194,7 +194,7 @@
 
     }
 
-    @media (min-width:1025px) {
+    @media (min-width:1024px) {
       .logoutUser {
         display: none;
       }
@@ -217,7 +217,7 @@
       }
     }
 
-    @media only screen and (max-width:1024px) {
+    @media only screen and (max-width:1023px) {
       header .content .header-l {
         visibility: initial;
       }
