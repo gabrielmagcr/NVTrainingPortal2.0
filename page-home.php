@@ -33,7 +33,7 @@ get_header();
 		position: absolute;
 		left: 50%;
 		z-index: 23;
-		top: 100%;
+		top: 70%;
 		transform: translate(-50%, -10%);
 	}
 
