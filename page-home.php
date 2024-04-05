@@ -18,7 +18,7 @@ get_header();
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 20px 0px;
+		margin-top: 20px;
 	}
 
 	.bg-wattermark {
