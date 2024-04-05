@@ -68,7 +68,7 @@ get_header();
 <div>
 	<div class="mainContainer">
 		<div class="bg-wattermark"></div>
-		<div class="row text-center">
+		<div class="text-center">
 			<div class="col-sm user_title ">
 				<div class="textHome">
 					<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
