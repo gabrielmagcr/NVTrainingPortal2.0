@@ -29,12 +29,11 @@ get_header();
 		height: 100dvh;
 		width: 95dvw;
 		overflow: hidden;
-		margin-top: 120px;
 		position: absolute;
 		left: 50%;
 		z-index: 23;
 		top: 100%;
-		transform: translate(-50%, -10%);
+		transform: translate(-50%, -45%);
 	}
 
 	.bg-botton-logout {
