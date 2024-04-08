@@ -22,8 +22,7 @@
     }
 
     .footerLogos img {
-        width: 135px;
-        height: 75px;
+        height: 85px;
     }
 
     .footerStructure {
