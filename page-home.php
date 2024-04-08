@@ -65,9 +65,11 @@ get_header();
 		width: 80%;
 	}
 	.textHome p {
-		font-family: "Montserrat", sans-serif;
+		font-family: "Montserrat";
 		font-weight: 500;
 		width: 50%;
+		font-size: 18px;
+    	line-height: 28px;
 	}
 </style>
 <div>
