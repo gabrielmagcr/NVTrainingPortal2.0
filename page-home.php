@@ -82,11 +82,11 @@ get_header();
     		font-size: 16px;
 		}
 		.mainContainer{
-			height: 95dvh;
+			height: 75dvh;
 		}
 		.bg-wattermark{
 			width: 130dvw;
-			top: 45%;
+			top: 50%;
 		}
 		.bg-botton-logout{
 			position: relative;
