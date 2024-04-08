@@ -19,6 +19,7 @@ get_header();
 		justify-content: center;
 		align-items: center;
 		margin-top: 20px;
+		position: relative;
 	}
 
 	.bg-wattermark {
@@ -222,10 +223,10 @@ get_header();
 <?php } ?>
 </div>
 </div>
-</div>
 <?php if (!is_user_logged_in()) { ?>
 	<div class="bg-botton-logout"></div>
 <?php } ?>
+</div>
 </div>
 <?php
 get_footer();
