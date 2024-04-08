@@ -27,14 +27,15 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 100dvh;
-		width: 95dvw;
-		overflow: hidden;
-		position: absolute;
-		left: 50%;
-		z-index: 23;
-		top: 100%;
-		transform: translate(-50%, -45%);
+	    height: 130dvh;
+    width: 100dvw;
+    
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    z-index: 23;
+    top: 105%;
+    transform: translate(-50%, -50%);
 	}
 
 	.bg-botton-logout {
@@ -223,10 +224,10 @@ get_header();
 <?php } ?>
 </div>
 </div>
+</div>
 <?php if (!is_user_logged_in()) { ?>
 	<div class="bg-botton-logout"></div>
 <?php } ?>
-</div>
 </div>
 <?php
 get_footer();
