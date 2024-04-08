@@ -63,13 +63,14 @@ get_header();
 
 	.textHome h2 {
 		width: 80%;
+		font-size: 36px;
 	}
 
 	.textHome p {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
 		width: 50%;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 28px;
 		margin: 35px 0;
 	}
@@ -80,6 +81,13 @@ get_header();
 			width: 100dvw;
 
 		}
+		.textHome h2{
+			font-size: 72px;
+		}
+		.textHome p{
+			font-size: 18px;
+		}
+		
 	}
 </style>
 <div>
