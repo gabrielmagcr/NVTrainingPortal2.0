@@ -32,6 +32,8 @@
   <meta http-equiv="Expires" content="-1">
   <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
   <style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    
     div,
     section,
     img,
