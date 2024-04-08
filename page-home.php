@@ -84,10 +84,19 @@ get_header();
 		.textHome h2{
 			font-size: 72px;
 		}
+		
+		
+	}
+	@media (min-width:767px) {
+		.textHome h2{
+			font-size: 48px;
+		}
 		.textHome p{
 			font-size: 18px;
 		}
-		
+		.mainContainer{
+			height: 75dvh;
+		}
 	}
 </style>
 <div>
