@@ -16,7 +16,7 @@
         justify-content: space-evenly;
         gap: 40px;
         background-color: #26948c;
-        padding: 40px 0;
+        padding: 40px 20px;
         align-items: center;
 
     }
