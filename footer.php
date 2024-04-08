@@ -162,6 +162,10 @@
             font-size: 17px;
             width: 90%;
         }
+        .responsiveList a {
+            color: #ffffff;
+
+        }
 
     }
 
