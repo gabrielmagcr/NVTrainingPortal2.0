@@ -167,7 +167,11 @@
         .newsLetter {
             order: 4;
             width: 50%;
-            margin-top: 55px;
+            margin-top: 35px;
+        }
+
+        .newsLetter span {
+            font-size: 2em;
         }
 
         .footerMenus {
@@ -228,7 +232,9 @@
             width: 300px;
             margin-bottom: 0;
         }
-        #resource_1, #company_1{
+
+        #resource_1,
+        #company_1 {
             margin-top: 25px;
         }
     }
