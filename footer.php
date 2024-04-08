@@ -228,7 +228,9 @@
             width: 300px;
             margin-bottom: 0;
         }
-       
+        #resource_1, #company_1{
+            margin-top: 25px;
+        }
     }
 </style>
 <footer>
@@ -331,20 +333,24 @@
         <div class="footerMenus">
             <div class="footerMenu">
                 <span>Resources</span>
-                <?php if ($footerResources) {
+                <?php
+                $resourceCount = 1;
+                if ($footerResources) {
                     foreach ($footerResources as $footerResource) {
-                        // Create <li> for each menu element
-                        echo '<li class="responsiveList"><a target="_blank" href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
+                        echo '<li id="resource_' . $resourceCount . '" class="responsiveList"><a target="_blank" href="' . $footerResource->url . '">' . $footerResource->title . '</a></li>';
+                        $resourceCount++;
                     }
                 }
                 ?>
             </div>
             <div class="footerMenu">
                 <span>Company</span>
-                <?php if ($footerCompanys) {
+                <?php
+                $companyCount = 1;
+                if ($footerCompanys) {
                     foreach ($footerCompanys as $footerCompany) {
-                        // Create <li> for each menu element
-                        echo '<li class="responsiveList"><a target="_blank" href="' . $footerCompany->url . '">' . $footerCompany->title . '</a></li>';
+                        echo '<li id="company_' . $companyCount . '" class="responsiveList"><a target="_blank" href="' . $footerCompany->url . '">' . $footerCompany->title . '</a></li>';
+                        $companyCount++;
                     }
                 }
                 ?>
