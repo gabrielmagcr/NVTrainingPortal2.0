@@ -228,9 +228,7 @@
             width: 300px;
             margin-bottom: 0;
         }
-        .footerMenu:first-child .responsiveList {
-    margin-top: 25px;
-}
+       
     }
 </style>
 <footer>
