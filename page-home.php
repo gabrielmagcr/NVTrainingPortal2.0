@@ -42,7 +42,7 @@ get_header();
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 35dvh;
-		width: 100dvw;
+		width: 100%;
 		position: relative;
 		bottom: 0;
 		left: 0;
