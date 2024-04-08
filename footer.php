@@ -55,7 +55,7 @@
         border-radius: 5rem;
         color: #d1d1d1;
         font-size: 1rem;
-        margin: 20px 0;
+        margin: 25px 0;
         padding-left: 15px;
         width: 100%;
         min-height: 3.6rem;
@@ -82,6 +82,7 @@
     .newsLetterFormClass button {
         max-width: 110px;
         padding: 1rem 2rem;
+        margin: 25px 0px;
     }
 
     .footerMenus {
@@ -94,13 +95,17 @@
         flex-direction: column;
         flex-wrap: wrap;
         font-size: 14px;
+        width: 50%;
+        margin: 0px 30px;
     }
 
     .footerMenu span {
         color: #fff;
         font-weight: bold;
     }
-
+    .responsiveList li{
+        padding: 3px 0;
+    }
     .footerLastSection {
         display: flex;
         align-items: center;
@@ -131,7 +136,7 @@
         width: 175px;
         margin-bottom: -25px;
     }
-
+    	
     #swedencare {
         color: #fac33b;
     }
