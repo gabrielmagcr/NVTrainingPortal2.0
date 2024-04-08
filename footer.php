@@ -95,10 +95,6 @@
         font-size: 14px;
     }
 
-    .footerMenu:first-child {
-        margin-left: 25px;
-    }
-
     .footerMenu span {
         color: #fff;
         font-weight: bold;
@@ -233,8 +229,8 @@
             margin-bottom: 0;
         }
         .footerMenu .responsiveList:first-child {
-    margin-top: 25px;
-}
+          margin-top: 25px !important;
+            } 
     }
 </style>
 <footer>
