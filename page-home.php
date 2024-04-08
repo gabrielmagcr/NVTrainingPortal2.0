@@ -91,7 +91,7 @@ get_header();
 		.bg-wattermark {
 			height: 125dvh;
 			width: 100dvw;
-
+			top: 65%;
 		}
 		.textHome h2{
 			font-size: 72px;
