@@ -96,6 +96,9 @@ get_header();
 		.textHome h2{
 			font-size: 72px;
 		}
+		.textHome p {
+			width: 60%;
+		}
 		.mainContainer {
     height: 100dvh;
 }
