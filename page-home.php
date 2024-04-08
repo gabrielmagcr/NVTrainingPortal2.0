@@ -19,7 +19,6 @@ get_header();
 		justify-content: center;
 		align-items: center;
 		margin-top: 20px;
-		position: relative;
 	}
 
 	.bg-wattermark {
@@ -27,15 +26,14 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-	    height: 130dvh;
-    width: 100dvw;
-    
-    position: absolute;
-    overflow: hidden;
-    left: 50%;
-    z-index: 23;
-    top: 105%;
-    transform: translate(-50%, -50%);
+		height: 100dvh;
+		width: 95dvw;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		z-index: 23;
+		top: 100%;
+		transform: translate(-50%, -45%);
 	}
 
 	.bg-botton-logout {
@@ -223,10 +221,10 @@ get_header();
 </script>
 <?php } ?>
 </div>
-</div>
 <?php if (!is_user_logged_in()) { ?>
 	<div class="bg-botton-logout"></div>
 <?php } ?>
+</div>
 </div>
 </div>
 <?php
