@@ -29,6 +29,7 @@
         background-color: #2c667e;
         display: flex;
         flex-direction: column;
+        padding: 10px;
     }
 
     .newsLetter {
@@ -87,7 +88,6 @@
 
     .footerMenus {
         display: flex;
-        width: 90%;
         justify-content: space-evenly;
     }
 
@@ -129,7 +129,7 @@
     }
 
     .footerLastSectionRightSide img {
-        width: 100px;
+        width: 60px;
     }
 
     .footer-logo {
@@ -244,6 +244,9 @@
         #company_1 {
             margin-top: 25px;
         }
+        .footerLastSectionRightSide img {
+        width: 100px;
+    }
     }
 </style>
 <footer>
