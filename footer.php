@@ -165,7 +165,7 @@
 
     }
 
-    @media (min-width:1024px) {
+    @media (min-width:1400px) {
         .footerStructure {
             flex-direction: row;
             padding-top: 25px;
