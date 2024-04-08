@@ -165,6 +165,7 @@
     @media (min-width:1024px) {
         .footerStructure {
             flex-direction: row;
+            padding-top: 25px;
         }
 
         .newsLetter {
@@ -179,7 +180,7 @@
 
         .footerLastSection {
             order: 0;
-            gap: 15px;
+            gap: 45px;
             width: 50%;
             flex-direction: column;
         }
@@ -201,10 +202,6 @@
 
         .footerLastSectionLeftSide span {
             font-size: 10px;
-        }
-
-        .footerLastSectionRightSide {
-            width: auto;
         }
 
         .footerMenus {
