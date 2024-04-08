@@ -9,17 +9,17 @@ get_header();
 	.welcomeh2 {
 		color: #4D7F70;
 		text-transform: uppercase;
-		font-size: 32px;
+		font-size: 72px;
 		text-align: center;
 	}
 
 	.mainContainer {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-top: 20px;
-		height: 100dvh;
-		position: relative;
+	    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
 	}
 
 	.bg-wattermark {
@@ -27,14 +27,14 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 100dvh;
-    width: 95dvw;
+	    height: 125dvh;
+    width: 100dvw;
     overflow: hidden;
     position: absolute;
     left: 50%;
     z-index: 23;
-    top: 50%;
-    transform: translate(-50%, -45%);
+    top: 65%;
+    transform: translate(-50%, -50%);
 	}
 
 	.bg-botton-logout {
@@ -58,6 +58,7 @@ get_header();
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-top: 35px;
 	}
 
 	.textHome h2,
@@ -72,7 +73,7 @@ get_header();
 			<div class="col-sm user_title ">
 				<div class="textHome">
 					<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quasi, ex doloremque veniam dolore quidem natus. Recusandae magni ab maiores quis alias quasi eaque ex, libero iste? Nam, pariatur praesentium.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
 					<div class="logoutUser logoutUserDesktop">
