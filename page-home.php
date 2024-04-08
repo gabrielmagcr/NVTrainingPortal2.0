@@ -72,7 +72,7 @@ get_header();
     	line-height: 28px;
 		margin: 35px 0;
 	}
-	@media (max-width:780px) {
+	@media (max-width:600px) {
 		.textHome h2{
 			font-size: 36px;
 			width: 90%;
@@ -92,6 +92,15 @@ get_header();
 			position: relative;
 		}
 	}
+	@media (max-width:1023px) {
+		.textHome h2 {
+    font-size: 42px;
+
+	}
+	.textHome p{
+		font-size: 17px;
+	}
+}
 </style>
 <div>
 	<div class="mainContainer">
