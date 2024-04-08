@@ -40,14 +40,6 @@
       transition: all 0.4s ease;
     }
 
-    .sticky {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-    }
-
     .content {
       margin: 0 auto;
       font-family: 'Brandon Grotesque';
