@@ -103,7 +103,7 @@
         color: #fff;
         font-weight: bold;
     }
-    .responsiveList li{
+    .responsiveList{
         padding: 3px 0;
     }
     .footerLastSection {
