@@ -63,7 +63,7 @@
     }
 
     .newsLetterFormClass label::placeholder {
-        color: #d1d1d1;
+        color: #cdcdcd;
         transition: font-size 0.3s ease, transform 0.3s ease, margin-top 0.3s ease;
     }
 
@@ -154,6 +154,7 @@
 
         .responsiveList {
             font-size: 17px;
+            width: 90%;
         }
 
     }
