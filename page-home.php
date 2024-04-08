@@ -61,9 +61,13 @@ get_header();
 		margin-top: 35px;
 	}
 
-	.textHome h2,
-	.textHome p {
+	.textHome h2{
 		width: 80%;
+	}
+	.textHome p {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		width: 60%;
 	}
 </style>
 <div>
