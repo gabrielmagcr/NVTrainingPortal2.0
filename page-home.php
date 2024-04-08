@@ -67,7 +67,7 @@ get_header();
 	.textHome p {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
-		width: 60%;
+		width: 50%;
 	}
 </style>
 <div>
