@@ -75,6 +75,7 @@ get_header();
 	@media (max-width:480px) {
 		.textHome h2{
 			font-size: 36px;
+			width: 90%;
 		}
 		.textHome p{
 			width: 85%;
@@ -86,6 +87,9 @@ get_header();
 		.bg-wattermark{
 			width: 130dvw;
 			top: 45%;
+		}
+		.bg-botton-logout{
+			position: relative;
 		}
 	}
 </style>
