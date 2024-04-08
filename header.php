@@ -94,7 +94,7 @@
     }
 
     header .content .header-c {
-      width: 50%;
+      width: 40%;
       text-align: center;
     }
 

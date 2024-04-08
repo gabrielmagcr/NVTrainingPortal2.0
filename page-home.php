@@ -113,6 +113,11 @@ get_header();
 			height: 80dvh;
 		}
 	}
+	@media (min-width:1024px) {
+		.textHome p {
+			width: 70%;
+		}
+	}
 </style>
 <div>
 	<div class="mainContainer">
