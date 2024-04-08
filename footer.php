@@ -81,6 +81,7 @@
 
     .newsLetterFormClass button {
         max-width: 110px;
+        padding: 1rem 2rem;
     }
 
     .footerMenus {
