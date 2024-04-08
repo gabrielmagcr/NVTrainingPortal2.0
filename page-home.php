@@ -75,18 +75,7 @@ get_header();
 		margin: 35px 0;
 	}
 
-	@media (min-width:1023px) {
-		.bg-wattermark {
-			height: 125dvh;
-			width: 100dvw;
 
-		}
-		.textHome h2{
-			font-size: 72px;
-		}
-		
-		
-	}
 	@media (min-width:767px) {
 		.textHome h2{
 			font-size: 48px;
@@ -97,6 +86,20 @@ get_header();
 		.mainContainer{
 			height: 75dvh;
 		}
+	}
+	@media (min-width:1023px) {
+		.bg-wattermark {
+			height: 125dvh;
+			width: 100dvw;
+
+		}
+		.textHome h2{
+			font-size: 72px;
+		}
+		.mainContainer {
+    height: 85dvh;
+}
+		
 	}
 </style>
 <div>
