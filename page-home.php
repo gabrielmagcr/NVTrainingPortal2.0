@@ -97,7 +97,7 @@ get_header();
 			font-size: 72px;
 		}
 		.mainContainer {
-    height: 85dvh;
+    height: 100dvh;
 }
 		
 	}
