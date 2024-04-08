@@ -65,11 +65,28 @@ get_header();
 		width: 80%;
 	}
 	.textHome p {
-		font-family: "Montserrat";
+		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
 		width: 50%;
 		font-size: 18px;
     	line-height: 28px;
+		margin: 35px 0;
+	}
+	@media (max-width:480px) {
+		.textHome h2{
+			font-size: 36px;
+		}
+		.textHome p{
+			width: 85%;
+    		font-size: 16px;
+		}
+		.mainContainer{
+			height: 95dvh;
+		}
+		.bg-wattermark{
+			width: 130dvw;
+			top: 45%;
+		}
 	}
 </style>
 <div>
