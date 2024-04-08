@@ -72,7 +72,7 @@ get_header();
     	line-height: 28px;
 		margin: 35px 0;
 	}
-	@media (max-width:480px) {
+	@media (max-width:780px) {
 		.textHome h2{
 			font-size: 36px;
 			width: 90%;
