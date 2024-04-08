@@ -16,9 +16,10 @@ get_header();
 	.mainContainer {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		margin-top: 20px;
+		height: 100dvh;
+		position: relative;
 	}
 
 	.bg-wattermark {
@@ -27,13 +28,13 @@ get_header();
 		background-repeat: no-repeat;
 		background-size: contain;
 		height: 100dvh;
-		width: 95dvw;
-		overflow: hidden;
-		position: absolute;
-		left: 50%;
-		z-index: 23;
-		top: 100%;
-		transform: translate(-50%, -45%);
+    width: 95dvw;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    z-index: 23;
+    top: 50%;
+    transform: translate(-50%, -45%);
 	}
 
 	.bg-botton-logout {
@@ -41,9 +42,9 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 35dvh;
+		height: 40dvh;
 		width: 100%;
-		position: relative;
+		position: relaabsolutetive;
 		bottom: 0;
 		left: 0;
 
