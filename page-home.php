@@ -14,12 +14,12 @@ get_header();
 	}
 
 	.mainContainer {
-	    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100dvh;
-    position: relative;
-    overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100dvh;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.bg-wattermark {
@@ -27,14 +27,14 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
-	    height: 125dvh;
-    width: 100dvw;
-    overflow: hidden;
-    position: absolute;
-    left: 50%;
-    z-index: 23;
-    top: 65%;
-    transform: translate(-50%, -50%);
+		height: 125dvh;
+		width: 100dvw;
+		overflow: hidden;
+		position: absolute;
+		left: 50%;
+		z-index: 23;
+		top: 65%;
+		transform: translate(-50%, -50%);
 	}
 
 	.bg-botton-logout {
@@ -61,46 +61,58 @@ get_header();
 		margin-top: 35px;
 	}
 
-	.textHome h2{
+	.textHome h2 {
 		width: 80%;
 	}
+
 	.textHome p {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
 		width: 50%;
 		font-size: 18px;
-    	line-height: 28px;
+		line-height: 28px;
 		margin: 35px 0;
 	}
+
 	@media (max-width:600px) {
-		.textHome h2{
+		.textHome h2 {
 			font-size: 36px;
 			width: 90%;
 		}
-		.textHome p{
+
+		.textHome p {
 			width: 85%;
-    		font-size: 16px;
+			font-size: 16px;
 		}
-		.mainContainer{
+
+		.mainContainer {
 			height: 75dvh;
 		}
-		.bg-wattermark{
+
+		.bg-wattermark {
 			width: 130dvw;
 			top: 50%;
 		}
-		.bg-botton-logout{
+
+		.bg-botton-logout {
 			position: relative;
 		}
 	}
+
 	@media (max-width:1023px) {
 		.textHome h2 {
-    font-size: 42px;
+			font-size: 42px;
 
+		}
+
+		.textHome p {
+			font-size: 17px;
+			width: 65%;
+		}
+		.mainContainer{
+			height: 80dvh;
+		}
 	}
-	.textHome p{
-		font-size: 17px;
-	}
-}
 </style>
 <div>
 	<div class="mainContainer">
