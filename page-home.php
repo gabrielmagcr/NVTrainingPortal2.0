@@ -44,7 +44,7 @@ get_header();
 		background-size: cover;
 		height: 40dvh;
 		width: 100%;
-		position: relaabsolutetive;
+		position: absolute;
 		bottom: 0;
 		left: 0;
 
