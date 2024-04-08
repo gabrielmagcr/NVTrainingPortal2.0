@@ -85,9 +85,6 @@ get_header();
 			width: 130dvw;
 			top: 50%;
 		}
-		.bg-botton-logout{
-			position: relative;
-		}
 	}
 	@media (max-width:1023px) {
 		.textHome h2 {
