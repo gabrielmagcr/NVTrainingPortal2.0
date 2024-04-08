@@ -81,9 +81,6 @@ get_header();
 			width: 85%;
     		font-size: 16px;
 		}
-		.mainContainer{
-			height: 75dvh;
-		}
 		.bg-wattermark{
 			width: 130dvw;
 			top: 50%;
