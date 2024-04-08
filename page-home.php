@@ -27,13 +27,13 @@ get_header();
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
+		height: 125dvh;
 		width: 130dvw;
-		top: 50%;
 		overflow: hidden;
 		position: absolute;
 		left: 50%;
 		z-index: 23;
-		top: 65%;
+		top: 45%;
 		transform: translate(-50%, -50%);
 	}
 
@@ -69,7 +69,7 @@ get_header();
 	.textHome p {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
-		width: 50%;
+		width: 75%;
 		font-size: 16px;
 		line-height: 28px;
 		margin: 35px 0;
