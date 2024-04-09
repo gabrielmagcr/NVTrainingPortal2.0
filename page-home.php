@@ -122,16 +122,16 @@ get_header();
 		}
 		.bg-wattermark{
 			top: 425px;
-}
+			}
 		}
 
-	}
+	
 
 	@media (min-width:1023px) {
 		.bg-wattermark {
 			height: 125dvh;
 			width: 100dvw;
-
+			top: 550px;
 		}
 
 		.welcomeTitle {
