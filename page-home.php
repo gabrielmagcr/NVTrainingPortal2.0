@@ -92,6 +92,7 @@ get_header();
 		width: 80%;
 	}
 	.mainVideoText h3 {
+		font-family: "Brandon Grotesque",sans-serif;
 		color: #E26743;
 		font-size: 30px;
 		font-weight: 450;
