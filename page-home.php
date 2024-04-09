@@ -79,7 +79,9 @@ get_header();
 		display: flex;
 		justify-content: center;
 	}
-
+	.productText{
+		text-align: center;
+	}
 	.quizContainer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -176,8 +178,8 @@ get_header();
 					<?php get_template_part('productLine'); ?>
 
 					<div class="productCategoriesContainer">
-						<div class="mainVideoText">
-							<h2 class="welcomeTitle productText">Product Categories</h2>
+						<div class="mainVideoText productText">
+							<h2 class="welcomeTitle ">Product Categories</h2>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
