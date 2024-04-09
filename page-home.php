@@ -75,43 +75,8 @@ get_header();
 		margin: 35px 0;
 	}
 
-	.mainVideo {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+	
 
-	.mainVideoImg {
-		margin-top: 15px;
-
-	}
-
-	.mainVideoImg img {
-		width: 330px;
-
-	}
-
-	.mainVideoText {
-		text-align: left;
-		width: 80%;
-		margin: 25px 0;
-	}
-
-	.mainVideoText h3 {
-		font-family: "Brandon Grotesque", sans-serif;
-		color: #E26743;
-		font-size: 30px;
-		font-weight: bold;
-	}
-
-	.mainVideoText p {
-		font-family: "Montserrat", sans-serif;
-		font-weight: 600;
-	}
-
-	.lineBreak img {
-		width: 29px;
-	}
 
 	@media (min-width:767px) {
 		.welcomeTitle {
@@ -187,58 +152,12 @@ get_header();
 					$_SESSION["user_id"] = get_current_user_id();
 
 				?>
-					<div class="mainVideosContainer">
-						<div class="mainVideo">
-							<div class="mainVideoImg">
-								<img src="/wp-content/uploads/Placeholder-image.png">
-							</div>
-							<div class="mainVideoText">
-								<h3>Our Brand - Naturevet Brand Video</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-						<div class="mainVideo">
-							<div class="mainVideoImg">
-								<img src="/wp-content/uploads/Placeholder-image-1.png">
-							</div>
-							<div class="mainVideoText">
-								<h3>Manufacturing Quality Video</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-					</div>
-					<div class="lineBreak"><img src=/wp-content/uploads/Line-Break.svg" alt="lineBreak"></div>
+					
+					<?php get_template_part('mainVideos'); ?>
 
-					<div class="productLineContainer">
-						<h2 class="welcomeTitle">Product lines</h2>
-						<div class="mainVideo">
-							<div class="mainVideoImg">
-								<img src="/wp-content/uploads/Placeholder-image-2.png">
-							</div>
-							<div class="mainVideoText">
-								<h3>Scoopables - Intro</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-						<div class="mainVideo">
-							<div class="mainVideoImg">
-								<img src="/wp-content/uploads/Placeholder-image-3.png">
-							</div>
-							<div class="mainVideoText">
-								<h3>Evolutions - Intro</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-						<div class="mainVideo">
-							<div class="mainVideoImg">
-								<img src="/wp-content/uploads/Placeholder-image-4.png">
-							</div>
-							<div class="mainVideoText">
-								<h3>Breed Specific - Intro</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							</div>
-						</div>
-					</div>
+					<?php get_template_part('lineBreak'); ?>
+
+					<?php get_template_part('productLine'); ?>
 					<?php
 					$modalCompletedAllQuizzes = false;
 					$modalQuizzesCompleted = new WP_Query(array(
