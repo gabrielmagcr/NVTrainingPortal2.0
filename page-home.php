@@ -90,16 +90,17 @@ get_header();
 	.mainVideoText {
 		text-align: left;
 		width: 80%;
+		margin: 25px 0;
 	}
 	.mainVideoText h3 {
 		font-family: "Brandon Grotesque",sans-serif;
 		color: #E26743;
 		font-size: 30px;
-		font-weight: 450;
+		font-weight: bold;
 	}
 	.mainVideoText p{
 		font-family: "Montserrat", sans-serif;
-
+		font-weight: 600;
 	}
 
 	@media (min-width:767px) {
@@ -177,7 +178,7 @@ get_header();
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
 						</div>
-						<div>
+						<div class="mainVideo">
 							<div class="mainVideoImg">
 								<img src="/wp-content/uploads/Placeholder-image-1.png">
 							</div>
