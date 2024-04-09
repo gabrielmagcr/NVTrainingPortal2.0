@@ -73,7 +73,10 @@ get_header();
 		line-height: 28px;
 		margin: 35px 0;
 	}
-
+	.mainVideo{
+		display: flex;
+		flex-direction: column;
+	}
 
 	@media (min-width:767px) {
 		.textHome h2 {
@@ -129,6 +132,22 @@ get_header();
 					$_SESSION["user_id"] = get_current_user_id();
 
 				?>
+					<div class="mainVideosContainer">
+						<div class="mainVideo">
+							<div><img src="/wp-content/uploads/Placeholder-image.png"></div>
+							<div>
+								<h3>Our Brand - Naturevet Brand Video</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div>
+							<div><img src="/wp-content/uploads/Placeholder-image-1.png"></div>
+							<div>
+								<h3>Manufacturing Quality Video</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
 					<?php
 					$modalCompletedAllQuizzes = false;
 					$modalQuizzesCompleted = new WP_Query(array(
