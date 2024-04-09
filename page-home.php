@@ -9,7 +9,7 @@ get_header();
 	.welcomeTitle {
 		color: #4D7F70;
 		text-transform: uppercase;
-		font-size: 72px;
+		font-size: 36px;
 		text-align: center;
 	}
 
@@ -64,7 +64,7 @@ get_header();
 
 	.textHome h2 {
 		width: 80%;
-		font-size: 36px;
+		
 	}
 
 	.textHome p {
@@ -115,7 +115,7 @@ get_header();
 	}
 
 	@media (min-width:767px) {
-		.textHome h2 {
+		.welcomeTitle  {
 			font-size: 48px;
 		}
 
@@ -132,7 +132,7 @@ get_header();
 
 		}
 
-		.textHome h2 {
+		.welcomeTitle {
 			font-size: 72px;
 		}
 
