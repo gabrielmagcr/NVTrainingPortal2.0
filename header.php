@@ -201,6 +201,7 @@
         flex-direction: column;
         gap: 15px;
         margin: 25px 0 40px;
+        cursor: pointer;
       }
 
       #banner {
