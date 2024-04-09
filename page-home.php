@@ -82,7 +82,7 @@ get_header();
 		align-items: center;
 	}
 
-	.mainVideoImg {
+	.mainVideoImg img {
 		width: 330px;
 
 	}
