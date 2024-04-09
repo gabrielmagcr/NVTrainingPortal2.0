@@ -75,7 +75,7 @@ get_header();
 		margin: 35px 0;
 	}
 
-	
+
 
 
 	@media (min-width:767px) {
@@ -147,17 +147,27 @@ get_header();
 				<?php } ?>
 
 				<?php
+				function get_quiz_title($quiz_id)
+				{
+					$title = get_the_title($quiz_id);
+					return $title;
+				}?>
+
+
+				<?php
 				if (is_user_logged_in()) {
 					// session_start(); 
+
 					$_SESSION["user_id"] = get_current_user_id();
 
 				?>
-					
+
+
 					<?php get_template_part('mainVideos'); ?>
 
 					<?php get_template_part('productLine'); ?>
 
-					
+
 					<?php
 					$modalCompletedAllQuizzes = false;
 					$modalQuizzesCompleted = new WP_Query(array(
@@ -252,8 +262,7 @@ get_header();
 					<div class="col-sm ieColSM">
 						<a href="<?php the_permalink() ?>">
 							<img class=selection-box src="<?php the_field('quiz_bg_image') ?>">
-
-							</p>
+							<h3><?php echo get_quiz_title(get_the_ID());?></h3>
 						</a>
 					</div>
 			<?php }
