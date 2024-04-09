@@ -129,6 +129,7 @@
       border-radius: 5em;
       color: #fff;
       margin: 0px 5px;
+      cursor: pointer;
     }
 
     .bannerClass {
