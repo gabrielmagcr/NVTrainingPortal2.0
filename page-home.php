@@ -31,7 +31,7 @@ get_header();
 		overflow: hidden;
 		position: absolute;
 		z-index: -1;
-		top: 3%;
+		bottom: 0;
 	
 	}
 
@@ -103,6 +103,12 @@ get_header();
 			width: 60%;
 		}
 
+	}
+	@media (min-width:1439px) {
+
+		.bg-wattermark{
+			top: 50px;
+		}
 	}
 </style>
 <div>
