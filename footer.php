@@ -11,18 +11,16 @@
 </script>
 <style>
     .footerLogos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
         background-color: #26948c;
         padding: 40px 20px;
-        align-items: center;
-
+        justify-items: center
     }
 
     .footerLogos img {
-        height: 55px;
+        height: 50px;
     }
 
     .footerStructure {
@@ -103,9 +101,11 @@
         color: #fff;
         font-weight: bold;
     }
-    .responsiveList{
+
+    .responsiveList {
         padding: 3px 0;
     }
+
     .footerLastSection {
         display: flex;
         align-items: center;
@@ -136,7 +136,7 @@
         width: 175px;
         margin-bottom: -25px;
     }
-    	
+
     #swedencare {
         color: #fac33b;
     }
@@ -154,6 +154,14 @@
     }
 
     @media (min-width:550px) {
+        .footerLogos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
         .footerMenu span {
             font-size: 18px;
         }
@@ -162,6 +170,7 @@
             font-size: 17px;
             width: 90%;
         }
+
         .responsiveList a {
             color: #ffffff;
 
@@ -248,9 +257,10 @@
         #company_1 {
             margin-top: 25px;
         }
+
         .footerLastSectionRightSide img {
-        width: 100px;
-    }
+            width: 100px;
+        }
     }
 </style>
 <footer>
