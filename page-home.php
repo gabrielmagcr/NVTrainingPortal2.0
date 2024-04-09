@@ -14,9 +14,6 @@ get_header();
 	}
 
 	.mainContainer {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 		position: relative;
 		overflow: hidden;
 	}
@@ -31,7 +28,9 @@ get_header();
 		overflow: hidden;
 		position: absolute;
 		z-index: -1;
-		bottom: 0;
+		left: 50%;
+   		top: 40%;
+   		transform: translate(-50%, -50%);
 	
 	}
 
@@ -107,7 +106,7 @@ get_header();
 	@media (min-width:1439px) {
 
 		.bg-wattermark{
-			top: 50px;
+			top: 65%;
 		}
 	}
 </style>
