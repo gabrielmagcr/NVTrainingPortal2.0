@@ -17,7 +17,6 @@ get_header();
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		height: 100dvh;
 		position: relative;
 		overflow: hidden;
 	}
@@ -44,7 +43,7 @@ get_header();
 		background-size: cover;
 		height: 40dvh;
 		width: 100%;
-		position: absolute;
+		position: relative;
 		bottom: 0;
 		left: 0;
 
@@ -85,9 +84,6 @@ get_header();
 			font-size: 18px;
 		}
 
-		.mainContainer {
-			height: 75dvh;
-		}
 	}
 
 	@media (min-width:1023px) {
@@ -103,10 +99,6 @@ get_header();
 
 		.textHome p {
 			width: 60%;
-		}
-
-		.mainContainer {
-			height: 100dvh;
 		}
 
 	}
