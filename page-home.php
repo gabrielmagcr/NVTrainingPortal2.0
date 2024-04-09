@@ -81,7 +81,10 @@ get_header();
 		flex-direction: column;
 		align-items: center;
 	}
+	.mainVideoImg{
+		margin-top: 15px;
 
+	}
 	.mainVideoImg img {
 		width: 330px;
 
@@ -102,7 +105,9 @@ get_header();
 		font-family: "Montserrat", sans-serif;
 		font-weight: 600;
 	}
-
+	.lineBreak img{
+		width: 200px;
+	}
 	@media (min-width:767px) {
 		.textHome h2 {
 			font-size: 48px;
@@ -188,6 +193,7 @@ get_header();
 							</div>
 						</div>
 					</div>
+					<div class="lineBreak"><img src=/wp-content/uploads/Line-Break.svg" alt="lineBreak"></div>
 					<?php
 					$modalCompletedAllQuizzes = false;
 					$modalQuizzesCompleted = new WP_Query(array(
