@@ -155,9 +155,9 @@ get_header();
 					
 					<?php get_template_part('mainVideos'); ?>
 
-					<?php get_template_part('lineBreak'); ?>
-
 					<?php get_template_part('productLine'); ?>
+
+					
 					<?php
 					$modalCompletedAllQuizzes = false;
 					$modalQuizzesCompleted = new WP_Query(array(
