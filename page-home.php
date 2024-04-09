@@ -33,7 +33,9 @@ get_header();
    		transform: translate(-50%, -50%);
 	
 	}
-
+	.bg-wattermark.logged-in{
+		top: 12%;
+	}
 	.bg-botton-logout {
 		background: url('/wp-content/uploads/Hills-Illustration.svg');
 		background-position: center;
@@ -101,18 +103,21 @@ get_header();
 		.textHome p {
 			width: 60%;
 		}
-
+		.bg-wattermark.logged-in{
+			top:650px
+		}
 	}
 	@media (min-width:1439px) {
 
 		.bg-wattermark{
 			top: 65%;
 		}
+		
 	}
 </style>
 <div>
 	<div class="mainContainer">
-		<div class="bg-wattermark"></div>
+		<div class="bg-wattermark <?php echo is_user_logged_in() ? 'logged-in' : ''; ?>"></div>
 		<div class="text-center">
 			<div class="user_title ">
 				<div class="textHome">
