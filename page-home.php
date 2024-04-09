@@ -29,12 +29,13 @@ get_header();
 		position: absolute;
 		z-index: -1;
 		left: 50%;
-		top: 250px;;
+		top: 250px;
+		;
 		transform: translate(-50%, -50%);
 
 	}
 
-	
+
 
 	.bg-botton-logout {
 		background: url('/wp-content/uploads/Hills-Illustration.svg');
@@ -62,7 +63,7 @@ get_header();
 
 	.textHome h2 {
 		width: 80%;
-		
+
 	}
 
 	.textHome p {
@@ -113,19 +114,20 @@ get_header();
 	}
 
 	@media (min-width:767px) {
-		.welcomeTitle  {
+		.welcomeTitle {
 			font-size: 48px;
 		}
 
 		.textHome p {
 			font-size: 18px;
 		}
-		.bg-wattermark{
-			top: 425px;
-			}
-		}
 
-	
+		.bg-wattermark {
+			top: 425px;
+		}
+	}
+
+
 
 	@media (min-width:1023px) {
 		.bg-wattermark {
@@ -145,6 +147,13 @@ get_header();
 	}
 
 	@media (min-width:1439px) {
+		.textHome h2 {
+			width: 70%;
+		}
+
+		.textHome p {
+			width: 45%;
+		}
 
 		.bg-wattermark {
 			top: 650px;
@@ -199,7 +208,7 @@ get_header();
 						</div>
 					</div>
 					<div class="lineBreak"><img src=/wp-content/uploads/Line-Break.svg" alt="lineBreak"></div>
-					
+
 					<div class="productLineContainer">
 						<h2 class="welcomeTitle">Product lines</h2>
 						<div class="mainVideo">
