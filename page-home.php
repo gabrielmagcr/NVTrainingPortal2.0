@@ -218,7 +218,7 @@ get_header();
 					<h4 style="margin-top:10px;">Select a training to continue</h4>
 			</div>
 		</div>
-		<div class="row text-center pad-top ieRow">
+		<div class="quizContainer">
 			<?php
 					$homepageQuizzes = new WP_Query(array(
 						'posts_per_page' => 10,
@@ -248,7 +248,7 @@ get_header();
 
 						if ($quizCompleted->found_posts) {
 				?>
-					<div class="quizContainer">
+					<div class="">
 
 						<a class="completed " href="<?php the_permalink() . "?completedQuiz"; ?>">
 							<img class="selection-box quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
@@ -263,7 +263,7 @@ get_header();
 					</div>
 				<?php
 						} else { ?>
-					<div class="quizContainer">
+					<div class="">
 						<a href="<?php the_permalink() ?>">
 							<img class=selection-box src="<?php the_field('quiz_bg_image') ?>">
 							<h3><?php echo get_quiz_title(get_the_ID());?></h3>
