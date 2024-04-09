@@ -30,10 +30,9 @@ get_header();
 		width: 130dvw;
 		overflow: hidden;
 		position: absolute;
-		left: 50%;
 		z-index: -1;
-		top: 45%;
-		transform: translate(-50%, -50%);
+		top: 3%;
+	
 	}
 
 	.bg-botton-logout {
@@ -93,7 +92,7 @@ get_header();
 		.bg-wattermark {
 			height: 125dvh;
 			width: 100dvw;
-			top: 65%;
+		
 		}
 
 		.textHome h2 {
