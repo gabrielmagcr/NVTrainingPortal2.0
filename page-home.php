@@ -6,7 +6,7 @@
 get_header();
 ?>
 <style>
-	.welcomeh2 {
+	.welcomeTitle {
 		color: #4D7F70;
 		text-transform: uppercase;
 		font-size: 72px;
@@ -81,10 +81,12 @@ get_header();
 		flex-direction: column;
 		align-items: center;
 	}
-	.mainVideoImg{
+
+	.mainVideoImg {
 		margin-top: 15px;
 
 	}
+
 	.mainVideoImg img {
 		width: 330px;
 
@@ -95,19 +97,23 @@ get_header();
 		width: 80%;
 		margin: 25px 0;
 	}
+
 	.mainVideoText h3 {
-		font-family: "Brandon Grotesque",sans-serif;
+		font-family: "Brandon Grotesque", sans-serif;
 		color: #E26743;
 		font-size: 30px;
 		font-weight: bold;
 	}
-	.mainVideoText p{
+
+	.mainVideoText p {
 		font-family: "Montserrat", sans-serif;
 		font-weight: 600;
 	}
-	.lineBreak img{
-		width: 200px;
+
+	.lineBreak img {
+		width: 29px;
 	}
+
 	@media (min-width:767px) {
 		.textHome h2 {
 			font-size: 48px;
@@ -153,7 +159,7 @@ get_header();
 		<div class="text-center">
 			<div class="user_title ">
 				<div class="textHome">
-					<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
+					<h2 class="welcomeTitle">Welcome Back to the naturevet training portal</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
@@ -194,6 +200,37 @@ get_header();
 						</div>
 					</div>
 					<div class="lineBreak"><img src=/wp-content/uploads/Line-Break.svg" alt="lineBreak"></div>
+					
+					<div class="productLineContainer">
+						<h2 class="welcomeTitle">Product lines</h2>
+						<div class="mainVideo">
+							<div class="mainVideoImg">
+								<img src="/wp-content/uploads/Placeholder-image-2.png">
+							</div>
+							<div class="mainVideoText">
+								<h3>Scoopables - Intro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="mainVideo">
+							<div class="mainVideoImg">
+								<img src="/wp-content/uploads/Placeholder-image-3.png">
+							</div>
+							<div class="mainVideoText">
+								<h3>Evolutions - Intro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+						<div class="mainVideo">
+							<div class="mainVideoImg">
+								<img src="/wp-content/uploads/Placeholder-image-4.png">
+							</div>
+							<div class="mainVideoText">
+								<h3>Breed Specific - Intro</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
 					<?php
 					$modalCompletedAllQuizzes = false;
 					$modalQuizzesCompleted = new WP_Query(array(
