@@ -217,13 +217,7 @@ get_header();
 					//  delete_user_meta(get_current_user_id(),'completedGiftForm');
 					@$modalCompletedForm = get_user_meta(get_current_user_id(), 'completedGiftForm')[0];
 
-					if ($modalCompletedAllQuizzes) { ?>
-						<div class="CompletedLinkButton">
-							<a href="<?php echo get_bloginfo('url'); ?>/completedallquizzes/">
-								<button class="btn btn-success completedButton">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
-							</a>
-						</div>
-					<?php } ?>
+					 ?>
 
 			</div>
 		</div>
