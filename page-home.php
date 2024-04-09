@@ -76,7 +76,7 @@ get_header();
 	}
 
 
-	.quizContainer{
+	.quizContainer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
@@ -155,7 +155,7 @@ get_header();
 				{
 					$title = get_the_title($quiz_id);
 					return $title;
-				}?>
+				} ?>
 
 
 				<?php
@@ -184,22 +184,6 @@ get_header();
 							)
 						)
 					));
-					$modalUserQuizCompleted = count($modalQuizzesCompleted->posts);
-					if (is_super_admin()) {
-						echo "Completed: <strong>" . $modalUserQuizCompleted . "</strong>&nbsp; | &nbsp;";
-					}
-					wp_reset_query();
-					$modalQuizzesAmount = new WP_Query(array(
-						'posts_per_page' => 10,
-						'post_type' => 'Quiz'
-					));
-
-					$modalTotalQuizzesAvailable = count($modalQuizzesAmount->posts);
-					if (is_super_admin()) {
-						echo "Quizes Total: <strong>" . $modalTotalQuizzesAvailable . '</strong>';
-					}
-					wp_reset_query();
-
 					if ($modalUserQuizCompleted >= $modalTotalQuizzesAvailable) {
 						$modalCompletedAllQuizzes = true;
 					} ?>
@@ -215,7 +199,7 @@ get_header();
 							</a>
 						</div>
 					<?php } ?>
-					<h4 style="margin-top:10px;">Select a training to continue</h4>
+
 			</div>
 		</div>
 		<div class="quizContainer">
@@ -266,7 +250,7 @@ get_header();
 					<div class="">
 						<a href="<?php the_permalink() ?>">
 							<img class=selection-box src="<?php the_field('quiz_bg_image') ?>">
-							<h3><?php echo get_quiz_title(get_the_ID());?></h3>
+							<h3><?php echo get_quiz_title(get_the_ID()); ?></h3>
 						</a>
 					</div>
 			<?php }
