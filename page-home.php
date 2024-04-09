@@ -75,17 +75,28 @@ get_header();
 		line-height: 28px;
 		margin: 35px 0;
 	}
-	.productCategoriesContainer{
+
+	.productCategoriesContainer {
 		display: flex;
 		justify-content: center;
 	}
-	.productText p{
+
+	.productText p {
 		text-align: center;
+		margin: 25px 0;
 	}
+
 	.quizContainer {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
+		margin: 25px;
+	}
+
+	.quiz span {
+		color: #486284;
+		font-family: "Brandon Grotesque";
+		font-size: 16px;
 	}
 
 	@media (min-width:767px) {
@@ -180,7 +191,7 @@ get_header();
 					<div class="productCategoriesContainer">
 						<div class="mainVideoText productText">
 							<h2 class="welcomeTitle ">Product Categories</h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 						</div>
 					</div>
 					<?php
@@ -242,11 +253,11 @@ get_header();
 
 						if ($quizCompleted->found_posts) {
 				?>
-					<div class="">
+					<div class="quiz">
 
 						<a class="completed " href="<?php the_permalink() . "?completedQuiz"; ?>">
 							<img class="selection-box quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
-
+							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 						</a>
 						<div class=" completed_div">
 							<a class="completedLink" href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>"></a>
@@ -257,10 +268,10 @@ get_header();
 					</div>
 				<?php
 						} else { ?>
-					<div class="">
+					<div class="quiz">
 						<a href="<?php the_permalink() ?>">
 							<img class=selection-box src="<?php the_field('quiz_bg_image') ?>">
-							<h3><?php echo get_quiz_title(get_the_ID()); ?></h3>
+							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 						</a>
 					</div>
 			<?php }
