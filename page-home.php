@@ -77,32 +77,38 @@ get_header();
 
 
 	@media (min-width:767px) {
-		.textHome h2{
+		.textHome h2 {
 			font-size: 48px;
 		}
-		.textHome p{
+
+		.textHome p {
 			font-size: 18px;
 		}
-		.mainContainer{
+
+		.mainContainer {
 			height: 75dvh;
 		}
 	}
+
 	@media (min-width:1023px) {
 		.bg-wattermark {
 			height: 125dvh;
 			width: 100dvw;
 			top: 65%;
 		}
-		.textHome h2{
+
+		.textHome h2 {
 			font-size: 72px;
 		}
+
 		.textHome p {
 			width: 60%;
 		}
+
 		.mainContainer {
-    height: 100dvh;
-}
-		
+			height: 100dvh;
+		}
+
 	}
 </style>
 <div>
@@ -111,7 +117,6 @@ get_header();
 		<div class="text-center">
 			<div class="user_title ">
 				<div class="textHome">
-				<?php get_template_part('logged'); ?>
 					<h2 class="welcomeh2">Welcome Back to the naturevet training portal</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
@@ -236,6 +241,10 @@ get_header();
 		</div>
 
 	</div>
+	<?php if (is_user_logged_in()) { ?>
+		<?php  get_template('logged')?>
+
+		<?php } ?>
 </div>
 
 <script>
