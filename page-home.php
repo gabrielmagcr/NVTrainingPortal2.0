@@ -29,13 +29,15 @@ get_header();
 		position: absolute;
 		z-index: -1;
 		left: 50%;
-   		top: 40%;
-   		transform: translate(-50%, -50%);
-	
+		top: 40%;
+		transform: translate(-50%, -50%);
+
 	}
-	.bg-wattermark.logged-in{
+
+	.bg-wattermark.logged-in {
 		top: 12%;
 	}
+
 	.bg-botton-logout {
 		background: url('/wp-content/uploads/Hills-Illustration.svg');
 		background-position: center;
@@ -73,9 +75,30 @@ get_header();
 		line-height: 28px;
 		margin: 35px 0;
 	}
-	.mainVideo{
+
+	.mainVideo {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+	}
+
+	.mainVideoImg {
+		width: 330px;
+
+	}
+
+	.mainVideoText {
+		text-align: left;
+		width: 80%;
+	}
+	.mainVideoText h3 {
+		color: #E26743;
+		font-size: 30px;
+		font-weight: 450;
+	}
+	.mainVideoText p{
+		font-family: "Montserrat", sans-serif;
+
 	}
 
 	@media (min-width:767px) {
@@ -93,7 +116,7 @@ get_header();
 		.bg-wattermark {
 			height: 125dvh;
 			width: 100dvw;
-		
+
 		}
 
 		.textHome h2 {
@@ -103,16 +126,18 @@ get_header();
 		.textHome p {
 			width: 60%;
 		}
-		.bg-wattermark.logged-in{
-			top:650px
+
+		.bg-wattermark.logged-in {
+			top: 650px
 		}
 	}
+
 	@media (min-width:1439px) {
 
-		.bg-wattermark{
+		.bg-wattermark {
 			top: 65%;
 		}
-		
+
 	}
 </style>
 <div>
@@ -143,15 +168,19 @@ get_header();
 				?>
 					<div class="mainVideosContainer">
 						<div class="mainVideo">
-							<div><img src="/wp-content/uploads/Placeholder-image.png"></div>
-							<div>
+							<div class="mainVideoImg">
+								<img src="/wp-content/uploads/Placeholder-image.png">
+							</div>
+							<div class="mainVideoText">
 								<h3>Our Brand - Naturevet Brand Video</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
 						</div>
 						<div>
-							<div><img src="/wp-content/uploads/Placeholder-image-1.png"></div>
-							<div>
+							<div class="mainVideoImg">
+								<img src="/wp-content/uploads/Placeholder-image-1.png">
+							</div>
+							<div class="mainVideoText">
 								<h3>Manufacturing Quality Video</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 							</div>
