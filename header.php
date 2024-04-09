@@ -323,6 +323,7 @@
 
       .bannerInfo h2 {
         margin: 0;
+        font-size: 1.5em;
       }
 
       #banner {
@@ -333,6 +334,11 @@
         height: 750px;
       }
 
+    }
+    @media (min-width:1024px) {
+      .bannerInfo h2 {
+        font-size: 2em;
+      }
     }
 
     @media only screen and (max-width:767px) {
