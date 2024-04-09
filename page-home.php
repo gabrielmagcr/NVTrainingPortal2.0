@@ -11,6 +11,7 @@ get_header();
 		text-transform: uppercase;
 		font-size: 36px;
 		text-align: center;
+		font-weight: 700;
 	}
 
 	.mainContainer {
@@ -74,7 +75,10 @@ get_header();
 		line-height: 28px;
 		margin: 35px 0;
 	}
-
+	.productCategoriesContainer{
+		display: flex;
+		justify-content: center;
+	}
 
 	.quizContainer {
 		display: grid;
