@@ -20,7 +20,7 @@
     }
 
     .footerLogos img {
-        height: 50px;
+        height: 35px;
     }
 
     .footerStructure {
@@ -161,7 +161,10 @@
             align-items: center;
 
         }
-
+        
+    .footerLogos img {
+        height: 50px;
+    }
         .footerMenu span {
             font-size: 18px;
         }
