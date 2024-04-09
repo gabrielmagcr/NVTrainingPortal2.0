@@ -76,7 +76,11 @@ get_header();
 	}
 
 
-
+	.quizContainer{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
 
 	@media (min-width:767px) {
 		.welcomeTitle {
@@ -244,13 +248,13 @@ get_header();
 
 						if ($quizCompleted->found_posts) {
 				?>
-					<div class="col-sm ieColSM">
+					<div class="quizContainer">
 
 						<a class="completed " href="<?php the_permalink() . "?completedQuiz"; ?>">
 							<img class="selection-box quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
 
 						</a>
-						<div class="completed_div">
+						<div class=" completed_div">
 							<a class="completedLink" href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>"></a>
 							<div class="checkmark">
 								<img class="checkmarkimage" src="<?php echo get_bloginfo('url'); ?>/wp-content/uploads/2018/10/checkmark-png-25951.png">
@@ -259,7 +263,7 @@ get_header();
 					</div>
 				<?php
 						} else { ?>
-					<div class="col-sm ieColSM">
+					<div class="quizContainer">
 						<a href="<?php the_permalink() ?>">
 							<img class=selection-box src="<?php the_field('quiz_bg_image') ?>">
 							<h3><?php echo get_quiz_title(get_the_ID());?></h3>
