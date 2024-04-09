@@ -29,14 +29,12 @@ get_header();
 		position: absolute;
 		z-index: -1;
 		left: 50%;
-		top: 40%;
+		top: 250px;;
 		transform: translate(-50%, -50%);
 
 	}
 
-	.bg-wattermark.logged-in {
-		top: 12%;
-	}
+	
 
 	.bg-botton-logout {
 		background: url('/wp-content/uploads/Hills-Illustration.svg');
@@ -122,6 +120,10 @@ get_header();
 		.textHome p {
 			font-size: 18px;
 		}
+		.bg-wattermark{
+			top: 425px;
+}
+		}
 
 	}
 
@@ -140,26 +142,23 @@ get_header();
 			width: 60%;
 		}
 
-		.bg-wattermark.logged-in {
-			top: 650px
-		}
 	}
 
 	@media (min-width:1439px) {
 
 		.bg-wattermark {
-			top: 65%;
+			top: 650px;
 		}
 
 	}
 </style>
 <div>
 	<div class="mainContainer">
-		<div class="bg-wattermark <?php echo is_user_logged_in() ? 'logged-in' : ''; ?>"></div>
+		<div class="bg-wattermark"></div>
 		<div class="text-center">
 			<div class="user_title ">
 				<div class="textHome">
-					<h2 class="welcomeTitle">Welcome Back to the naturevet training portal</h2>
+					<h2 class="welcomeTitle">Welcome to the NaturVet Training Portal</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
