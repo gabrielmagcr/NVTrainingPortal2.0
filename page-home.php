@@ -32,7 +32,7 @@ get_header();
 		overflow: hidden;
 		position: absolute;
 		left: 50%;
-		z-index: 23;
+		z-index: -1;
 		top: 45%;
 		transform: translate(-50%, -50%);
 	}
@@ -241,10 +241,7 @@ get_header();
 		</div>
 
 	</div>
-	<?php if (is_user_logged_in()) { ?>
-		<?php  get_template_part('logged');?>
-		<div>test</div>
-		<?php } ?>
+
 </div>
 
 <script>
