@@ -242,7 +242,7 @@ get_header();
 
 	</div>
 	<?php if (is_user_logged_in()) { ?>
-		<?php  get_template('logged')?>
+		<?php  get_template_part('logged');?>
 		<div>test</div>
 		<?php } ?>
 </div>
