@@ -79,7 +79,7 @@ get_header();
 		display: flex;
 		justify-content: center;
 	}
-	.productText{
+	.productText p{
 		text-align: center;
 	}
 	.quizContainer {
