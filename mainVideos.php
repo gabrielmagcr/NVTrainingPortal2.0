@@ -72,7 +72,7 @@
 <div class="mainVideosContainer">
     <div class="mainVideo">
         <div class="mainVideoImg">
-            <img class="placeholder-img" src="/wp-content/uploads/Placeholder-image-1.png" alt="Placeholder Image">
+            <img class="placeholder-img" src="/wp-content/uploads/Placeholder-image.png" alt="Placeholder Image">
             <img class="play-icon" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
             <video class="video" controls style="display: none;">
                 <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
