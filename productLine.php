@@ -9,7 +9,7 @@
 
 	}
 	.productText{
-		width: 55%;
+		max-width: 800px;
 	}
 	.productText p{
 		margin: 50px 110px;
