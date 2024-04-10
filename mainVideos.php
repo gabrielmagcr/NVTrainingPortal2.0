@@ -61,7 +61,7 @@
 		}
 
 		.mainVideoText {
-			width: 70%;
+			width: auto;
 		}
 	}
 </style>

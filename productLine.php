@@ -2,6 +2,7 @@
 @media (min-width:1023px){
 	.productVideoContainer{
 		display: flex;
+		justify-content: space-evenly;
 	}
 	.productLineImg img{
 		width: 344px;
