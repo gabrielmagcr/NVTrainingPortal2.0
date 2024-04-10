@@ -88,19 +88,23 @@ get_header();
 
 	.quizContainer {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 20px;
-		margin: 25px;
-	}
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		gap: 15px;
+		margin: 0px 12px;
 
+		justify-items: center;
+	}
+	
 	.quiz span {
 		color: #486284;
 		font-family: "Brandon Grotesque";
 		font-size: 18px;
-    	font-weight: bold;
+		font-weight: bold;
 	}
-	.quizzImage{
+
+	.quizzImage {
 		margin-bottom: 5px;
+		width: 185px;
 	}
 
 	@media (min-width:767px) {
@@ -217,7 +221,7 @@ get_header();
 					//  delete_user_meta(get_current_user_id(),'completedGiftForm');
 					@$modalCompletedForm = get_user_meta(get_current_user_id(), 'completedGiftForm')[0];
 
-					 ?>
+					?>
 
 			</div>
 		</div>
@@ -254,7 +258,7 @@ get_header();
 					<div class="quiz">
 
 						<a class="completed " href="<?php the_permalink() . "?completedQuiz"; ?>">
-							<img class="selection-box quizzImage quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
+							<img class="quizzImage quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
 							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 						</a>
 						<div class=" completed_div">
@@ -268,7 +272,7 @@ get_header();
 						} else { ?>
 					<div class="quiz">
 						<a href="<?php the_permalink() ?>">
-							<img class='selection-box quizzImage' src="<?php the_field('quiz_bg_image') ?>">
+							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
 							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 						</a>
 					</div>
