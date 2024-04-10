@@ -161,7 +161,7 @@
 
     .login-btns {
       color: #fff;
-      padding: 20px 37px;
+      padding: 15px 30px;
       border-radius: 30px;
       background-color: #E26743;
       font-size: 20px;
@@ -476,22 +476,16 @@
         </div><!--end responsive-menu-->
 
         <script>
-          jQuery(".close-btn").on("click", function() {
-            jQuery(".responsive-menu").animate({
-              left: '-100%'
-            }, 'slow', function() {
-              jQuery(this).hide();
-            });
-          });
+        jQuery(".close-btn").on("click", function() {
+    jQuery(".responsive-menu").fadeOut('slow');
+});
 
-          jQuery(".bars").on("click", function() {
-            jQuery(".responsive-menu").css({
-              display: 'block',
-              left: '-100%'
-            }).animate({
-              left: '0%'
-            }, 'slow');
-          });
+jQuery(".bars").on("click", function() {
+    jQuery(".responsive-menu").css('display', 'block').animate({
+        left: '0%'
+    }, 'slow');
+});
+
         </script>
       </div><!--end header-ll-->
       <div class="header-c">
