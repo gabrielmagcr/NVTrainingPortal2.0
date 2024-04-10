@@ -11,7 +11,6 @@ get_header();
 		text-transform: uppercase;
 		font-size: 36px;
 		text-align: center;
-		font-weight: 700;
 	}
 
 	.mainContainer {
@@ -173,6 +172,7 @@ get_header();
 
 		.textHome p {
 			width: 60%;
+			margin: 50px 0;
 		}
 		.quizContainer{
 			justify-items: start;

@@ -11,6 +11,9 @@
 	.productText{
 		width: 55%;
 	}
+	.productText p{
+		margin: 50px 110px;
+	}
 	.productLineVideo{
    		width: 344px;
 	}
