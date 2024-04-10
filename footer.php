@@ -279,7 +279,9 @@
             font-size: 22px;
 
         }
-
+        .footerMenu {
+            margin: 0px 10px;
+        }
         .footerMenu span {
             font-size: 24px;
         }

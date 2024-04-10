@@ -12,6 +12,7 @@ get_header();
 		font-size: 36px;
 		text-align: center;
 		font-family: "Brandon Grotesque",sans-serif;
+		font-weight: 600;
 	}
 
 	.mainContainer {
@@ -59,7 +60,7 @@ get_header();
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 35px;
+		margin-top: 50px;
 	}
 
 	.textHome h2 {
@@ -69,7 +70,7 @@ get_header();
 
 	.textHome p {
 		font-family: "Montserrat", sans-serif;
-		font-weight: 600;
+		font-weight: 500;
 		width: 75%;
 		font-size: 16px;
 		line-height: 28px;

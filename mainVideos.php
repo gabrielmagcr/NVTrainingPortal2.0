@@ -22,12 +22,12 @@
 		font-family: "Brandon Grotesque", sans-serif;
 		color: #E26743;
 		font-size: 30px;
-		font-weight: bold;
+		font-weight: 600;
 	}
 
 	.mainVideoText p {
 		font-family: "Montserrat", sans-serif;
-		font-weight: 600;
+		font-weight: 500;
 	}
 
 	@media (min-width:767px) {
