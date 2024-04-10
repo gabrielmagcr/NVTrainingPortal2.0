@@ -10,7 +10,7 @@
 
 	}
 
-	.mainVideoImg img {
+	.mainVideoImg video {
 		width: 330px;
 	}
 
@@ -33,7 +33,7 @@
 	}
 
 	@media (min-width:767px) {
-		.mainVideoImg img {
+		.mainVideoImg video {
 			width: 500px;
 		}
 
