@@ -77,7 +77,7 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const placeholders = document.querySelectorAll('.placeholder-img');
-        const playIcons = document.querySelectorAll('.play-icon');
+        const playIcons = document.querySelectorAll('.playIconProductVideoNew');
         const videos = document.querySelectorAll('.video');
 
         for (let i = 0; i < playIcons.length; i++) {
