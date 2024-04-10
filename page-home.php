@@ -94,12 +94,31 @@ get_header();
 
 		justify-items: center;
 	}
-	
+
 	.quiz span {
 		color: #486284;
 		font-family: "Brandon Grotesque";
 		font-size: 18px;
 		font-weight: bold;
+	}
+
+	.quiz {
+		position: relative;
+	}
+
+	.quiz-link {
+		position: relative;
+		display: inline-block;
+	}
+
+	.play-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 28px;
+		height: 28px;
+		z-index: 1;
 	}
 
 	.quizzImage {
@@ -257,9 +276,10 @@ get_header();
 				?>
 					<div class="quiz">
 
-						<a class="completed " href="<?php the_permalink() . "?completedQuiz"; ?>">
+						<a class="completed quiz-link" href="<?php the_permalink() . "?completedQuiz"; ?>">
 							<img class="quizzImage quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
 							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
+							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
 						<div class=" completed_div">
 							<a class="completedLink" href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>"></a>
@@ -271,9 +291,10 @@ get_header();
 				<?php
 						} else { ?>
 					<div class="quiz">
-						<a href="<?php the_permalink() ?>">
+						<a href="<?php the_permalink() ?>" class="quiz-link">
 							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
 							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
+							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
 					</div>
 			<?php }
