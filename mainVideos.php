@@ -7,14 +7,16 @@
 
 	.mainVideoImg {
 		margin-top: 15px;
-
+		position: relative;
 	}
 
 	.mainVideoImg video {
 		width: 330px;
 		border-radius: 24px;
 	}
-
+	.placeholder-img{
+		width: 330px;
+	}
 	.mainVideoText {
 		text-align: left;
 		width: 80%;
@@ -57,6 +59,9 @@
 			width: 500px;
 			align-items: flex-start;
 		}
+		.placeholder-img{
+			width: 500px;
+		}
 
 		.mainVideoText {
 			width: auto;
@@ -81,7 +86,7 @@
     <div class="mainVideo">
         <div class="mainVideoImg">
             <img class="placeholder-img" src="/wp-content/uploads/Placeholder-image-1.png" alt="Placeholder Image">
-            <img class="play-icon" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+            <img class="play-icon playIconMainVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
             <video class="video" controls style="display: none;">
                 <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
             </video>
