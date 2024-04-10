@@ -66,6 +66,9 @@
 		.mainVideoText {
 			width: auto;
 		}
+		.playIconMainVideo {
+    width: 76px;
+}
 	}
 </style>
 
@@ -73,7 +76,7 @@
     <div class="mainVideo">
         <div class="mainVideoImg">
             <img class="placeholder-img" src="/wp-content/uploads/Placeholder-image.png" alt="Placeholder Image">
-            <img class="play-icon" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+            <img class="play-icon playIconMainVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
             <video class="video" controls style="display: none;">
                 <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
             </video>
@@ -99,19 +102,17 @@
 </div>
 
 <script>
-	// Obtenemos todos los elementos necesarios
 const placeholders = document.querySelectorAll('.placeholder-img');
 const playIcons = document.querySelectorAll('.play-icon');
 const videos = document.querySelectorAll('.video');
 
-// Iteramos sobre cada ícono de reproducción
+
 playIcons.forEach((playIcon, index) => {
-    // Manejamos el clic en el ícono de reproducción
+
     playIcon.addEventListener('click', () => {
-        // Ocultamos la imagen placeholder y el ícono de reproducción
+    
         placeholders[index].style.display = 'none';
         playIcons[index].style.display = 'none';
-        // Mostramos el video correspondiente y lo reproducimos
         videos[index].style.display = 'block';
         videos[index].play();
     });
