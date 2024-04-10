@@ -105,8 +105,7 @@ get_header();
 	.quiz {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		text-align: center;
+		align-items: flex-start;
 	}
 
 	.quiz-link {
