@@ -115,6 +115,7 @@ get_header();
 	.quizzImage {
 		margin-bottom: 5px;
 		width: 185px;
+		height: 123px;
 		border-radius: 14px;
 	}
 
@@ -138,6 +139,23 @@ get_header();
 
 		.bg-wattermark {
 			top: 425px;
+		}
+
+		.mainVideoImg img {
+			width: 500px;
+		}
+
+		.mainVideoText h3 {
+
+			font-size: 42px;
+		}
+
+		.mainVideoText p {
+			font-size: 22px;
+		}
+
+		.quizContainer {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		}
 	}
 
