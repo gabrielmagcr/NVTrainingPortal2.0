@@ -153,6 +153,12 @@
         display: none;
     }
 
+    @media (min-width:400px) {
+        .footerLogos img {
+            height: 45px;
+        }
+    }
+
     @media (min-width:550px) {
         .footerLogos {
             display: flex;
@@ -161,10 +167,11 @@
             align-items: center;
 
         }
-        
-    .footerLogos img {
-        height: 50px;
-    }
+
+        .footerLogos img {
+            height: 50px;
+        }
+
         .footerMenu span {
             font-size: 18px;
         }

@@ -158,7 +158,15 @@
     .bannerInfo span {
       color: #FAC33B;
     }
-
+    .login-btns{
+      color: #fff;
+      padding: 20px 37px;
+      border-radius: 30px;
+      background-color: #E26743;
+    }
+    .createAccount-btns {
+        background-color: #FA9E33;
+      }
     @media only screen and (max-width:1420px) {
       .top-btns {
         max-height: 6rem;
@@ -276,9 +284,7 @@
         text-decoration: none;
       }
 
-      .createAccount-btns {
-        background-color: #FA9E33;
-      }
+     
 
       .close-btn {
         color: #FFFFFF;
@@ -511,10 +517,10 @@
         <?php if (!is_user_logged_in()) { ?>
           <div class="logoutUser">
             <a href="<?php echo wp_login_url(); ?>">
-              <button class="top-btns">Login</button>
+              <button class="login-btns">Login</button>
             </a>
             <a href="<?php echo wp_registration_url(); ?>">
-              <button class="top-btns createAccount-btns">Create an account</button>
+              <button class="login-btns createAccount-btns">Create an account</button>
             </a>
           </div>
         <?php } else {
