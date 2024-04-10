@@ -476,16 +476,13 @@
         </div><!--end responsive-menu-->
 
         <script>
-        jQuery(".close-btn").on("click", function() {
-    jQuery(".responsive-menu").fadeOut('slow');
-});
+          jQuery(".close-btn").on("click", function() {
+            jQuery(".responsive-menu").fadeOut('slow');
+          });
 
-jQuery(".bars").on("click", function() {
-    jQuery(".responsive-menu").css('display', 'block').animate({
-        left: '0%'
-    }, 'slow');
-});
-
+          jQuery(".bars").on("click", function() {
+            jQuery(".responsive-menu").fadeIn('slow');
+          });
         </script>
       </div><!--end header-ll-->
       <div class="header-c">
