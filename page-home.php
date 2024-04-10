@@ -47,7 +47,7 @@ get_header();
 		position: relative;
 		bottom: 0;
 		left: 0;
-
+		margin-top: -120px;
 	}
 
 	.createAccount-btns-desktop {
@@ -191,6 +191,9 @@ get_header();
 		.quizContainer{
 			justify-items: start;
     		margin: 50px 260px;
+		}
+		.bg-botton-logout{
+			margin-top: 0
 		}
 
 	}

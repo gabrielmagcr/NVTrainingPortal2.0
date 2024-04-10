@@ -9,12 +9,9 @@
 		margin-top: 15px;
 
 	}
-
 	.mainVideoImg img {
 		width: 330px;
-
 	}
-
 	.mainVideoText {
 		text-align: left;
 		width: 80%;
@@ -37,16 +34,13 @@
 		.mainVideoImg img {
 			width: 500px;
 		}
-
 		.mainVideoText h3 {
-
 			font-size: 30px;
 		}
 
 		.mainVideoText p {
 			font-size: 18px;
 		}
-
 	}
 
 	@media (min-width:1023px) {
