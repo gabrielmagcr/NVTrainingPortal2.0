@@ -7,6 +7,9 @@
 		width: 344px;
 
 	}
+	.productText{
+		width: 55%;
+	}
 }
 </style>
 <div class="productLineContainer">

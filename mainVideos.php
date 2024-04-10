@@ -51,6 +51,9 @@
 		.mainVideosContainer{
 			display: flex;
 		}
+		.mainVideoText {
+			width: 70%;
+		}
 	}
 </style>
 
