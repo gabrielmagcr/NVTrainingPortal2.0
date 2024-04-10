@@ -161,13 +161,14 @@
 
     .login-btns {
       color: #fff;
-      padding: 15px 30px;
-      border-radius: 30px;
-      background-color: #E26743;
-      font-size: 20px;
-      font-weight: 500;
-      margin: 10px 0;
-      text-transform: uppercase;
+    padding: 15px 45px;
+    border-radius: 30px;
+    background-color: #E26743;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px -30px;
+    text-transform: uppercase;
+    font-family: "Brandon Grotesque";
     }
 
     .createAccount-btns {
@@ -326,7 +327,7 @@
       }
 
       .shield img {
-        width: 275px;
+        width: 250px;
       }
 
       .shield {
