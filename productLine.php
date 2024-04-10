@@ -8,7 +8,7 @@
 			justify-content: space-evenly;
 		}
 
-		.productLineImg img {
+		.productLineImg img, .productLineImg video {
 			width: 315px;
 
 		}
