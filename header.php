@@ -476,17 +476,20 @@
         </div><!--end responsive-menu-->
 
         <script>
-          jQuery(".close-btn").on("click", function() {
-            jQuery(".responsive-menu").animate({
-              left: '-100%'
-            }, 'slow');
-          });
+         jQuery(".close-btn").on("click", function() {
+    jQuery(".responsive-menu").animate({
+        left: '-100%'
+    }, 'slow', function() {
+        jQuery(this).hide();
+    });
+});
 
-          jQuery(".bars").on("click", function() {
-            jQuery(".responsive-menu").css('left', '-100%').animate({
-              left: '0%'
-            }, 'slow');
-          });
+jQuery(".bars").on("click", function() {
+    jQuery(".responsive-menu").css('left', '-100%').show().animate({
+        left: '0%'
+    }, 'slow');
+});
+
         </script>
       </div><!--end header-ll-->
       <div class="header-c">
