@@ -87,7 +87,7 @@ get_header();
 
 	.quizContainer {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 		gap: 15px;
 		margin: 30px 12px;
 		justify-items: center;
