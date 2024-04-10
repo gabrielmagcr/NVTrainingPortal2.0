@@ -11,9 +11,6 @@
 	.productText{
 		max-width: 800px;
 	}
-	.productText p{
-		margin: 50px 110px;
-	}
 	.productLineVideo{
    		width: 315px;
 	}
