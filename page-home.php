@@ -89,8 +89,7 @@ get_header();
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		gap: 15px;
-		margin: 0px 12px;
-
+		margin: 30px 12px;
 		justify-items: center;
 	}
 
