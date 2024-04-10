@@ -157,6 +157,7 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        margin: 10px 0 35px;
     }
 
     .newsLetterFormulary input {
@@ -165,6 +166,10 @@
         background: transparent;
         border: solid 2px #fff;
         color: #fff;
+        width: 100%;
+    }
+    .newsLetterFormulary input::placeholder{
+        color: #c1c1c1
     }
 
     .newsletterbtn {
@@ -196,11 +201,11 @@
         }
 
         .footerMenu span {
-            font-size: 18px;
+            font-size: 20px;
         }
 
         .responsiveList {
-            font-size: 17px;
+            font-size: 18px;
             width: 90%;
         }
 
