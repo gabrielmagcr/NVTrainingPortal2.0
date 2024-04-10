@@ -1,4 +1,7 @@
 <style>
+	.playIconProductVideo{
+		width: 28px;
+	}
 	@media (min-width:1023px) {
 		.productVideoContainer {
 			display: flex;
@@ -21,6 +24,9 @@
 		.productLineText {
 			width: auto;
 		}
+		.playIconProductVideo{
+		width: 50px;
+	}
 	}
 </style>
 <div class="productLineContainer">
@@ -29,7 +35,7 @@
 		<div class="mainVideo productLineVideo">
 			<div class="mainVideoImg productLineImg">
 				<img class="placeholder-img" src="/wp-content/uploads/Placeholder-image-2.png" alt="Placeholder Image">
-				<img class="play-icon" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+				<img class="play-icon playIconProductVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 				<video class="video" controls style="display: none;">
 					<source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
 				</video>
@@ -42,7 +48,7 @@
 		<div class="mainVideo productLineVideo">
 			<div class="mainVideoImg productLineImg">
 				<img src="/wp-content/uploads/Placeholder-image-3.png">
-				<img class="play-icon" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+				<img class="play-icon playIconProductVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 				<video class="video" controls style="display: none;">
 					<source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
 				</video>
@@ -55,7 +61,7 @@
 		<div class="mainVideo productLineVideo">
 			<div class="mainVideoImg productLineImg">
 				<img src="/wp-content/uploads/Placeholder-image-4.png">
-				<img class="play-icon" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+				<img class="play-icon playIconProductVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 				<video class="video" controls style="display: none;">
 					<source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
 				</video>
