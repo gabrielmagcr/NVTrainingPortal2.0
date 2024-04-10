@@ -251,6 +251,8 @@
         left: 0;
         z-index: 10;
         text-align: center;
+        transition: none;
+        -webkit-transition:none;
 
       }
 
