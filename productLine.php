@@ -73,29 +73,5 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const placeholders = document.querySelectorAll('.placeholder-img');
-        const playIcons = document.querySelectorAll('.play-icon');
-        const videos = document.querySelectorAll('.video');
-
-        playIcons.forEach((playIcon, index) => {
-            playIcon.addEventListener('click', () => {
-                placeholders[index].style.display = 'none';
-                playIcons[index].style.display = 'none';
-                videos[index].style.display = 'block';
-                videos[index].play();
-            });
-
-            placeholders[index].addEventListener('click', () => {
-                placeholders[index].style.display = 'none';
-                playIcons[index].style.display = 'none';
-                videos[index].style.display = 'block';
-                videos[index].play();
-            });
-        });
-    });
-</script>
-
 
 <?php get_template_part('lineBreak'); ?>
