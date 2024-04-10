@@ -140,19 +140,6 @@ get_header();
 			top: 425px;
 		}
 
-		.mainVideoImg img {
-			width: 500px;
-		}
-
-		.mainVideoText h3 {
-
-			font-size: 42px;
-		}
-
-		.mainVideoText p {
-			font-size: 22px;
-		}
-
 		.quizContainer {
 			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 		}
@@ -162,7 +149,6 @@ get_header();
 		}
 
 		.quizzImage {
-
 			width: 250px;
 			height: 170px;
 		}

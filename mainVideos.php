@@ -32,7 +32,21 @@
 		font-family: "Montserrat", sans-serif;
 		font-weight: 600;
 	}
+	@media (min-width:767px){
+		.mainVideoImg img {
+			width: 500px;
+		}
 
+		.mainVideoText h3 {
+
+			font-size: 42px;
+		}
+
+		.mainVideoText p {
+			font-size: 22px;
+		}
+
+	}
 </style>
 
 <div class="mainVideosContainer">
