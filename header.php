@@ -475,7 +475,21 @@
 
         </div><!--end responsive-menu-->
 
+        <script>
+          jQuery(".close-btn").on("click", function() {
+            jQuery(".responsive-menu").animate({
+              left: '-100%'
+            }, 'slow', function() {
+              jQuery(this).hide();
+            });
+          });
 
+          jQuery(".bars").on("click", function() {
+            jQuery(".responsive-menu").css('left', '-100%').show().animate({
+              left: '0%'
+            }, 'slow');
+          });
+        </script>
       </div><!--end header-ll-->
       <div class="header-c">
         <a href="<?php echo home_url('/'); ?>" rel="home">
