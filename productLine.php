@@ -80,14 +80,14 @@
         const playIcons = document.querySelectorAll('.play-icon');
         const videos = document.querySelectorAll('.video');
 
-        playIcons.forEach((playIcon, index) => {
-            playIcon.addEventListener('click', () => {
-                placeholders[index].style.display = 'none';
-                playIcons[index].style.display = 'none';
-                videos[index].style.display = 'block';
-                videos[index].play();
+        for (let i = 0; i < playIcons.length; i++) {
+            playIcons[i].addEventListener('click', function() {
+                placeholders[i].style.display = 'none';
+                playIcons[i].style.display = 'none';
+                videos[i].style.display = 'block';
+                videos[i].play();
             });
-        });
+        }
     });
 </script>
 
