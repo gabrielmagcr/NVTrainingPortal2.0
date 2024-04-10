@@ -297,6 +297,13 @@
         .footerLastSectionRightSide img {
             width: 100px;
         }
+        .newsLetterFormulary input,.newsletterbtn  {
+              padding: 15px 20px;
+        }
+        .newsLetterFormulary {
+            margin: 35px 0;
+        }
+     
     }
 </style>
 <footer>
