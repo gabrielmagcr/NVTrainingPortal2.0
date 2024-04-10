@@ -32,8 +32,8 @@
   <meta http-equiv="Expires" content="-1">
   <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
   <style type="text/css">
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
     div,
     section,
     img,
@@ -158,15 +158,22 @@
     .bannerInfo span {
       color: #FAC33B;
     }
-    .login-btns{
+
+    .login-btns {
       color: #fff;
       padding: 20px 37px;
       border-radius: 30px;
       background-color: #E26743;
+      font-size: 20px;
+      font-weight: 500;
+      margin: 10px 0;
+      text-transform: uppercase;
     }
+
     .createAccount-btns {
-        background-color: #FA9E33;
-      }
+      background-color: #FA9E33;
+    }
+
     @media only screen and (max-width:1420px) {
       .top-btns {
         max-height: 6rem;
@@ -284,7 +291,7 @@
         text-decoration: none;
       }
 
-     
+
 
       .close-btn {
         color: #FFFFFF;
@@ -304,16 +311,18 @@
         text-align: right;
         display: none;
       }
-    
+
 
       .logoutUser {
         display: flex;
         flex-direction: column;
         align-items: center;
       }
-      .logoutUserDesktop{
+
+      .logoutUserDesktop {
         display: none;
       }
+
       .shield img {
         width: 275px;
       }
@@ -330,7 +339,7 @@
       .bannerInfo h2 {
         margin: 0;
         font-size: 1.2em;
-        min-width:275px;
+        min-width: 275px;
       }
 
       #banner {
@@ -342,6 +351,7 @@
       }
 
     }
+
     @media (min-width:1024px) {
       .bannerInfo h2 {
         font-size: 2em;
@@ -465,16 +475,7 @@
 
         </div><!--end responsive-menu-->
 
-        <script>
-          jQuery(".close-btn").on("click", function() {
-            jQuery(".responsive-menu").hide('slow');
-            jQuery(".responsive-menu").css('left', '-100%');
-          });
-          jQuery(".bars").on("click", function() {
-            jQuery(".responsive-menu").show('slow');
-            jQuery(".responsive-menu").css('left', '0%');
-          });
-        </script>
+
       </div><!--end header-ll-->
       <div class="header-c">
         <a href="<?php echo home_url('/'); ?>" rel="home">
