@@ -116,6 +116,7 @@ get_header();
 	.quizzImage {
 		margin-bottom: 5px;
 		width: 185px;
+		border-radius: 14px;
 	}
 
 	.play-icon {
