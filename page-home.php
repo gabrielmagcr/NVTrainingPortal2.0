@@ -121,7 +121,6 @@ get_header();
 
 	.play-icon {
 		width: 28px;
-		height: 28px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -156,6 +155,14 @@ get_header();
 
 		.quizContainer {
 			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+
+		.quiz span {
+			font-size: 22px;
+		}
+
+		.play-icon {
+			width: 50px;
 		}
 	}
 
