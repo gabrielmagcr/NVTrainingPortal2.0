@@ -103,7 +103,7 @@
     }
 
     .responsiveList {
-        padding: 3px 0;
+        padding: 4px 0;
     }
 
     .footerLastSection {
@@ -151,6 +151,20 @@
 
     .footerSocialDesktop {
         display: none;
+    }
+
+    .newsLetterFormulary {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .newsLetterFormulary input {
+        padding: 10px 20px;
+        border-radius: 35px;
+        background: transparent;
+        border: solid 2px #fff;
+        color: #fff;
     }
 
     @media (min-width:400px) {
@@ -350,7 +364,7 @@
     <div class="footerStructure">
         <div class="newsLetter">
             <span>NEWSLETTER SIGN UP</span>
-            <div class="newsLetterFormClass">
+            <div class="newsLetterFormulary">
                 <input id="newsLetterForm" type="email" autocapitalize="off" autocomplete="email" placeholder="Email Address">
                 <button class="top-btns newsletterbtn">
                     <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" width='35px' xmlns="http://www.w3.org/2000/svg">
