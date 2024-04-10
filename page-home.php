@@ -174,10 +174,7 @@ get_header();
 			width: 60%;
 			margin: 50px 0;
 		}
-		.quizContainer{
-			justify-items: start;
-    		margin: 50px 260px;
-		}
+	
 	}
 
 	@media (min-width:1439px) {
@@ -191,6 +188,10 @@ get_header();
 
 		.bg-wattermark {
 			top: 650px;
+		}
+		.quizContainer{
+			justify-items: start;
+    		margin: 50px 260px;
 		}
 
 	}

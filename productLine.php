@@ -5,7 +5,7 @@
 		justify-content: space-evenly;
 	}
 	.productLineImg img{
-		width: 344px;
+		width: 315px;
 
 	}
 	.productText{
@@ -15,7 +15,7 @@
 		margin: 50px 110px;
 	}
 	.productLineVideo{
-   		width: 344px;
+   		width: 315px;
 	}
 	.productLineText{
 		width: auto;
