@@ -174,7 +174,10 @@ get_header();
 		.textHome p {
 			width: 60%;
 		}
-
+		.quizContainer{
+			justify-items: start;
+    		margin: 50px 260px;
+		}
 	}
 
 	@media (min-width:1439px) {
