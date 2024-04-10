@@ -77,11 +77,11 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const placeholders = document.querySelectorAll('.placeholder-img');
-        const playIcons = document.querySelectorAll('.play-icon');
+        const playIconsNew = document.querySelectorAll('.playIconProductVideo');
         const videos = document.querySelectorAll('.video');
 
-        for (let i = 0; i < playIcons.length; i++) {
-            playIcons[i].addEventListener('click', function() {
+        for (let i = 0; i < playIconsNew.length; i++) {
+            playIconsNew[i].addEventListener('click', function() {
                 placeholders[i].style.display = 'none';
                 playIcons[i].style.display = 'none';
                 videos[i].style.display = 'block';
