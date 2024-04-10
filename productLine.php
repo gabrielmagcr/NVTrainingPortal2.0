@@ -3,7 +3,7 @@
 	.productVideoContainer{
 		display: flex;
 	}
-	.productLineImg{
+	.productLineImg img{
 		width: 344px;
 
 	}
