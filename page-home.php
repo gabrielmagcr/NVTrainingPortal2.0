@@ -121,7 +121,10 @@ get_header();
 	.play-icon {
 		width: 28px;
 		height: 28px;
-		margin-top: -14px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	@media (min-width:767px) {
