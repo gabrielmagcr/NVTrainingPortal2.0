@@ -1,5 +1,5 @@
 <style>
-    .mainVideo {
+	.mainVideo {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -32,7 +32,8 @@
 		font-family: "Montserrat", sans-serif;
 		font-weight: 600;
 	}
-	@media (min-width:767px){
+
+	@media (min-width:767px) {
 		.mainVideoImg img {
 			width: 500px;
 		}
@@ -47,10 +48,18 @@
 		}
 
 	}
-	@media (min-width:1023px){
-		.mainVideosContainer{
+
+	@media (min-width:1023px) {
+		.mainVideosContainer {
 			display: flex;
+			justify-content: space-around;
 		}
+
+		.mainVideo {
+			width: 500px;
+			align-items: flex-start;
+		}
+
 		.mainVideoText {
 			width: 70%;
 		}
@@ -58,23 +67,23 @@
 </style>
 
 <div class="mainVideosContainer">
-    <div class="mainVideo">
-        <div class="mainVideoImg">
-            <img src="/wp-content/uploads/Placeholder-image.png">
-        </div>
-        <div class="mainVideoText">
-            <h3>Our Brand - Naturevet Brand Video</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
-    <div class="mainVideo">
-        <div class="mainVideoImg">
-            <img src="/wp-content/uploads/Placeholder-image-1.png">
-        </div>
-        <div class="mainVideoText">
-            <h3>Manufacturing Quality Video</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-    </div>
+	<div class="mainVideo">
+		<div class="mainVideoImg">
+			<img src="/wp-content/uploads/Placeholder-image.png">
+		</div>
+		<div class="mainVideoText">
+			<h3>Our Brand - Naturevet Brand Video</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+	<div class="mainVideo">
+		<div class="mainVideoImg">
+			<img src="/wp-content/uploads/Placeholder-image-1.png">
+		</div>
+		<div class="mainVideoText">
+			<h3>Manufacturing Quality Video</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
 </div>
 <?php get_template_part('lineBreak'); ?>
