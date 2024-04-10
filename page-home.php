@@ -103,27 +103,25 @@ get_header();
 	}
 
 	.quiz {
-		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
 	}
 
 	.quiz-link {
 		position: relative;
-		display: inline-block;
-	}
-
-	.play-icon {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 28px;
-		height: 28px;
-		z-index: 1;
 	}
 
 	.quizzImage {
 		margin-bottom: 5px;
 		width: 185px;
+	}
+
+	.play-icon {
+		width: 28px;
+		height: 28px;
+		margin-top: -14px;
 	}
 
 	@media (min-width:767px) {
