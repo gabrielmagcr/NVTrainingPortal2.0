@@ -69,7 +69,7 @@ get_header();
 
 	.textHome p {
 		font-family: "Montserrat", sans-serif;
-		font-weight: 500;
+		font-weight: 600;
 		width: 75%;
 		font-size: 16px;
 		line-height: 28px;

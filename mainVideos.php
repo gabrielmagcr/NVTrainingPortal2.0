@@ -39,13 +39,18 @@
 
 		.mainVideoText h3 {
 
-			font-size: 42px;
+			font-size: 30px;
 		}
 
 		.mainVideoText p {
-			font-size: 22px;
+			font-size: 18px;
 		}
 
+	}
+	@media (min-width:1023px){
+		.mainVideosContainer{
+			display: flex;
+		}
 	}
 </style>
 
