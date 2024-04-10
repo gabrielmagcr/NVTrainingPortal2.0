@@ -11,6 +11,7 @@ get_header();
 		text-transform: uppercase;
 		font-size: 36px;
 		text-align: center;
+		font-family: "Brandon Grotesque",sans-serif;
 	}
 
 	.mainContainer {
