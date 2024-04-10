@@ -3,14 +3,17 @@
 	.productVideoContainer{
 		display: flex;
 	}
+	.productLineImg{
+		width: 344px;
 
+	}
 }
 </style>
 <div class="productLineContainer">
 	<h2 class="welcomeTitle">Product lines</h2>
 	<div class="productVideoContainer">
 		<div class="mainVideo">
-			<div class="mainVideoImg">
+			<div class="mainVideoImg productLineImg">
 				<img src="/wp-content/uploads/Placeholder-image-2.png">
 			</div>
 			<div class="mainVideoText">
@@ -19,7 +22,7 @@
 			</div>
 		</div>
 		<div class="mainVideo">
-			<div class="mainVideoImg">
+			<div class="mainVideoImg productLineImg">
 				<img src="/wp-content/uploads/Placeholder-image-3.png">
 			</div>
 			<div class="mainVideoText">
@@ -28,7 +31,7 @@
 			</div>
 		</div>
 		<div class="mainVideo">
-			<div class="mainVideoImg">
+			<div class="mainVideoImg productLineImg">
 				<img src="/wp-content/uploads/Placeholder-image-4.png">
 			</div>
 			<div class="mainVideoText">
