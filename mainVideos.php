@@ -9,9 +9,11 @@
 		margin-top: 15px;
 
 	}
+
 	.mainVideoImg img {
 		width: 330px;
 	}
+
 	.mainVideoText {
 		text-align: left;
 		width: 80%;
@@ -34,6 +36,7 @@
 		.mainVideoImg img {
 			width: 500px;
 		}
+
 		.mainVideoText h3 {
 			font-size: 30px;
 		}
@@ -63,7 +66,9 @@
 <div class="mainVideosContainer">
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img src="/wp-content/uploads/Placeholder-image.png">
+			<video controls >
+				<source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
+			</video>
 		</div>
 		<div class="mainVideoText">
 			<h3>Our Brand - Naturevet Brand Video</h3>
@@ -72,7 +77,9 @@
 	</div>
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img src="/wp-content/uploads/Placeholder-image-1.png">
+			<video controls >
+				<source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
+			</video>
 		</div>
 		<div class="mainVideoText">
 			<h3>Manufacturing Quality Video</h3>
