@@ -276,9 +276,9 @@ get_header();
 
 						<a class="completed quiz-link" href="<?php the_permalink() . "?completedQuiz"; ?>">
 							<img class="quizzImage quizCompleted" src="<?php the_field('quiz_bg_image') ?>">
-							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
+						<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 						<div class=" completed_div">
 							<a class="completedLink" href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>"></a>
 							<div class="checkmark">
@@ -291,9 +291,9 @@ get_header();
 					<div class="quiz">
 						<a href="<?php the_permalink() ?>" class="quiz-link">
 							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
-							<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
+						<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
 			<?php }
 					}
