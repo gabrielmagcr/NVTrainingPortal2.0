@@ -309,7 +309,7 @@
         display: none;
       }
       .shield img {
-        width: 230px;
+        width: 275px;
       }
 
       .shield {
@@ -323,7 +323,8 @@
 
       .bannerInfo h2 {
         margin: 0;
-        font-size: 1.5em;
+        font-size: 1.2em;
+        min-width:275px;
       }
 
       #banner {
