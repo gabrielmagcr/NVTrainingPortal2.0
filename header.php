@@ -169,6 +169,7 @@
     margin: 10px -30px;
     text-transform: uppercase;
     font-family: "Brandon Grotesque";
+    border: none;
     }
 
     .createAccount-btns {

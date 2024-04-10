@@ -61,18 +61,18 @@
         box-sizing: border-box;
     }
 
-    .newsLetterFormClass label::placeholder {
+    #newsLetterForm label::placeholder {
         color: #cdcdcd;
         transition: font-size 0.3s ease, transform 0.3s ease, margin-top 0.3s ease;
     }
 
-    .newsLetterFormClass input:focus::placeholder {
+    #newsLetterForm input:focus::placeholder {
         font-size: 12px;
         transform: translateY(-10px);
         margin-top: -10px;
     }
 
-    .newsLetterFormClass:not(:focus)::placeholder {
+    #newsLetterForm:not(:focus)::placeholder {
         font-size: 16px;
         transform: translateY(0);
         margin-top: 0;
