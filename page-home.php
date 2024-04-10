@@ -161,6 +161,12 @@ get_header();
 			font-size: 22px;
 		}
 
+		.quizzImage {
+
+			width: 250px;
+			height: 170px;
+		}
+
 		.play-icon {
 			width: 50px;
 		}
