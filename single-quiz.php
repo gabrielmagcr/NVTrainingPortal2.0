@@ -11,6 +11,9 @@
     max-height: 600px;
   }
   .quizBg{
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     background-color: #000000cf;

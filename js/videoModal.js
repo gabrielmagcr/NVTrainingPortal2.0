@@ -1,4 +1,5 @@
 (function checkVideo(){
+
 	if(window.location.search!="?completed"){
 	var required =document.querySelectorAll(".field_required");
 	for(var x=0;x<required.length;x++){
@@ -46,9 +47,11 @@ function checkTime(){
   
 }
   function removeVideoModal(){
+    const bgQuizz= document.querySelector('.quizBg');
       var modal=document.getElementsByClassName("popup");
       modal[0].classList.remove("video_modal");
       var modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
+      bgQuizz.style.display='none';
   }
  
