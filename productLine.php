@@ -19,6 +19,7 @@
 
         .productLineVideo {
             width: 315px;
+			height: 185px;
         }
 
         .productLineText {
