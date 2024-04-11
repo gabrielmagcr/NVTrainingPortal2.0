@@ -38,7 +38,7 @@
                 <img class="placeholder-img placeholder-imgPL " src="/wp-content/uploads/Placeholder-image-2.png" alt="Placeholder Image">
                 <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
                 <video class="video" controls style="display: none;">
-                    <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
+                    <source src="https://www.youtube.com/embed/p-5dMoulSh0" type="video/mp4">
                 </video>
             </div>
             <div class="mainVideoText productLineText">
