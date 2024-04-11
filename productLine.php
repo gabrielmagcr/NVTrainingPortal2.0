@@ -10,7 +10,7 @@
 
         .placeholder-imgPL, .productLineImg video {
             width: 315px;
-			height: 185px;
+			
         }
 
         .productText {
@@ -19,7 +19,7 @@
 
         .productLineVideo {
             width: 315px;
-			height: 185px;
+			
         }
 
         .productLineText {
