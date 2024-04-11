@@ -20,23 +20,50 @@
     width: 100vw;
     background-color: #000000cf;
   }
-  .backHomeLink{
+
+  .backHomeLink {
     text-decoration: none;
     color: #2C667E;
-    font-family: "Brandon Grotesque",sans-serif;
+    font-family: "Brandon Grotesque", sans-serif;
     font-size: 16px;
     font-weight: 600;
     margin: 15px;
   }
-  .quizLine{
+
+  .quizContainer {
+    margin: 40px;
+  }
+
+  .quizLine {
     border-bottom: solid 2px #2C667E;
     width: 85%;
     margin: 0 auto;
   }
+
+  .quizTitle {
+    text-align: center;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4D7F70;
+  }
+
+  .quizText p {
+    color: #2D1A10;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+
   @media (min-width:767px) {
     .popupQuizVideo {
-    top: 55%;
-  
+      top: 55%;
+
     }
   }
 </style>
@@ -51,9 +78,9 @@ session_start();
 $_SESSION['post_id'] = get_the_ID();
 ?>
 
-<?php if(get_field('activate_banner')){ ?>
-<section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
-</section>
+<?php if (get_field('activate_banner')) { ?>
+  <section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
+  </section>
 <?php } ?>
 
 <?php
@@ -84,17 +111,18 @@ while (have_posts()) {
 
 
 
-  <div class="page-banner" ses="<?php echo $_SESSION['user_id'] ?>" id="currentpostid" dataType=<?php echo get_the_ID() ?>>
+  <div class="page-banner quizContainer" ses="<?php echo $_SESSION['user_id'] ?>" id="currentpostid" dataType=<?php echo get_the_ID() ?>>
     <div class="container container--narrow page-section">
       <div class="metabox metabox--position-up metabox--with-home-link">
-        <a class="metabox__blog-home-link backHomeLink" href="<?php echo get_bloginfo('url'); ?>">< NaturVet University Catalog</a>
+        <a class="metabox__blog-home-link backHomeLink" href="<?php echo get_bloginfo('url'); ?>">
+          < NaturVet University Catalog</a>
       </div>
     </div>
     <div class="quizLine"></div>
     <div class="page-banner__bg-image" style="background-image: url('');"></div>
     <div class="page-banner__content container container--narrow">
-      <h1 class="page-banner__title"><?php the_title(); ?></h1>
-      <div class="page-banner__intro">
+      <h1 class="quizTitle"><?php the_title(); ?></h1>
+      <div class="page-banner__intro quizText">
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
         <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
