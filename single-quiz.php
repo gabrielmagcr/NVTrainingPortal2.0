@@ -10,6 +10,11 @@
     width: 90%;
     max-height: 600px;
   }
+  .quizBg{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000cf;
+  }
 </style>
 
 <?php
@@ -34,6 +39,7 @@ $completedThisQuiz=false;
 if (strpos($url,'completedQuiz') !== false) {
     $completedThisQuiz=true;
 } else {?>
+  	<div class="quizBg"></div>
     <div class="popup popupQuizVideo <?php $video=get_field('quiz_video');if($video){echo 'video_modal';}?>">
   <div class="modal_content">
      <?php echo $video ;?>
