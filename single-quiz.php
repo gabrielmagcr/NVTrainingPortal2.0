@@ -33,7 +33,7 @@ $completedThisQuiz=false;
 if (strpos($url,'completedQuiz') !== false) {
     $completedThisQuiz=true;
 } else {?>
-    <div class="popup <?php $video=get_field('quiz_video');if($video){echo 'video_modal';}?>">
+    <div class="popup popupQuizVideo <?php $video=get_field('quiz_video');if($video){echo 'video_modal';}?>">
   <div class="modal_content">
      <?php echo $video ;?>
   </div>
