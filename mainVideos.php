@@ -40,7 +40,7 @@
 	}
 
 	@media (min-width:767px) {
-		.mainVideoImg video {
+		.mainVideoImg video, .placeholder-img {
 			width: 500px;
 
 		}
