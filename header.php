@@ -41,7 +41,9 @@
       -webkit-transition: all 0.4s ease;
       transition: all 0.4s ease;
     }
-
+    body{
+      margin: 0;
+    }
     .content {
       margin: 0 auto;
       font-family: 'Brandon Grotesque';
