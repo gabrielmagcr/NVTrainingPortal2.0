@@ -1,3 +1,16 @@
+<style>
+  .popupQuizVideo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+  .wp-video-shortcode{
+    width: 90%;
+  }
+</style>
+
 <?php
   if(!get_current_user_id()){
     wp_redirect( home_url());
