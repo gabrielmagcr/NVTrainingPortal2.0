@@ -40,7 +40,7 @@
 	@media (min-width:767px) {
 		.mainVideoImg video {
 			width: 500px;
-			height: 300px;
+			height: 285px;
 		}
 
 		.mainVideoText h3 {
@@ -60,12 +60,12 @@
 
 		.mainVideo {
 			width: 500px;
-			height: 300px;
+			height: 285px;
 			align-items: flex-start;
 		}
 		.placeholder-img{
 			width: 500px;
-			height: 300px;
+			height: 285px;
 		}
 
 		.mainVideoText {

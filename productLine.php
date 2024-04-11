@@ -10,6 +10,7 @@
 
         .productLineImg img, .productLineImg video {
             width: 315px;
+			height: 175px;
         }
 
         .productText {
@@ -18,6 +19,7 @@
 
         .productLineVideo {
             width: 315px;
+			height: 175px;
         }
 
         .productLineText {
