@@ -83,7 +83,7 @@
 <?php
 $welcomeVideo1 = get_field('welcomeVideo1');
 $placeHolderImage1 = get_field('placeHolderImg1');
-$videoTitle1 = get_field('videoTitle');
+$videoTitle1 = get_field('videoTitle1');
 $videoText1 = get_field('videoText1');
 $welcomeVideo2 = get_field('welcomeVideo2');
 $placeHolderImage2 = get_field('placeHolderImg2');
