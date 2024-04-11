@@ -12,10 +12,12 @@
 
 	.mainVideoImg video {
 		width: 330px;
+		height: 185px;
 		border-radius: 24px;
 	}
 	.placeholder-img{
 		width: 330px;
+		height: 185px;
 	}
 	.mainVideoText {
 		text-align: left;
@@ -38,6 +40,7 @@
 	@media (min-width:767px) {
 		.mainVideoImg video {
 			width: 500px;
+			height: 300px;
 		}
 
 		.mainVideoText h3 {
@@ -57,10 +60,12 @@
 
 		.mainVideo {
 			width: 500px;
+			height: 300px;
 			align-items: flex-start;
 		}
 		.placeholder-img{
 			width: 500px;
+			height: 300px;
 		}
 
 		.mainVideoText {
