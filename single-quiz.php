@@ -26,7 +26,7 @@
     font-family: "Brandon Grotesque";
     font-size: 16px;
   }
-  @media (min-width:767px){
+  @media (min-width:767px) {
     .popupQuizVideo {
     top: 55%;
   
