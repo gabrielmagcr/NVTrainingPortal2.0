@@ -84,11 +84,11 @@
 $welcomeVideo1 = get_field('welcomeVideo1');
 $placeHolderImage1 = get_field('placeHolderImg1');
 $videoTitle1 = get_field('videoTitle1');
-$videoText1 = get_field('videoText1');
+$videoText1 = get_field('videotext1');
 $welcomeVideo2 = get_field('welcomeVideo2');
 $placeHolderImage2 = get_field('placeHolderImg2');
 $videoTitle2 = get_field('videoTitle2');
-$videoText2 = get_field('videoText2');
+$videoText2 = get_field('videotext2');
 ?>
 <div class="mainVideosContainer">
 	<div class="mainVideo">
