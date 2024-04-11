@@ -23,8 +23,9 @@
   .backHomeLink{
     text-decoration: none;
     color: #2C667E;
-    font-family: "Brandon Grotesque";
+    font-family: "Brandon Grotesque",sans-serif;
     font-size: 16px;
+    font-weight: bold;
   }
   @media (min-width:767px) {
     .popupQuizVideo {
@@ -80,7 +81,7 @@ while (have_posts()) {
   <div class="page-banner" ses="<?php echo $_SESSION['user_id'] ?>" id="currentpostid" dataType=<?php echo get_the_ID() ?>>
     <div class="container container--narrow page-section">
       <div class="metabox metabox--position-up metabox--with-home-link">
-        <p><a class="metabox__blog-home-link backHomeLink" href="<?php echo get_bloginfo('url'); ?>"><< NaturVet University Catalog</a></p>
+        <p><a class="metabox__blog-home-link backHomeLink" href="<?php echo get_bloginfo('url'); ?>">< NaturVet University Catalog</a></p>
       </div>
     </div>
     <div class="page-banner__bg-image" style="background-image: url('');"></div>

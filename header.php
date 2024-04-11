@@ -46,7 +46,7 @@
     }
     .content {
       margin: 0 auto;
-      font-family: 'Brandon Grotesque';
+      font-family: 'Brandon Grotesque', sans-serif;
       padding: 7px 0px 9px 0px;
     }
 
@@ -170,7 +170,7 @@
     font-weight: 500;
     margin: 10px -30px;
     text-transform: uppercase;
-    font-family: "Brandon Grotesque";
+    font-family: "Brandon Grotesque", sans-serif;
     border: none;
     }
 
