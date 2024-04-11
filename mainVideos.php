@@ -101,6 +101,28 @@
     </div>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const placeholders = document.querySelectorAll('.placeholder-img');
+        const playIcons = document.querySelectorAll('.play-icon');
+        const videos = document.querySelectorAll('.video');
 
+        for (let i = 0; i < playIcons.length; i++) {
+            placeholders[i].addEventListener('click', function() {
+                placeholders[i].style.display = 'none';
+                playIcons[i].style.display = 'none';
+                videos[i].style.display = 'block';
+                videos[i].play();
+            });
+
+            playIcons[i].addEventListener('click', function() {
+                placeholders[i].style.display = 'none';
+                playIcons[i].style.display = 'none';
+                videos[i].style.display = 'block';
+                videos[i].play();
+            });
+        }
+    });
+</script>
 
 <?php get_template_part('lineBreak'); ?>
