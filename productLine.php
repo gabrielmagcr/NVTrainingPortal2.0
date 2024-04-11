@@ -8,9 +8,9 @@
             justify-content: space-evenly;
         }
 
-        .productLineImg img, .productLineImg video {
+        .placeholder-img, .productLineImg video {
             width: 315px;
-			
+			height: 185px;
         }
 
         .productText {
