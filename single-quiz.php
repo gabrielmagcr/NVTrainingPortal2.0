@@ -8,6 +8,7 @@
   }
   .wp-video-shortcode{
     width: 90%;
+    max-height: 600px;
   }
 </style>
 
