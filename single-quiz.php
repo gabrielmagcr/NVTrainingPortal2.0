@@ -40,7 +40,7 @@
     margin: 0 auto;
   }
 
-  .quizTitle {
+  .quizTitle h1 .quizTitle h2 {
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 36px;
@@ -49,7 +49,9 @@
     text-transform: uppercase;
     color: #4D7F70;
   }
-
+  .quizTitle h2{
+    font-size: 32px;
+  }
   .quizText p {
     color: #2D1A10;
     text-align: center;
@@ -120,8 +122,8 @@ while (have_posts()) {
     </div>
     <div class="quizLine"></div>
     <div class="page-banner__bg-image" style="background-image: url('');"></div>
-    <div class="page-banner__content container container--narrow">
-      <h1 class="quizTitle"><?php the_title(); ?></h1>
+    <div class="page-banner__content container container--narrow quizTitle">
+      <h1 class=""><?php the_title(); ?></h1>
       <div class="page-banner__intro quizText">
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
