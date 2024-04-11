@@ -1,14 +1,14 @@
 <style>
   .popupQuizVideo{
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
   }
   .wp-video-shortcode{
     width: 90%;
-    max-height: 600px;
+    max-height: 500px;
   }
   .quizBg{
     position: fixed;
