@@ -33,9 +33,9 @@
     <div class="productVideoContainer">
         <div class="mainVideo productLineVideo">
             <div class="mainVideoImg productLineImg">
-                <img id="placeholder-img-1" src="/wp-content/uploads/Placeholder-image-2.png" alt="Placeholder Image">
+                <img class="placeholder-img" src="/wp-content/uploads/Placeholder-image-2.png" alt="Placeholder Image">
                 <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
-                <video id="video-1" class="video" controls style="display: none;">
+                <video class="video" controls style="display: none;">
                     <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
                 </video>
             </div>
@@ -46,9 +46,9 @@
         </div>
         <div class="mainVideo productLineVideo">
             <div class="mainVideoImg productLineImg">
-                <img id="placeholder-img-2" src="/wp-content/uploads/Placeholder-image-3.png">
+                <img src="/wp-content/uploads/Placeholder-image-3.png">
                 <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
-                <video id="video-2" class="video" controls style="display: none;">
+                <video class="video" controls style="display: none;">
                     <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
                 </video>
             </div>
@@ -59,9 +59,9 @@
         </div>
         <div class="mainVideo productLineVideo">
             <div class="mainVideoImg productLineImg">
-                <img id="placeholder-img-3" src="/wp-content/uploads/Placeholder-image-4.png">
+                <img src="/wp-content/uploads/Placeholder-image-4.png">
                 <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
-                <video id="video-3" class="video" controls style="display: none;">
+                <video class="video" controls style="display: none;">
                     <source src="/wp-content/uploads/2018/11/HempVideo.mp4" type="video/mp4">
                 </video>
             </div>
@@ -72,31 +72,6 @@
         </div>
     </div>
 </div>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const placeholders = document.querySelectorAll('.placeholder-img');
-        const playIcons = document.querySelectorAll('.play-icon');
-
-        for (let i = 0; i < playIcons.length; i++) {
-            placeholders[i].addEventListener('click', function() {
-                placeholders[i].style.display = 'none';
-                playIcons[i].style.display = 'none';
-                const video = document.getElementById('video-' + (i + 1));
-                video.style.display = 'block';
-                video.play();
-            });
-
-            playIcons[i].addEventListener('click', function() {
-                placeholders[i].style.display = 'none';
-                playIcons[i].style.display = 'none';
-                const video = document.getElementById('video-' + (i + 1));
-                video.style.display = 'block';
-                video.play();
-            });
-        }
-    });
-</script>
-
 
 
 <?php get_template_part('lineBreak'); ?>
