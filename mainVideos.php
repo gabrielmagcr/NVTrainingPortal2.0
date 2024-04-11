@@ -17,7 +17,7 @@
 	}
 	.placeholder-img{
 		width: 330px;
-		height: 192px;
+		
 	}
 	.mainVideoText {
 		text-align: left;
