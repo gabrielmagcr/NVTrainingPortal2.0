@@ -12,7 +12,7 @@
 
 	.mainVideoImg video {
 		width: 330px;
-		height: 192px;
+	
 		border-radius: 24px;
 	}
 	.placeholder-img{
