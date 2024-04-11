@@ -29,8 +29,9 @@
     margin: 15px;
   }
   .quizLine{
-    border-bottom: solid 1px #2C667E;
+    border-bottom: solid 2px #2C667E;
     width: 85%;
+    margin: 0 auto;
   }
   @media (min-width:767px) {
     .popupQuizVideo {
