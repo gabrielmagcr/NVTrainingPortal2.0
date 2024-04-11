@@ -1,7 +1,7 @@
 <style>
   .popupQuizVideo {
     position: fixed;
-    top: 55%;
+    top: 20%;
     left: 50%;
     width: 90%;
     transform: translate(-50%, -50%);
@@ -19,6 +19,18 @@
     height: 100vh;
     width: 100vw;
     background-color: #000000cf;
+  }
+  .backHomeLink{
+    text-decoration: none;
+    color: #2C667E;
+    font-family: "Brandon Grotesque";
+    font-size: 16px;
+  }
+  @media (min-width:767px){
+    .popupQuizVideo {
+    top: 55%;
+  
+    }
   }
 </style>
 
@@ -68,7 +80,7 @@ while (have_posts()) {
   <div class="page-banner" ses="<?php echo $_SESSION['user_id'] ?>" id="currentpostid" dataType=<?php echo get_the_ID() ?>>
     <div class="container container--narrow page-section">
       <div class="metabox metabox--position-up metabox--with-home-link">
-        <p><a class="metabox__blog-home-link" href="<?php echo get_bloginfo('url'); ?>"><i class="fas fa-home"></i> Back to all trainings</a></p>
+        <p><a class="metabox__blog-home-link backHomeLink" href="<?php echo get_bloginfo('url'); ?>"><< NaturVet University Catalog</a></p>
       </div>
     </div>
     <div class="page-banner__bg-image" style="background-image: url('');"></div>
