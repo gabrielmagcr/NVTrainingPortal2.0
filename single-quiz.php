@@ -73,6 +73,13 @@
     justify-content: center;
     align-items: center;
   }
+  .alert, .alert-error{
+    background: #fff;
+    text-align: center;
+    font-size: 34px;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: 600;
+  }
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
