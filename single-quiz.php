@@ -90,6 +90,9 @@
     padding: 15px;
     border-radius: 12px;
   }
+  .caldera-grid:last-child{
+    border: none;
+  }
   .submitQuizBtn{
     background: #E26743;
     border: none;
@@ -102,7 +105,9 @@
     padding: 20px 37px;
     font-size: 20px;
     font-family: "Brandon Grotesque", sans-serif;
-   
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
   @media (min-width:767px) {
     .popupQuizVideo {
