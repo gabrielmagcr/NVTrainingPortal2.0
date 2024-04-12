@@ -110,6 +110,9 @@ while (have_posts()) {
   ?>
   <!--Lines 17-28 Checks if Quiz has already been completed , if quiz has not been completed adds Video modal else dosent display video modal-->
 
+
+
+
   <div class="page-banner quizContainer" ses="<?php echo $_SESSION['user_id'] ?>" id="currentpostid" dataType=<?php echo get_the_ID() ?>>
     <div class="container container--narrow page-section">
       <div class="metabox metabox--position-up metabox--with-home-link">
@@ -118,20 +121,34 @@ while (have_posts()) {
       </div>
     </div>
     <div class="quizLine"></div>
-
+    <div class="page-banner__bg-image" style="background-image: url('');"></div>
     <div class="page-banner__content container container--narrow quizTitle">
       <h1 class=""><?php the_title(); ?></h1>
       <div class="page-banner__intro quizText">
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
-      
+
+
         <?php
+
         if (!$completedThisQuiz) {
           the_field('quiz');
         } ?>
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
       </div>
     </div>
+  </div>
+
+  <div class="container container--narrow page-section">
+    <div id="bottomHomeButton" class="metabox metabox--position-up metabox--with-home-link">
+      <p><a class="metabox__blog-home-link" href="<?php echo get_bloginfo('url'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to all trainings</a> <span class="metabox__main"><?php the_title(); ?></span></p>
+    </div>
+
+  </div>
+
+  <div class="helpLinkButton">
+    <a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
+    </a>
   </div>
 
 <?php }
