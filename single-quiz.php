@@ -43,7 +43,7 @@
 
   .quizText {
     color: #2D1A10;
-    text-align: center;
+    text-align: start;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -59,7 +59,6 @@
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 32px;
-   
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
@@ -79,6 +78,7 @@
     font-size: 34px !important;
     font-family: "Brandon Grotesque", sans-serif !important;
     font-weight: 600 !important;
+    color: #E26743 !important;
   }
   @media (min-width:767px) {
     .popupQuizVideo {
