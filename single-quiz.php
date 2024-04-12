@@ -97,10 +97,12 @@
     padding: 15px;
     border-radius: 12px;
   }
-  .submitDiv{
+
+  .submitDiv {
     border: none !important;
   }
-  .submitQuizBtn{
+
+  .submitQuizBtn {
     background: #E26743;
     border: none;
     color: white;
@@ -116,12 +118,14 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
+
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
 
     }
   }
+
   @media (min-width:1400px) {
     .quizText {
       width: 55%;
@@ -187,6 +191,11 @@ while (have_posts()) {
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
 
+        <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
+        <div class="collapse" id="collapseVideo">
+          <?php the_field('quiz_video'); ?>
+          <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
+        </div>
 
         <?php
 
@@ -197,11 +206,7 @@ while (have_posts()) {
       </div>
     </div>
   </div>
-  <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
-  <div class="collapse" id="collapseVideo">
-    <?php the_field('quiz_video'); ?>
-    <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
-  </div>
+
   <div class="container container--narrow page-section">
     <div id="bottomHomeButton" class="metabox metabox--position-up metabox--with-home-link">
       <p><a class="metabox__blog-home-link" href="<?php echo get_bloginfo('url'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to all trainings</a> <span class="metabox__main"><?php the_title(); ?></span></p>
@@ -219,3 +224,6 @@ while (have_posts()) {
 get_footer();
 
 ?>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
