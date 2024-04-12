@@ -36,11 +36,10 @@
 
   .quizLine {
     border-bottom: solid 2px #2C667E;
-    width: 85%;
     margin: 0 auto;
   }
 
-  .quizTitle h1 .quizTitle h2 {
+  .quizTitle, .quizText h2 {
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 36px;
