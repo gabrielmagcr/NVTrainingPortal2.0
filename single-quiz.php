@@ -191,22 +191,8 @@ while (have_posts()) {
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
 
-        <?php
-$show_video_container = false;
 
-$alert_class = 'alert-error'; 
 
-if ($alert_class === 'alert-error') {
-    $show_video_container = true; 
-}
-?>
-
-<?php if ($show_video_container): ?>
-    <button class="btn" id="toggleVideo">Want to watch the video again?</button>
-    <div class="collapse" id="collapseVideo">
-        <?php the_field('quiz_video'); ?>
-    </div>
-<?php endif; ?>
 
 
         <?php
@@ -250,9 +236,9 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleButton.addEventListener('click', function() {
 
     if (collapseContent.style.display === 'none') {
-      collapseContent.style.display = 'none';
-    } else {
       collapseContent.style.display = 'block';
+    } else {
+      collapseContent.style.display = 'none';
     }
   });
 });
