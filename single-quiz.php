@@ -191,11 +191,12 @@ while (have_posts()) {
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
 
-        <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
-        <div class="collapse" id="collapseVideo">
-          <?php the_field('quiz_video'); ?>
-          <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
-        </div>
+       <button class="btn" id="toggleVideo">Want to watch the video again?</button>
+<div class="collapse" id="collapseVideo">
+  <!-- PHP para mostrar el video -->
+  <?php the_field('quiz_video'); ?>
+</div>
+
 
         <?php
 
@@ -225,5 +226,21 @@ get_footer();
 
 ?>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+  var toggleButton = document.getElementById('toggleVideo');
+  var collapseContent = document.getElementById('collapseVideo');
+
+ 
+  toggleButton.addEventListener('click', function() {
+
+    if (collapseContent.style.display === 'none') {
+      collapseContent.style.display = 'block';
+    } else {
+      collapseContent.style.display = 'none';
+    }
+  });
+});
+</script>
