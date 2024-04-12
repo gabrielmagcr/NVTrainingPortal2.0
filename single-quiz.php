@@ -51,6 +51,7 @@
     line-height: 28px;
     width: 55%;
   }
+
   .quizTitle,
   .quizText h2,
   .quizText h3,
@@ -72,7 +73,9 @@
     justify-content: center;
     align-items: center;
   }
-  .alert, .alert-error{
+
+  .alert,
+  .alert-error {
     background: #fff !important;
     text-align: center !important;
     font-size: 34px !important;
@@ -80,6 +83,14 @@
     font-weight: 600 !important;
     color: #E26743 !important;
   }
+
+  .caldera-grid .form-group {
+    margin-bottom: 23px;
+    border: 1px solid;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
