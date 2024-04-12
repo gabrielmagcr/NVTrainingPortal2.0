@@ -127,14 +127,8 @@ while (have_posts()) {
       <div class="page-banner__intro quizText">
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
-        <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
-        <div class="collapse" id="collapseVideo">
-          <?php the_field('quiz_video'); ?>
-          <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
-        </div>
-
+      
         <?php
-
         if (!$completedThisQuiz) {
           the_field('quiz');
         } ?>
@@ -148,11 +142,6 @@ while (have_posts()) {
       <p><a class="metabox__blog-home-link" href="<?php echo get_bloginfo('url'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to all trainings</a> <span class="metabox__main"><?php the_title(); ?></span></p>
     </div>
 
-  </div>
-
-  <div class="helpLinkButton">
-    <a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
-    </a>
   </div>
 
 <?php }
