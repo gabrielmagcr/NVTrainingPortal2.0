@@ -90,7 +90,7 @@
     padding: 15px;
     border-radius: 12px;
   }
-  .form-group:last-child{
+  .caldera-grid:last-child .form-group:last-child{
     border: none;
   }
   .submitQuizBtn{
