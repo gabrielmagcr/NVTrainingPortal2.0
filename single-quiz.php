@@ -90,18 +90,18 @@
     padding: 15px;
     border-radius: 12px;
   }
-  .btn{
-    background: #E26743 !important;
-    border: none !important;
-    color: white !important;
-    text-align: center !important;
-    justify-content: center !important;
-    display: flex !important;
-    align-items: center !important;
-    border-radius: 30px !important;
-    padding: 20px 37px !important;
-    font-size: 20px !important;
-    font-family: "Brandon Grotesque", sans-serif !important;
+  .submitQuizBtn{
+    background: #E26743;
+    border: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 37px;
+    font-size: 20px;
+    font-family: "Brandon Grotesque", sans-serif;
    
   }
   @media (min-width:767px) {
