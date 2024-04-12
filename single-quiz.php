@@ -250,9 +250,9 @@ document.addEventListener('DOMContentLoaded', function() {
   toggleButton.addEventListener('click', function() {
 
     if (collapseContent.style.display === 'none') {
-      collapseContent.style.display = 'block';
-    } else {
       collapseContent.style.display = 'none';
+    } else {
+      collapseContent.style.display = 'block';
     }
   });
 });
