@@ -49,7 +49,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
-    width: 55%;
+    width: 80%;
   }
 
   .quizTitle,
@@ -113,6 +113,11 @@
     .popupQuizVideo {
       top: 55%;
 
+    }
+  }
+  @media (min-width:1400px) {
+    .quizText {
+      width: 55%;
     }
   }
 </style>
