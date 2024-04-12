@@ -90,7 +90,20 @@
     padding: 15px;
     border-radius: 12px;
   }
-
+  .btn{
+    background: #E26743;
+    border: none;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 20px 37;
+    font-size: 20px;
+    font-family: "Brandon Grotesque", sans-serif;
+   
+  }
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
