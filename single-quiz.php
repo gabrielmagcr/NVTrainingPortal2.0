@@ -91,7 +91,7 @@
     border-radius: 12px;
   }
   .submitDiv{
-    border: none;
+    border: none !important;
   }
   .submitQuizBtn{
     background: #E26743;
