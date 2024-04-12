@@ -90,7 +90,7 @@
     padding: 15px;
     border-radius: 12px;
   }
-  .caldera-grid:last-child .form-group:last-child{
+  .submitDiv{
     border: none;
   }
   .submitQuizBtn{
