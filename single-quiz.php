@@ -36,7 +36,8 @@
 
   .quizLine {
     border-bottom: solid 2px #2C667E;
-    margin: 0 auto;
+    margin: 10 auto;
+    width: 100%;
   }
 
 
@@ -48,6 +49,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 28px;
+    width: 55%;
   }
   .quizTitle,
   .quizText h2,
@@ -66,6 +68,10 @@
 
   .quizTitle {
     font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   @media (min-width:767px) {
     .popupQuizVideo {
