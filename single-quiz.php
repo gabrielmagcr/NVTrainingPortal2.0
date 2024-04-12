@@ -36,7 +36,7 @@
 
   .quizLine {
     border-bottom: solid 2px #2C667E;
-    margin: 10 auto;
+    margin: 20px auto;
     width: 100%;
   }
 
@@ -50,6 +50,9 @@
     font-weight: 500;
     line-height: 28px;
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .quizTitle,
@@ -60,6 +63,7 @@
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 32px;
+    line-height: 34px;
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
@@ -78,10 +82,13 @@
   .alert-error {
     background: #fff !important;
     text-align: center !important;
-    font-size: 34px !important;
+    font-size: 52px !important;
     font-family: "Brandon Grotesque", sans-serif !important;
+    line-height: 52px !important;
     font-weight: 600 !important;
     color: #E26743 !important;
+    margin: 25px 0 !important;
+
   }
 
   .caldera-grid .form-group {
