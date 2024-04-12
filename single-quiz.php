@@ -138,7 +138,11 @@ while (have_posts()) {
       </div>
     </div>
   </div>
-
+  <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
+<div class="collapse" id="collapseVideo">
+  <?php the_field('quiz_video'); ?>
+  <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
+</div>
   <div class="container container--narrow page-section">
     <div id="bottomHomeButton" class="metabox metabox--position-up metabox--with-home-link">
       <p><a class="metabox__blog-home-link" href="<?php echo get_bloginfo('url'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to all trainings</a> <span class="metabox__main"><?php the_title(); ?></span></p>
