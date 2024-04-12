@@ -39,19 +39,8 @@
     margin: 0 auto;
   }
 
-  .quizTitle, .quizText h2 {
-    text-align: center;
-    font-family: "Brandon Grotesque", sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #4D7F70;
-  }
-  .quizTitle h2{
-    font-size: 32px;
-  }
-  .quizText p {
+
+  .quizText {
     color: #2D1A10;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -60,7 +49,24 @@
     font-weight: 500;
     line-height: 28px;
   }
+  .quizTitle,
+  .quizText h2,
+  .quizText h3,
+  .quizText h4,
+  .quizText h5 {
+    text-align: center;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 32px;
+   
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #4D7F70;
+  }
 
+  .quizTitle {
+    font-size: 36px;
+  }
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
@@ -138,10 +144,10 @@ while (have_posts()) {
     </div>
   </div>
   <button data-toggle="collapse" data-target="#collapseVideo" aria-expanded="false" aria-controls="collapseVideo" class="btn btn-primary naturvetColor collapsed">Want to watch the video again?</button>
-<div class="collapse" id="collapseVideo">
-  <?php the_field('quiz_video'); ?>
-  <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
-</div>
+  <div class="collapse" id="collapseVideo">
+    <?php the_field('quiz_video'); ?>
+    <!--Line 49 adds the "Quiz Video" field associated to quiz in the "Quizzes" Tab in the back end-->
+  </div>
   <div class="container container--narrow page-section">
     <div id="bottomHomeButton" class="metabox metabox--position-up metabox--with-home-link">
       <p><a class="metabox__blog-home-link" href="<?php echo get_bloginfo('url'); ?>"><i class="fa fa-home" aria-hidden="true"></i> Back to all trainings</a> <span class="metabox__main"><?php the_title(); ?></span></p>
