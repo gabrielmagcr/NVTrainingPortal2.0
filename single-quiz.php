@@ -197,7 +197,7 @@ $show_video_container = false;
 $alert_class = 'alert-error'; 
 
 if ($alert_class === 'alert-error') {
-    $show_video_container = true; /
+    $show_video_container = true; 
 }
 ?>
 
