@@ -61,6 +61,7 @@ function checkTime(){
       setTimeout(function(){
         if(alertError.textContent.includes('Question')){
           toggleVideo.style.display='block';
+          console.log('true')
         }
       }, 10000)
       
