@@ -121,10 +121,7 @@
   #toggleVideo{
     display: none;
   }
-  .fade-in  {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out; /* Puedes ajustar la duración y la función de la transición según tus preferencias */
-}
+  
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;

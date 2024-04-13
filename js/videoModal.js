@@ -78,7 +78,7 @@ function checkTime(){
             
             calderaQuestions.forEach(function(question) {
                 question.style.background = '#fff';
-                question.classList.add('fade-in');
+                
             });
 
             // Aplicar el estilo a la pregunta incorrecta
