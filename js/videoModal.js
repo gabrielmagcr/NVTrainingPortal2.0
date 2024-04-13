@@ -1,7 +1,7 @@
 const bgQuizz= document.querySelector('.quizBg');
 const collapseVideo= document.querySelector('#collapseVideo');
 const alertError= document.querySelector('.alert-error');
-const toggleVideo= document.querySelector('.toggleVideo');
+const toggleVideo= document.querySelector('#toggleVideo');
 
 (function checkVideo(){
 
@@ -61,19 +61,15 @@ function checkTime(){
 
     }
 
-    function hideShowVideoBtn(clickTrue){
-   
-      if(clickTrue){
-        toggleVideo.style.display='block'
-      }
-
+    function ShowVideoBtn(){
+            toggleVideo.style.display='block'
 
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-      var submitBtn = document.querySelector('.submitQuizBtn');
+      const submitBtn = document.querySelector('.submitQuizBtn');
       
       submitBtn.addEventListener('click', function() {
-        hideShowVideoBtn(true);
+        hideShowVideoBtn();
       });
     });
