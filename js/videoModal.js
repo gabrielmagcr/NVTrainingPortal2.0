@@ -3,6 +3,7 @@ const collapseVideo= document.querySelector('#collapseVideo');
 const alertError= document.querySelector('.alert-error');
 const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
+const calderaQuestions = document.querySelectorAll('.caldera-question');
 
 (function checkVideo(){
 
@@ -67,25 +68,11 @@ function checkTime(){
 
     }
     function wrongQuestion() {
-      // Add an event listener to detect when the error message is displayed
-      document.querySelector(".alert-error").addEventListener("DOMNodeInserted", function(event) {
-          try {
-              // Check if the error message contains information about the incorrect question
-              var errorMessage = event.target.textContent;
-              var incorrectQuestion = errorMessage.match(/Question (\d+) is incorrect/);
   
-              if (incorrectQuestion) {
-                  // Get the number of the incorrect question
-                  var questionNumber = parseInt(incorrectQuestion[1]);
-  
-                  // Apply style to the element of the incorrect question
-                  var question = document.querySelector(".caldera-question:nth-of-type(" + questionNumber + ")");
-                  question.style.background = "#FCE1D9";
-              }
-          } catch (error) {
-              console.error("An error occurred in wrongQuestion function:", error);
-          }
-      });
+      if(alertError.textContent.includes('QUESTION 1')){
+        calderaQuestions.style.background='#FCE1D9';
+      }
+    
   }
   
 
