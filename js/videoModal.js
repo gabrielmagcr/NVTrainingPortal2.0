@@ -68,11 +68,11 @@ function checkTime(){
 
     }
     function wrongQuestion() {
-  
-      if(alertError.textContent.includes('QUESTION 1')){
-        calderaQuestions.style.background='#FCE1D9';
-      }
-    
+      setTimeout(function(){
+        if(alertError.textContent.includes('QUESTION 1')){
+          calderaQuestions.style.background='#FCE1D9';
+        }
+      },300)
   }
   
 
