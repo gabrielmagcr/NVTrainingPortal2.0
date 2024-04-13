@@ -58,11 +58,14 @@ function checkTime(){
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
 
+      hideShowVideoBtn()
+    }
+
+    function hideShowVideoBtn(){
       setTimeout(function(){
         if(alertError.textContent.includes('Question')){
           toggleVideo.style.display='block';
           console.log('true')
         }
-      }, 10000)
-      
+      }, 1000)
     }
