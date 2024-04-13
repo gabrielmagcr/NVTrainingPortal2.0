@@ -59,7 +59,7 @@ function checkTime(){
       collapseVideo.style.display='none';
 
       setTimeout(function(){
-        if(alertError.style.display==='block' && bgQuizz.style.display==='none'){
+        if(alertError.textContent.includes('Question')){
           toggleVideo.style.display='block';
         }
       }, 10000)
