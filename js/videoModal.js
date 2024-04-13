@@ -65,7 +65,7 @@ function checkTime(){
 
     function ShowVideoBtn(){
             toggleVideo.style.display='block'
-
+            wrongQuestion();
     }
     function wrongQuestion() {
       setTimeout(function(){
@@ -80,6 +80,6 @@ function checkTime(){
     document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
        ShowVideoBtn();
-       wrongQuestion();
+     
       });
     });
