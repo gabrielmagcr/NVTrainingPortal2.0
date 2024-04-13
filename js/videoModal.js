@@ -66,6 +66,7 @@ function checkTime(){
             toggleVideo.style.display='block'
             wrongQuestion();
     }
+
     function wrongQuestion() {
       setTimeout(function() {
           const alertError = document.querySelector('.alert-error');
@@ -82,9 +83,8 @@ function checkTime(){
               }
           }
       }, 300);
-  
-  
-
+    }
+    
     document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
        ShowVideoBtn();
