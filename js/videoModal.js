@@ -48,12 +48,18 @@ function checkTime(){
 }
   function removeVideoModal(){
     const bgQuizz= document.querySelector('.quizBg');
-    const collapseVideo= document.querySelector('#collapseVideo')
+    const collapseVideo= document.querySelector('#collapseVideo');
+    const alertError= document.querySelector('.alert-error');
+    const toggleVideo= document.querySelector('.toggleVideo');
       var modal=document.getElementsByClassName("popup");
       modal[0].classList.remove("video_modal");
       var modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
+      
+      if(alertError.style.display='block'){
+        toggleVideo.style.display='block';
+      }
   }
  
