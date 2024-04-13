@@ -1,3 +1,8 @@
+const bgQuizz= document.querySelector('.quizBg');
+const collapseVideo= document.querySelector('#collapseVideo');
+const alertError= document.querySelector('.alert-error');
+const toggleVideo= document.querySelector('.toggleVideo');
+
 (function checkVideo(){
 
 	if(window.location.search!="?completed"){
@@ -47,10 +52,6 @@ function checkTime(){
   
 }
   function removeVideoModal(){
-    const bgQuizz= document.querySelector('.quizBg');
-    const collapseVideo= document.querySelector('#collapseVideo');
-    const alertError= document.querySelector('.alert-error');
-  
       var modal=document.getElementsByClassName("popup");
       modal[0].classList.remove("video_modal");
       var modalIframe =document.getElementsByClassName("modal_content");
@@ -60,14 +61,19 @@ function checkTime(){
 
     }
 
-    function hideShowVideoBtn(){
-      const toggleVideo= document.querySelector('.toggleVideo');
-      toggleVideo.style.display='block'
+    function hideShowVideoBtn(clickTrue){
+   
+      if(clickTrue){
+        toggleVideo.style.display='block'
+      }
+
+
     }
+
     document.addEventListener('DOMContentLoaded', function() {
       var submitBtn = document.querySelector('.submitQuizBtn');
       
       submitBtn.addEventListener('click', function() {
-        hideShowVideoBtn();
+        hideShowVideoBtn(true);
       });
     });
