@@ -62,13 +62,19 @@ function checkTime(){
 
     }
 
-    function ShowVideoBtn(){
-            toggleVideo.style.display='block'
-            calderaQuestions.style.background='#FCE1D9';
-            wrongQuestion();
-    }
-
-    function wrongQuestion() {
+    function resetQuestionBackground() {
+      const calderaQuestions = document.querySelectorAll('.caldera-question');
+      calderaQuestions.forEach(function(question) {
+          question.style.background = '#fff';
+      });
+  }
+  
+  function ShowVideoBtn() {
+      toggleVideo.style.display = 'block';
+      wrongQuestion();
+  }
+  
+  function wrongQuestion() {
       setTimeout(function() {
           const alertError = document.querySelector('.alert-error');
           if (alertError && alertError.textContent.includes('QUESTION')) {
@@ -84,11 +90,12 @@ function checkTime(){
               }
           }
       }, 300);
-    }
-
-    document.addEventListener('DOMContentLoaded', function() {
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
-       ShowVideoBtn();
-     
+          resetQuestionBackground(); // Restablecer el fondo de las preguntas
+          ShowVideoBtn();
       });
-    });
+  });
+  
