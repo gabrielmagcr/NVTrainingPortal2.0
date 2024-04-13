@@ -73,7 +73,7 @@ function checkTime(){
           if (alertError && alertError.textContent.includes('QUESTION')) {
               console.log('testwrong');
               const calderaQuestions = document.querySelectorAll('.caldera-question');
-              const matches = alertError.textContent.match(/QUESTION (\d+) is incorrect/);
+              const matches = alertError.textContent.match(/QUESTION (\d+)/);
               if (matches) {
                   const questionNumber = parseInt(matches[1]);
                   if (questionNumber >= 1 && questionNumber <= calderaQuestions.length) {
@@ -84,7 +84,7 @@ function checkTime(){
           }
       }, 300);
     }
-    
+
     document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
        ShowVideoBtn();
