@@ -1,6 +1,5 @@
 const bgQuizz= document.querySelector('.quizBg');
 const collapseVideo= document.querySelector('#collapseVideo');
-const alertError= document.querySelector('.alert-error');
 const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
@@ -69,7 +68,7 @@ function checkTime(){
     }
     function wrongQuestion() {
       setTimeout(function() {
-          
+        const alertError= document.querySelector('.alert-error');
            if (alertError && alertError.textContent.includes('QUESTION 1')) {
             console.log('testwrong');
           }
