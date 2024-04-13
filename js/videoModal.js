@@ -70,7 +70,7 @@ function checkTime(){
       document.querySelector(".alert-error").addEventListener("DOMNodeInserted", function(event) {
         var errorMessage = event.target.textContent;
         var incorrectQuestion = errorMessage.match(/Question (\d+) is incorrect/);
-
+console.log('wrongquestion')
         if (incorrectQuestion) {
             var questionNumber = parseInt(incorrectQuestion[1]);
 
@@ -78,6 +78,7 @@ function checkTime(){
             question.style.background = "#FCE1D9";
         }
     });
+
     }
 
     document.addEventListener('DOMContentLoaded', function() {
