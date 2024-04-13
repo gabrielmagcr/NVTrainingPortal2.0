@@ -64,7 +64,7 @@ function checkTime(){
 
     function ShowVideoBtn(){
             toggleVideo.style.display='block'
-            calderaQuestions.style.background='#fff'
+            calderaQuestions.style.background='#FCE1D9';
             wrongQuestion();
     }
 
