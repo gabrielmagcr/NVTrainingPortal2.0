@@ -66,9 +66,23 @@ function checkTime(){
             toggleVideo.style.display='block'
 
     }
+    function wrongQuestion(){
+      document.querySelector(".alert-error").addEventListener("DOMNodeInserted", function(event) {
+        var errorMessage = event.target.textContent;
+        var incorrectQuestion = errorMessage.match(/Question (\d+) is incorrect/);
+
+        if (incorrectQuestion) {
+            var questionNumber = parseInt(incorrectQuestion[1]);
+
+            var question = document.querySelector(".caldera-question:nth-of-type(" + questionNumber + ")");
+            question.style.background = "#FCE1D9";
+        }
+    });
+    }
 
     document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
        ShowVideoBtn();
+       wrongQuestion();
       });
     });
