@@ -69,6 +69,7 @@ function checkTime(){
     }
     function wrongQuestion() {
       setTimeout(function(){
+        console.log('testwrong')
         if(alertError.textContent.includes('QUESTION 1')){
           calderaQuestions.style.background='#FCE1D9';
         }
