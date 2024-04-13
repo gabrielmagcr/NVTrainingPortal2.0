@@ -90,7 +90,7 @@ function checkTime(){
                 }
             }
         }
-    }, 300);
+    }, 1000);
 }
   
   document.addEventListener('DOMContentLoaded', function() {
