@@ -57,8 +57,9 @@ function checkTime(){
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
+
       
-      if(alertError.style.display='block'){
+      if(alertError.style.display==='block' && bgQuizz.style.display==='none'){
         toggleVideo.style.display='block';
       }
   }
