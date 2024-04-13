@@ -68,13 +68,16 @@ function checkTime(){
             wrongQuestion();
     }
     function wrongQuestion() {
-      setTimeout(function(){
-        console.log('testwrong')
-        if (alertError && alertError.textContent.includes('QUESTION 1')){
-          calderaQuestions.style.background='#FCE1D9';
-        }
-      },300)
+      setTimeout(function() {
+          console.log('testwrong');
+           if (alertError && alertError.textContent.includes('QUESTION 1')) {
+              calderaQuestions.forEach(function(question) {
+                  question.style.background = '#FCE1D9';
+              });
+          }
+      }, 300);
   }
+  
   
 
     document.addEventListener('DOMContentLoaded', function() {
