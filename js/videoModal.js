@@ -62,12 +62,7 @@ function checkTime(){
 
     }
 
-    function resetQuestionBackground() {
-      const calderaQuestions = document.querySelectorAll('.caldera-question');
-      calderaQuestions.forEach(function(question) {
-          question.style.background = '#fff';
-      });
-  }
+
   
   function ShowVideoBtn() {
       toggleVideo.style.display = 'block';
@@ -75,26 +70,31 @@ function checkTime(){
   }
   
   function wrongQuestion() {
-      setTimeout(function() {
-          const alertError = document.querySelector('.alert-error');
-          if (alertError && alertError.textContent.includes('QUESTION')) {
-              console.log('testwrong');
-              const calderaQuestions = document.querySelectorAll('.caldera-question');
-              const matches = alertError.textContent.match(/QUESTION (\d+)/);
-              if (matches) {
-                  const questionNumber = parseInt(matches[1]);
-                  if (questionNumber >= 1 && questionNumber <= calderaQuestions.length) {
-                      const incorrectQuestion = calderaQuestions[questionNumber - 1];
-                      incorrectQuestion.style.background = '#FCE1D9';
-                  }
-              }
-          }
-      }, 300);
-  }
+    setTimeout(function() {
+        const alertError = document.querySelector('.alert-error');
+        if (alertError && alertError.textContent.includes('QUESTION')) {
+            console.log('testwrong');
+            const calderaQuestions = document.querySelectorAll('.caldera-question');
+            
+            calderaQuestions.forEach(function(question) {
+                question.style.background = '#fff';
+            });
+
+            // Aplicar el estilo a la pregunta incorrecta
+            const matches = alertError.textContent.match(/QUESTION (\d+)/);
+            if (matches) {
+                const questionNumber = parseInt(matches[1]);
+                if (questionNumber >= 1 && questionNumber <= calderaQuestions.length) {
+                    const incorrectQuestion = calderaQuestions[questionNumber - 1];
+                    incorrectQuestion.style.background = '#FCE1D9';
+                }
+            }
+        }
+    }, 300);
+}
   
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
-          resetQuestionBackground(); // Restablecer el fondo de las preguntas
           ShowVideoBtn();
       });
   });
