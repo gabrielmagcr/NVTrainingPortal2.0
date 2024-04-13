@@ -69,11 +69,9 @@ function checkTime(){
     }
     function wrongQuestion() {
       setTimeout(function() {
-          console.log('testwrong');
+          
            if (alertError && alertError.textContent.includes('QUESTION 1')) {
-              calderaQuestions.forEach(function(question) {
-                  question.style.background = '#FCE1D9';
-              });
+            console.log('testwrong');
           }
       }, 300);
   }
