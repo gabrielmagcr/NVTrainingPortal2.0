@@ -58,9 +58,10 @@ function checkTime(){
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
 
+      setTimeout(function(){
+        if(alertError.style.display==='block' && bgQuizz.style.display==='none'){
+          toggleVideo.style.display='block';
+        }
+      }, 10000)
       
-      if(alertError.style.display==='block' && bgQuizz.style.display==='none'){
-        toggleVideo.style.display='block';
-      }
-  }
- 
+    }
