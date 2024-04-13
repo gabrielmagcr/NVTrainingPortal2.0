@@ -118,7 +118,9 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
-
+  #toggleVideo{
+    display: none;
+  }
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
