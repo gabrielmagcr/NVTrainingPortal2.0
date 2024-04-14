@@ -74,7 +74,7 @@ function checkTime(){
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
         if (alertError && alertError.textContent.includes('QUESTION')) {
-            console.log('testwrong');
+            console.log('updates test');
             const calderaQuestions = document.querySelectorAll('.caldera-question');
             
             calderaQuestions.forEach(function(question) {
