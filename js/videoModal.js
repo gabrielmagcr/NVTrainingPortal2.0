@@ -1,5 +1,4 @@
 const bgQuizz= document.querySelector('.quizBg');
-const collapseVideo= document.querySelector('#collapseVideo');
 const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
@@ -21,38 +20,44 @@ const calderaQuestions = document.querySelectorAll('.caldera-question');
 	}
 }());
 
-function videoModal() {
-    const body = document.getElementsByTagName('body');
-    body[0].style.overflow = "hidden";
-    const vid = document.getElementsByClassName("wp-video-shortcode")[1];
-    setTimeout(function() {
-        const videoProgress = document.getElementsByClassName("mejs-time-rail")[0];
-        videoProgress.style.pointerEvents = "none";
-    }, 500);
-console.log('video modal working ')
-    vid.addEventListener('loadedmetadata', function() {
-        const videoEndCheck = setInterval(function() {
-            const videoCurrentTime = checkTime();
-            if (vid.duration <= (videoCurrentTime + 1)) {
-                removeVideoModal();
-                body[0].style.overflow = "auto";
-                clearInterval(videoEndCheck);
-            }
-        }, 1000);
-    });
-}
+function videoModal(){
+    var body=document.getElementsByTagName('body');
+    body[0].style.overflow="hidden";
+    var vid=document.getElementsByClassName("wp-video-shortcode")[1];
+    setTimeout(function(){
+    var videoProgress=document.getElementsByClassName("mejs-time-rail")[0];
+    videoProgress.style.pointerEvents = "none";
+    },500);
 
-function checkTime() {
-    const vid = document.getElementsByClassName("wp-video-shortcode")[1];
+    
+    setTimeout(function(){
+    var videoEndCheck =setInterval(function(){
+    var videoCurrentTime=checkTime();
+    
+        if(vid.duration<=(videoCurrentTime+1)){
+            removeVideoModal();
+            body[0].style.overflow="auto";
+           
+            clearInterval(videoEndCheck);
+        }
+      },1000);
+    },700);
+ }
+
+
+
+function checkTime(){
+   var vid=document.getElementsByClassName("wp-video-shortcode")[1];
     return vid.currentTime;
+  
 }
   function removeVideoModal(){
-      const modal=document.getElementsByClassName("popup");
+      var modal=document.getElementsByClassName("popup");
       modal[0].classList.remove("video_modal");
-      const modalIframe =document.getElementsByClassName("modal_content");
+      var modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
-      collapseVideo.style.display='none';
+     
 
     }
 
