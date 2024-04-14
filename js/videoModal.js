@@ -43,13 +43,13 @@ console.log('video modal working ')
 }
 
 function checkTime() {
-    var vid = document.getElementsByClassName("wp-video-shortcode")[1];
+    const vid = document.getElementsByClassName("wp-video-shortcode")[1];
     return vid.currentTime;
 }
   function removeVideoModal(){
-      var modal=document.getElementsByClassName("popup");
+      const modal=document.getElementsByClassName("popup");
       modal[0].classList.remove("video_modal");
-      var modalIframe =document.getElementsByClassName("modal_content");
+      const modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
