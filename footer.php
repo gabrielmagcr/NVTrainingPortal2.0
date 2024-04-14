@@ -39,6 +39,8 @@
         color: #fff;
         font-weight: 700;
         font-size: 1.2em;
+        font-family: "Brandon Grotesque", sans-serif;
+
     }
 
     .newsLetterFormClass {
@@ -102,6 +104,7 @@
     .footerMenu span {
         color: #fff;
         font-weight: bold;
+
     }
 
     .responsiveList {
