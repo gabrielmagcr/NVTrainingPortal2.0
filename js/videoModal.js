@@ -55,8 +55,7 @@ function checkTime(){
   function removeVideoModal(){
       var modal=document.getElementsByClassName("popup");
       modal[0].style.display='none'
-    
-    
+      console.log('test video')
    
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
