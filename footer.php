@@ -96,6 +96,7 @@
         font-size: 14px;
         width: 50%;
         margin: 0px 30px;
+        font-family: "Brandon Grotesque", sans-serif;
     }
 
     .footerMenu span {
@@ -105,6 +106,11 @@
 
     .responsiveList {
         padding: 4px 0;
+        list-style: none;
+    }
+    .responsiveList a{
+        font-family: "Brandon Grotesque", sans-serif;
+        text-decoration: none;
     }
 
     .footerLastSection {
