@@ -57,7 +57,7 @@ function removeVideoModal() {
 }
 
 function ShowVideoBtn() {
-  toggleVideo   toggleVideo.style.display = 'block';
+     toggleVideo.style.display = 'block';
   if(toggleVideo.style.display === 'block'){
      videoModal()
   }
