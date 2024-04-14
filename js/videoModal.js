@@ -56,11 +56,9 @@ function checkTime(){
       var modal=document.getElementsByClassName("popup");
       modal[0].style.display='none'
     
-    if( modal[0].style.display==='none')
-   {
-    bgQuizz.style.display='none';
-   }
-  
+    
+   
+      bgQuizz.style.display='none';
       collapseVideo.style.display='none';
 
     }
