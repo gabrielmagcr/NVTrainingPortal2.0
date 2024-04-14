@@ -1,4 +1,5 @@
 const bgQuizz= document.querySelector('.quizBg');
+const collapseVideo= document.querySelector('#collapseVideo');
 const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
@@ -57,6 +58,8 @@ function checkTime(){
       var modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
+      modal.style.display='none';
+
     }
 
 
@@ -64,7 +67,7 @@ function checkTime(){
   function ShowVideoBtn() {
       toggleVideo.style.display = 'block';
       if(toggleVideo.style.display === 'block'){
-        videoModal()
+         videoModal()
       }
       wrongQuestion();
   }
