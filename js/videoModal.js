@@ -22,17 +22,17 @@ const calderaQuestions = document.querySelectorAll('.caldera-question');
 }());
 
 function videoModal() {
-    var body = document.getElementsByTagName('body');
+    const body = document.getElementsByTagName('body');
     body[0].style.overflow = "hidden";
-    var vid = document.getElementsByClassName("wp-video-shortcode")[1];
+    const vid = document.getElementsByClassName("wp-video-shortcode")[1];
     setTimeout(function() {
-        var videoProgress = document.getElementsByClassName("mejs-time-rail")[0];
+        const videoProgress = document.getElementsByClassName("mejs-time-rail")[0];
         videoProgress.style.pointerEvents = "none";
     }, 500);
 console.log('video modal working ')
     vid.addEventListener('loadedmetadata', function() {
-        var videoEndCheck = setInterval(function() {
-            var videoCurrentTime = checkTime();
+        const videoEndCheck = setInterval(function() {
+            const videoCurrentTime = checkTime();
             if (vid.duration <= (videoCurrentTime + 1)) {
                 removeVideoModal();
                 body[0].style.overflow = "auto";
