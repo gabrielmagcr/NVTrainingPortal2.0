@@ -56,8 +56,7 @@ function checkTime(){
       var modal=document.getElementsByClassName("popup");
       modal[0].style.display='none'
       console.log('test video')
-      var modalIframe =document.getElementsByClassName("modal_content");
-      modalIframe[0].innerHTML="";
+   
       bgQuizz.style.display='none';
       collapseVideo.style.display='none';
 
