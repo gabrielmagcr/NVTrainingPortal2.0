@@ -10,6 +10,9 @@
     });
 </script>
 <style>
+    ol, ul {
+	list-style: none;
+}
     .footerLogos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
