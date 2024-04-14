@@ -199,7 +199,10 @@ while (have_posts()) {
         <?php the_field('quiz_text'); ?>
 
        <button class="btn" id="toggleVideo">Want to watch the video again?</button>
-
+<div class="collapse" id="collapseVideo">
+  <!-- PHP para mostrar el video -->
+  <?php the_field('quiz_video'); ?>
+</div>
 
 
         <?php
