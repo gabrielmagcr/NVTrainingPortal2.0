@@ -48,19 +48,16 @@ function checkTime() {
 function removeVideoModal() {
   var modal = document.getElementsByClassName("popup");
   modal[0].style.display = "none";
-    console.log('no video to show');
+
   if (modal[0].style.display === "none") {
     bgQuizz.style.display = "none";
-    console.log('bg conditional');
-
   } else {
     bgQuizz.style.display = "block";
   }
 }
 
 function ShowVideoBtn() {
-     toggleVideo.style.display = 'block';
-
+  toggleVideo.style.display = "block";
   wrongQuestion();
 }
 
