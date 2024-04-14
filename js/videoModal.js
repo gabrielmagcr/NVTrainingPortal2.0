@@ -1,12 +1,7 @@
 const bgQuizz= document.querySelector('.quizBg');
-const collapseVideo= document.querySelector('#collapseVideo');
 const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
-
-toggleVideo.addEventListener('click', function() {
-    videoModal()
-});
 
 (function checkVideo(){
 
@@ -62,19 +57,23 @@ function checkTime(){
       var modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
-      collapseVideo.style.display='none';
-
     }
 
 
   
-  
+  function ShowVideoBtn() {
+      toggleVideo.style.display = 'block';
+      if(toggleVideo.style.display === 'block'){
+        videoModal()
+      }
+      wrongQuestion();
+  }
   
   function wrongQuestion() {
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
         if (alertError && alertError.textContent.includes('QUESTION')) {
-            console.log('updates test');
+            console.log('testwrong');
             const calderaQuestions = document.querySelectorAll('.caldera-question');
             
             calderaQuestions.forEach(function(question) {
@@ -97,7 +96,7 @@ function checkTime(){
   
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
-        wrongQuestion();
+          ShowVideoBtn();
       });
   });
   
