@@ -59,7 +59,7 @@ function checkTime(){
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
       popupQuizVideo.style.display='none';
-
+    console.log('video finish')
     }
 
 
