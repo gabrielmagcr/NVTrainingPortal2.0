@@ -54,7 +54,7 @@ function checkTime(){
 }
   function removeVideoModal(){
       var modal=document.getElementsByClassName("popup");
-      modal[0].classList.remove("video_modal");
+      modal[0].style.display='none'
       var modalIframe =document.getElementsByClassName("modal_content");
       modalIframe[0].innerHTML="";
       bgQuizz.style.display='none';
