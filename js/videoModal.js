@@ -21,36 +21,30 @@ const calderaQuestions = document.querySelectorAll('.caldera-question');
 	}
 }());
 
-function videoModal(){
-    var body=document.getElementsByTagName('body');
-    body[0].style.overflow="hidden";
-    var vid=document.getElementsByClassName("wp-video-shortcode")[1];
-    setTimeout(function(){
-    var videoProgress=document.getElementsByClassName("mejs-time-rail")[0];
-    videoProgress.style.pointerEvents = "none";
-    },500);
+function videoModal() {
+    var body = document.getElementsByTagName('body');
+    body[0].style.overflow = "hidden";
+    var vid = document.getElementsByClassName("wp-video-shortcode")[1];
+    setTimeout(function() {
+        var videoProgress = document.getElementsByClassName("mejs-time-rail")[0];
+        videoProgress.style.pointerEvents = "none";
+    }, 500);
 
-    
-    setTimeout(function(){
-    var videoEndCheck =setInterval(function(){
-    var videoCurrentTime=checkTime();
-    
-        if(vid.duration<=(videoCurrentTime+1)){
-            removeVideoModal();
-            body[0].style.overflow="auto";
-           
-            clearInterval(videoEndCheck);
-        }
-      },1000);
-    },700);
- }
+    vid.addEventListener('loadedmetadata', function() {
+        var videoEndCheck = setInterval(function() {
+            var videoCurrentTime = checkTime();
+            if (vid.duration <= (videoCurrentTime + 1)) {
+                removeVideoModal();
+                body[0].style.overflow = "auto";
+                clearInterval(videoEndCheck);
+            }
+        }, 1000);
+    });
+}
 
-
-
-function checkTime(){
-   var vid=document.getElementsByClassName("wp-video-shortcode")[1];
+function checkTime() {
+    var vid = document.getElementsByClassName("wp-video-shortcode")[1];
     return vid.currentTime;
-  
 }
   function removeVideoModal(){
       var modal=document.getElementsByClassName("popup");
