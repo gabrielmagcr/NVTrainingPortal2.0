@@ -29,7 +29,7 @@ function videoModal() {
         var videoProgress = document.getElementsByClassName("mejs-time-rail")[0];
         videoProgress.style.pointerEvents = "none";
     }, 500);
-
+console.log('video modal working ')
     vid.addEventListener('loadedmetadata', function() {
         var videoEndCheck = setInterval(function() {
             var videoCurrentTime = checkTime();
