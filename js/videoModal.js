@@ -4,6 +4,10 @@ const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 
+toggleVideo.addEventListener('click', function() {
+    videoModal()
+});
+
 (function checkVideo(){
 
 	if(window.location.search!="?completed"){
@@ -65,11 +69,9 @@ function checkTime(){
 
   
   function ShowVideoBtn() {
-      toggleVideo.addEventListener('click', function() {
-        videoModal()
-    });
       wrongQuestion();
   }
+  
   
   function wrongQuestion() {
     setTimeout(function() {
