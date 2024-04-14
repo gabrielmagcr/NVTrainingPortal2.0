@@ -68,9 +68,6 @@ function checkTime(){
 
 
   
-  function ShowVideoBtn() {
-      wrongQuestion();
-  }
   
   
   function wrongQuestion() {
@@ -100,7 +97,7 @@ function checkTime(){
   
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
-          ShowVideoBtn();
+        wrongQuestion();
       });
   });
   
