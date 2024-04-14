@@ -60,9 +60,7 @@ function removeVideoModal() {
 
 function ShowVideoBtn() {
      toggleVideo.style.display = 'block';
-  if(toggleVideo.style.display === 'block'){
-     videoModal()
-  }
+
   wrongQuestion();
 }
 
