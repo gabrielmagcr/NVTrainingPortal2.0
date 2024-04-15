@@ -24,9 +24,10 @@ const modal=document.getElementsByClassName("popup");
 }());
 
 function videoModal(){
+    bgQuizz.style.display='block';
+    modal[0].style.display='block';
     var body=document.getElementsByTagName('body');
     body[0].style.overflow="hidden";
-    modal[0].style.display='block';
     var vid=document.getElementsByClassName("wp-video-shortcode")[1];
     setTimeout(function(){
     var videoProgress=document.getElementsByClassName("mejs-time-rail")[0];
