@@ -99,7 +99,6 @@ function checkTime(){
       submitBtn.addEventListener('click', function() {
         
           ShowVideoBtn();   
-          insertBtn()
       });
   });
   
@@ -109,6 +108,19 @@ function checkTime(){
         behavior: 'smooth' 
     });
 }
+
+var observer = new MutationObserver(function(mutationsList, observer) {
+    for(var mutation of mutationsList) {
+        if (mutation.type === 'childList' && mutation.addedNodes.length > 0 && mutation.addedNodes[0].classList.contains('alert-error')) {
+            insertBtn();
+            observer.disconnect();
+        }
+    }
+});
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+
 function insertBtn() {
     setTimeout(function(){
         var alertErrorDiv = document.querySelector('.alert-error');
