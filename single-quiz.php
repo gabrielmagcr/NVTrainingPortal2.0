@@ -102,12 +102,11 @@
     border-radius: 12px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
-  .caldera-grid:last-child, .form-group:last-child{
-    box-shadow: none;
-  }
 
   .submitDiv {
     border: none !important;
+    box-shadow: none;
+
   }
 
   .submitQuizBtn {
