@@ -122,7 +122,7 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
-  #toggleVideo{
+  #toggleVideo, #collapseVideo{
     display: none;
   }
   
