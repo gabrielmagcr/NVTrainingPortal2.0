@@ -1,10 +1,8 @@
 const bgQuizz= document.querySelector('.quizBg');
-const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
 
-toggleVideo.addEventListener('click', btnToggleVideo);
 
 
 (function checkVideo(){
@@ -103,6 +101,8 @@ function checkTime(){
       submitBtn.addEventListener('click', function() {
         
           ShowVideoBtn();
+          const toggleVideo= document.querySelector('#toggleVideo');
+          toggleVideo.addEventListener('click', btnToggleVideo);
       });
   });
   
