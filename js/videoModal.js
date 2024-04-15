@@ -5,10 +5,6 @@ const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
 
 
-toggleVideo.addEventListener('click', function(){
-    videoModal()
-  })
-
 
 (function checkVideo(){
 
@@ -52,6 +48,10 @@ function videoModal(){
     },700);
  }
 
+
+ toggleVideo.addEventListener('click', function(){
+    videoModal()
+  })
 
 
 function checkTime(){
