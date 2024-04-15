@@ -70,12 +70,8 @@ function checkTime(){
         const alertError = document.querySelector('.alert-error');
         if (alertError && alertError.textContent.includes('QUESTION')) {
             
-            const calderaQuestions = document.querySelectorAll('.caldera-question');
-            calderaQuestions.forEach(function(question) {
-                question.style.background = '#fff';     
-            });
+            resetCaldera();
 
-            // Aplicar el estilo a la pregunta incorrecta
             const matches = alertError.textContent.match(/QUESTION (\d+)/);
             if (matches) {
                 const questionNumber = parseInt(matches[1]);
@@ -95,14 +91,19 @@ function checkTime(){
       });
   });
 
+  function resetCaldera(){
+    const calderaQuestions = document.querySelectorAll('.caldera-question');
+    calderaQuestions.forEach(function(question) {
+        question.style.background = '#fff';     
+    });
+  }
 
   function btnToggleVideo(){
 
     scrollToTop() 
     setTimeout(function(){
-        videoModal()
-        var alertErrorDiv = document.querySelector('.alert-error');
-        alertErrorDiv.style.display='none'
+        videoModal();
+        resetCaldera();
         calderaQuestions.style.background='#fff'
         bgQuizz.style.display='block';
         submitBtn.style.display='block';
