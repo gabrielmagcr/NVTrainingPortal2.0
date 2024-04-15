@@ -88,7 +88,11 @@
     font-weight: 600 !important;
     color: #E26743 !important;
     margin: 25px 0 !important;
-
+    display: flex;
+    flex-direction: column;
+    font-size: 52px;
+    gap: 12px;
+    align-items: center;
   }
 
   .caldera-grid .form-group {
@@ -122,13 +126,23 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
-  #toggleVideo{
-    display: none;
-  }
-  .collapse{
-    display: none;
-  }
-  
+ #toggleVideo{
+  border-radius: 30px;
+    background: #E26743;
+    color: #fff;
+    padding: 20px 37px;
+    border: none;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 20px;
+ }
+ .quizErrorSpan{
+    color: #E26743;
+    text-align: center;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 25px;
+    font-style: normal;
+ }
+
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
