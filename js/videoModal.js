@@ -74,10 +74,11 @@ function checkTime(){
   function wrongQuestion() {
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
+        const calderaQuestions = document.querySelectorAll('.caldera-question');
+
         if (alertError && alertError.textContent.includes('QUESTION')) {
             
             resetCaldera();
-
             const matches = alertError.textContent.match(/QUESTION (\d+)/);
             if (matches) {
                 const questionNumber = parseInt(matches[1]);
