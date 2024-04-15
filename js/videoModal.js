@@ -4,7 +4,7 @@ const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
 
-toggleVideo.addEventListener('click', btnToggleVideo())
+toggleVideo.addEventListener('click', btnToggleVideo);
 
 
 (function checkVideo(){
