@@ -105,7 +105,7 @@
 
   .submitDiv {
     border: none !important;
-    box-shadow: none;
+    box-shadow: none !important;
 
   }
 
