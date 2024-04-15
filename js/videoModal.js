@@ -50,12 +50,12 @@ function videoModal(){
  }
 
 
-/*toggleVideo.addEventListener('click', function(){
+toggleVideo.addEventListener('click', function(){
     scrollToTop() 
     setTimeout(function(){
         videoModal()
     },300)
-  })*/
+  })
 
 
 function checkTime(){
