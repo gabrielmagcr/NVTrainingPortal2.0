@@ -118,6 +118,7 @@ button.className = 'btn';
 button.id = 'toggleVideo';
 button.textContent = 'PLAY VIDEO';
 
+const toggleVideo= document.querySelector('#toggleVideo');
 toggleVideo.addEventListener('click', btnToggleVideo);
 
 alertErrorDiv.appendChild(button);
