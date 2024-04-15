@@ -105,7 +105,6 @@ function checkTime(){
     setTimeout(function(){
         videoModal();
         resetCaldera();
-        calderaQuestions.style.background='#fff'
         bgQuizz.style.display='block';
         submitBtn.style.display='block';
 
