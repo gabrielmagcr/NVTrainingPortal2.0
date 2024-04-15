@@ -109,24 +109,21 @@ function checkTime(){
         behavior: 'smooth' 
     });
 }
+function insertBtn() {
+    var alertErrorDiv = document.querySelector('.alert-error');
 
-function insertBtn(){
-var alertErrorDiv = document.querySelector('.alert-error');
+    var button = document.createElement('button');
+    button.className = 'btn';
+    button.id = 'toggleVideo';
+    button.textContent = 'PLAY VIDEO';
 
-var button = document.createElement('button');
-button.className = 'btn';
-button.id = 'toggleVideo';
-button.textContent = 'PLAY VIDEO';
+    alertErrorDiv.appendChild(button);
 
-const toggleVideo= document.querySelector('#toggleVideo');
-toggleVideo.addEventListener('click', btnToggleVideo);
+    var span = document.createElement('span');
+    span.className = 'quizErrorSpan';
+    span.textContent = 'Do you want to watch the video again?';
 
-alertErrorDiv.appendChild(button);
+    alertErrorDiv.appendChild(span);
 
-var span= document.createElement('span');
-span.className='quizErrorSpan';
-span.textContent= 'Do you want to watch the video again?'
-
-alertErrorDiv.appendChild(span);
-
+    button.addEventListener('click', btnToggleVideo);
 }
