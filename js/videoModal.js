@@ -2,7 +2,7 @@ const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
-
+const toggleVideo= document.querySelector('#toggleVideo');
 
 
 (function checkVideo(){
@@ -101,7 +101,7 @@ function checkTime(){
       submitBtn.addEventListener('click', function() {
         
           ShowVideoBtn();
-          const toggleVideo= document.querySelector('#toggleVideo');
+          
           toggleVideo.addEventListener('click', btnToggleVideo);
       });
   });
