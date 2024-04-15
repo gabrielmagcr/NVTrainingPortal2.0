@@ -3,6 +3,14 @@ const toggleVideo= document.querySelector('#toggleVideo');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
+
+
+toggleVideo.addEventListener('click', function(){
+    modal[0].style.display='block';
+    videoModal()
+  })
+
+  
 (function checkVideo(){
 
 	if(window.location.search!="?completed"){
@@ -52,20 +60,16 @@ function checkTime(){
   
 }
   function removeVideoModal(){
-     
-      modal.style.display='none';
+      
+      modal[0].style.display='none';
       bgQuizz.style.display='none';
-     
 
     }
 
 
   
   function ShowVideoBtn() {
-      toggleVideo.addEventListener('click', function(){
-        modal.style.display='block';
-        videoModal()
-      })
+    
       wrongQuestion();
   }
   
