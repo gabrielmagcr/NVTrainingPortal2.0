@@ -70,7 +70,7 @@ function checkTime(){
 
   
   function ShowVideoBtn() {
-    
+ 
       wrongQuestion();
   }
   
@@ -78,7 +78,7 @@ function checkTime(){
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
         if (alertError && alertError.textContent.includes('QUESTION')) {
-            console.log('testwrong');
+            toggleVideo.style.display='block';
             const calderaQuestions = document.querySelectorAll('.caldera-question');
             
             calderaQuestions.forEach(function(question) {
