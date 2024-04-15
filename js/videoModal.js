@@ -2,7 +2,7 @@ const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
-const submitDiv=document.querySelector('.submitDiv')
+
 
 (function checkVideo(){
 
@@ -103,7 +103,7 @@ function checkTime(){
         videoModal()
         
         bgQuizz.style.display='block';
-        submitDiv.style.display='block';
+        submitBtn.style.display='block';
 
     },300)
   }
@@ -123,7 +123,7 @@ var observer = new MutationObserver(function(mutationsList, observer) {
         if (mutation.type === 'childList' && mutation.addedNodes.length > 0 && mutation.addedNodes[0].classList.contains('alert-error')) {
             insertBtn();
             observer.disconnect();
-            submitDiv.style.display='none';
+            submitBtn.style.display='none';
         }
     }
 });
