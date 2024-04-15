@@ -51,7 +51,10 @@ function videoModal(){
 
 
  toggleVideo.addEventListener('click', function(){
-    videoModal()
+    scrollToTop() 
+    setTimeout(function(){
+        videoModal()
+    },300)
   })
 
 
@@ -61,16 +64,12 @@ function checkTime(){
   
 }
   function removeVideoModal(){
-      
       modal[0].style.display='none';
       bgQuizz.style.display='none';
-
     }
 
 
-  
   function ShowVideoBtn() {
- 
       wrongQuestion();
   }
   
@@ -80,10 +79,8 @@ function checkTime(){
         if (alertError && alertError.textContent.includes('QUESTION')) {
             toggleVideo.style.display='block';
             const calderaQuestions = document.querySelectorAll('.caldera-question');
-            
             calderaQuestions.forEach(function(question) {
-                question.style.background = '#fff';
-                
+                question.style.background = '#fff';     
             });
 
             // Aplicar el estilo a la pregunta incorrecta
@@ -101,7 +98,14 @@ function checkTime(){
   
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
+        
           ShowVideoBtn();
       });
   });
   
+  function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+}
