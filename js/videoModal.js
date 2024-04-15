@@ -2,7 +2,6 @@ const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
-const submitDiv=document.getElementsByClassName('submitDiv')
 
 (function checkVideo(){
 
@@ -49,15 +48,6 @@ function videoModal(){
 
 
 
-function btnToggleVideo(){
-    scrollToTop() 
-    setTimeout(function(){
-        videoModal()
-        submitDiv.style.display='block';
-
-    },300)
-  }
-
 
 function checkTime(){
    var vid=document.getElementsByClassName("wp-video-shortcode")[1];
@@ -103,6 +93,17 @@ function checkTime(){
           ShowVideoBtn();   
       });
   });
+
+
+  function btnToggleVideo(){
+    scrollToTop() 
+    setTimeout(function(){
+        videoModal()
+        submitDiv.style.display='block';
+
+    },300)
+  }
+
   
   function scrollToTop() {
     window.scrollTo({
@@ -116,6 +117,7 @@ var observer = new MutationObserver(function(mutationsList, observer) {
         if (mutation.type === 'childList' && mutation.addedNodes.length > 0 && mutation.addedNodes[0].classList.contains('alert-error')) {
             insertBtn();
             observer.disconnect();
+            const submitDiv=document.getElementsByClassName('submitDiv')
             submitDiv.style.display='none';
         }
     }
