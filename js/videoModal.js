@@ -78,7 +78,7 @@ function checkTime(){
         const alertError = document.querySelector('.alert-error');
         if (alertError && alertError.textContent.includes('QUESTION')) {
             toggleVideo.style.display='block';
-            insertBtn()
+            
             const calderaQuestions = document.querySelectorAll('.caldera-question');
             calderaQuestions.forEach(function(question) {
                 question.style.background = '#fff';     
