@@ -64,7 +64,9 @@ function checkTime(){
 
   
   function ShowVideoBtn() {
-      toggleVideo.style.display = 'block';
+      toggleVideo.addEventListener('click', function(){
+        videoModal()
+      })
       wrongQuestion();
   }
   
