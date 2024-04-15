@@ -101,6 +101,7 @@ function checkTime(){
     scrollToTop() 
     setTimeout(function(){
         videoModal()
+        bgQuizz.style.display='block';
         submitDiv.style.display='block';
 
     },300)
