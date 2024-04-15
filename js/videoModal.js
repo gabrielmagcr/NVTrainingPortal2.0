@@ -2,6 +2,7 @@ const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
+const submitDiv=document.querySelector('.submitDiv')
 
 (function checkVideo(){
 
@@ -96,11 +97,11 @@ function checkTime(){
 
 
   function btnToggleVideo(){
-    const submitDiv=document.getElementsByClassName('submitDiv')
 
     scrollToTop() 
     setTimeout(function(){
         videoModal()
+        
         bgQuizz.style.display='block';
         submitDiv.style.display='block';
 
