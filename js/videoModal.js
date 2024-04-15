@@ -6,11 +6,10 @@ const modal=document.getElementsByClassName("popup");
 
 
 toggleVideo.addEventListener('click', function(){
-    modal[0].style.display='block';
     videoModal()
   })
 
-  
+
 (function checkVideo(){
 
 	if(window.location.search!="?completed"){
@@ -31,6 +30,7 @@ toggleVideo.addEventListener('click', function(){
 function videoModal(){
     var body=document.getElementsByTagName('body');
     body[0].style.overflow="hidden";
+    modal[0].style.display='block';
     var vid=document.getElementsByClassName("wp-video-shortcode")[1];
     setTimeout(function(){
     var videoProgress=document.getElementsByClassName("mejs-time-rail")[0];
