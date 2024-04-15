@@ -101,7 +101,9 @@ function checkTime(){
     scrollToTop() 
     setTimeout(function(){
         videoModal()
-        
+        var alertErrorDiv = document.querySelector('.alert-error');
+        alertErrorDiv.style.display='none'
+        calderaQuestions.style.background='#fff'
         bgQuizz.style.display='block';
         submitBtn.style.display='block';
 
@@ -117,7 +119,6 @@ function checkTime(){
 }
 
 var observer = new MutationObserver(function(mutationsList, observer) {
-    const submitDiv=document.getElementsByClassName('submitDiv')
 
     for(var mutation of mutationsList) {
         if (mutation.type === 'childList' && mutation.addedNodes.length > 0 && mutation.addedNodes[0].classList.contains('alert-error')) {
@@ -132,7 +133,6 @@ observer.observe(document.body, { childList: true, subtree: true });
 
 
 function insertBtn() {
-    setTimeout(function(){
         var alertErrorDiv = document.querySelector('.alert-error');
 
         var button = document.createElement('button');
@@ -149,6 +149,5 @@ function insertBtn() {
         alertErrorDiv.appendChild(span);
     
         button.addEventListener('click', btnToggleVideo);
-    },100)
 
 }
