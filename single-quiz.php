@@ -125,6 +125,9 @@
   #toggleVideo{
     display: none;
   }
+  .collapse{
+    display: none;
+  }
   
   @media (min-width:767px) {
     .popupQuizVideo {
