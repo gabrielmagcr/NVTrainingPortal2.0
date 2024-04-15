@@ -2,7 +2,6 @@ const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
 const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
-const toggleVideo= document.querySelector('#toggleVideo');
 
 
 (function checkVideo(){
@@ -77,7 +76,6 @@ function checkTime(){
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
         if (alertError && alertError.textContent.includes('QUESTION')) {
-            toggleVideo.style.display='block';
             
             const calderaQuestions = document.querySelectorAll('.caldera-question');
             calderaQuestions.forEach(function(question) {
@@ -100,9 +98,8 @@ function checkTime(){
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
         
-          ShowVideoBtn();
-          
-          toggleVideo.addEventListener('click', btnToggleVideo);
+          ShowVideoBtn();   
+          insertBtn()
       });
   });
   
@@ -120,6 +117,8 @@ var button = document.createElement('button');
 button.className = 'btn';
 button.id = 'toggleVideo';
 button.textContent = 'PLAY VIDEO';
+
+toggleVideo.addEventListener('click', btnToggleVideo);
 
 alertErrorDiv.appendChild(button);
 
