@@ -201,6 +201,9 @@ while (have_posts()) {
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
 
+<div class="collapse" id="collapseVideo">
+  <?php the_field('quiz_video'); ?>
+</div>
 
 
         <?php
@@ -230,3 +233,24 @@ while (have_posts()) {
 get_footer();
 
 ?>
+
+
+<script>
+
+  
+document.addEventListener('DOMContentLoaded', function() {
+
+  var toggleButton = document.getElementById('toggleVideo');
+  var collapseContent = document.getElementById('collapseVideo');
+
+ 
+  toggleButton.addEventListener('click', function() {
+
+    if (collapseContent.style.display === 'none') {
+      collapseContent.style.display = 'block';
+    } else {
+      collapseContent.style.display = 'none';
+    }
+  });
+});
+</script>
