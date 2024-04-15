@@ -1,10 +1,10 @@
 const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
+const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
 
 
 function resetCaldera(){
-    const calderaQuestions = document.querySelectorAll('.caldera-question');
     calderaQuestions.forEach(function(question) {
         question.style.background = '#fff';     
     });
