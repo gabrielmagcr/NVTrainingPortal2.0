@@ -234,23 +234,3 @@ get_footer();
 
 ?>
 
-
-<script>
-
-  
-document.addEventListener('DOMContentLoaded', function() {
-
-  var toggleButton = document.getElementById('toggleVideo');
-  var collapseContent = document.getElementById('collapseVideo');
-
- 
-  toggleButton.addEventListener('click', function() {
-
-    if (collapseContent.style.display === 'none') {
-      collapseContent.style.display = 'block';
-    } else {
-      collapseContent.style.display = 'none';
-    }
-  });
-});
-</script>
