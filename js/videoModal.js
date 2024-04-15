@@ -96,6 +96,8 @@ function checkTime(){
 
 
   function btnToggleVideo(){
+    const submitDiv=document.getElementsByClassName('submitDiv')
+
     scrollToTop() 
     setTimeout(function(){
         videoModal()
@@ -104,7 +106,7 @@ function checkTime(){
     },300)
   }
 
-  
+
   function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -113,11 +115,12 @@ function checkTime(){
 }
 
 var observer = new MutationObserver(function(mutationsList, observer) {
+    const submitDiv=document.getElementsByClassName('submitDiv')
+
     for(var mutation of mutationsList) {
         if (mutation.type === 'childList' && mutation.addedNodes.length > 0 && mutation.addedNodes[0].classList.contains('alert-error')) {
             insertBtn();
             observer.disconnect();
-            const submitDiv=document.getElementsByClassName('submitDiv')
             submitDiv.style.display='none';
         }
     }
