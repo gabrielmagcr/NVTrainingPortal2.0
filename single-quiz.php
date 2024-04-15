@@ -142,7 +142,9 @@
     font-size: 25px;
     font-style: normal;
  }
-
+ #collapseVideo{
+  display: none;
+ }
   @media (min-width:767px) {
     .popupQuizVideo {
       top: 55%;
