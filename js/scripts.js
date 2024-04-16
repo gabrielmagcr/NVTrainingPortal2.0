@@ -15,7 +15,7 @@
 		
  		jQuery.ajax({
 			 //route api called in function.php file in line 69-91
-			url: 'https://training.naturvet.com/wp-json/nvtp/v1/quizSubs' ,
+			url: '/wp-json/nvtp/v1/quizSubs' ,
  			type: 'POST',
  			data: {'quizID': formID,'user_id':userID},
  			success: function(response) {
