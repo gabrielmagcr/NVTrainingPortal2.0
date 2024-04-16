@@ -6,7 +6,11 @@ const modal=document.getElementsByClassName("popup");
 
 function resetCaldera(){
     var alertErrorDiv = document.querySelector('.alert-error');
-    alertErrorDiv.style.display='none'
+    if(alertErrorDiv.style.display==='none'){
+        alertErrorDiv.style.display='block'
+    }else {
+        alertErrorDiv.style.display='none'
+    }
     calderaQuestions.forEach(function(question) {
         question.style.background = '#fff';     
     });
@@ -74,7 +78,6 @@ function checkTime(){
   function wrongQuestion() {
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
-       
         const calderaQuestions = document.querySelectorAll('.caldera-question');
 
         if (alertError && alertError.textContent.includes('QUESTION')) {
