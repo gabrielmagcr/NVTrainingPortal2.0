@@ -1,5 +1,3 @@
-
-
 	function markComplete(callback){
 		console.log(callback);
 		if(callback.type=="error"){
