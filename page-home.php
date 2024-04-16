@@ -200,6 +200,30 @@ get_header();
 
 	}
 </style>
+<?php
+// Get the total number of available quizzes
+$modalTotalQuizzesAvailable = new WP_Query(array(
+    'posts_per_page' => -1,
+    'post_type' => 'Quiz'
+));
+$totalQuizzesCount = $modalTotalQuizzesAvailable->found_posts;
+
+// Get the number of quizzes completed by the current user
+$modalQuizzesCompleted = new WP_Query(array(
+    'post_type' => 'completed-quizzes',
+    'meta_query' => array(
+        array(
+            'key' => 'user_id',
+            'compare' => '=',
+            'value' => get_current_user_id()
+        )
+    )
+));
+$completedQuizzesCount = $modalQuizzesCompleted->found_posts;
+
+// Determine if all quizzes are completed
+$modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
+?>
 <div>
 	<div class="mainContainer">
 		<div class="bg-wattermark"></div>
@@ -297,7 +321,8 @@ get_header();
 								)
 							)
 						));
-
+						
+            		    // Check if the quiz is completed or not
 						if ($quizCompleted->found_posts) {
 				?>
 					<div class="quiz">
@@ -363,6 +388,18 @@ get_header();
 <?php } ?>
 </div>
 </div>
+
+<?php
+// Display the button to receive the free gift card if all quizzes are completed
+if ($modalCompletedAllQuizzes && !$modalCompletedForm) { ?>
+    <div class="CompletedLinkButton">
+        <a href="<?php echo get_bloginfo('url'); ?>/completedallquizzes/">
+            <button class="btn btn-success completedButton">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
+            <button class="btn btn-success completedButtonMobile">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
+        </a>
+    </div>
+<?php } ?>
+
 <?php
 get_footer();
 ?>
