@@ -5,8 +5,7 @@ const modal=document.getElementsByClassName("popup");
 
 
 function resetCaldera(){
-    submitBtn.style.display='block';
-
+    
     if(submitBtn.style.display==='none'){
         alertErrorDiv.style.display='block'
     }else {
@@ -111,6 +110,7 @@ function checkTime(){
     scrollToTop() 
     setTimeout(function(){
         videoModal();
+        submitBtn.style.display='block';
         resetCaldera();
         bgQuizz.style.display='block';
 
