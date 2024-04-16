@@ -29,7 +29,7 @@
   }
 
   .quizContainer {
-    margin: 40px;
+    margin: 20px;
   }
 
   .quizLine {
