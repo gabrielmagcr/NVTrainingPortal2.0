@@ -5,7 +5,7 @@ const modal=document.getElementsByClassName("popup");
 
 
 function resetCaldera(){
-    
+    const alertErrorDiv = document.querySelector('.alert-error');
     if(submitBtn.style.display==='none'){
         alertErrorDiv.style.display='block'
     }else {
@@ -139,7 +139,7 @@ var observer = new MutationObserver(function(mutationsList, observer) {
 
 
 function insertBtn() {
-        var alertErrorDiv = document.querySelector('.alert-error');
+        const alertErrorDiv = document.querySelector('.alert-error');
 
         var button = document.createElement('button');
         button.className = 'btn';
