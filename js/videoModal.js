@@ -5,6 +5,8 @@ const modal=document.getElementsByClassName("popup");
 
 
 function resetCaldera(){
+    var alertErrorDiv = document.querySelector('.alert-error');
+    alertErrorDiv.style.display='none'
     calderaQuestions.forEach(function(question) {
         question.style.background = '#fff';     
     });
@@ -67,13 +69,14 @@ function checkTime(){
     }
 
 
-  function ShowVideoBtn() {
-      wrongQuestion();
-  }
+
   
   function wrongQuestion() {
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
+        if(alertError.style.display==='none'){
+            alertError.style.display==='block'
+        }
         const calderaQuestions = document.querySelectorAll('.caldera-question');
 
         if (alertError && alertError.textContent.includes('QUESTION')) {
@@ -93,7 +96,7 @@ function checkTime(){
   
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
-          ShowVideoBtn();   
+        wrongQuestion(); 
           observer.observe(document.body, { childList: true, subtree: true });
 
       });
