@@ -1,3 +1,5 @@
+
+
 	function markComplete(callback){
 		console.log(callback);
 		if(callback.type=="error"){
@@ -13,7 +15,7 @@
 		
  		jQuery.ajax({
 			 //route api called in function.php file in line 69-91
-			url: '/wp-json/nvtp/v1/quizSubs' ,
+			url: 'https://5hp.86b.myftpupload.com/wp-json/nvtp/v1/quizSubs' ,
  			type: 'POST',
  			data: {'quizID': formID,'user_id':userID},
  			success: function(response) {
