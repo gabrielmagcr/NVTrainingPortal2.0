@@ -126,6 +126,12 @@ get_header();
 		left: 50%;
 		transform: translate(-50%, -50%);
 	}
+	.quizzImageCompleted{
+		border: 3px solid #73BA00;
+	}
+	.completedCheck{
+		width: 25px;
+	}
 
 	@media (min-width:767px) {
 		.welcomeTitle {
@@ -325,12 +331,12 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
             		    // Check if the quiz is completed or not
 						if ($quizCompleted->found_posts) {
 				?>
-					<div class="quiz completedQuiz">
+					<div class="quiz ">
 						<a href="<?php the_permalink() ?>" class="quiz-link">
-							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
+							<img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
 							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
-						<span><?php echo get_quiz_title(get_the_ID()); ?></span>
+						<span><img class="completedCheck" src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
 				<?php
 						} else { ?>
