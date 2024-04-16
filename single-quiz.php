@@ -3,7 +3,6 @@
     position: fixed;
     top: 20%;
     left: 50%;
-    width: 90%;
     transform: translate(-50%, -50%);
   }
 
@@ -144,12 +143,7 @@
  #collapseVideo{
   display: none;
  }
-  @media (min-width:767px) {
-    .popupQuizVideo {
-      top: 55%;
 
-    }
-  }
 
   @media (min-width:1400px) {
     .quizText {
