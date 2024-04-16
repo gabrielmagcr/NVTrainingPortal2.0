@@ -1,6 +1,6 @@
 const bgQuizz= document.querySelector('.quizBg');
 const submitBtn = document.querySelector('.submitQuizBtn');
-const calderaQuestions = document.querySelectorAll('.form-group');
+const calderaQuestions = document.querySelectorAll('.caldera-question');
 const modal=document.getElementsByClassName("popup");
 
 
@@ -78,7 +78,7 @@ function checkTime(){
   function wrongQuestion() {
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
-        const calderaQuestions = document.querySelectorAll('.form-group');
+        const calderaQuestions = document.querySelectorAll('.caldera-question');
 
         if (alertError && alertError.textContent.includes('QUESTION')) {
             
