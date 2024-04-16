@@ -5,8 +5,7 @@ const modal=document.getElementsByClassName("popup");
 
 
 function resetCaldera(){
-    var alertErrorDiv = document.querySelector('.alert-error');
-    if(alertErrorDiv.style.display==='none'){
+    if(submitBtn.style.display==='none'){
         alertErrorDiv.style.display='block'
     }else {
         alertErrorDiv.style.display='none'
@@ -140,9 +139,7 @@ var observer = new MutationObserver(function(mutationsList, observer) {
 
 function insertBtn() {
         var alertErrorDiv = document.querySelector('.alert-error');
-        if(alertErrorDiv.style.display==='none'){
-            alertErrorDiv.style.display==='block'
-        }
+
         var button = document.createElement('button');
         button.className = 'btn';
         button.id = 'toggleVideo';
