@@ -94,6 +94,8 @@ function checkTime(){
   document.addEventListener('DOMContentLoaded', function() {
       submitBtn.addEventListener('click', function() {
           ShowVideoBtn();   
+          observer.observe(document.body, { childList: true, subtree: true });
+
       });
   });
 
@@ -130,7 +132,6 @@ var observer = new MutationObserver(function(mutationsList, observer) {
     }
 });
 
-observer.observe(document.body, { childList: true, subtree: true });
 
 
 function insertBtn() {
