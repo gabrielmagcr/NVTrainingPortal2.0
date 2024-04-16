@@ -74,9 +74,7 @@ function checkTime(){
   function wrongQuestion() {
     setTimeout(function() {
         const alertError = document.querySelector('.alert-error');
-        if(alertError.style.display==='none'){
-            alertError.style.display==='block'
-        }
+       
         const calderaQuestions = document.querySelectorAll('.caldera-question');
 
         if (alertError && alertError.textContent.includes('QUESTION')) {
@@ -139,7 +137,9 @@ var observer = new MutationObserver(function(mutationsList, observer) {
 
 function insertBtn() {
         var alertErrorDiv = document.querySelector('.alert-error');
-
+        if(alertErrorDiv.style.display==='none'){
+            alertErrorDiv.style.display==='block'
+        }
         var button = document.createElement('button');
         button.className = 'btn';
         button.id = 'toggleVideo';
