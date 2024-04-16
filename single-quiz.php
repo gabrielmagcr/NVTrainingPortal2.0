@@ -94,7 +94,7 @@
     align-items: center;
   }
 
-  .caldera-grid, .form-group {
+  .caldera-grid {
     margin-bottom: 23px;
     border: 1px solid;
     padding: 15px;
