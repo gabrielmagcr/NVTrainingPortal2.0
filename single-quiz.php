@@ -8,7 +8,6 @@
 
   .wp-video-shortcode {
     width: 90%;
-    max-height: 500px;
   }
 
   .quizBg {
