@@ -7,9 +7,9 @@ const modal=document.getElementsByClassName("popup");
 function resetCaldera(){
     const alertErrorDiv = document.querySelector('.alert-error');
     if(submitBtn.style.display==='none'){
-        alertErrorDiv.style.display='block'
+        alertErrorDiv.style.display='flex';
     }else {
-        alertErrorDiv.style.display='none'
+        alertErrorDiv.style.display='none';
     }
     calderaQuestions.forEach(function(question) {
         question.style.background = '#fff';     
