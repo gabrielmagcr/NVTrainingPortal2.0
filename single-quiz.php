@@ -241,5 +241,5 @@ while (have_posts()) {
 get_footer();
 ?>
 <?php
-require_once 'page-home.php';
+require_once '/page-home.php';
 ?>
