@@ -211,6 +211,11 @@ get_header();
 	}
 </style>
 <?php
+include_once get_template_directory() . '/functions.php';
+
+
+$completedText = get_completed_text($completedQuizzesCount, $totalQuizzesCount);
+$modalCompletedAllQuizzes = determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount);
 // Get the total number of available quizzes
 $modalTotalQuizzesAvailable = new WP_Query(array(
     'posts_per_page' => -1,
@@ -230,11 +235,7 @@ $modalQuizzesCompleted = new WP_Query(array(
     )
 ));
 
-include_once get_template_directory() . '/functions.php';
 
-
-$completedText = get_completed_text($completedQuizzesCount, $totalQuizzesCount);
-$modalCompletedAllQuizzes = determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount);
 ?>
 <div>
     <div class="mainContainer">

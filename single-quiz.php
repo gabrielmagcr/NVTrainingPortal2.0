@@ -168,6 +168,7 @@ include_once get_template_directory() . '/functions.php';
 
 
 $completedText = get_completed_text($completedQuizzesCount, $totalQuizzesCount);
+var_dump()
 $modalCompletedAllQuizzes = determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount);
 ?>
 <?php
