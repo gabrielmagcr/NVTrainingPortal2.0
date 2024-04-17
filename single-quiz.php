@@ -164,14 +164,7 @@
 </style>
 
 <?php
-include 'page-home.php';
-
-// Verifica si las variables de cuestionarios completados y cuestionarios totales están definidas
-if (isset($completed_quizzes_count) && isset($total_quizzes_count)) {
-    $completedText = "Great Job, you’ve completed $completed_quizzes_count/$total_quizzes_count quizzes!!";
-} else {
-    $completedText = 'Great Job, you’ve completed this quiz!!';
-}
+require_once 'page-home.php';
 ?>
 
 <?php
@@ -194,13 +187,23 @@ while (have_posts()) {
     the_post();
     ?>
 
-    <?php
+<?php
     $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
     $completedThisQuiz = false;
 
     if (strpos($url, 'completedQuiz') !== false) {
         $completedThisQuiz = true;
     } else {
+    ?>
+        <div class="quizBg"></div>
+        <div class="popup popupQuizVideo <?php echo get_field('quiz_video') ? 'video_modal' : ''; ?>">
+            <div class="modal_content">
+                <?php echo get_field('quiz_video'); ?>
+            </div>
+        </div>
+    <?php
+        wp_enqueue_script("video-JS", get_template_directory_uri() . '/js/videoModal.js');
+    }
     ?>
         <div class="quizBg"></div>
         <div class="popup popupQuizVideo <?php echo get_field('quiz_video') ? 'video_modal' : ''; ?>">
