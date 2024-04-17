@@ -157,7 +157,7 @@ if (!get_current_user_id()) {
 get_template_part('quizHeader');
 session_start();
 $_SESSION['post_id'] = get_the_ID();
-var_dump(get_the_ID())
+
 ?>
 
 <?php if (get_field('activate_banner')) { ?>
@@ -175,6 +175,7 @@ while (have_posts()) {
     $quiz_completed = get_user_meta($user_id, 'completed-quizzes', true);
     if ($quiz_completed && in_array(get_the_ID(), $quiz_completed)) {
         $completedThisQuiz = true;
+        var_dump($completedThisQuiz);
     }
     ?>
 
