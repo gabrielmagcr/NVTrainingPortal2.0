@@ -164,7 +164,7 @@
 </style>
 
 <?php
-include 'page-home.php';
+include_once 'page-home.php';
 ?>
 <?php
 if (!get_current_user_id()) {
