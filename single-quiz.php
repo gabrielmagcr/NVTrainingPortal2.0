@@ -172,6 +172,16 @@ get_template_part('quizHeader');
 session_start();
 $_SESSION['post_id'] = get_the_ID();
 ?>
+<?php
+$current_user_id = get_current_user_id();
+$user_info = get_userdata($current_user_id);
+
+if (current_user_can('manage_options')) {
+    $completed_quizzes_count = count_completed_quizzes($current_user_id);
+    $total_quizzes_count = count_total_quizzes();
+}
+?>
+
 
 <?php if (get_field('activate_banner')) { ?>
   <section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
@@ -233,7 +243,7 @@ while (have_posts()) {
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
 
         <div class="completedQuizBottonInfo">
-          <h3>Great Job, you’ve completed 5/15 quizes!!</h3>
+          <h3>Great Job, you’ve completed <?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?></span> quizes!!</h3>
           <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Libary</button></a>
         </div>
       </div>
