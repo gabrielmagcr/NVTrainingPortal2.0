@@ -149,8 +149,7 @@
       width: 55%;
     }
   }
-</style>
-<?php
+</style><?php
 if (!get_current_user_id()) {
     wp_redirect(home_url());
 }
@@ -172,8 +171,8 @@ while (have_posts()) {
     <?php
     $completedThisQuiz = false;
     $user_id = get_current_user_id();
-    $quiz_completed = get_user_meta($user_id, 'completed_quiz_id', true);
-    if ($quiz_completed == get_the_ID()) {
+    $quiz_completed = get_user_meta($user_id, 'completed-quizzes', true);
+    if ($quiz_completed && in_array(get_the_ID(), $quiz_completed)) {
         $completedThisQuiz = true;
     }
     ?>
