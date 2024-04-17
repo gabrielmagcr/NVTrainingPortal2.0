@@ -132,6 +132,10 @@ get_header();
 	.completedCheck{
 		width: 25px;
 	}
+	.completedQuiz span{
+		display: flex;
+		gap: 5px;
+	}
 
 	@media (min-width:767px) {
 		.welcomeTitle {
@@ -331,7 +335,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
             		    // Check if the quiz is completed or not
 						if ($quizCompleted->found_posts) {
 				?>
-					<div class="quiz ">
+					<div class="quiz completedQuiz">
 						<a href="<?php the_permalink() ?>" class="quiz-link">
 							<img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
 							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
