@@ -145,13 +145,16 @@
   #collapseVideo {
     display: none;
   }
-
+  .completedQuizBottonInfo {
+    text-align: center;
+    margin-bottom: 25px;
+  }
   .completedQuizBottonInfo h3 {
     color: #4D7F70;
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 56px;
-    font-weight: 450;
+    font-weight: 500;
     line-height: 56px;
     text-transform: uppercase;
   }
