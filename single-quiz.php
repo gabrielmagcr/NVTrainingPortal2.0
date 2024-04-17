@@ -166,7 +166,12 @@
 <?php
 
 include '/page-home.php';
-
+if (isset($completed_quizzes_count) && isset($total_quizzes_count)) {
+ $completedText= "Great Job, you’ve completed <?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ? quizes!!";
+} else {
+ $completedText= 'Great Job, you’ve completed this quize!!';
+}?>
+<?php
 if (!get_current_user_id()) {
   wp_redirect(home_url());
 }
@@ -238,7 +243,7 @@ while (have_posts()) {
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
 
         <div class="completedQuizBottonInfo">
-          <h3>Great Job, you’ve completed <?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?></span> quizes!!</h3>
+          <h3><?php echo $completedText ?></h3>
           <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Libary</button></a>
         </div>
       </div>
