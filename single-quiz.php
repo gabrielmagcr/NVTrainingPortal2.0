@@ -151,7 +151,7 @@
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 56px;
-    font-weight: 450;
+    font-weight: 500;
     line-height: 56px;
     text-transform: uppercase;
   }
@@ -184,11 +184,10 @@ while (have_posts()) {
 
   <?php $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
   $completedThisQuiz = false;
-  
- if (current_user_can('manage_options')) :
-    $completed_quizzes_count = count_completed_quizzes($current_user_id);
-    $total_quizzes_count = count_total_quizzes();
 
+ if (current_user_can('manage_options')) {    $completed_quizzes_count = count_completed_quizzes($current_user_id);
+    $total_quizzes_count = count_total_quizzes();
+ }
 
   if (strpos($url, 'completedQuiz') !== false) {
     $completedThisQuiz = true;
