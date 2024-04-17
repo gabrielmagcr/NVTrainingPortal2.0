@@ -1,4 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <?php
+  $activateBanner = get_field('activate_banner');
+  $bannerHeight = get_field('banner_height');
+  $bannerImage = get_field('banner_image');
+  $menuItems = wp_get_nav_menu_items('Menu_Mobile');
+  ?>
+  <?php wp_head(); ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Hotjar Tracking Code for https://training.naturvet.com -->
+  <script>
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 1178112,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
+
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+  <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
 <style type="text/css">
+
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     div,
@@ -360,7 +393,9 @@
     }
   </style>
 
+</head>
 <header>
+  
     <div class="content">
       <div class="header-l">
         <svg class="bars" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="presentation" class="icon icon-hamburger" fill="none" width="27" height="19" viewBox="0 0 27 19">
