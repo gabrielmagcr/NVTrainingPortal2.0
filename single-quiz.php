@@ -233,7 +233,7 @@ while (have_posts()) {
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
 
         <div class="completedQuizBottonInfo">
-          <h3>Great Job, you’ve <br> completed 5/15 quizes!!</h3>
+          <h3>Great Job, you’ve completed 5/15 quizes!!</h3>
           <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Libary</button></a>
         </div>
       </div>
