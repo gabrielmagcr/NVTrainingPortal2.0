@@ -230,7 +230,7 @@ while (have_posts()) {
                 ?>
 
                 <div class="completedQuizBottonInfo">
-                    <h3><?php echo $completedText; ?></h3>
+                    <h3><?php var_dump($completedText) ; ?></h3>
                     <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Library</button></a>
                 </div>
             </div>
