@@ -208,9 +208,7 @@ while (have_posts()) {
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
         <?php the_field('quiz_text'); ?>
 
-<div class="collapse" id="collapseVideo">
-  <?php the_field('quiz_video'); ?>
-</div>
+
 
 
         <?php
