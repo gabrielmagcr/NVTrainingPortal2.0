@@ -157,6 +157,7 @@ if (!get_current_user_id()) {
 get_template_part('quizHeader');
 session_start();
 $_SESSION['post_id'] = get_the_ID();
+var_dump(get_the_ID())
 ?>
 
 <?php if (get_field('activate_banner')) { ?>
@@ -193,7 +194,7 @@ while (have_posts()) {
 
 
     <div class="page-banner quizContainer" ses="<?php echo $_SESSION['user_id'] ?>" id="currentpostid" dataType=<?php echo get_the_ID() ?>>
-        <div class="container container--narrow page-section">
+        <div class="">
             <div class="metabox metabox--position-up metabox--with-home-link">
                 <a class="metabox__blog-home-link backHomeLink" href="<?php echo get_bloginfo('url'); ?>">
                     < NaturVet University Catalog</a>
