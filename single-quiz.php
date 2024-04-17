@@ -164,6 +164,9 @@
 </style>
 
 <?php
+
+include '/page-home.php';
+
 if (!get_current_user_id()) {
   wp_redirect(home_url());
 }
@@ -172,15 +175,7 @@ get_template_part('quizHeader');
 session_start();
 $_SESSION['post_id'] = get_the_ID();
 ?>
-<?php
-$current_user_id = get_current_user_id();
-$user_info = get_userdata($current_user_id);
 
-if (current_user_can('manage_options')) {
-    $completed_quizzes_count = count_completed_quizzes($current_user_id);
-    $total_quizzes_count = count_total_quizzes();
-}
-?>
 
 
 <?php if (get_field('activate_banner')) { ?>
