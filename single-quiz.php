@@ -146,6 +146,15 @@
     display: none;
   }
 
+  .completedQuizBottonInfo {
+    color: #4D7F70;
+    text-align: center;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-size: 56px;
+    font-weight: 450;
+    line-height: 56px;
+    text-transform: uppercase;
+  }
 
   @media (min-width:1400px) {
     .quizText {
@@ -222,6 +231,11 @@ while (have_posts()) {
           the_field('quiz');
         } ?>
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
+
+        <div class="completedQuizBottonInfo">
+          <h3>Great Job, you’ve completed 5/15 quizes!!</h3>
+          <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Libary</button></a>
+        </div>
       </div>
     </div>
   </div>
