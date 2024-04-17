@@ -233,8 +233,13 @@ $completedQuizzesCount = $modalQuizzesCompleted->found_posts;
 
 // Determine if all quizzes are completed
 $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
-?>
 
+if (isset($completedQuizzesCount) && isset($totalQuizzesCount)) {
+    $completedText = "Great Job, you’ve completed $completedQuizzesCount/$totalQuizzesCount quizzes!!";
+} else {
+    $completedText = 'Great Job, you’ve completed this quiz!!';
+}
+?>
 <div>
     <div class="mainContainer">
         <div class="bg-wattermark"></div>
