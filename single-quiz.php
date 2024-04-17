@@ -146,7 +146,7 @@
     display: none;
   }
 
-  .completedQuizBottonInfo {
+  .completedQuizBottonInfo h3 {
     color: #4D7F70;
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
