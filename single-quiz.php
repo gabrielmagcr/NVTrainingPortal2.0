@@ -163,14 +163,7 @@
   }
 </style>
 
-<?php
-include_once get_template_directory() . '/functions.php';
 
-
-$completedText = get_completed_text($completedQuizzesCount, $totalQuizzesCount);
-var_dump()
-$modalCompletedAllQuizzes = determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount);
-?>
 <?php
 if (!get_current_user_id()) {
     wp_redirect(home_url());
@@ -235,7 +228,7 @@ while (have_posts()) {
                 ?>
 
                 <div class="completedQuizBottonInfo">
-                    <h3><?php var_dump($completedText) ; ?></h3>
+                    <h3><?php echo $completedText; ?></h3>
                     <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Library</button></a>
                 </div>
             </div>

@@ -139,16 +139,3 @@ function webp_upload_mimes($existing_mimes) {
 }
 add_filter('mime_types', 'webp_upload_mimes');
 
-function get_completed_text($completedQuizzesCount, $totalQuizzesCount) {
-  if (isset($completedQuizzesCount) && isset($totalQuizzesCount)) {
-      $completedText = "Great Job, you’ve completed $completedQuizzesCount/$totalQuizzesCount quizzes!!";
-  } else {
-      $completedText = 'Great Job, you’ve completed this quiz!!';
-  }
-  return $completedText;
-}
-
-function determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount) {
-  $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
-  return $modalCompletedAllQuizzes;
-}
