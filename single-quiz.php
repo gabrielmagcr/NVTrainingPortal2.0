@@ -154,7 +154,7 @@ if (!get_current_user_id()) {
     wp_redirect(home_url());
 }
 //Line 2-4 checks if there is an active user, else redirect unknown user to home page
-get_header();
+get_template_part('quizHeader');
 session_start();
 $_SESSION['post_id'] = get_the_ID();
 ?>
