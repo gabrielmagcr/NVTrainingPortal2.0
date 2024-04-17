@@ -165,7 +165,7 @@
 
 <?php
 
-include 'page-home.php';
+include '/page-home.php';
 
 if (isset($completed_quizzes_count) && isset($total_quizzes_count)) {
  $completedText= "Great Job, you’ve completed <?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ? quizes!!";
