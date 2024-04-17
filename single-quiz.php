@@ -184,6 +184,11 @@ while (have_posts()) {
 
   <?php $url = 'https://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
   $completedThisQuiz = false;
+  
+ if (current_user_can('manage_options')) :
+    $completed_quizzes_count = count_completed_quizzes($current_user_id);
+    $total_quizzes_count = count_total_quizzes();
+
 
   if (strpos($url, 'completedQuiz') !== false) {
     $completedThisQuiz = true;
