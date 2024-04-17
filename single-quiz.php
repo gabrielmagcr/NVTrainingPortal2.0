@@ -163,7 +163,9 @@
   }
 </style>
 
-
+<?php
+include '/page-home.php';
+?>
 <?php
 if (!get_current_user_id()) {
     wp_redirect(home_url());
