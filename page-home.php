@@ -336,7 +336,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 						if ($quizCompleted->found_posts) {
 				?>
 					<div class="quiz completedQuiz">
-						<a href="<?php the_permalink() ?>" class="quiz-link">
+						<a href="<?php the_permalink()?><?php echo"?completedQuiz"; ?>" class="quiz-link">
 							<img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
 							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
