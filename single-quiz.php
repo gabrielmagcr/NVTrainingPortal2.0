@@ -163,7 +163,9 @@
   }
 </style>
 
-
+<?php
+require_once '/page-home.php';
+?>
 <?php
 if (!get_current_user_id()) {
     wp_redirect(home_url());
@@ -239,7 +241,4 @@ while (have_posts()) {
 }
 
 get_footer();
-?>
-<?php
-require_once '/page-home.php';
 ?>
