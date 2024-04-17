@@ -146,12 +146,12 @@
     display: none;
   }
 
-  .completedQuizBottonInfo h3{
+  .completedQuizBottonInfo {
     color: #4D7F70;
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
     font-size: 56px;
-    font-weight: 500;
+    font-weight: 450;
     line-height: 56px;
     text-transform: uppercase;
   }
@@ -177,16 +177,6 @@ $_SESSION['post_id'] = get_the_ID();
   <section id="banner" style="height:<?php echo get_field('banner_height'); ?>px; background:url('<?php echo get_field('banner_image'); ?>') no-repeat center center; background-size:cover;">
   </section>
 <?php } ?>
-
-<?php
-$current_user_id = get_current_user_id();
-$user_info = get_userdata($current_user_id);
-
-if (current_user_can('manage_options')) {
-    $completed_quizzes_count = count_completed_quizzes($current_user_id);
-    $total_quizzes_count = count_total_quizzes();
-}
-?>
 
 <?php
 while (have_posts()) {
@@ -243,7 +233,7 @@ while (have_posts()) {
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
 
         <div class="completedQuizBottonInfo">
-          <h3>Great Job, you’ve <br> completed <?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?> quizes!!</h3>
+          <h3>Great Job, you’ve <br> completed 5/15 quizes!!</h3>
           <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Libary</button></a>
         </div>
       </div>
