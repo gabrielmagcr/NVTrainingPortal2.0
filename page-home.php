@@ -229,16 +229,12 @@ $modalQuizzesCompleted = new WP_Query(array(
         )
     )
 ));
-$completedQuizzesCount = $modalQuizzesCompleted->found_posts;
 
-// Determine if all quizzes are completed
-$modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
+include_once get_template_directory() . '/functions.php';
 
-if (isset($completedQuizzesCount) && isset($totalQuizzesCount)) {
-    $completedText = "Great Job, you’ve completed $completedQuizzesCount/$totalQuizzesCount quizzes!!";
-} else {
-    $completedText = 'Great Job, you’ve completed this quiz!!';
-}
+
+$completedText = get_completed_text($completedQuizzesCount, $totalQuizzesCount);
+$modalCompletedAllQuizzes = determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount);
 ?>
 <div>
     <div class="mainContainer">

@@ -164,7 +164,11 @@
 </style>
 
 <?php
-include_once 'page-home.php';
+include_once get_template_directory() . '/functions.php';
+
+
+$completedText = get_completed_text($completedQuizzesCount, $totalQuizzesCount);
+$modalCompletedAllQuizzes = determine_if_all_quizzes_completed($completedQuizzesCount, $totalQuizzesCount);
 ?>
 <?php
 if (!get_current_user_id()) {
