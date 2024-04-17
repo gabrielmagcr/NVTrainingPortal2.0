@@ -359,16 +359,7 @@
 
     }
   </style>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1178112,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+
 <header>
     <div class="content">
       <div class="header-l">
@@ -448,15 +439,7 @@
 
         </div><!--end responsive-menu-->
 
-        <script>
-          jQuery(".close-btn").on("click", function() {
-            jQuery(".responsive-menu").fadeOut('slow');
-          });
 
-          jQuery(".bars").on("click", function() {
-            jQuery(".responsive-menu").fadeIn('slow');
-          });
-        </script>
       </div><!--end header-ll-->
       <div class="header-c">
         <a href="<?php echo home_url('/'); ?>" rel="home">
@@ -491,3 +474,14 @@
       </div><!--end header-r-->
     </div><!--end content-->
   </header>
+
+
+<script>
+          jQuery(".close-btn").on("click", function() {
+            jQuery(".responsive-menu").fadeOut('slow');
+          });
+
+          jQuery(".bars").on("click", function() {
+            jQuery(".responsive-menu").fadeIn('slow');
+          });
+        </script>
