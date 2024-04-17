@@ -234,174 +234,181 @@ $completedQuizzesCount = $modalQuizzesCompleted->found_posts;
 // Determine if all quizzes are completed
 $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 ?>
+
 <div>
-	<div class="mainContainer">
-		<div class="bg-wattermark"></div>
-		<div class="text-center">
-			<div class="user_title ">
-				<div class="textHome">
-					<h2 class="welcomeTitle">Welcome to the NaturVet Training Portal</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-				<?php if (!is_user_logged_in()) { ?>
-					<div class="logoutUser logoutUserDesktop">
-						<a href="<?php echo wp_login_url(); ?>">
-							<button class="top-btns">Login</button>
-						</a>
-						<a href="<?php echo wp_registration_url(); ?>">
-							<button class="top-btns createAccount-btns createAccount-btns-desktop">Create an account</button>
-						</a>
-					</div>
-				<?php } ?>
+    <div class="mainContainer">
+        <div class="bg-wattermark"></div>
+        <div class="text-center">
+            <div class="user_title ">
+                <div class="textHome">
+                    <h2 class="welcomeTitle">Welcome to the NaturVet Training Portal</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <?php if (!is_user_logged_in()) { ?>
+                    <div class="logoutUser logoutUserDesktop">
+                        <a href="<?php echo wp_login_url(); ?>">
+                            <button class="top-btns">Login</button>
+                        </a>
+                        <a href="<?php echo wp_registration_url(); ?>">
+                            <button class="top-btns createAccount-btns createAccount-btns-desktop">Create an account</button>
+                        </a>
+                    </div>
+                <?php } ?>
 
-				<?php
-				function get_quiz_title($quiz_id)
-				{
-					$title = get_the_title($quiz_id);
-					return $title;
-				} ?>
-
-
-				<?php
-				if (is_user_logged_in()) {
-					// session_start(); 
-
-					$_SESSION["user_id"] = get_current_user_id();
-
-				?>
+                <?php
+                function get_quiz_title($quiz_id)
+                {
+                    $title = get_the_title($quiz_id);
+                    return $title;
+                } ?>
 
 
-					<?php get_template_part('mainVideos'); ?>
+                <?php
+                if (is_user_logged_in()) {
+                    // session_start(); 
 
-					<?php get_template_part('productLine'); ?>
+                    $_SESSION["user_id"] = get_current_user_id();
 
-					<div class="productCategoriesContainer">
-						<div class="mainVideoText productText">
-							<h2 class="welcomeTitle ">Product Categories</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-						</div>
-					</div>
-					<?php
-					$modalCompletedAllQuizzes = false;
-					$modalQuizzesCompleted = new WP_Query(array(
-						'post_type' => 'completed-quizzes',
-						'meta_query' => array(
-							array(
-								'key' => 'user_id',
-								'compare' => '=',
-								'value' => get_current_user_id()
-							)
-						)
-					));
-					if ($modalUserQuizCompleted >= $modalTotalQuizzesAvailable) {
-						$modalCompletedAllQuizzes = true;
-					} ?>
-					<?php
-					//  delete_user_meta(get_current_user_id(),'completedGiftForm');
-					@$modalCompletedForm = get_user_meta(get_current_user_id(), 'completedGiftForm')[0];
+                ?>
 
-					?>
 
-			</div>
-		</div>
-		<div class="quizContainer">
-			<?php
-					$homepageQuizzes = new WP_Query(array(
-						'posts_per_page' => 10,
-						'post_type' => 'Quiz'
-					));
-					//Loops Through the list of Quizess available and adds them to the dom
-					while ($homepageQuizzes->have_posts()) {
+                    <?php get_template_part('mainVideos'); ?>
 
-						$homepageQuizzes->the_post(); ?>
-				<?php
+                    <?php get_template_part('productLine'); ?>
 
-						$quizCompleted = new WP_Query(array(
-							'post_type' => 'completed-quizzes',
-							'meta_query' => array(
-								array(
-									'key' => 'completed_quiz_id',
-									'compare' => '=',
-									'value' => get_the_ID()
-								),
-								array(
-									'key' => 'user_id',
-									'compare' => '=',
-									'value' => get_current_user_id()
-								)
-							)
-						));
+                    <div class="productCategoriesContainer">
+                        <div class="mainVideoText productText">
+                            <h2 class="welcomeTitle ">Product Categories</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
 
-            		    // Check if the quiz is completed or not
-						if ($quizCompleted->found_posts) {
-				?>
-					<div class="quiz completedQuiz">
-						<a href="<?php the_permalink()?><?php echo"?completedQuiz"; ?>" class="quiz-link">
-							<img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
-							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
-						</a>
-						<span><img class="completedCheck" src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
-					</div>
-				<?php
-						} else { ?>
-					<div class="quiz">
-						<a href="<?php the_permalink() ?>" class="quiz-link">
-							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
-							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
-						</a>
-						<span><?php echo get_quiz_title(get_the_ID()); ?></span>
-					</div>
-			<?php }
-					}
-			?>
-		</div>
+                    <?php
+                    // Verifica si todos los cuestionarios están completos
+                    if ($modalCompletedAllQuizzes) {
+                        // Obtén el formulario completado (si existe) para el usuario actual
+                        $modalCompletedForm = get_user_meta(get_current_user_id(), 'completedGiftForm', true);
 
-	</div>
+                        // Si todos los cuestionarios están completos y el formulario aún no se ha completado, muestra el botón para recibir la tarjeta de regalo gratuita
+                        if (!$modalCompletedForm) {
+                    ?>
+                            <div class="CompletedLinkButton">
+                                <a href="<?php echo get_bloginfo('url'); ?>/completedallquizzes/">
+                                    <button class="btn btn-success completedButton">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
+                                    <button class="btn btn-success completedButtonMobile">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
+                                </a>
+                            </div>
+                    <?php
+                        }
+                    }
+                    ?>
+
+                    <?php
+                    $modalQuizzesCompleted = new WP_Query(array(
+                        'post_type' => 'completed-quizzes',
+                        'meta_query' => array(
+                            array(
+                                'key' => 'user_id',
+                                'compare' => '=',
+                                'value' => get_current_user_id()
+                            )
+                        )
+                    ));
+                    if ($modalQuizzesCompleted->found_posts >= $modalTotalQuizzesAvailable->found_posts) {
+                        $modalCompletedAllQuizzes = true;
+                    } else {
+                        $modalCompletedAllQuizzes = false;
+                    }
+                    ?>
+            </div>
+        </div>
+        <div class="quizContainer">
+            <?php
+            $homepageQuizzes = new WP_Query(array(
+                'posts_per_page' => 10,
+                'post_type' => 'Quiz'
+            ));
+            // Loops Through the list of Quizzes available and adds them to the DOM
+            while ($homepageQuizzes->have_posts()) {
+                $homepageQuizzes->the_post(); ?>
+
+                <?php
+                $quizCompleted = new WP_Query(array(
+                    'post_type' => 'completed-quizzes',
+                    'meta_query' => array(
+                        array(
+                            'key' => 'completed_quiz_id',
+                            'compare' => '=',
+                            'value' => get_the_ID()
+                        ),
+                        array(
+                            'key' => 'user_id',
+                            'compare' => '=',
+                            'value' => get_current_user_id()
+                        )
+                    )
+                ));
+
+                // Check if the quiz is completed or not
+                if ($quizCompleted->found_posts) {
+                ?>
+                    <div class="quiz completedQuiz">
+                        <a href="<?php the_permalink()?><?php echo"?completedQuiz"; ?>" class="quiz-link">
+                            <img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
+                            <img class='play-icon' src="/wp-content/uploads/Button-play.svg">
+                        </a>
+                        <span><img class="completedCheck" src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
+                    </div>
+                <?php
+                } else { ?>
+                    <div class="quiz">
+                        <a href="<?php the_permalink() ?>" class="quiz-link">
+                            <img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
+                            <img class='play-icon' src="/wp-content/uploads/Button-play.svg">
+                        </a>
+                        <span><?php echo get_quiz_title(get_the_ID()); ?></span>
+                    </div>
+            <?php }
+            }
+            ?>
+        </div>
+
+    </div>
 
 </div>
 
 <script>
-	//Script checks  the amount of completed training quizzes and displays the "recieve your gift card" button if amount equals to available quizzes
-	function checkIfTestsCompleted() {
+    // Script checks the amount of completed training quizzes and displays the "receive your gift card" button if the amount equals the available quizzes
+    function checkIfTestsCompleted() {
 
-		var quizzesCompleted = document.getElementsByClassName("completed_div");
-		var modalCompleted = jQuery('.modalCompleted');
-		if (quizzesCompleted.length == 7) {
-			if (modalCompleted.length) {
-				modalCompleted.css("display", "block");
-				jQuery("body").css("overflow", "hidden");
+        var quizzesCompleted = document.getElementsByClassName("completed_div");
+        var modalCompleted = jQuery('.modalCompleted');
+        if (quizzesCompleted.length == 7) {
+            if (modalCompleted.length) {
+                modalCompleted.css("display", "block");
+                jQuery("body").css("overflow", "hidden");
 
-			} else {
-				jQuery("body").css("overflow", "visible");
-			}
-		} else {
-			return;
-		}
+            } else {
+                jQuery("body").css("overflow", "visible");
+            }
+        } else {
+            return;
+        }
 
 
 
-	}
-	checkIfTestsCompleted()
+    }
+    checkIfTestsCompleted()
 </script>
+
 <?php } ?>
 </div>
 </div>
 <?php if (!is_user_logged_in()) { ?>
-	<div class="bg-botton-logout"></div>
+    <div class="bg-botton-logout"></div>
 <?php } ?>
 </div>
 </div>
-
-<?php
-// Display the button to receive the free gift card if all quizzes are completed
-if ($modalCompletedAllQuizzes && !$modalCompletedForm) { ?>
-    <div class="CompletedLinkButton">
-        <a href="<?php echo get_bloginfo('url'); ?>/completedallquizzes/">
-            <button class="btn btn-success completedButton">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
-            <button class="btn btn-success completedButtonMobile">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
-        </a>
-    </div>
-<?php } ?>
 
 <?php
 get_footer();
