@@ -202,8 +202,7 @@ while (have_posts()) {
       </div>
     </div>
     <div class="quizLine"></div>
-    <div class="page-banner__bg-image" style="background-image: url('');"></div>
-    <div class="page-banner__content container container--narrow quizTitle">
+    <div class=" quizTitle">
       <h1 class=""><?php the_title(); ?></h1>
       <div class="page-banner__intro quizText">
         <!--Line 45 adds the "Quiz text" field associated to quiz in the "Quizzes" Tab in the back end-->
