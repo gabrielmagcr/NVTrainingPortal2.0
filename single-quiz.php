@@ -157,6 +157,7 @@
     font-weight: 500;
     line-height: 56px;
     text-transform: uppercase;
+    margin: 25px;
   }
 
   @media (min-width:1400px) {
@@ -231,7 +232,7 @@ while (have_posts()) {
                 ?>
 
                 <div class="completedQuizBottonInfo">
-                    <h3>GREAT JOB, YOU'VE <br> COMPLETE THIS QUIZ</h3>
+                    <h3>Great job, you've <br> completed this quiz</h3>
                     <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Library</button></a>
                 </div>
             </div>
