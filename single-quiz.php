@@ -146,7 +146,7 @@
     display: none;
   }
 
-  .completedQuizBottonInfo {
+  .completedQuizBottonInfo h3{
     color: #4D7F70;
     text-align: center;
     font-family: "Brandon Grotesque", sans-serif;
@@ -233,7 +233,7 @@ while (have_posts()) {
         <!--Line 55-57 adds the "Quiz" field associated to quiz in the "Quizzes" Tab in the back end-->
 
         <div class="completedQuizBottonInfo">
-          <h3>Great Job, you’ve completed 5/15 quizes!!</h3>
+          <h3>Great Job, you’ve <br> completed <?php echo $completed_quizzes_count; ?>/<?php echo $total_quizzes_count; ?> quizes!!</h3>
           <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Libary</button></a>
         </div>
       </div>
