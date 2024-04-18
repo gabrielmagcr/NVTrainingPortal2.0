@@ -227,12 +227,11 @@ while (have_posts()) {
                 <?php
                 if (!$completedThisQuiz) {
                     the_field('quiz');
+                }else{
+                  get_template_part('completedQuizMessage');
                 }
                 ?>
-                <?php if($completedThisQuiz){
-                    get_template_part('completedQuizMessage');
-
-                }?>
+               
                
             </div>
         </div>
