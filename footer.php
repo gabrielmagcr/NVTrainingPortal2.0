@@ -356,28 +356,33 @@
     $socials = array(
         'twitter' => array(
             'img' => '/wp-content/uploads/twitter.svg',
-            'url' => 'https://twitter.com/',
-            'name' => 'Twitter'
+            'url' => 'https://twitter.com/naturvet',
+            'name' => 'X'
         ),
         'facebook' => array(
-            'img' => '/wp-content/uploads/twitter.svg',
-            'url' => 'https://www.facebook.com/',
+            'img' => '/wp-content/uploads/facebook-1.svg',
+            'url' => 'https://www.facebook.com/NaturVet',
             'name' => 'Facebook'
         ),
         'pinterest' => array(
-            'img' => '/wp-content/uploads/twitter.svg',
-            'url' => 'https://www.pinterest.com/',
+            'img' => '/wp-content/uploads/pinterest-1.svg',
+            'url' => 'https://www.pinterest.com/naturvet/',
             'name' => 'Pinterest'
         ),
         'instagram' => array(
-            'img' => '/wp-content/uploads/twitter.svg',
-            'url' => 'https://www.instagram.com/',
+            'img' => '/wp-content/uploads/instagram-1.svg',
+            'url' => 'https://www.instagram.com/naturvet',
             'name' => 'Instagram'
         ),
         'youtube' => array(
-            'img' => '/wp-content/uploads/twitter.svg',
-            'url' => 'https://www.youtube.com/',
+            'img' => '/wp-content/uploads/youtube-1.svg',
+            'url' => 'https://www.youtube.com/NaturVet',
             'name' => 'YouTube'
+        ),
+        'tiktok' => array(
+            'img' => '/wp-content/uploads/tiktok.svg',
+            'url' => 'https://www.tiktok.com/@naturvet',
+            'name' => 'TikTok'
         )
     );
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
