@@ -76,7 +76,6 @@
     align-items: center;
   }
 
-  .alert,
   .alert-error {
     background: #fff !important;
     text-align: center !important;
