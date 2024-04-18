@@ -225,16 +225,15 @@ while (have_posts()) {
                 </div>
 
                 <?php
-                // Muestra el cuestionario si no se ha completado este quiz
                 if (!$completedThisQuiz) {
                     the_field('quiz');
                 }
                 ?>
+                <?php if($completedThisQuiz){
+                    get_template_part('completedQuizMessage');
 
-                <div class="completedQuizBottonInfo">
-                    <h3>Great job, you've <br> completed this quiz</h3>
-                    <a href="<?php echo get_bloginfo('url'); ?>"><button class="top-btns">Return to Library</button></a>
-                </div>
+                }?>
+               
             </div>
         </div>
     </div>
