@@ -7,7 +7,7 @@
 
     .completedContentLeft {
         text-align: center;
-        width: 50%;
+        width: 75%;
     }
 
     .completedContentLeft h2 {
@@ -22,17 +22,14 @@
         font-family: Montserrat;
         font-size: 18px;
     }
-
-    .completedForm {
-        width: 500px;
-        margin: 0 auto 40px;
-        margin-top: 2%;
-        height: 76%;
-    }
     .hs-button{
         border-radius: 30px !important;
     }
     @media (min-width:767px) {
+        .completedForm{
+            width: 530px;
+            padding-left: 25px;
+        }
         .completedContentLeft h2 {
             font-size: 48px;
         }
@@ -42,6 +39,9 @@
         .completedContentLeft h2 {
             font-size: 72px;
         }
+        .completedContentLeft {
+        width: 50%;
+    }
     }
 </style>
 <?php
