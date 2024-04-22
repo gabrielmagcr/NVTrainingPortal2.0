@@ -63,6 +63,7 @@ jQuery(document).ready(function($) {
           if (isInViewport(this)) {
               $(this).attr("src", $(this).data("src"));
               $(this).removeClass("lazy-load");
+              $(this).addClass("animate__animated animate__fadeIn");
           }
       });
   }
