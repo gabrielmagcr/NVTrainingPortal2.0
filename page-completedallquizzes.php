@@ -7,7 +7,7 @@
 
     .completedContentLeft {
         text-align: center;
-        width: 75%;
+        width: 90%;
     }
 
     .completedContentLeft h2 {
@@ -25,6 +25,7 @@
 
     .completedForm {
         padding-left: 25px;
+        margin-bottom:40px
     }
 
     .hs-button {
