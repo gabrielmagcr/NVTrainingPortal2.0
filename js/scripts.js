@@ -104,6 +104,6 @@ const placeholders = document.querySelectorAll('.placeholder-img');
 
 placeholders.forEach(placeholder => {
     placeholder.addEventListener('click', function() {
-      
+      placeholders.style
     });
 });
