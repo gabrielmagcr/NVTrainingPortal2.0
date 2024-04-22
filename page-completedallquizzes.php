@@ -22,14 +22,21 @@
         font-family: Montserrat;
         font-size: 18px;
     }
-    .hs-button{
+
+    .completedForm {
+        padding-left: 25px;
+    }
+
+    .hs-button {
         border-radius: 30px !important;
     }
+
     @media (min-width:767px) {
-        .completedForm{
+        .completedForm {
             width: 530px;
             padding-left: 25px;
         }
+
         .completedContentLeft h2 {
             font-size: 48px;
         }
@@ -39,9 +46,10 @@
         .completedContentLeft h2 {
             font-size: 72px;
         }
+
         .completedContentLeft {
-        width: 50%;
-    }
+            width: 50%;
+        }
     }
 </style>
 <?php
