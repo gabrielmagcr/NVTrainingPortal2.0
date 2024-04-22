@@ -57,7 +57,7 @@ $pVideoText3 = get_field('pVideoText3');
                     <source src="<?php echo $productVideo1 ?>" type="video/mp4">
                 </video>
             </div>
-            <div class="mainVideoText productLineText animate__animated animate__fadeIn">
+            <div class="mainVideoText productLineText lazy-load">
                 <h3><?php echo $pVideoTitle1 ?></h3>
                 <p>L<?php echo  $pVideoText1 ?></p>
             </div>
@@ -70,7 +70,7 @@ $pVideoText3 = get_field('pVideoText3');
                     <source src="<?php echo $productVideo2 ?>" type="video/mp4">
                 </video>
             </div>
-            <div class="mainVideoText productLineText animate__animated animate__fadeIn">
+            <div class="mainVideoText productLineText lazy-load">
                 <h3><?php echo $pVideoTitle2 ?></h3>
                 <p>L<?php echo  $pVideoText2 ?></p>
             </div>
@@ -83,7 +83,7 @@ $pVideoText3 = get_field('pVideoText3');
                     <source src="<?php echo $productVideo3 ?>" type="video/mp4">
                 </video>
             </div>
-            <div class="mainVideoText productLineText animate__animated animate__fadeIn">
+            <div class="mainVideoText productLineText lazy-load">
                 <h3><?php echo $pVideoTitle3 ?></h3>
                 <p>L<?php echo  $pVideoText3 ?></p>
             </div>
