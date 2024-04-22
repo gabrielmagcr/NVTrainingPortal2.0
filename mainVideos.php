@@ -23,7 +23,7 @@
 	}
 	.placeholder-img:hover{
 		transition: transform 0.3s ease;
-		transform: scale(1.1);
+		transform: scale(1.05);
 	}
 
 	.mainVideoText {
