@@ -1,3 +1,14 @@
+<style>
+.completedContentLeft {
+    text-align: center;
+}
+.completedForm{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 2%;
+    height: 76%;
+}
+</style>
 <?php 
  get_header();
  $userCompletedAllQuizzes=false;
@@ -39,7 +50,7 @@ if(!$completedForm && $userCompletedAllQuizzes){ ?>
    </div>  
    <div class="completedForm"></div>
 </div>
-</div>
+</div>  
 
 <!--[if lte IE 8]>
 <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
@@ -100,8 +111,5 @@ if(!$completedForm && $userCompletedAllQuizzes){ ?>
 
 }?>
 <div class="whiteSpace"></div>
-<div class="helpLinkButton">
-<a href=mailto:training@naturvet.com><button class="btn btn-success helpButton">Have a Problem? Contact Us</button>
-</a>
-</div>
+
 <?php get_footer();?>
