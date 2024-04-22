@@ -45,8 +45,9 @@ if(!$completedForm && $userCompletedAllQuizzes){ ?>
 <div class="Completed pad-top">
    <div class="completedContent">
     <div class="completedContentLeft">
-  <h2>Please complete the below form.</h2>
-   <h3 class="prizeTitle">Your $5 Starbucks digital gift card will be emailed to you.</h3><h4>(Please allow 1-2 business days pending employee verification.)<h4>
+  <h2 class="welcomeTitle">Please complete the below form.</h2>
+   <p>Your $5 Starbucks digital gift card will be emailed to you. <br> (Please allow 1-2 business days pending employee verification.)</p>
+
    </div>  
    <div class="completedForm"></div>
 </div>
