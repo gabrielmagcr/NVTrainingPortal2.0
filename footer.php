@@ -260,8 +260,11 @@
         .footerSocialDesktop {
             display: flex;
             gap: 10px;
-        }
 
+        }
+        .footerSocialDesktop a img{
+            width: 47px;
+        }
         .footerLastSectionLeftSide {
             display: flex;
             flex-direction: column;

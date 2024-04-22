@@ -25,7 +25,7 @@
 
     .completedForm {
         width: 500px;
-        margin: 0 auto;
+        margin: 0 auto 40px;
         margin-top: 2%;
         height: 76%;
     }
