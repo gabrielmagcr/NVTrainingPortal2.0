@@ -294,8 +294,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
                     ?>
                             <div class="CompletedLinkButton">
                                 <a href="<?php echo get_bloginfo('url'); ?>/completedallquizzes/">
-                                    <button class="btn btn-success completedButton">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
-                                    <button class="btn btn-success completedButtonMobile">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
+                                    <button class="top-btns">Click here to receive your <strong>FREE</strong> Starbucks gift card!</button>
                                 </a>
                             </div>
                     <?php
