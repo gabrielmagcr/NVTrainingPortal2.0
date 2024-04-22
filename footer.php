@@ -322,7 +322,7 @@
      
     }
 </style>
-<footer>
+<footer class="lazy-load">
     <?php
     $brandsLogos = array(
         'img1' => array(
