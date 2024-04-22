@@ -149,6 +149,6 @@ if (!$completedForm && $userCompletedAllQuizzes) { ?>
 <?php
 
 } ?>
-<div class="whiteSpace"></div>
+
 
 <?php get_footer(); ?>
