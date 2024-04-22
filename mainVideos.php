@@ -100,7 +100,7 @@ $videoText2 = get_field('videotext2');
 				<source src="<?php echo $welcomeVideo1 ?>" type="video/mp4">
 			</video>
 		</div>
-		<div class="mainVideoText">
+		<div class="mainVideoText animate__animated animate__fadeIn">
 			<h3><?php echo $videoTitle1 ?></h3>
 			<p><?php echo $videoText1 ?></p>
 		</div>
@@ -113,7 +113,7 @@ $videoText2 = get_field('videotext2');
 				<source src="<?php echo $welcomeVideo2 ?>" type="video/mp4">
 			</video>
 		</div>
-		<div class="mainVideoText">
+		<div class="mainVideoText animate__animated animate__fadeIn">
 			<h3><?php echo $videoTitle2 ?></h3>
 			<p><?php echo $videoText2 ?></p>
 		</div>
