@@ -93,8 +93,8 @@ $videoText2 = get_field('videotext2');
 <div class="mainVideosContainer">
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img class="placeholder-img" src="<?php echo $placeHolderImage1 ?>" alt="Placeholder Image">
-			<img class="play-icon playIconMainVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+			<img class="placeholder-img lazy-load" src="<?php echo $placeHolderImage1 ?>" alt="Placeholder Image">
+			<img class="play-icon playIconMainVideo lazy-load" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 			<video class="video" controls style="display: none;">
 				<source src="<?php echo $welcomeVideo1 ?>" type="video/mp4">
 			</video>
@@ -106,8 +106,8 @@ $videoText2 = get_field('videotext2');
 	</div>
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img class="placeholder-img" src="<?php echo $placeHolderImage2 ?>" alt="Placeholder Image">
-			<img class="play-icon playIconMainVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+			<img class="placeholder-img lazy-load" src="<?php echo $placeHolderImage2 ?>" alt="Placeholder Image">
+			<img class="play-icon playIconMainVideo lazy-load" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 			<video class="video" controls style="display: none;">
 				<source src="<?php echo $welcomeVideo2 ?>" type="video/mp4">
 			</video>

@@ -51,8 +51,8 @@ $pVideoText3 = get_field('pVideoText3');
     <div class="productVideoContainer">
         <div class="mainVideo productLineVideo">
             <div class="mainVideoImg productLineImg">
-                <img class="placeholder-img placeholder-imgPL " src="<?php echo $pPlaceHolderImg1 ?>" alt="Placeholder Image">
-                <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+                <img class="placeholder-img placeholder-imgP lazy-loadL " src="<?php echo $pPlaceHolderImg1 ?>" alt="Placeholder Image">
+                <img class="play-icon playIconProductVideo lazy-load"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
                 <video class="video" controls style="display: none;">
                     <source src="<?php echo $productVideo1 ?>" type="video/mp4">
                 </video>
@@ -63,8 +63,8 @@ $pVideoText3 = get_field('pVideoText3');
             </div>
         </div>
 		<div class="mainVideo productLineVideo">
-            <div class="mainVideoImg productLineImg">
-                <img class="placeholder-img placeholder-imgPL " src="<?php echo $pPlaceHolderImg2 ?>" alt="Placeholder Image">
+            <div class="mainVideoImg productLineImg lazy-load">
+                <img class="placeholder-img placeholder-imgPL lazy-load " src="<?php echo $pPlaceHolderImg2 ?>" alt="Placeholder Image">
                 <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
                 <video class="video" controls style="display: none;">
                     <source src="<?php echo $productVideo2 ?>" type="video/mp4">
@@ -77,8 +77,8 @@ $pVideoText3 = get_field('pVideoText3');
         </div>
 		<div class="mainVideo productLineVideo">
             <div class="mainVideoImg productLineImg">
-                <img class="placeholder-img placeholder-imgPL " src="<?php echo $pPlaceHolderImg3 ?>" alt="Placeholder Image">
-                <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+                <img class="placeholder-img placeholder-imgPL lazy-load " src="<?php echo $pPlaceHolderImg3 ?>" alt="Placeholder Image">
+                <img class="play-icon playIconProductVideo lazy-load"  src="/wp-content/uploads/Button-play.svg" alt="Play Button">
                 <video class="video" controls style="display: none;">
                     <source src="<?php echo $productVideo3 ?>" type="video/mp4">
                 </video>

@@ -46,3 +46,32 @@ function markComplete(callback) {
   });
   updatePage();
 }
+
+jQuery(document).ready(function($) {
+  function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+
+  function lazyLoad() {
+      $(".lazy-load").each(function() {
+          if (isInViewport(this)) {
+              $(this).attr("src", $(this).data("src"));
+              $(this).removeClass("lazy-load");
+          }
+      });
+  }
+
+  // Load images on initial page load
+  lazyLoad();
+
+  // Load images when scrolling
+  $(window).on("scroll", function() {
+      lazyLoad();
+  });
+});

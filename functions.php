@@ -139,3 +139,7 @@ function webp_upload_mimes($existing_mimes) {
 }
 add_filter('mime_types', 'webp_upload_mimes');
 
+function my_theme_enqueue_scripts() {
+  wp_enqueue_script('lazy-load', get_template_directory_uri() . '/js/scripts.js', array('jquery'), null, true);
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
