@@ -225,7 +225,7 @@
       }
 
       #banner {
-        background: url('/wp-content/uploads/HomePageBanner.png');
+        background: url('/wp-content/uploads/HomePageBanner.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
