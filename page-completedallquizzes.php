@@ -1,15 +1,24 @@
 <style>
+    .completedContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .completedContentLeft {
         text-align: center;
+        width: 50%;
     }
 
     .completedContentLeft h2 {
         font-family: "Brandon Grotesque", sans-serif;
+        color: #4D7F70;
         font-size: 72px;
         font-weight: 600;
         text-transform: uppercase;
     }
-    .completedContentLeft p{
+
+    .completedContentLeft p {
         font-family: Montserrat;
         font-size: 18px;
     }
@@ -19,6 +28,9 @@
         margin: 0 auto;
         margin-top: 2%;
         height: 76%;
+    }
+    .hs-button{
+        border-radius: 30px;
     }
 
     @media (min-width:1400px) {
