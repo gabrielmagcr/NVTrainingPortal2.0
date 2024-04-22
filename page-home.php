@@ -76,6 +76,7 @@ get_header();
 		font-size: 16px;
 		line-height: 28px;
 		margin: 35px 0;
+		opacity: 0;
 	}
 
 	.productCategoriesContainer {
