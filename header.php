@@ -329,7 +329,8 @@
       }
 
       .shield img {
-        width: 250px;
+        width: 280px;
+        margin-bottom: 10px;
       }
 
       .shield {
