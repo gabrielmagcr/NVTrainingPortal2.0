@@ -13,7 +13,7 @@ get_header();
 		text-align: center;
 		font-family: "Brandon Grotesque", sans-serif;
 		font-weight: 600;
-		opacity: 0;
+		
 	}
 
 	.mainContainer {
@@ -76,7 +76,6 @@ get_header();
 		font-size: 16px;
 		line-height: 28px;
 		margin: 35px 0;
-		opacity: 0;
 	}
 
 	.productCategoriesContainer {
@@ -261,9 +260,9 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 		<div class="bg-wattermark"></div>
 		<div class="text-center">
 			<div class="user_title ">
-				<div class="textHome">
-					<h2 class="welcomeTitle animate__animated animate__fadeIn">Welcome to the NaturVet Training Portal</h2>
-					<p class="animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="textHome lazy-load">
+					<h2 class="welcomeTitle ">Welcome to the NaturVet Training Portal</h2>
+					<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
 					<div class="logoutUser logoutUserDesktop">
