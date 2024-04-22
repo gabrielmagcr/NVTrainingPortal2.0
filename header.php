@@ -351,7 +351,7 @@
       }
 
       #banner {
-        background: url('/wp-content/uploads/mobile-portrait-e1712101125997.jpeg');
+        background: url('/wp-content/uploads/mobile-portrait-e1712101125997.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
