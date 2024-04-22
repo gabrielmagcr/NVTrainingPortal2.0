@@ -529,7 +529,7 @@
   <div class="bannerClass">
     <section id="banner"></section>
     <div class="shield">
-      <img src="/wp-content/uploads/Layer_1.svg" alt="University Naturevet">
+      <img data-src="/wp-content/uploads/Layer_1.svg" class="lazy-load" alt="University Naturevet">
       <div class="bannerInfo">
         <?php if (!is_user_logged_in()) { ?>
           <div class="logoutUser">
