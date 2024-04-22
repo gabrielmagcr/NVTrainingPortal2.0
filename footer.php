@@ -398,7 +398,7 @@
             $name = $data['name'];
         ?>
             <a href="<?php echo $url; ?>">
-                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
         <?php endforeach; ?>
     </div>
     <div class="footerStructure">
@@ -420,7 +420,7 @@
                     $name = $data['name'];
                 ?>
                     <a href="<?php echo $url; ?>">
-                        <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+                        <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -479,7 +479,7 @@
                 <span>A MEMBER OF THE <span id="swedencare">SWEDENCARE </span>FAMILY</span>
             </div>
             <div class="footerLastSectionRightSide">
-                <a href="https://www.nasc.cc/about-our-mission/"><img src="https://5hp.86b.myftpupload.com/wp-content/uploads/Group_345_2x_f60161c9-06f6-46dd-bb90-d1fc12451b79.png" alt="Nasc logo"></a>
+                <a href="https://www.nasc.cc/about-our-mission/"><img class="lazy-load" src="https://5hp.86b.myftpupload.com/wp-content/uploads/Group_345_2x_f60161c9-06f6-46dd-bb90-d1fc12451b79.png" alt="Nasc logo"></a>
             </div>
         </div>
         <div class="footerSocial">
