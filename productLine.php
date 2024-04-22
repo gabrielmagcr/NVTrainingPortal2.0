@@ -65,7 +65,7 @@ $pVideoText3 = get_field('pVideoText3');
 		<div class="mainVideo productLineVideo">
             <div class="mainVideoImg productLineImg lazy-load">
                 <img class="placeholder-img placeholder-imgPL lazy-load " data-src="<?php echo $pPlaceHolderImg2 ?>" alt="Placeholder Image">
-                <img class="play-icon playIconProductVideo"  data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+                <img class="play-icon playIconProductVideo lazy-load"   data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
                 <video class="video" controls style="display: none;">
                     <source src="<?php echo $productVideo2 ?>" type="video/mp4">
                 </video>
