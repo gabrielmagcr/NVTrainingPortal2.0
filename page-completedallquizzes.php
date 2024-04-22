@@ -13,7 +13,7 @@
     .completedContentLeft h2 {
         font-family: "Brandon Grotesque", sans-serif;
         color: #4D7F70;
-        font-size: 72px;
+        font-size: 36px;
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -30,7 +30,12 @@
         height: 76%;
     }
     .hs-button{
-        border-radius: 30px;
+        border-radius: 30px !important;
+    }
+    @media (min-width:767px) {
+        .completedContentLeft h2 {
+            font-size: 48px;
+        }
     }
 
     @media (min-width:1400px) {
