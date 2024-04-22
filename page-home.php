@@ -13,6 +13,7 @@ get_header();
 		text-align: center;
 		font-family: "Brandon Grotesque", sans-serif;
 		font-weight: 600;
+		display: none;
 	}
 
 	.mainContainer {
