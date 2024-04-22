@@ -375,7 +375,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 							<img class='quizzImage quizzImageCompleted- lazy-load' data-src="<?php the_field('quiz_bg_image') ?>">
 							<img class='play-icon lazy-load' data-src="/wp-content/uploads/Button-play.svg">
 						</a>
-						<span><img class="completedCheck" data-src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
+						<span><img class="completedCheck lazy-load" data-src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
 				<?php
 						} else { ?>
