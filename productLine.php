@@ -59,7 +59,7 @@ $pVideoText3 = get_field('pVideoText3');
             </div>
             <div class="mainVideoText productLineText lazy-load">
                 <h3><?php echo $pVideoTitle1 ?></h3>
-                <p>L<?php echo  $pVideoText1 ?></p>
+                <p><?php echo  $pVideoText1 ?></p>
             </div>
         </div>
 		<div class="mainVideo productLineVideo">

@@ -102,7 +102,7 @@ $videoText2 = get_field('videotext2');
 		</div>
 		<div class="mainVideoText">
 			<h3><?php echo $videoTitle1 ?></h3>
-			<p><?php var_dump($videoText1) ?> </p>
+			<p><?php echo $videoText1  ?> </p>
 		</div>
 	</div>
 	<div class="mainVideo">
