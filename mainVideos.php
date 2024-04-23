@@ -19,11 +19,9 @@
 
 	.placeholder-img {
 		width: 330px;
-	}
-	.play-icon{
 		transition: transform 0.3s ease;
 	}
-	.play-icon:hover{
+	.placeholder-img:hover{
 		transition: transform 0.3s ease;
 		transform: scale(1.05);
 	}
