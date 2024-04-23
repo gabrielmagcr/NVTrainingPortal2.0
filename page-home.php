@@ -143,6 +143,8 @@ get_header();
 
 	.breathBtn {
 		animation: breathe 3s infinite alternate;
+		margin: 0 auto;
+
 	}
 
 	@keyframes breathe {
@@ -151,7 +153,7 @@ get_header();
 		}
 
 		100% {
-			transform: scale(1.1);
+			transform: scale(0.9);
 		}
 	}
 

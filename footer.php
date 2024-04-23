@@ -188,7 +188,7 @@
         border: none;
         border-radius: 35px;
         padding: 10px 30px;
-
+        cursor: pointer;
     }
 
     @media (min-width:400px) {
@@ -489,7 +489,7 @@
                 $name = $data['name'];
             ?>
                 <a target="_blank" href="<?php echo $url; ?>">
-                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load socialIcon"></a>
             <?php endforeach; ?>
         </div>
     </div>
