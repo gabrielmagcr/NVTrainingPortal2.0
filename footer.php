@@ -190,6 +190,9 @@
         padding: 10px 30px;
         cursor: pointer;
     }
+    .socialIcon:hover{
+        filter: brightness(90%);
+    }
 
     @media (min-width:400px) {
         .footerLogos img {
@@ -398,7 +401,7 @@
             $name = $data['name'];
         ?>
             <a href="<?php echo $url; ?>">
-                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
+                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load socialIcon"></a>
         <?php endforeach; ?>
     </div>
     <div class="footerStructure">
