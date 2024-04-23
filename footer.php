@@ -194,7 +194,7 @@
         transition: filter 0.3s;
     }
     .socialIcon:hover{
-          filter: brightness(90%);
+          filter: brightness(60%);
     }
 
     @media (min-width:400px) {
