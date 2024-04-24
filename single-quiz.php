@@ -85,6 +85,7 @@
     font-weight: 600 !important;
     color: #E26743 !important;
     margin: 25px 0 !important;
+    border: none !important;
     display: flex;
     flex-direction: column;
     font-size: 52px;
