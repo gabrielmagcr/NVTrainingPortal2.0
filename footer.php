@@ -158,6 +158,9 @@
         align-items: center;
         margin-bottom: 25px;
     }
+    .footerSocial a img{
+            width: 47px;
+        }
 
     .footerSocialDesktop {
         display: none;
