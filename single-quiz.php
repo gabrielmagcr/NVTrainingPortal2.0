@@ -108,6 +108,7 @@
   } 
   .alert-success{
     background-color: #ffffff00 !important;
+    border: none !important;
   }
 
   .submitQuizBtn {
