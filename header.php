@@ -188,7 +188,7 @@
         ?>
           <h2 class="h2welcome">Welcome <span><?php echo $user_info->user_login; ?></span></h2>
 
-          <?php if (current_user_can('manage_options')) :
+          <?php if($completed_quizzes_count >= 1) :
             $completed_quizzes_count = count_completed_quizzes($current_user_id);
             $total_quizzes_count = count_total_quizzes();
           ?>
