@@ -186,7 +186,7 @@
           $current_user_id = get_current_user_id();
           $user_info = get_userdata($current_user_id);
         ?>
-          <h2 class="h2welcome">Welcome <span><?php echo $user_info->user_login; ?>,</span></h2>
+          <h2 class="h2welcome">Welcome <span><?php echo $user_info->user_login; ?></span></h2>
 
           <?php if (current_user_can('manage_options')) :
             $completed_quizzes_count = count_completed_quizzes($current_user_id);
