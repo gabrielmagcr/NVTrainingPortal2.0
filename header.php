@@ -187,6 +187,7 @@
           $user_info = get_userdata($current_user_id);
           $completed_quizzes_count = count_completed_quizzes($current_user_id);
           $total_quizzes_count = count_total_quizzes();
+          echo var_dump($completed_quizzes_count)
         ?>
           <h2 class="h2welcome">Welcome <span><?php echo $user_info->user_login; ?></span></h2>
 

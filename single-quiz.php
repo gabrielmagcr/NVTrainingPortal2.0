@@ -105,6 +105,9 @@
     border: none !important;
     box-shadow: none !important;
 
+  } 
+  .alert-success{
+    background-color: #ffffff00 !important;
   }
 
   .submitQuizBtn {
