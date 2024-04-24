@@ -153,8 +153,8 @@
 
     .footerSocial {
         display: flex;
-        gap: 10px;
-        justify-content: space-evenly;
+        gap: 5px;
+        justify-content: center;
         align-items: center;
         margin-bottom: 25px;
     }
@@ -231,6 +231,9 @@
         .responsiveList a {
             color: #ffffff;
 
+        }
+        .footerSocial{
+            gap: 15px;
         }
 
     }
