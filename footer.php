@@ -121,7 +121,7 @@
         align-items: center;
         justify-content: flex-start;
         margin: 25px;
-        gap: 40px;
+        gap: 55px;
     }
 
     .footerLastSectionLeftSide {
