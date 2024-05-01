@@ -301,7 +301,10 @@ border: none;
   .responsiveList a {
     color: #fff;
   }
-
+  .responsiveListBtn{
+    font-family: "Brandon Grotesque", sans-serif;
+    color: #fff;
+  }
   #responsiveMenuLogo {
     width: 300px;
   }
