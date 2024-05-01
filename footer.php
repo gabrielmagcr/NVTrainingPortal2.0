@@ -409,7 +409,7 @@
             $url = $data['url'];
             $name = $data['name'];
         ?>
-            <a href="<?php echo $url; ?>">
+            <a href="<?php echo $url; ?>" target="_blank">
                 <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
         <?php endforeach; ?>
     </div>
@@ -431,7 +431,7 @@
                     $url = $data['url'];
                     $name = $data['name'];
                 ?>
-                    <a href="<?php echo $url; ?>">
+                    <a href="<?php echo $url; ?>" target="_blank">
                         <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load socialIcon"></a>
                 <?php endforeach; ?>
             </div>
