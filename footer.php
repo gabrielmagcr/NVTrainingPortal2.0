@@ -263,6 +263,9 @@
             gap: 45px;
             width: 50%;
             flex-direction: column;
+            align-items: flex-start;
+            padding-left: 100px;
+            margin: 25px 0 25px 25px;
         }
 
         .footerSocial {
@@ -285,7 +288,8 @@
         }
 
         .footerLastSectionLeftSide span {
-            font-size: 10px;
+            font-size: 14px;
+            width: 300px;
         }
 
         .footerMenus {
