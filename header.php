@@ -33,8 +33,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <title>Naturevet Training Portal</title>
 
-  <style type="text/css">
-   
+  <style>
+   .responsiveListBtn{
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #fff;
+  font-family: 'Brandon Grotesque', sans-serif;
+  text-transform: uppercase;
+  font-weight: 450;
+}
   </style>
 </head>
 
