@@ -283,7 +283,7 @@
         .footerLastSectionLeftSide {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             gap: 5px;
         }
 
@@ -318,7 +318,7 @@
 
         .footer-logo {
             width: 300px;
-            margin-bottom: 0;
+            margin: 0 -10px;
         }
 
         #resource_1,
