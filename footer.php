@@ -238,7 +238,7 @@
 
     }
 
-    @media (min-width:1400px) {
+    @media (min-width:1023px) {
         .footerStructure {
             flex-direction: row;
             padding-top: 25px;
@@ -264,7 +264,7 @@
             width: 50%;
             flex-direction: column;
             align-items: flex-start;
-            padding-left: 100px;
+            padding-left: 25px;
             margin: 25px 0 25px 25px;
         }
 
