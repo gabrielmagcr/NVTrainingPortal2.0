@@ -106,7 +106,7 @@
               <li class="responsiveList">
                 <a href="<?php echo wp_logout_url();  ?>">Logout</a>
               </li>
-              <li class="responsiveListBtn">
+              <li class="responsiveList">
                 <button type="button" data-toggle="modal" data-target="#partnerAssets" class="responsiveListBtn">NatureVet Parner Assets Site</button>
               </li>
             <?php } else { ?>
