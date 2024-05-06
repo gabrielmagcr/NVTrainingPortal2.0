@@ -28,11 +28,13 @@
         background-color: #2c667e;
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 20px 10px 10px 10px;
+        margin-top: -1px;
     }
 
     .newsLetter {
         margin: 15px;
+        display: none;
     }
 
     .newsLetter span {
@@ -248,10 +250,12 @@
             order: 4;
             width: 50%;
             margin-top: 35px;
+            display: block;
         }
 
         .newsLetter span {
             font-size: 2em;
+            display: none;
         }
 
         .footerMenus {
@@ -264,7 +268,6 @@
             width: 50%;
             flex-direction: column;
             align-items: flex-start;
-            padding-left: 25px;
             margin: 25px 0 25px 25px;
         }
 
@@ -275,7 +278,8 @@
         .footerSocialDesktop {
             display: flex;
             gap: 10px;
-
+            align-items: center;
+            height: 45%;
         }
         .footerSocialDesktop a img{
             width: 47px;
@@ -301,7 +305,6 @@
             gap: 5px;
         }
 
-        .newsLetterFormClass input,
 
 
         .responsiveList a {
@@ -334,6 +337,7 @@
         }
         .newsLetterFormulary {
             margin: 35px 0;
+            display: none;
         }
      
     }
