@@ -279,6 +279,7 @@
             display: flex;
             gap: 10px;
             align-items: center;
+            justify-content: center;
             height: 45%;
         }
         .footerSocialDesktop a img{
