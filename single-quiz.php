@@ -29,7 +29,8 @@
   }
 
   .quizContainer {
-    margin: 20px;
+    margin: 0 auto;
+    width: 90%;
   }
 
   .quizLine {
@@ -163,7 +164,12 @@
     text-transform: uppercase;
     margin: 25px;
   }
-
+  @media (min-width:1024px) {
+    #banner{
+      width: 90%;
+    margin: 0 auto;
+    }
+  }
   @media (min-width:1400px) {
     .quizText {
       width: 55%;
