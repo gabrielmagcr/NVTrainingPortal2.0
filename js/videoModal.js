@@ -5,10 +5,8 @@ const modal = document.getElementsByClassName("popup");
 
 function resetCaldera() {
   const alertErrorDiv = document.querySelector(".alert-error");
-  if (submitBtn.style.display === "none") {
+  if (submitBtn.style.display === "block") {
     alertErrorDiv.style.display = "flex";
-  } else {
-    alertErrorDiv.style.display = "none";
   }
   calderaQuestions.forEach(function (question) {
     question.style.background = "#fff";
@@ -95,7 +93,6 @@ function btnToggleVideo() {
   scrollToTop();
   setTimeout(function () {
     videoModal();
-    submitBtn.style.display = "block";
     resetCaldera();
     bgQuizz.style.display = "block";
   }, 300);
@@ -117,7 +114,7 @@ var observer = new MutationObserver(function (mutationsList, observer) {
     ) {
       insertBtn();
       observer.disconnect();
- 
+     
     }
   }
 });
