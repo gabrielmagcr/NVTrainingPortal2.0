@@ -117,7 +117,7 @@ var observer = new MutationObserver(function (mutationsList, observer) {
     ) {
       insertBtn();
       observer.disconnect();
-      submitBtn.style.display = "none";
+ 
     }
   }
 });
