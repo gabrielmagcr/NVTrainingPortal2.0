@@ -68,6 +68,10 @@
     text-transform: uppercase;
     color: #4D7F70;
   }
+  .quizText li{
+
+    list-style: disc;
+  }
 
   .quizTitle {
     font-size: 36px;
