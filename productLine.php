@@ -1,4 +1,38 @@
+<style>
+    .playIconProductVideo {
+        width: 28px !important;
+    }
 
+    @media (min-width:1023px) {
+        .productVideoContainer {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .placeholder-imgPL,
+        .productLineImg video {
+            width: 315px;
+
+        }
+
+        .productText {
+            max-width: 800px;
+        }
+
+        .productLineVideo {
+            width: 315px;
+
+        }
+
+        .productLineText {
+            width: auto;
+        }
+
+        .playIconProductVideo {
+            width: 50px !important;
+        }
+    }
+</style>
 
 <?php 
 $productionSectionTitle= get_field('productionSectionTitle');
@@ -45,6 +79,7 @@ if( have_rows('product_line') ):
         <?php 
     // End loop.
 endwhile;
+else: 
 ?>
 
     </div>
@@ -53,38 +88,3 @@ endwhile;
 
 <?php get_template_part('lineBreak'); ?>
 
-<style>
-    .playIconProductVideo {
-        width: 28px !important;
-    }
-
-    @media (min-width:1023px) {
-        .productVideoContainer {
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        .placeholder-imgPL,
-        .productLineImg video {
-            width: 315px;
-
-        }
-
-        .productText {
-            max-width: 800px;
-        }
-
-        .productLineVideo {
-            width: 315px;
-
-        }
-
-        .productLineText {
-            width: auto;
-        }
-
-        .playIconProductVideo {
-            width: 50px !important;
-        }
-    }
-</style>
