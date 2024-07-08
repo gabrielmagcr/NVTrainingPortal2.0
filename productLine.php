@@ -77,9 +77,9 @@ if( have_rows('product_line') ):
             </div>
         </div>
         <?php 
-    // End loop.
+ 
 endwhile;
-else: 
+endif;
 ?>
 
     </div>
