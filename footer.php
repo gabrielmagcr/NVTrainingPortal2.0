@@ -345,38 +345,8 @@
 </style>
 <footer class="lazy-load">
     <?php
-    $brandsLogos = array(
-        'img1' => array(
-            'img' => '/wp-content/uploads/petco.png',
-            'url' => 'https://www.petco.com/shop/en/petcostore/brand/naturvet',
-            'name' => 'Petco'
-        ),
-        'img2' => array(
-            'img' => '/wp-content/uploads/chewy.png',
-            'url' => 'https://www.chewy.com/brands/naturvet-7112',
-            'name' => 'Chewy'
-        ),
-        'img3' => array(
-            'img' => '/wp-content/uploads/amazon.png',
-            'url' => 'https://www.amazon.com/stores/page/55E4FBE0-1284-4FEA-94D5-1E199BED7E3C?maas=maas_adg_4E5B677FA0C870CEB1BE9A24C2332217_afap_abs&ref_=aa_maas&tag=maas',
-            'name' => 'Amazon'
-        ),
-        'img4' => array(
-            'img' => '/wp-content/uploads/psp.png',
-            'url' => 'https://www.petsuppliesplus.com/',
-            'name' => 'Pet Supplies Plus'
-        ),
-        'img5' => array(
-            'img' => '/wp-content/uploads/pet-supermarket.png',
-            'url' => 'https://www.petsupermarket.com/brands/n/naturvet/',
-            'name' => 'Pet Supermarket'
-        ),
-        'img6' => array(
-            'img' => '/wp-content/uploads/tsc.png',
-            'url' => 'https://www.tractorsupply.com/landing-pages_brands_naturvet',
-            'name' => 'Tractor Supply Co.'
-        )
-    );
+//Retailer Banner 
+/*
     $socials = array(
         'twitter' => array(
             'img' => '/wp-content/uploads/twitter.svg',
@@ -408,20 +378,25 @@
             'url' => 'https://www.tiktok.com/@naturvet',
             'name' => 'TikTok'
         )
-    );
+    ); */
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
+    <!--
     <div class="footerLogos">
-        <?php foreach ($brandsLogos as $brandlogo => $data) :
+        
+        <?php /*
+        foreach ($brandsLogos as $brandlogo => $data) :
             $image = $data['img'];
             $url = $data['url'];
             $name = $data['name'];
         ?>
             <a href="<?php echo $url; ?>" target="_blank">
                 <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
-        <?php endforeach; ?>
+        <?php endforeach; */?>
+        
     </div>
+        -->
     <div class="footerStructure">
         <div class="newsLetter">
             <span>NEWSLETTER SIGN UP</span>
