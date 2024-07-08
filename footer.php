@@ -345,58 +345,11 @@
 </style>
 <footer class="lazy-load">
     <?php
-//Retailer Banner 
-/*
-    $socials = array(
-        'twitter' => array(
-            'img' => '/wp-content/uploads/twitter.svg',
-            'url' => 'https://twitter.com/naturvet',
-            'name' => 'X'
-        ),
-        'facebook' => array(
-            'img' => '/wp-content/uploads/facebook-1.svg',
-            'url' => 'https://www.facebook.com/NaturVet',
-            'name' => 'Facebook'
-        ),
-        'pinterest' => array(
-            'img' => '/wp-content/uploads/pinterest-1.svg',
-            'url' => 'https://www.pinterest.com/naturvet/',
-            'name' => 'Pinterest'
-        ),
-        'instagram' => array(
-            'img' => '/wp-content/uploads/instagram-1.svg',
-            'url' => 'https://www.instagram.com/naturvet',
-            'name' => 'Instagram'
-        ),
-        'youtube' => array(
-            'img' => '/wp-content/uploads/youtube-1.svg',
-            'url' => 'https://www.youtube.com/NaturVet',
-            'name' => 'YouTube'
-        ),
-        'tiktok' => array(
-            'img' => '/wp-content/uploads/tiktok.svg',
-            'url' => 'https://www.tiktok.com/@naturvet',
-            'name' => 'TikTok'
-        )
-    ); */
+
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
-    <!--
-    <div class="footerLogos">
-        
-        <?php /*
-        foreach ($brandsLogos as $brandlogo => $data) :
-            $image = $data['img'];
-            $url = $data['url'];
-            $name = $data['name'];
-        ?>
-            <a href="<?php echo $url; ?>" target="_blank">
-                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
-        <?php endforeach; */?>
-        
-    </div>
-        -->
+
     <div class="footerStructure">
         <div class="newsLetter">
             <span>NEWSLETTER SIGN UP</span>
