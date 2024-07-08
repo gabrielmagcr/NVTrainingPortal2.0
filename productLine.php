@@ -8,10 +8,10 @@ $productionSectionTitle = get_field('productionSectionTitle');
 
     @media (min-width: 1023px) {
         .productVideoContainer {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+        justify-items: center;
         }
 
         .placeholder-imgPL,
