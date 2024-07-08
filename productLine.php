@@ -56,9 +56,9 @@ $productionSectionTitle = get_field('productionSectionTitle');
                 <div class="mainVideo productLineVideo">
                     <div class="mainVideoImg productLineImg">
                         <?php if ($product_place_holder_image): ?>
-                            <img class="placeholder-img placeholder-imgPL lazy-load" data-src="<?php echo esc_url($product_place_holder_image); ?>" data-placeholder="/wp-content/uploads/Spinner@1x-1.0s-200px-200px.gif" alt="Placeholder Image">
+                            <img class="placeholder-img placeholder-imgPL lazy-load" src="/wp-content/uploads/Spinner@1x-1.0s-200px-200px.gif" data-src="<?php echo esc_url($product_place_holder_image); ?>" data-placeholder="/wp-content/uploads/Spinner@1x-1.0s-200px-200px.gif" alt="Placeholder Image">
                         <?php endif; ?>
-                        <img class="play-icon playIconProductVideo lazy-load" data-src="/wp-content/uploads/Button-play.svg" data-placeholder="/wp-content/uploads/Spinner@1x-1.0s-200px-200px.gif" alt="Play Button">
+                        <img class="play-icon playIconProductVideo lazy-load" src="/wp-content/uploads/Spinner@1x-1.0s-200px-200px.gif" data-src="/wp-content/uploads/Button-play.svg" data-placeholder="/wp-content/uploads/Spinner@1x-1.0s-200px-200px.gif" alt="Play Button">
                         <?php if ($product_video): ?>
                             <video class="video" controls style="display: none;">
                                 <source src="<?php echo esc_url($product_video); ?>" type="video/mp4">
