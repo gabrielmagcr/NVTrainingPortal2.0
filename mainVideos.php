@@ -98,8 +98,8 @@ $videoText2 = get_field('videotext2');
 <div class="mainVideosContainer">
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img class="placeholder-img lazy-load" data-src="<?php echo $placeHolderImage1 ?>" alt="Placeholder Image">
-			<img class="play-icon playIconMainVideo lazy-load" data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+			<img class="placeholder-img lazy-load" data-src="<?php echo $placeHolderImage1 ?>" src="/wp-content/uploads/lazyload.gif"  data-placeholder="/wp-content/uploads/lazyload.gif" alt="Placeholder Image">
+			<img class="play-icon playIconMainVideo lazy-load" src="/wp-content/uploads/lazyload-transparent.gif" data-placeholder="/wp-content/uploads/lazyload-transparent.gif" data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 			<video class="video" controls style="display: none;">
 				<source src="<?php echo $welcomeVideo1 ?>" type="video/mp4">
 			</video>
@@ -111,8 +111,8 @@ $videoText2 = get_field('videotext2');
 	</div>
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img class="placeholder-img lazy-load" data-src="<?php echo $placeHolderImage2 ?>" alt="Placeholder Image">
-			<img class="play-icon playIconMainVideo lazy-load" data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
+			<img class="placeholder-img lazy-load" data-src="<?php echo $placeHolderImage2 ?>" src="/wp-content/uploads/lazyload.gif"  data-placeholder="/wp-content/uploads/lazyload.gif" alt="Placeholder Image">
+			<img class="play-icon playIconMainVideo lazy-load" src="/wp-content/uploads/lazyload-transparent.gif" data-placeholder="/wp-content/uploads/lazyload-transparent.gif" data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 			<video class="video" controls style="display: none;">
 				<source src="<?php echo $welcomeVideo2 ?>" type="video/mp4">
 			</video>
