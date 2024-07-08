@@ -343,7 +343,7 @@
      
     }
 </style>
-<footer class="lazy-load">
+<footer >
     <?php
 
     $socials = array(
