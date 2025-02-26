@@ -263,7 +263,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 		<div class="text-center">
 			<div class="user_title ">
 				<div class="textHome lazy-load">
-					<h2 class="welcomeTitle ">Welcome to the NaturVet Training Portal</h2>
+					<h2 class="welcomeTitle ">Welcome to the NaturVet Training Portal Test</h2>
 					<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
