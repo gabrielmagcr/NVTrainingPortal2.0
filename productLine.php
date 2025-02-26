@@ -1,41 +1,7 @@
 <?php 
 $productionSectionTitle = get_field('productionSectionTitle');
 ?>
-<style>
-    .playIconProductVideo {
-        width: 28px !important;
-    }
 
-    @media (min-width: 1023px) {
-        .productVideoContainer {
-            display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 20px;
-        justify-items: center;
-        }
-
-        .placeholder-imgPL,
-        .productLineImg video {
-            width: 315px;
-        }
-
-        .productText {
-            max-width: 800px;
-        }
-
-        .productLineVideo {
-            width: 315px;
-        }
-
-        .productLineText {
-            width: auto;
-        }
-
-        .playIconProductVideo {
-            width: 50px !important;
-        }
-    }
-</style>
 
 <div class="productLineContainer">
     <h2 class="welcomeTitle">

@@ -106,7 +106,7 @@ header {
 header .content {
   display: flex;
   align-items: center;
-  padding: 2rem 0rem;
+
 }
 
 header .content .header-l {
@@ -497,3 +497,358 @@ border: none;
     transform: scale(1.05);
 }
 
+/*page home */
+	.welcomeTitle {
+		color: #4D7F70;
+		text-transform: uppercase;
+		font-size: 36px;
+		text-align: center;
+		font-family: "Brandon Grotesque", sans-serif;
+		font-weight: 600;
+		
+	}
+
+	.mainContainer {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.bg-wattermark {
+		background: url('/wp-content/uploads/Paw-Watermark.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		height: 125dvh;
+		width: 130dvw;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+		left: 50%;
+		top: 250px;
+		;
+		transform: translate(-50%, -50%);
+
+	}
+
+
+
+	.bg-botton-logout {
+		background: url('/wp-content/uploads/Hills-Illustration.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 40dvh;
+		width: 100%;
+		position: relative;
+		bottom: 0;
+		left: 0;
+		margin-top: -120px;
+	}
+
+	.createAccount-btns-desktop {
+		background-color: #416D5E;
+	}
+
+	.textHome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+	}
+
+	.textHome h2 {
+		width: 80%;
+
+	}
+
+	.textHome p {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+		width: 75%;
+		font-size: 16px;
+		line-height: 28px;
+		margin: 35px 0;
+	}
+
+	.productCategoriesContainer {
+		display: flex;
+		justify-content: center;
+	}
+
+	.productText p {
+		text-align: center;
+		margin: 25px 0;
+	}
+
+	.quizContainer {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+		gap: 15px;
+		margin: 30px 12px;
+		justify-items: center;
+	}
+
+	.quiz span {
+		color: #486284;
+		font-family: "Brandon Grotesque";
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	.quiz {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.quiz-link {
+		position: relative;
+	}
+
+	.quizzImage {
+		margin-bottom: 5px;
+		width: 185px;
+		height: 123px;
+		border-radius: 14px;
+	}
+
+	.play-icon {
+		width: 28px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.quizzImageCompleted {
+		border: 3px solid #73BA00;
+	}
+
+	.completedCheck {
+		width: 25px;
+	}
+
+	.completedQuiz span {
+		display: flex;
+		gap: 5px;
+	}
+
+	.breathBtn {
+		animation: breathe 3s infinite alternate;
+		margin: 0 auto;
+
+	}
+
+	@keyframes breathe {
+		0% {
+			transform: scale(1);
+		}
+
+		100% {
+			transform: scale(0.9);
+		}
+	}
+
+	@media (min-width:767px) {
+		.welcomeTitle {
+			font-size: 48px;
+		}
+
+		.textHome p {
+			font-size: 18px;
+		}
+
+		.bg-wattermark {
+			top: 425px;
+		}
+
+		.quizContainer {
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		}
+
+		.quiz span {
+			font-size: 22px;
+		}
+
+		.quizzImage {
+			width: 250px;
+			height: 170px;
+		}
+
+		.play-icon {
+			width: 50px;
+		}
+	}
+
+
+
+	@media (min-width:1023px) {
+		.bg-wattermark {
+			height: 125dvh;
+			width: 100dvw;
+			top: 550px;
+		}
+
+		.welcomeTitle {
+			font-size: 72px;
+		}
+
+		.textHome p {
+			width: 60%;
+			margin: 50px 0;
+		}
+
+	}
+
+	@media (min-width:1439px) {
+		.textHome h2 {
+			width: 70%;
+		}
+
+		.textHome p {
+			width: 45%;
+		}
+
+		.bg-wattermark {
+			top: 650px;
+		}
+
+		.quizContainer {
+			justify-items: start;
+			margin: 50px 260px;
+		}
+
+		.bg-botton-logout {
+			margin-top: 0
+		}
+
+	}
+/* page home */
+
+
+/* mainvideos */
+
+
+	.mainVideo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.mainVideoImg {
+		margin-top: 15px;
+		position: relative;
+		cursor: pointer;
+	}
+
+	.mainVideoImg video {
+		width: 330px;
+
+		border-radius: 24px;
+	}
+
+	.placeholder-img {
+		width: 330px;
+		transition: transform 0.3s ease;
+	}
+	.placeholder-img:hover{
+		transition: transform 0.3s ease;
+		transform: scale(1.02);
+	}
+
+	.mainVideoText {
+		text-align: left;
+		width: 80%;
+		margin: 25px 0;
+	}
+
+	.mainVideoText h3 {
+		font-family: "Brandon Grotesque", sans-serif;
+		color: #E26743;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	.mainVideoText p {
+		font-family: "Montserrat", sans-serif;
+		font-weight: 500;
+	}
+
+	@media (min-width:767px) {
+		.mainVideoImg video, .placeholder-img {
+			width: 500px;
+
+		}
+
+		.mainVideoText h3 {
+			font-size: 30px;
+		}
+
+		.mainVideoText p {
+			font-size: 18px;
+		}
+	}
+
+	@media (min-width:1023px) {
+		.mainVideosContainer {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		.mainVideo {
+			width: 500px;
+
+			align-items: flex-start;
+		}
+
+		.placeholder-img {
+			width: 500px;
+
+		}
+
+		.mainVideoText {
+			width: auto;
+		}
+
+		.playIconMainVideo {
+			width: 76px;
+		}
+	}
+  /* main videos */
+
+  /* product line*/
+
+    .playIconProductVideo {
+        width: 28px !important;
+    }
+
+    @media (min-width: 1023px) {
+        .productVideoContainer {
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        }
+
+        .placeholder-imgPL,
+        .productLineImg video {
+            width: 315px;
+        }
+
+        .productText {
+            max-width: 800px;
+        }
+
+        .productLineVideo {
+            width: 315px;
+        }
+
+        .productLineText {
+            width: auto;
+        }
+
+        .playIconProductVideo {
+            width: 50px !important;
+        }
+    }
+  /* product line*/
