@@ -850,3 +850,31 @@ border: none;
     }
   /* product line*/
 
+/* footer*/
+
+
+#swedencare {
+  color: #fac33b;
+}
+.footerStructure{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.footerStructure span {
+  color: #fff;
+  font-weight: 500;
+  }
+
+
+@media (min-width:1023px) {
+
+
+  .footerStructure span {
+      font-size: 14px;
+      width: 300px;
+  }
+
+ 
+}
+/* Footer */
