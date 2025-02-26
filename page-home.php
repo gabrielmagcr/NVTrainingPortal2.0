@@ -375,8 +375,8 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 				?>
 					<div class="quiz completedQuiz hoverAnimation">
 						<a href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>" class="quiz-link">
-							<img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
-							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
+							<img class='quizzImage quizzImageCompleted- lazyload' src="<?php the_field('quiz_bg_image') ?>">
+							<img class='play-icon lazyload' src="/wp-content/uploads/Button-play.svg">
 						</a>
 						<span><img class="completedCheck" src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
@@ -384,8 +384,8 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 						} else { ?>
 					<div class="quiz hoverAnimation">
 						<a href="<?php the_permalink() ?>" class="quiz-link">
-							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
-							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
+							<img class='quizzImage lazyload' src="<?php the_field('quiz_bg_image') ?>">
+							<img class='play-icon lazyload' src="/wp-content/uploads/Button-play.svg">
 						</a>
 						<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
