@@ -567,9 +567,16 @@ border: none;
 		width: 75%;
 		font-size: 16px;
 		line-height: 28px;
-		margin: 35px 0;
+		margin: 10px 0 35px;
 	}
-
+  .textHome span{
+    color: #4D7F70;
+    font-size: 26px;
+    text-align: center;
+    font-family: "Brandon Grotesque", sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+  }
 	.productCategoriesContainer {
 		display: flex;
 		justify-content: center;
@@ -695,9 +702,11 @@ border: none;
 
 		.textHome p {
 			width: 60%;
-			margin: 50px 0;
+      margin: 20px 0 50px;
 		}
-
+    .textHome span{
+      font-size: 32px;
+    }
 	}
 
 	@media (min-width:1439px) {
