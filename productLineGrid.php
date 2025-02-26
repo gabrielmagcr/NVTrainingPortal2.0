@@ -1,10 +1,10 @@
 <?php 
-$productionSectionTitle = get_field('productionSectionTitle') ? get_field('productionSectionTitle') : "";
+$productionSectionTitleGrid = get_field('productionSectionTitle') ? get_field('productionSectionTitle') : "";
 ?>
 
 
 <div class="productLineContainer">
-    <h2 class="welcomeTitle">
+    <h2 class="welcomeTitle test">
         <?php echo esc_html($productionSectionTitleGrid); ?>
     </h2>
     <div class="quizContainer">
