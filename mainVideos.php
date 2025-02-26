@@ -10,7 +10,6 @@
         <div class="mainVideo">
             <div class="mainVideoImg">
                 <img class="placeholder-img" src="<?php echo esc_url($placeHolderImage); ?>" alt="Placeholder Image">
-                <img class="play-icon playIconMainVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
                 <video class="video" controls style="display: none;">
                     <source src="<?php echo esc_url($welcomeVideo); ?>" type="video/mp4">
                 </video>
