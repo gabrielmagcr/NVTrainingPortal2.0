@@ -1,5 +1,5 @@
 <?php 
-$productionSectionTitleGrid = get_field('productionSectionTitle') ? get_field('productionSectionTitle') : "";
+$productionSectionTitleGrid = get_field('productionSectionTitleGrid') ? get_field('productionSectionTitleGrid') : "";
 ?>
 
 
