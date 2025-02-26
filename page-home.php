@@ -143,6 +143,8 @@ get_header();
 
 	.breathBtn {
 		animation: breathe 3s infinite alternate;
+		margin: 0 auto;
+
 	}
 
 	@keyframes breathe {
@@ -151,7 +153,7 @@ get_header();
 		}
 
 		100% {
-			transform: scale(1.1);
+			transform: scale(0.9);
 		}
 	}
 
@@ -371,7 +373,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 						// Check if the quiz is completed or not
 						if ($quizCompleted->found_posts) {
 				?>
-					<div class="quiz completedQuiz">
+					<div class="quiz completedQuiz hoverAnimation">
 						<a href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>" class="quiz-link">
 							<img class='quizzImage quizzImageCompleted- lazy-load' data-src="<?php the_field('quiz_bg_image') ?>">
 							<img class='play-icon lazy-load' data-src="/wp-content/uploads/Button-play.svg">
@@ -380,7 +382,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 					</div>
 				<?php
 						} else { ?>
-					<div class="quiz">
+					<div class="quiz hoverAnimation">
 						<a href="<?php the_permalink() ?>" class="quiz-link">
 							<img class='quizzImage lazy-load' data-src="<?php the_field('quiz_bg_image') ?>">
 							<img class='play-icon lazy-load' data-src="/wp-content/uploads/Button-play.svg">

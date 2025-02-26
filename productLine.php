@@ -1,16 +1,22 @@
+<?php 
+$productionSectionTitle = get_field('productionSectionTitle');
+?>
 <style>
     .playIconProductVideo {
         width: 28px !important;
     }
-    @media (min-width:1023px) {
+
+    @media (min-width: 1023px) {
         .productVideoContainer {
-            display: flex;
-            justify-content: space-evenly;
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 20px;
+        justify-items: center;
         }
 
-        .placeholder-imgPL, .productLineImg video {
+        .placeholder-imgPL,
+        .productLineImg video {
             width: 315px;
-			
         }
 
         .productText {
@@ -19,77 +25,62 @@
 
         .productLineVideo {
             width: 315px;
-			
         }
 
         .productLineText {
             width: auto;
         }
-        .playIconProductVideo{
+
+        .playIconProductVideo {
             width: 50px !important;
         }
     }
 </style>
 
-<?php 
-$productionSectionTitle= get_field('productionSectionTitle');
-$productVideo1 = get_field('productVideo1');
-$pPlaceHolderImg1 = get_field('pPlaceHolderImg1');
-$pVideoTitle1 = get_field('pVideoTitle1');
-$pVideoText1 = get_field('pVideoText1');
-$productVideo2 = get_field('productVideo2');
-$pPlaceHolderImg2 = get_field('pPlaceHolderImg2');
-$pVideoTitle2 = get_field('pVideoTitle2');
-$pVideoText2 = get_field('pVideoText2');
-$productVideo3 = get_field('productVideo3');
-$pPlaceHolderImg3 = get_field('pPlaceHolderImg3');
-$pVideoTitle3 = get_field('pVideoTitle3');
-$pVideoText3 = get_field('pVideoText3');
-?>
 <div class="productLineContainer">
-    <h2 class="welcomeTitle"><?php echo $productionSectionTitle ?></h2>
+    <h2 class="welcomeTitle">
+        <?php echo esc_html($productionSectionTitle); ?>
+    </h2>
     <div class="productVideoContainer">
-        <div class="mainVideo productLineVideo">
-            <div class="mainVideoImg productLineImg">
-                <img class="placeholder-img placeholder-imgPL lazy-load " data-src="<?php echo $pPlaceHolderImg1 ?>" alt="Placeholder Image">
-                <img class="play-icon playIconProductVideo lazy-load"  data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
-                <video class="video" controls style="display: none;">
-                    <source src="<?php echo $productVideo1 ?>" type="video/mp4">
-                </video>
-            </div>
-            <div class="mainVideoText productLineText lazy-load">
-                <h3><?php echo $pVideoTitle1 ?></h3>
-                <p>L<?php echo  $pVideoText1 ?></p>
-            </div>
-        </div>
-		<div class="mainVideo productLineVideo">
-            <div class="mainVideoImg productLineImg lazy-load">
-                <img class="placeholder-img placeholder-imgPL lazy-load " data-src="<?php echo $pPlaceHolderImg2 ?>" alt="Placeholder Image">
-                <img class="play-icon playIconProductVideo lazy-load"   data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
-                <video class="video" controls style="display: none;">
-                    <source src="<?php echo $productVideo2 ?>" type="video/mp4">
-                </video>
-            </div>
-            <div class="mainVideoText productLineText lazy-load">
-                <h3><?php echo $pVideoTitle2 ?></h3>
-                <p>L<?php echo  $pVideoText2 ?></p>
-            </div>
-        </div>
-		<div class="mainVideo productLineVideo">
-            <div class="mainVideoImg productLineImg">
-                <img class="placeholder-img placeholder-imgPL lazy-load " data-src="<?php echo $pPlaceHolderImg3 ?>" alt="Placeholder Image">
-                <img class="play-icon playIconProductVideo lazy-load"  data-src="/wp-content/uploads/Button-play.svg" alt="Play Button">
-                <video class="video" controls style="display: none;">
-                    <source src="<?php echo $productVideo3 ?>" type="video/mp4">
-                </video>
-            </div>
-            <div class="mainVideoText productLineText lazy-load">
-                <h3><?php echo $pVideoTitle3 ?></h3>
-                <p>L<?php echo  $pVideoText3 ?></p>
-            </div>
-        </div>
+        <?php
+        // Check rows exists.
+        if( have_rows('product_line') ):
+            // Loop through rows.
+            while( have_rows('product_line') ) : the_row();
+
+                $product_video = get_sub_field('product_video');
+                $product_place_holder_image = get_sub_field('product_place_holder_image');
+                $product_video_title = get_sub_field('product_video_title');
+                $product_video_text = get_sub_field('product_video_text');
+                ?>
+                <div class="mainVideo productLineVideo">
+                    <div class="mainVideoImg productLineImg">
+                        <?php if ($product_place_holder_image): ?>
+                            <img class="placeholder-img placeholder-imgPL lazy-load" src="/wp-content/uploads/lazyload.gif" data-src="<?php echo esc_url($product_place_holder_image); ?>" data-placeholder="/wp-content/uploads/lazyload.gif" alt="Placeholder Image">
+                        <?php endif; ?>
+                        <img class="play-icon playIconProductVideo lazy-load" src="/wp-content/uploads/lazyload-transparent.gif" data-src="/wp-content/uploads/Button-play.svg" data-placeholder="/wp-content/uploads/lazyload-transparent.gif" alt="Play Button">
+                        <?php if ($product_video): ?>
+                            <video class="video" controls style="display: none;">
+                                <source src="<?php echo esc_url($product_video); ?>" type="video/mp4">
+                            </video>
+                        <?php endif; ?>
+                    </div>
+                    <div class="mainVideoText productLineText lazy-load">
+                        <?php if ($product_video_title): ?>
+                            <h3><?php echo esc_html($product_video_title); ?></h3>
+                        <?php endif; ?>
+                        <?php if ($product_video_text): ?>
+                            <p><?php echo esc_html($product_video_text); ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <?php 
+            // End loop.
+            endwhile;
+        endif;
+        ?>
     </div>
 </div>
 
-
 <?php get_template_part('lineBreak'); ?>
+

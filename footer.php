@@ -28,11 +28,13 @@
         background-color: #2c667e;
         display: flex;
         flex-direction: column;
-        padding: 10px;
+        padding: 20px 10px 10px 10px;
+        margin-top: -1px;
     }
 
     .newsLetter {
         margin: 15px;
+        display: none;
     }
 
     .newsLetter span {
@@ -121,7 +123,7 @@
         align-items: center;
         justify-content: flex-start;
         margin: 25px;
-        gap: 40px;
+        gap: 55px;
     }
 
     .footerLastSectionLeftSide {
@@ -153,11 +155,14 @@
 
     .footerSocial {
         display: flex;
-        gap: 10px;
-        justify-content: space-evenly;
+        gap: 5px;
+        justify-content: center;
         align-items: center;
         margin-bottom: 25px;
     }
+    .footerSocial a img{
+            width: 47px;
+        }
 
     .footerSocialDesktop {
         display: none;
@@ -188,7 +193,13 @@
         border: none;
         border-radius: 35px;
         padding: 10px 30px;
-
+        cursor: pointer;
+    }
+    .socialIcon{
+        transition: filter 0.3s;
+    }
+    .socialIcon:hover{
+          filter: brightness(60%);
     }
 
     @media (min-width:400px) {
@@ -223,10 +234,13 @@
             color: #ffffff;
 
         }
+        .footerSocial{
+            gap: 15px;
+        }
 
     }
 
-    @media (min-width:1400px) {
+    @media (min-width:1023px) {
         .footerStructure {
             flex-direction: row;
             padding-top: 25px;
@@ -236,10 +250,12 @@
             order: 4;
             width: 50%;
             margin-top: 35px;
+            display: block;
         }
 
         .newsLetter span {
             font-size: 2em;
+            display: none;
         }
 
         .footerMenus {
@@ -251,6 +267,8 @@
             gap: 45px;
             width: 50%;
             flex-direction: column;
+            align-items: flex-start;
+            margin: 25px 0 25px 25px;
         }
 
         .footerSocial {
@@ -260,7 +278,9 @@
         .footerSocialDesktop {
             display: flex;
             gap: 10px;
-
+            align-items: center;
+            justify-content: center;
+            height: 45%;
         }
         .footerSocialDesktop a img{
             width: 47px;
@@ -268,12 +288,13 @@
         .footerLastSectionLeftSide {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             gap: 5px;
         }
 
         .footerLastSectionLeftSide span {
-            font-size: 10px;
+            font-size: 14px;
+            width: 300px;
         }
 
         .footerMenus {
@@ -285,7 +306,6 @@
             gap: 5px;
         }
 
-        .newsLetterFormClass input,
 
 
         .responsiveList a {
@@ -302,7 +322,7 @@
 
         .footer-logo {
             width: 300px;
-            margin-bottom: 0;
+            margin: 0 -10px;
         }
 
         #resource_1,
@@ -318,44 +338,14 @@
         }
         .newsLetterFormulary {
             margin: 35px 0;
+            display: none;
         }
      
     }
 </style>
-<footer class="lazy-load">
+<footer >
     <?php
-    $brandsLogos = array(
-        'img1' => array(
-            'img' => '/wp-content/uploads/petco.png',
-            'url' => 'https://www.petco.com/shop/en/petcostore/brand/naturvet',
-            'name' => 'Petco'
-        ),
-        'img2' => array(
-            'img' => '/wp-content/uploads/chewy.png',
-            'url' => 'https://www.chewy.com/brands/naturvet-7112',
-            'name' => 'Chewy'
-        ),
-        'img3' => array(
-            'img' => '/wp-content/uploads/amazon.png',
-            'url' => 'https://www.amazon.com/stores/page/55E4FBE0-1284-4FEA-94D5-1E199BED7E3C?maas=maas_adg_4E5B677FA0C870CEB1BE9A24C2332217_afap_abs&ref_=aa_maas&tag=maas',
-            'name' => 'Amazon'
-        ),
-        'img4' => array(
-            'img' => '/wp-content/uploads/psp.png',
-            'url' => 'https://www.petsuppliesplus.com/',
-            'name' => 'Pet Supplies Plus'
-        ),
-        'img5' => array(
-            'img' => '/wp-content/uploads/pet-supermarket.png',
-            'url' => 'https://www.petsupermarket.com/brands/n/naturvet/',
-            'name' => 'Pet Supermarket'
-        ),
-        'img6' => array(
-            'img' => '/wp-content/uploads/tsc.png',
-            'url' => 'https://www.tractorsupply.com/landing-pages_brands_naturvet',
-            'name' => 'Tractor Supply Co.'
-        )
-    );
+
     $socials = array(
         'twitter' => array(
             'img' => '/wp-content/uploads/twitter.svg',
@@ -391,16 +381,7 @@
     $footerResources = wp_get_nav_menu_items('Footer_Resources');
     $footerCompanys = wp_get_nav_menu_items('Footer_Company');
     ?>
-    <div class="footerLogos">
-        <?php foreach ($brandsLogos as $brandlogo => $data) :
-            $image = $data['img'];
-            $url = $data['url'];
-            $name = $data['name'];
-        ?>
-            <a href="<?php echo $url; ?>">
-                <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
-        <?php endforeach; ?>
-    </div>
+
     <div class="footerStructure">
         <div class="newsLetter">
             <span>NEWSLETTER SIGN UP</span>
@@ -419,8 +400,8 @@
                     $url = $data['url'];
                     $name = $data['name'];
                 ?>
-                    <a href="<?php echo $url; ?>">
-                        <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load"></a>
+                    <a href="<?php echo $url; ?>" target="_blank">
+                        <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load socialIcon"></a>
                 <?php endforeach; ?>
             </div>
         </div>
@@ -489,7 +470,7 @@
                 $name = $data['name'];
             ?>
                 <a target="_blank" href="<?php echo $url; ?>">
-                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>"></a>
+                    <img alt="<?php echo $name; ?>" src="<?php echo $image; ?>" class="lazy-load socialIcon"></a>
             <?php endforeach; ?>
         </div>
     </div>

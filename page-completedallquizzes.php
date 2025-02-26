@@ -19,7 +19,7 @@
     }
 
     .completedContentLeft p {
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-size: 18px;
     }
 
@@ -139,20 +139,16 @@ if (!$completedForm && $userCompletedAllQuizzes) { ?>
     </script>
 <?php } else { ?>
     <!--If User has no completed the amount of quizzes required, User is redirected to home page -->
-    <div class="invalidAccess">
-        <div class="invalidAccessContent">
-            <h1>Sorry you don't have access to this page!</h1>
-        </div>
-    </div>
+
     <script>
         jQuery("body").css("overflow", "hidden");
-        setTimeout(function() {
+      
             window.location.replace("<?php echo home_url() ?>");
-        }, 2500);
+        
     </script>
 <?php
 
 } ?>
-<div class="whiteSpace"></div>
+
 
 <?php get_footer(); ?>
