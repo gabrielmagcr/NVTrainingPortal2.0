@@ -12,15 +12,15 @@
 	?>
 	<div class="mainVideo">
 		<div class="mainVideoImg">
-			<img class="placeholder-img" src="<?php echo $placeHolderImage1 ?>" alt="Placeholder Image">
+			<img class="placeholder-img" src="<?php echo $placeHolderImage ?>" alt="Placeholder Image">
 			<img class="play-icon playIconMainVideo" src="/wp-content/uploads/Button-play.svg" alt="Play Button">
 			<video class="video" controls style="display: none;">
-				<source src="<?php echo $welcomeVideo1 ?>" type="video/mp4">
+				<source src="<?php echo $welcomeVideo ?>" type="video/mp4">
 			</video>
 		</div>
 		<div class="mainVideoText">
-			<h3><?php echo $videoTitle1 ?></h3>
-			<p><?php echo $videoText1  ?> </p>
+			<h3><?php echo $videoTitle ?></h3>
+			<p><?php echo $videoText  ?> </p>
 		</div>
 	</div>
     <?php endwhile; ?>
