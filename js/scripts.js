@@ -82,14 +82,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const videos = document.querySelectorAll('.video');
 
 
-  for (let i = 0; i < playIcons.length; i++) {
+  for (let i = 0; i < placeholders.length; i++) {
     placeholders[i].addEventListener('click', function() {
       placeholders[i].style.display = 'none';
       videos[i].style.display = 'block';
       videos[i].play();
     });
 
-    playIcons[i].addEventListener('click', function() {
+    placeholders.addEventListener('click', function() {
       placeholders[i].style.display = 'none';
       videos[i].style.display = 'block';
       videos[i].play();
