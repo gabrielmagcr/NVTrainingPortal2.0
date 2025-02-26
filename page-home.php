@@ -29,16 +29,21 @@ $completedQuizzesCount = $modalQuizzesCompleted->found_posts;
 
 // Determine if all quizzes are completed
 $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
-?>
 
+?>
+<?  $title=get_field('title');
+	$subtitle=get_field('subtitle');
+	$text_content=get_field('text_content');
+	?>
 <div>
 	<div class="mainContainer">
 		<div class="bg-wattermark"></div>
 		<div class="text-center">
 			<div class="user_title ">
 				<div class="textHome">
-					<h2 class="welcomeTitle ">Welcome to the NaturVet Training Portal Test222</h2>
-					<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2 class="welcomeTitle "><? echo $title ?></h2>
+						<span><? echo $subtitle ?></span>
+					<p class=""><? echo $text_content ?></p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
 					<div class="logoutUser logoutUserDesktop">
