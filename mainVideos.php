@@ -3,10 +3,10 @@
 			if(have_rows('welcome_videos'));
 
 				while(have_rows('welcome_videos')): the_row();
-				$welcomeVideo = get_field('welcome_video');
-				$placeHolderImage = get_field('place_holder_image');
-				$videoTitle = get_field('video_title');
-				$videoText = get_field('video_text');
+				$welcomeVideo = get_field('welcome_video')? get_field('welcome_video'): "";
+				$placeHolderImage = get_field('place_holder_image')? get_field('place_holder_image'): "";
+				$videoTitle = get_field('video_title')? get_field('video_title'): "";
+				$videoText = get_field('video_text')? get_field('video_text'): "";
 
 	
 	?>

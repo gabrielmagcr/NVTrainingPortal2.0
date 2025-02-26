@@ -31,9 +31,9 @@ $completedQuizzesCount = $modalQuizzesCompleted->found_posts;
 $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 
 ?>
-<?  $title=get_field('title');
-	$subtitle=get_field('subtitle');
-	$text_content=get_field('text_content');
+<?  $title=get_field('title') ? get_field('title') : "Title";
+	$subtitle=get_field('subtitle')? get_field('subtitle'): "Subtitle";
+	$text_content=get_field('text_content')? get_field('text_content') : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 	?>
 <div>
 	<div class="mainContainer">
