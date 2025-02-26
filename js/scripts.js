@@ -81,19 +81,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const placeholders = document.querySelectorAll('.placeholder-img');
   const videos = document.querySelectorAll('.video');
 
-
-  for (let i = 0; i < placeholders.length; i++) {
-    placeholders[i].addEventListener('click', function() {
-      placeholders[i].style.display = 'none';
-      videos[i].style.display = 'block';
-      videos[i].play();
+  placeholders.forEach((placeholder, index) => {
+    placeholder.addEventListener('click', function() {
+      placeholder.style.display = 'none';
+      if (videos[index]) {
+        videos[index].style.display = 'block';
+        videos[index].play();
+      }
     });
-
-    placeholders.addEventListener('click', function() {
-      placeholders[i].style.display = 'none';
-      videos[i].style.display = 'block';
-      videos[i].play();
-    });
-  }
+  });
 });
 
