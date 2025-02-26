@@ -22,9 +22,9 @@ $productionSectionTitle = get_field('productionSectionTitle');
                 <div class="mainVideo productLineVideo">
                     <div class="mainVideoImg productLineImg">
                         <?php if ($product_place_holder_image): ?>
-                            <img class="placeholder-img placeholder-imgPL lazyload"  src="<?php echo esc_url($product_place_holder_image); ?>" alt="Placeholder Image">
+                            <img class="placeholder-img placeholder-imgPL"  src="<?php echo esc_url($product_place_holder_image); ?>" alt="Placeholder Image">
                         <?php endif; ?>
-                        <img class="play-icon playIconProductVideo lazyload"  src="/wp-content/uploads/Button-play.svg"  alt="Play Button">
+                        <img class="play-icon playIconProductVideo"  src="/wp-content/uploads/Button-play.svg"  alt="Play Button">
                         <?php if ($product_video): ?>
                             <video class="video" controls style="display: none;">
                                 <source src="<?php echo esc_url($product_video); ?>" type="video/mp4">

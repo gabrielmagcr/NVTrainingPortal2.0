@@ -36,7 +36,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 		<div class="bg-wattermark"></div>
 		<div class="text-center">
 			<div class="user_title ">
-				<div class="textHome lazy-load">
+				<div class="textHome">
 					<h2 class="welcomeTitle ">Welcome to the NaturVet Training Portal Test222</h2>
 					<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
@@ -149,8 +149,8 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 				?>
 					<div class="quiz completedQuiz hoverAnimation">
 						<a href="<?php the_permalink() ?><?php echo "?completedQuiz"; ?>" class="quiz-link">
-							<img class='quizzImage quizzImageCompleted- lazyload' src="<?php the_field('quiz_bg_image') ?>">
-							<img class='play-icon lazyload' src="/wp-content/uploads/Button-play.svg">
+							<img class='quizzImage quizzImageCompleted-' src="<?php the_field('quiz_bg_image') ?>">
+							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
 						<span><img class="completedCheck" src="/wp-content/uploads/Vector.svg"><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
@@ -158,8 +158,8 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 						} else { ?>
 					<div class="quiz hoverAnimation">
 						<a href="<?php the_permalink() ?>" class="quiz-link">
-							<img class='quizzImage lazyload' src="<?php the_field('quiz_bg_image') ?>">
-							<img class='play-icon lazyload' src="/wp-content/uploads/Button-play.svg">
+							<img class='quizzImage' src="<?php the_field('quiz_bg_image') ?>">
+							<img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 						</a>
 						<span><?php echo get_quiz_title(get_the_ID()); ?></span>
 					</div>
