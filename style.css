@@ -764,7 +764,11 @@ border: none;
 		transition: transform 0.3s ease;
 		transform: scale(1.02);
 	}
-
+  .video{
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+  }
 	.mainVideoText {
 		text-align: left;
 		width: 80%;
@@ -846,8 +850,3 @@ border: none;
     }
   /* product line*/
 
-  .video{
-    width: 100%;
-    height: 100%;
-    border-radius: 14px;
-  }
