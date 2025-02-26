@@ -746,7 +746,7 @@ border: none;
 		position: relative;
 		cursor: pointer;
     width: 330px;
-
+    height: 100%;
 	}
 
 	.mainVideoImg video {
