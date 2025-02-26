@@ -37,9 +37,10 @@
                             </g>
                         </svg>
                     </a>
+                    <span>A MEMBER OF THE <span id="swedencare">SWEDENCARE </span>FAMILY</span>
                 </div>
-                <span>A MEMBER OF THE <span id="swedencare">SWEDENCARE </span>FAMILY</span>
-            </div>
+              
+           
 </footer>
 </body>
 

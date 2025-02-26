@@ -857,9 +857,12 @@ border: none;
   color: #fac33b;
 }
 .footerStructure{
-  display:flex;
-  justify-content: center;
-  align-items:center;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40dvh;
+      flex-direction: column;
+      background-color: #2c667e;
 }
 .footerStructure span {
   color: #fff;
