@@ -702,6 +702,7 @@ border: none;
 
 		.textHome p {
 			width: 60%;
+      max-width: 1200px;
       margin: 20px 0 50px;
 		}
     .textHome span{
@@ -712,10 +713,6 @@ border: none;
 	@media (min-width:1439px) {
 		.textHome h2 {
 			width: 70%;
-		}
-
-		.textHome p {
-			width: 45%;
 		}
 
 		.bg-wattermark {
