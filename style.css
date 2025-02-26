@@ -788,7 +788,11 @@ border: none;
 		font-family: "Montserrat", sans-serif;
 		font-weight: 500;
 	}
-
+  @media (min-width:425px) {
+    .mainVideoText{
+      text-align: center;
+    }
+  }
 	@media (min-width:767px) {
 		.mainVideoImg {
 			width: 500px;
