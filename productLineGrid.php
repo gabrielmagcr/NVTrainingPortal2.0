@@ -21,7 +21,6 @@ $productionSectionTitleGrid = get_field('productionSectionTitleGrid') ? get_fiel
                 <div class="quiz">
                 <?php if ($product_place_holder_image): ?>
                             <img class="quizzImage"  src="<?php echo esc_url($product_place_holder_image); ?>" alt="Placeholder Image">
-                            <img class='play-icon' src="/wp-content/uploads/Button-play.svg">
 
                         <?php endif; ?>
                         <?php if ($product_video): ?>
