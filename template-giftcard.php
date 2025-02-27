@@ -63,7 +63,7 @@ get_header();
     <div class="Completed pad-top">
         <div class="completedContent">
             <div class="completedContentLeft">
-                <h2>Thank you/h2>
+                <h2>Thank you</h2>
                 <p>Your $5 Starbucks digital gift card will be emailed to you. <br> (Please allow 1-2 business days pending employee verification.)</p>
 
             </div>
