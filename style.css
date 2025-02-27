@@ -899,3 +899,13 @@ border: none;
   margin-bottom: 50px;
   border-radius: 14px;
 }
+ /* Survey*/
+
+ .survey{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 100px 0;
+ }
