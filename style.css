@@ -899,6 +899,7 @@ border: none;
   margin-bottom: 50px;
   border-radius: 14px;
   text-decoration: none !important;
+  display: inline-block;
 }
  /* Survey*/
 
