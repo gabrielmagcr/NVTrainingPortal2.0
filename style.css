@@ -894,15 +894,15 @@ border: none;
   border: none;
   outline: navajowhite;
   background: #E26743;
-  color: white;
+  color: white !important;
   padding: 10px 30px;
   margin-bottom: 50px;
   border-radius: 14px;
-  text-decoration: none;
+  text-decoration: none !important;
 }
  /* Survey*/
 
  .survey{
   max-width: 1000px;
-  margin: 100px 0;
+  margin: 100px auto;
  }
