@@ -79,8 +79,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 
 				
 					<?php get_template_part('productLineGrid'); ?>
-					<button class="hs-cta-trigger-button hs-cta-trigger-button-186683445849 cta-btn">Training Portal Quiz
-					</button>
+					<a href="/survey" class="hs-cta-trigger-button hs-cta-trigger-button-186683445849 cta-btn">Training Portal Quiz</a>
 			</div>
 		</div>
 		
