@@ -888,3 +888,14 @@ border: none;
  
 }
 /* Footer */
+
+
+.cta-btn{
+  border: none;
+  outline: navajowhite;
+  background: #E26743;
+  color: white;
+  padding: 10px 30px;
+  margin-bottom: 50px;
+  border-radius: 14px;
+}
