@@ -2,6 +2,13 @@
 /* 
  Template Name: Survey
  */
+session_start(); // Start the session
+
+if (!isset($_SESSION['user_id'])) {
+    // Redirect the user to the homepage (index.php, for example)
+    header("Location: index.php");
+    exit(); // Stop script execution
+}
 get_header();
 ?>
 <style>
