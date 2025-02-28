@@ -1,5 +1,5 @@
 <?php 
-$comingsoon = get_field('comingsoon') ? get_field('comingsoon') : "";
+$comingsoon = get_field('coming_soon_title') ? get_field('coming_soon_title') : "";
 ?>
 
 
@@ -10,9 +10,9 @@ $comingsoon = get_field('comingsoon') ? get_field('comingsoon') : "";
     <div class="quizContainer">
         <?php
         // Check rows exists.
-        if( have_rows('product_line') ):
+        if( have_rows('coming_soon_grid') ):
             // Loop through rows.
-            while( have_rows('product_line_grid') ) : the_row();
+            while( have_rows('coming_soon_grid') ) : the_row();
 
                 $product_video = get_sub_field('product_video');
                 $product_place_holder_image = get_sub_field('product_place_holder_image');

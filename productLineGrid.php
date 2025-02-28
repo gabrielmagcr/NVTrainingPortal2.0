@@ -10,7 +10,7 @@ $productionSectionTitleGrid = get_field('productionSectionTitleGrid') ? get_fiel
     <div class="quizContainer">
         <?php
         // Check rows exists.
-        if( have_rows('product_line') ):
+        if( have_rows('product_line_grid') ):
             // Loop through rows.
             while( have_rows('product_line_grid') ) : the_row();
 
