@@ -124,10 +124,10 @@
               </li>
             <?php } else { ?>
               <li class="responsiveList">
-                <a href="<?php echo wp_login_url(); ?>">Login</a>
+                <a href="/log-in">Login</a>
               </li>
               <li class="responsiveList">
-                <a href="<?php echo wp_registration_url(); ?>">Create an account</a>
+                <a href="/register">Create an account</a>
               </li>
             <?php } ?>
             </li>
