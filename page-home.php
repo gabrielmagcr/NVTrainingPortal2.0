@@ -46,6 +46,9 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 					<p class=""><? echo $text_content ?></p>
 				</div>
 				<?php if (!is_user_logged_in()) { ?>
+					<style>
+						.textHome span, .textHome p{display:none;}
+					</style>
 					<div class="logoutUser logoutUserDesktop">
 						<a href="<?php echo wp_login_url(); ?>">
 							<button class="top-btns">Login</button>
