@@ -362,15 +362,7 @@ border: none;
     display: none;
   }
 
-  .shield img {
-    width: 280px;
-    margin-bottom: 10px;
-  }
-
-  .shield {
-    top: 70%;
-    left: 50%;
-  }
+ 
 
   .bannerInfo {
     text-align: center;
