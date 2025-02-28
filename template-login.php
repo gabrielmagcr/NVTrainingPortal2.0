@@ -1,5 +1,5 @@
 <div class="login">
-<h1 role="presentation" class="wp-login-logo"><a href="https://training.naturvet.com/">Naturvet Training Portal</a></h1>
+<a class="login-logo" href="https://training.naturvet.com/"><img src="https://training.naturvet.com/wp-content/uploads/2018/08/naturvet-logo_green.png"/></a>
 <?php
 /* 
  Template Name: new-Login
@@ -10,6 +10,8 @@ the_content(); ?>
 <style>
     body{
         margin:0;
+        color: #3c434a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     }
     .login{
   display: flex;
@@ -17,18 +19,36 @@ the_content(); ?>
       justify-content: center;
       align-items: center;
       height: 100%;
+      background: #f0f0f1;
 }
-.fieldset-username, .fieldset-password{
+.fieldset-username, .fieldset-password, .fieldset-remember{
   border: none;
   margin: 0;
   padding: 0;
 }
-.login h1 a {
+.login-logo img{
     height: 65px;
     width: 320px;
-    background-size: 320px 65px;
-    background-repeat: no-repeat;
-    padding-bottom: 30px;
-    background-image: url(https://training.naturvet.com/wp-content/uploads/2018/08/naturvet-logo_green.png);
+}
+.login form{
+    background: white;
+    padding: 30px;
+    border: solid 1px #b4b4b5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 6px;
+}
+.input-text{
+    width: 100%;
+}
+.button{
+    background: #135e96;
+    padding: 10px;
+    border: navajowhite;
+    color: #fff;
+    width: 60px;
+    border-radius: 6px;
+    margin: 0 auto;
 }
     </style>
