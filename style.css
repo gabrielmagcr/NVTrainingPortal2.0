@@ -145,6 +145,7 @@ header .content .header-r {
 }
 .nvlink:hover{
   color: white;
+  text-decoration: none;
 }
 header .content .header-l .top-btns {
   display: none;
@@ -927,6 +928,13 @@ border: none;
   border-radius: 14px;
   text-decoration: none !important;
   display: inline-block;
+}
+@media (min-width:1400px) {
+  .cta-btn{
+    margin: 100px;
+    font-size: 32px;
+  }
+  
 }
  /* Survey*/
 
