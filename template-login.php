@@ -43,7 +43,7 @@ the_content(); ?>
     gap: 10px;
     border-radius: 6px;
 }
-.input-text{
+.input-text, .input-email{
     width: 100%;
     border: solid 1px #b4b4b5;
     border-radius: 3px;
