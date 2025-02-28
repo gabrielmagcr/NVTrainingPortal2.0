@@ -175,11 +175,35 @@ header .content .header-l .top-btns {
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .shield img{
   width: 150px;
 }
-
+@media (min-width:767px) {
+  .shield img{
+    width: 200px;
+  }
+  
+}
+@media (min-width:1023px) {
+  .shield{
+    top: 50%;
+    left: 20%;
+  }
+  .shield img{
+    width: 350px;
+  }
+  
+}
+@media (min-width:1439px) {
+  .shield img{
+    width: 400px;
+  }
+  
+}
 .responsive-menu {
   display: none;
 }
