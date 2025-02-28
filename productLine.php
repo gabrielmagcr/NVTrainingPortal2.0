@@ -47,5 +47,4 @@ $productionSectionTitle = get_field('productionSectionTitle');
     </div>
 </div>
 
-<?php get_template_part('lineBreak'); ?>
 
