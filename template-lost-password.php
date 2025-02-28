@@ -68,4 +68,15 @@ the_content(); ?>
 .wpum-action-links a{
     text-decoration:none;
 }
+.wpum-password-recovery-form{
+    width: 300px;
+    text-align:center;
+}
+.wpum-password-recovery-form p{
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    border-left: solid #8585fa;
+}
     </style>
