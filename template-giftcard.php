@@ -52,6 +52,9 @@
             width: 50%;
         }
     }
+    .bannerClass{
+        display:none;
+    }
 </style>
 <?php
 /* 
