@@ -50,7 +50,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 						.textHome span, .textHome p{display:none;}
 					</style>
 					<div class="logoutUser logoutUserDesktop">
-						<a href="<?php echo wp_login_url(); ?>">
+						<a href="/log-in">
 							<button class="top-btns">Login</button>
 						</a>
 						<a href="<?php echo wp_registration_url(); ?>">
