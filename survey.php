@@ -6,7 +6,7 @@ session_start(); // Start the session
 
 if (!isset($_SESSION['user_id'])) {
     // Redirect the user to the homepage (index.php, for example)
-    header("Location: index.php");
+    header("Location: https://training.naturvet.com/");
     exit(); // Stop script execution
 }
 get_header();
