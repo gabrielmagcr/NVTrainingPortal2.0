@@ -26,9 +26,13 @@ the_content(); ?>
   margin: 0;
   padding: 0;
 }
+.field{
+    padding-top: 3px;
+}
 .login-logo img{
     height: 65px;
     width: 320px;
+    padding-bottom: 50px;
 }
 .login form{
     background: white;
@@ -41,6 +45,9 @@ the_content(); ?>
 }
 .input-text{
     width: 100%;
+    border: solid 1px #b4b4b5;
+    border-radius: 3px;
+    padding: 5;
 }
 .button{
     background: #135e96;
@@ -50,5 +57,15 @@ the_content(); ?>
     width: 60px;
     border-radius: 6px;
     margin: 0 auto;
+}
+.wpum-action-links{
+    list-style: none;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.wpum-action-links a{
+    text-decoration:none;
 }
     </style>
