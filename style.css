@@ -723,7 +723,7 @@ border: none;
 
 		.quizContainer {
 			justify-items: start;
-			margin: 50px 260px;
+			margin: 50px 0;
 		}
 
 		.bg-botton-logout {
