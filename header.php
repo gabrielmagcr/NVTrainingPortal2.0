@@ -178,7 +178,7 @@
           <a href="<?php echo wp_logout_url();  ?>"><button type="button" class="top-btns">Logout</button></a>
           <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
         <?php } else { ?>
-          <a href="/log-in>"><button type="button" class="top-btns">Login</button></a>
+          <a href="/log-in"><button type="button" class="top-btns">Login</button></a>
           <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
         <?php } ?>
       </div><!--end header-r-->
