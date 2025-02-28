@@ -23,4 +23,12 @@ the_content(); ?>
   margin: 0;
   padding: 0;
 }
+.login h1 a {
+    height: 65px;
+    width: 320px;
+    background-size: 320px 65px;
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+    background-image: url(https://training.naturvet.com/wp-content/uploads/2018/08/naturvet-logo_green.png);
+}
     </style>
