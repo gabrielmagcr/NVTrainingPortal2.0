@@ -172,11 +172,13 @@ header .content .header-l .top-btns {
 .shield {
   position: absolute;
   z-index: 1;
-  top: 50%;
-  left: 20%;
+  top: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.shield img{
+  width: 150px;
+}
 
 .responsive-menu {
   display: none;
@@ -509,7 +511,7 @@ border: none;
 		text-align: center;
 		font-family: "Brandon Grotesque", sans-serif;
 		font-weight: 600;
-		
+		margin-bottom: 50px;
 	}
 
 	.mainContainer {
