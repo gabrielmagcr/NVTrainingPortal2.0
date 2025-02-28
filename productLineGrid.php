@@ -24,7 +24,7 @@ $productionSectionTitleGrid = get_field('productionSectionTitleGrid') ? get_fiel
 
                         <?php endif; ?>
                         <?php if ($product_video): ?>
-                            <video class="video" controls style="display: none;">
+                            <video class="video" controls controlsList="nodownload" style="display: none;">
                                 <source src="<?php echo esc_url($product_video); ?>" type="video/mp4">
                             </video>
                         <?php endif; ?>

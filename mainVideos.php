@@ -10,7 +10,7 @@
         <div class="mainVideo">
             <div class="mainVideoImg">
                 <img class="placeholder-img" src="<?php echo esc_url($placeHolderImage); ?>" alt="Placeholder Image">
-                <video class="video" controls style="display: none;">
+                <video class="video" controls controlsList="nodownload" style="display: none;">
                     <source src="<?php echo esc_url($welcomeVideo); ?>" type="video/mp4">
                 </video>
             </div>

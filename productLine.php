@@ -25,7 +25,7 @@ $productionSectionTitle = get_field('productionSectionTitle');
                             <img class="placeholder-img placeholder-imgPL"  src="<?php echo esc_url($product_place_holder_image); ?>" alt="Placeholder Image">
                         <?php endif; ?>
                         <?php if ($product_video): ?>
-                            <video class="video" controls style="display: none;">
+                            <video class="video" controls controlsList="nodownload" style="display: none;">
                                 <source src="<?php echo esc_url($product_video); ?>" type="video/mp4">
                             </video>
                         <?php endif; ?>
