@@ -3,7 +3,9 @@ Theme Name:NV Training Portal 2.0
 Author: Gabriel Arias
 Version: 1.0
 */
-
+#backtoblog{
+  display: none;
+}
 body{
     margin: 0;
   }
