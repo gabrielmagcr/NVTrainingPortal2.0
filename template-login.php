@@ -54,7 +54,7 @@ the_content(); ?>
     padding: 10px;
     border: navajowhite;
     color: #fff;
-    width: 60px;
+    width: auto;
     border-radius: 6px;
     margin: 0 auto;
 }

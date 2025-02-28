@@ -21,7 +21,7 @@ the_content(); ?>
       height: 100%;
       background: #f0f0f1;
 }
-.fieldset-username, .fieldset-password, .fieldset-remember{
+.fieldset-username, .fieldset-password, .fieldset-remember, .fieldset-user_password, .fieldset-robo, .fieldset-user_email{
   border: none;
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@ the_content(); ?>
     padding: 10px;
     border: navajowhite;
     color: #fff;
-    width: 60px;
+    width: auto;
     border-radius: 6px;
     margin: 0 auto;
 }
