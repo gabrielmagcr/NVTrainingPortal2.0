@@ -21,7 +21,7 @@ the_content(); ?>
       height: 100%;
       background: #f0f0f1;
 }
-.fieldset-username, .fieldset-password, .fieldset-remember, .fieldset-user_password, .fieldset-robo, .fieldset-user_email{
+.fieldset-username, .fieldset-password, .fieldset-remember, .fieldset-user_password, .fieldset-robo, .fieldset-user_email, .fieldset-username_email{
   border: none;
   margin: 0;
   padding: 0;
