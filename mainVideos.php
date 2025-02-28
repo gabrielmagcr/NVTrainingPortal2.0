@@ -1,4 +1,4 @@
-<div class="mainVideosContainer">
+<div class="mainVideosContainer training-container">
     <?php 
     if(have_rows('welcome_videos')): 
         while(have_rows('welcome_videos')): the_row();

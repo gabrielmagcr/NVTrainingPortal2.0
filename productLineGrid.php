@@ -3,7 +3,7 @@ $productionSectionTitleGrid = get_field('productionSectionTitleGrid') ? get_fiel
 ?>
 
 
-<div class="productLineContainer">
+<div class="productLineContainer training-container">
     <h2 class="welcomeTitle test">
         <?php echo esc_html($productionSectionTitleGrid); ?>
     </h2>

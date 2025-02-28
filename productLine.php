@@ -3,7 +3,7 @@ $productionSectionTitle = get_field('productionSectionTitle');
 ?>
 
 
-<div class="productLineContainer">
+<div class="productLineContainer training-container">
     <h2 class="welcomeTitle">
         <?php echo esc_html($productionSectionTitle); ?>
     </h2>
