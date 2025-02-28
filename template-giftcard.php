@@ -67,7 +67,7 @@ get_header();
         <div class="completedContent">
             <div class="completedContentLeft">
                 <h2>Thank you</h2>
-                <p>Your $5 Starbucks digital gift card will be emailed to you. <br> (Please allow 1-2 business days pending employee verification.)<br><strong>Please fill out the form below to receive your gift card.</strong></p>
+                <p>Your $5 Starbucks digital gift card will be emailed to you. <br> (Allow 1-2 business days pending employee verification.)<br><strong>Please fill out the form below to receive your gift card.</strong></p>
 
             </div>
             <div class="completedForm"></div>
