@@ -50,7 +50,6 @@
 </head>
 
 <body>
-<?php the_content(); ?>
 
   <section class="top-belt" style="display:none;">
     <div class="content">
