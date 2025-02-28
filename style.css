@@ -867,7 +867,7 @@ border: none;
   display: flex;
       justify-content: center;
       align-items: center;
-      height: 40dvh;
+      height: 20dvh;
       flex-direction: column;
       background-color: #2c667e;
 }
