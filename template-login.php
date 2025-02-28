@@ -11,4 +11,16 @@ the_content(); ?>
     body{
         margin:0;
     }
+    .login{
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+}
+.fieldset-username, .fieldset-password{
+  border: none;
+  margin: 0;
+  padding: 0;
+}
     </style>
