@@ -191,7 +191,7 @@
       <div class="bannerInfo">
         <?php if (!is_user_logged_in()) { ?>
           <div class="logoutUser">
-            <a href="<?php echo wp_login_url(); ?>">
+            <a href="/log-in">
               <button class="login-btns">Login</button>
             </a>
             <a href="<?php echo wp_registration_url(); ?>">
