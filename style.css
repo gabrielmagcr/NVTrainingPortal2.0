@@ -831,7 +831,11 @@ border: none;
 
   /* product line*/
 
-   
+  .p-c-grid-span{
+    text-align: center;
+    color: #4D7F70;
+
+  }
 
     @media (min-width: 1023px) {
         .productVideoContainer {
@@ -855,6 +859,7 @@ border: none;
 
        
     }
+  
   /* product line*/
 
 /* footer*/

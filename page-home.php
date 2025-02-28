@@ -79,7 +79,7 @@ $modalCompletedAllQuizzes = ($completedQuizzesCount >= $totalQuizzesCount);
 
 					<?php get_template_part('productLine'); ?>
 
-					<a href="/survey" class="cta-btn">Training Portal Quiz</a>
+					<a href="/survey" class="cta-btn">Click here for to complete the course</a>
 			</div>
 		</div>
 		
