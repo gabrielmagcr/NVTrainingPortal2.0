@@ -50,6 +50,8 @@
 </head>
 
 <body>
+<?php the_content(); ?>
+
   <section class="top-belt" style="display:none;">
     <div class="content">
       Free shipping on all subscriptions and orders $35+ <svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +120,7 @@
                 <a href="<?php echo wp_logout_url();  ?>">Logout</a>
               </li>
               <li class="responsiveList">
-                <button type="button" data-toggle="modal" data-target="#partnerAssets" class="responsiveListBtn">NatureVet Parner Assets Site</button>
+                <a href="https://naturvet.com/" target="_blank">NatureVet Website</a>
               </li>
             <?php } else { ?>
               <li class="responsiveList">
