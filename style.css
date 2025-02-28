@@ -834,7 +834,9 @@ border: none;
   .p-c-grid-span{
     text-align: center;
     color: #4D7F70;
-
+    margin-bottom: 30px;
+    font-weight: 500;
+    display: block;
   }
 
     @media (min-width: 1023px) {
