@@ -20,7 +20,7 @@ $productionSectionTitleGrid = get_field('productionSectionTitleGrid') ? get_fiel
                 ?>
                 <div class="quiz">
                 <?php if ($product_place_holder_image): ?>
-                            <img class="quizzImage "  src="<?php echo esc_url($product_place_holder_image); ?>" alt="Placeholder Image">
+                    <img class="quizzImage <?php echo $product_video ? 'placeholder-img' : ''; ?>" src="<?php echo esc_url($product_place_holder_image); ?>" alt="Placeholder Image">
 
                         <?php endif; ?>
                         <?php if ($product_video): ?>
