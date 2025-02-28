@@ -140,7 +140,12 @@ header .content .header-r {
   width: 40%;
   text-align: right;
 }
-
+.nvlink{
+  text-decoration: none;
+}
+.nvlink:hover{
+  color: white;
+}
 header .content .header-l .top-btns {
   display: none;
 }

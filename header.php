@@ -179,7 +179,7 @@
           <button type="button" class="top-btns" data-toggle="modal" data-target="#partnerAssets">NaturVet Partner Assets Site</button>
         <?php } else { ?>
           <a href="/log-in"><button type="button" class="top-btns">Login</button></a>
-          <a href="https://naturvet.com/" target="_blank" class="top-btns">NaturVet Website</a>
+          <a href="https://naturvet.com/" target="_blank" class="top-btns nvlink">NaturVet Website</a>
           <?php } ?>
       </div><!--end header-r-->
     </div><!--end content-->
